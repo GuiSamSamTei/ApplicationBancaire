@@ -1,14 +1,16 @@
 = Cahier des charges V1
+:toc:
+:toc-title: Sommaire
 
-=== 1. Contexte et définition du problème
+=== I. Contexte et définition du problème
 
 La banque DailyBank souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires et l’application sera déployée dans les 100 agences que compte son réseau. Un application JAVA-Oracle déjà existante possède différentes options comme : modifier les informations d'un clients, créer un nouveau client, consulter un compte, débiter un compte et rendre inactif un client.
 
-=== 2. Objectif du projet
+=== II. Objectif du projet
 
 L'objectif est d'ajouter des fonctionnalités à cette première version de l'application.
 
-=== 4. Description fonctionnelle des besoins
+=== III. Description fonctionnelle des besoins
 
 Fonction : Créditer / Débiter un compte::
     Objectif : Permettre d'effectuer des débits et des dépôts sur un compte +
@@ -30,6 +32,6 @@ Fonction : Gérer les employés::
     Objectif : Permettre de faire le CRUD sur tous types d'employés +
     Description : Cette action est réalisable par un chef d'agence
 
-=== 5. Délais
+=== IV. Délais
 
 La version V1 de cette application doit être réaliser pour le 17 mai.
