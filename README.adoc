@@ -1,5 +1,9 @@
 = SAE 02.01 - Développement d'une application
 
+== Présentation de l'équipe et rôles respectifs
+
+*À FAIRE*
+
 == Répartition des tâches et états d'avancement
 [%header,cols=7*]
 |===
