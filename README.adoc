@@ -22,3 +22,5 @@
 |
 
 |===
+D pour en Développment
+F pour Fonctionnel
