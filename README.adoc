@@ -1,7 +1,9 @@
 = SAE 02.01 - Développement d'une application
 
-[%header,cols=2*]
+
 == Répartition des tâches et états d'avancement
+
+[%header,cols=2*]
 |===
 |Version
 |Rôle
