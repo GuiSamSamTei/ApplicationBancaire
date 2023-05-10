@@ -1,3 +1,20 @@
 = SAE 02.01 - Développement d'une application
 
 == Répartition des tâches et états d'avancement
+|==
+|Version
+|Rôle
+|Use Case
+|Cas
+|BAELEN Julie
+|SAMPAIO Guilherme
+|RECORD Bastien
+
+|1
+|Chef d'Agence
+|CRUD employé
+|C
+|
+|OK
+
+|==
