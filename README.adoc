@@ -13,12 +13,4 @@
 |SAMPAIO Guilherme
 |RECORD Bastien
 
-|1
-|Chef d'Agence
-|CRUD employé
-|C
-|
-|OK
-|
-
 |===
