@@ -1,112 +1,54 @@
 = SAE 02.01 - Développement d'une application
 
-
 == Répartition des tâches et états d'avancement
 [%header,cols=7*]
 |===
-|Version
-|Rôle
-|Use Case
-|Cas
-|BAELEN Julie
-|SAMPAIO Guilherme
-|RECORD Bastien
+|Version    |Rôle           |Use Case           |Cas                |BAELEN Julie       |SAMPAIO Guilherme  |RECORD Bastien
 
-|1
-|Chef d'Agence
-|CRUD employé
-|C
-|
-|OK
-|
+|1          |Chef d'Agence  |CRUD employé       |C                  |                   |                   |
 |===
 
-D pour en Développment
-F pour Fonctionnel
+*D* pour en Développment +
+*F* pour Fonctionnel
 
 
 == Livrables
 [%header,cols=4*]
 |===
-|Date
-|Nom
-|Lien
-|Retour
+|Date       |Nom                |Lien               |Retour
 
-|12 mai
-|CDCU V1
-|
-|
+|12 mai     |CDCU V1            |                   |
 
-|
-|GANTT V1
-|
-|
+|           |GANTT V1           |                   |
 
-|16 mai
-|Doc Util V1
-|
-|
+|16 mai     |Doc Util V1        |                   |
 
-|
-|CDCU V2
-|
-|
+|           |CDCU V2            |                   |
 
-|
-|Gantt réalisé V1
-|
-|
+|           |Gantt réalisé V1   |                   |
 
-|
-|Gantt V2
-|
-|
+|           |Gantt V2           |                   |
 
-|17 mai
-|Doc Tech V1
-|
-|
+|17 mai     |Doc Tech V1        |                   |
 
-|
-|Cahier Tests V1
-|
-|
+|           |Cahier Tests V1    |                   |
 
-|
-|Jar V1
-|
-|
+|           |Jar V1             |                   |
 
-|26 mai
-|Doc Util V2
-|
-|
+|26 mai     |Doc Util V2        |                   |
 
-|
-|Gantt réalisé V2
-|
-|
+|           |Gantt réalisé V2   |                   |
 
-|
-|Chiffrage projet
-|
-|
+|           |Chiffrage projet   |                   |
 
-|
-|Dac Tech V2
-|
-|
+|           |Dac Tech V2        |                   |
 
-|
-|Cahier Tests V2 et recette final
-|
-|
+|           |Cahier Tests V2 +
+             et recette final   |                   |
 
-|
-|Jar V2
-|
-|
+|           |Jar V2             |                   |
 |===
 
-[embed]https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/GanttV1.pdf[/embed]
+== Planning Gantt V1
+
+image::VERSION 1/Gantt V1.png[]
