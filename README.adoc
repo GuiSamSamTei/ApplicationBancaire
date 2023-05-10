@@ -108,3 +108,5 @@ F pour Fonctionnel
 |
 |
 |===
+
+image::GanttV1.pdf[]
