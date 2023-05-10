@@ -109,4 +109,4 @@ F pour Fonctionnel
 |
 |===
 
-image::GanttV1.pdf[]
+[embed]https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/GanttV1.pdf[/embed]
