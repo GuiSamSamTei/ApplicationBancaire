@@ -33,13 +33,78 @@ F pour Fonctionnel
 |Lien
 |Retour
 
-|Sem.19
+|12 mai
 |CDCU V1
 |
 |
 
 |
 |GANTT V1
+|
+|
+
+|16 mai
+|Doc Util V1
+|
+|
+
+|
+|CDCU V2
+|
+|
+
+|
+|Gantt réalisé V1
+|
+|
+
+|
+|Gantt V2
+|
+|
+
+|17 mai
+|Doc Tech V1
+|
+|
+
+|
+|Cahier Tests V1
+|
+|
+
+|
+|Jar V1
+|
+|
+
+|26 mai
+|Doc Util V2
+|
+|
+
+|
+|Gantt réalisé V2
+|
+|
+
+|
+|Chiffrage projet
+|
+|
+
+|
+|Dac Tech V2
+|
+|
+
+|
+|Cahier Tests V2 et recette final
+|
+|
+
+|
+|Jar V2
 |
 |
 |===
