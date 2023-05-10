@@ -3,7 +3,7 @@
 
 == Répartition des tâches et états d'avancement
 
-[%header,cols=2*]
+[%header,cols=7*]
 |===
 |Version
 |Rôle
