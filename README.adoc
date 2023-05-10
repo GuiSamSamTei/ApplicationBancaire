@@ -2,7 +2,7 @@
 
 [%header,cols=2*]
 == Répartition des tâches et états d'avancement
-|==
+|===
 |Version
 |Rôle
 |Use Case
@@ -18,4 +18,4 @@
 |
 |OK
 
-|==
+|===
