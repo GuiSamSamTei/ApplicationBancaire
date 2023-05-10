@@ -1,2 +1,3 @@
-# sae2023-bank-1b01
-sae2023-bank-1b01 created by GitHub Classroom
+= SAE 02.01 - Développement d'une application
+
+== Répartition des tâches et états d'avancement
