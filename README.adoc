@@ -2,7 +2,7 @@
 
 == Présentation de l'équipe et rôles respectifs
 
-L'équipe est constituée de trois personnes : +
+L'équipe est constituée de trois personnes::
   - Julie BAELEN
   - Guilherme SAMPAIO
   - Bastien RECORD
