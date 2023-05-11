@@ -27,8 +27,8 @@ L'équipe est constituée de trois personnes::
 |2        |Guichetier     | CRUD Prélèvement  | R                     || | 
 |2        |Guichetier     | CRUD Prélèvement  | U                     || | 
 |2        |Guichetier     | CRUD Prélèvement  | D                     || | 
-|2        |Batch          | Prélèvements automatiques                 | || 
-|2        |Batch          | Reléves mensuels                          | || 
+|2        |Batch          | Prélèvements automatiques|                | || 
+|2        |Batch          | Reléves mensuels  |                       | ||
 |===
 
 *D* pour en Développment +
