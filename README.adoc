@@ -2,7 +2,12 @@
 
 == Présentation de l'équipe et rôles respectifs
 
-*À FAIRE*
+L'équipe est constituée de trois personnes : +
+  - Julie BAELEN
+  - Guilherme SAMPAIO
+  - Bastien RECORD
+
+Julie BAELEN est notre chef d'équipe. Guilherme SAMPAIO est chargé de nous faire respecter les délais. Bastien RECORD est chargé de bien organisé le dépôt Git.
 
 == Répartition des tâches et états d'avancement
 [%header,cols=7*]
