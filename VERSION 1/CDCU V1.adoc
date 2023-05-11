@@ -49,7 +49,8 @@ Fonction : Gérer les employés::
 
 == V. Analyse des contraintes
 
-Il y a différents types de contraintes, comme les contraintes techniques ou organisationnelles. +
+Il y a différents types de contraintes, comme les contraintes techniques ou organisationnelles.
+
 Les contraintes techniques sont:: 
     Certaines fonctionnalitées ne fonctionnent que pour un certain rôle +
     Il faut savoir relier la base de données avec le code java +
