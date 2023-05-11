@@ -35,9 +35,9 @@
 == Livrables
 [%header,cols=4*]
 |===
-|Date       |Nom                |Lien                                       |Retour
-| Sem.19    |CDC V1             |link:CDCU V1.adoc# |
-|           |Gantt V1 Prévu     |                   |
+|Date       |Nom                |Lien                                                                                                   |Retour
+| Sem.19    |CDC V1             |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/CDCU%20V1.adoc[CDCU Version 1]  |
+|           |Gantt V1 Prévu     |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Gantt%20V1.pdf[Gantt Prévu V1]  |
 | 16/05     |CDC V2             |                   |
 |           |Gantt V1 Réalisé   |                   |
 |           |Gantt V2 Prévu     |                   |     
@@ -55,3 +55,5 @@
 
 == Planning Gantt V1
 image:VERSION 1/Gantt V1.png[]
+
+permalink:
