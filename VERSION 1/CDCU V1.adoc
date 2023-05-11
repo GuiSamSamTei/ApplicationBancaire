@@ -49,3 +49,6 @@ Fonction : Gérer les employés::
 
 == V. Analyse des contraintes
 [.text-justify]
+Il y a différents types de contraintes, comme les contraintes techniques ou organisationnelles. +
+Contraintes techniques ::: 
+lol
