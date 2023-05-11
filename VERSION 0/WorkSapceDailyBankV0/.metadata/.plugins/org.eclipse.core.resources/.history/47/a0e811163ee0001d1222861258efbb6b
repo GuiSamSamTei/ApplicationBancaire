@@ -1,0 +1,118 @@
+package memory;
+
+import java.io.IOException;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import memory.view.AccueilMemoryController;
+import memory.view.JeuMemoryQuatreQuatreController;
+import javafx.scene.Scene;
+
+public class MemoryApp extends Application {
+
+	private BorderPane paneRoot;
+	private Stage stagePrimary;
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		this.stagePrimary = primaryStage;
+		this.paneRoot = new BorderPane();
+
+		Scene scene = new Scene(this.paneRoot);
+		scene.getStylesheets().add(MemoryApp.class.getResource("style.css").toExternalForm());
+
+		this.stagePrimary.setTitle("Memory App");
+		this.stagePrimary.setScene(scene);
+		this.stagePrimary.setResizable(false);
+
+		loadAccueilMemory();
+
+		this.stagePrimary.show();
+	}
+
+	public void loadAccueilMemory() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MemoryApp.class.getResource("view/AccueilMemory.fxml"));
+
+			BorderPane vuePageAccueil = loader.load();
+
+			AccueilMemoryController controller = loader.getController();
+			controller.setMemoryApp(this);
+			controller.setFenetrePrincipale(this.stagePrimary);
+
+			this.paneRoot.setCenter(vuePageAccueil);
+		} catch (IOException e) {
+			System.out.println("Ressource FXML non disponible : AccueilMemory");
+			System.exit(1);
+		}
+	}
+
+	public void showJeuNormalMemory() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MemoryApp.class.getResource("view/JeuMemoryQuatreQuatre.fxml"));
+
+			BorderPane vueJeuNormal = loader.load();
+
+			Scene scene = new Scene(vueJeuNormal);
+			scene.getStylesheets().setAll(this.stagePrimary.getScene().getStylesheets());
+
+			Stage stageNormal = new Stage();
+			stageNormal.setTitle("Memory App - Mode Normal");
+			stageNormal.initModality(Modality.WINDOW_MODAL);
+			stageNormal.initOwner(this.stagePrimary);
+			stageNormal.setScene(scene);
+			stageNormal.setResizable(false);
+
+			JeuMemoryQuatreQuatreController controller = loader.getController();
+			controller.setJeuMode(stageNormal, false);
+
+			stageNormal.showAndWait();
+
+		} catch (IOException e) {
+			System.out.println("Ressource FXML non disponible : JeuMemory");
+			System.exit(1);
+		}
+	}
+
+	public void showJeuTricheMemory() {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MemoryApp.class.getResource("view/JeuMemory.fxml"));
+
+			BorderPane vueJeuTriche = loader.load();
+
+			Scene scene = new Scene(vueJeuTriche);
+			scene.getStylesheets().setAll(this.stagePrimary.getScene().getStylesheets());
+
+			Stage stageTriche = new Stage();
+			stageTriche.setTitle("Memory App - Mode Triche");
+			stageTriche.initModality(Modality.WINDOW_MODAL);
+			stageTriche.initOwner(this.stagePrimary);
+			stageTriche.setScene(scene);
+			stageTriche.setResizable(false);
+
+			JeuMemoryQuatreQuatreController controller = loader.getController();
+			controller.setJeuMode(stageTriche, true);
+
+			stageTriche.showAndWait();
+
+		} catch (IOException e) {
+			System.out.println("Ressource FXML non disponible : JeuMemory");
+			System.exit(1);
+		}
+	}
+
+	@Override
+	public void stop() throws Exception {
+		System.out.println("Merci d'avoir jouer");
+		super.stop();
+	}
+
+	public static void main2(String[] args) {
+		Application.launch(args);
+	}
+}

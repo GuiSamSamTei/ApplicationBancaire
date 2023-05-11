@@ -1,0 +1,70 @@
+package memory.view;
+
+import javafx.fxml.Initializable;
+import java.net.URL;
+import java.util.Optional;
+import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Stage;
+import memory.MemoryApp;
+
+public class AccueilMemoryController implements Initializable {
+
+	@FXML
+	private Button butNormal;
+	@FXML
+	private Button butTriche;
+
+	private MemoryApp memoryApp;
+
+	private Stage stageMain;
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+	}
+
+	public void setFenetrePrincipale(Stage stageMain) {
+		this.stageMain = stageMain;
+		this.stageMain.setOnCloseRequest(event -> {
+			event.consume();
+			actionQuitter();
+		});
+	}
+
+	public void setMemoryApp(MemoryApp memoryApp) {
+		this.memoryApp = memoryApp;
+	}
+
+	@FXML
+	private void actionNormal() {
+		this.memoryApp.showJeuNormalMemory();
+	}
+
+	@FXML
+	private void actionTriche() {
+		this.memoryApp.showJeuTricheMemory();
+	}
+
+	@FXML
+	private void actionQuitter() {
+		Alert confirmation = new Alert(AlertType.CONFIRMATION);
+		confirmation.setTitle("Fermeture de l'application Memory App");
+		confirmation.setHeaderText("Voulez-vous réellement quitter le jeu ?");
+		confirmation.initOwner(this.stageMain);
+
+		confirmation.getButtonTypes().setAll(ButtonType.YES, ButtonType.NO);
+
+		Optional<ButtonType> reponse = confirmation.showAndWait();
+
+		if (reponse.isPresent()) {
+			if (reponse.get() == ButtonType.YES) {
+				this.stageMain.close();
+			}
+		}
+	}
+}

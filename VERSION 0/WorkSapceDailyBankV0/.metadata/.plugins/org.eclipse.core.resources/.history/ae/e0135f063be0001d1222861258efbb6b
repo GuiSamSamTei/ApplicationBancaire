@@ -1,0 +1,8 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.buttonnormal {
+	-fx-background-color :  #a7cda5;
+}
+
+.buttontriche {
+	-fx-background-color :  #cda5aa;
+}

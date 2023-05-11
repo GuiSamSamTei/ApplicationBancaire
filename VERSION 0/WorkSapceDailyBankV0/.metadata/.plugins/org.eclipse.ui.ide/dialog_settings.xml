@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/SAE/SAE 1/WorkSapceIHM/DailyBank"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/WorkSapceIHM/Memory"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/WorkSapceIHM/TP3"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/WorkSapceIHM/TP2"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/WorkSapceIHM/TP1"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/WorkSapceIHM/TD3_debut"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/WorkSapceIHM/TP1_step4"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/WorkSapceIHM/TP1_step1"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/WorkSapceIHM/TD2Version2"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/WorkSapceIHM/TD2Version1"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/TD/TD2_debut/Td2Version2"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/TD/TD2_debut/Td2Version1"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/TP/TP-1/GestClubTP1_step1"/>
+			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/TP/GestClubTP1_step1"/>
+		</list>
+	</section>
+</section>

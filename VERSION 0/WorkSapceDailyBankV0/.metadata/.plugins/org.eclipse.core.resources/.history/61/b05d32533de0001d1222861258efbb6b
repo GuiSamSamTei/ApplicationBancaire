@@ -1,0 +1,26 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.buttonnormal {
+	-fx-background-color :  #a7cda5;
+}
+
+.buttontriche {
+	-fx-background-color :  #cda5aa;
+}
+
+.borderpaneaccueil {
+	-fx-background-color :  #d7dae9;
+}
+
+.menubaracceuil {
+	-fx-background-color :  #d7dae9;
+}
+
+.hboxjeu {
+	-fx-background-color : #d7dae9;
+}
+
+.buttoncarte {
+	-fx-border-color : #4a3329;
+	-fx-background-color : #91bec2;
+	-fx-border-radius : 10px;
+}

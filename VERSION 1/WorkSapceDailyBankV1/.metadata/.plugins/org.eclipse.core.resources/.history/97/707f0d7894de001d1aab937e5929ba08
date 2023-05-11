@@ -1,0 +1,110 @@
+package iut.td;
+
+import java.net.URL;
+import java.util.Optional;
+import java.util.ResourceBundle;
+
+import javafx.beans.binding.Bindings;
+import javafx.beans.property.IntegerProperty;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.ButtonType;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Slider;
+import javafx.scene.control.TextField;
+import javafx.scene.web.WebView;
+import javafx.stage.Stage;
+import javafx.util.converter.NumberStringConverter;
+
+public class PlusMoinsController implements Initializable {
+
+	@FXML
+	private TextField zoneTexte;
+	@FXML
+	private Slider valeurSlider;
+
+	private IntegerProperty valProperty;
+	private Stage fenetrePrincipale = null;
+
+	public void setFenetrePrincipale(Stage fenetrePrincipale, IntegerProperty valeurProp) {
+		this.fenetrePrincipale = fenetrePrincipale;
+		this.fenetrePrincipale.setOnCloseRequest(event -> {
+			event.consume();
+			actionQuitter();
+		});
+		this.valProperty = valeurProp;
+		Bindings.bindBidirectional(this.zoneTexte.textProperty(), this.valProperty, new NumberStringConverter());
+		this.valeurSlider.valueProperty().bindBidirectional(this.valProperty);
+	}
+
+	@FXML
+	private void actionQuitter() {
+		Alert confirmation = new Alert(AlertType.CONFIRMATION);
+		confirmation.setTitle("Fermeture de l'application");
+		confirmation.setHeaderText("Voulez-vous réellement quitter ?");
+		confirmation.initOwner(this.fenetrePrincipale);
+
+		ButtonType plusTard = new ButtonType("Plus tard...");
+		confirmation.getButtonTypes().setAll(plusTard, ButtonType.YES, ButtonType.NO);
+
+		Optional<ButtonType> reponse = confirmation.showAndWait();
+
+		if (reponse.isPresent()) {
+			if (reponse.get() == ButtonType.YES) {
+				String valTexte = "" + this.valProperty.get();
+				System.out.println("Sniff... c'est la fin ici aussi...");
+				System.out.println("La dernière valeur du compteur était : " + valTexte);
+				this.fenetrePrincipale.close();
+			} else if (reponse.get() == ButtonType.NO) {
+				System.out.println("NON");
+			} else if (reponse.get() == plusTard) {
+				System.out.println("On continue");
+			} else {
+				System.out.println("On ne sait pas la réponse donc on ne part pas");
+			}
+		} else {
+			System.out.println("On continue car pas de réponse");
+		}
+	}
+
+	@FXML
+	private void actionCredit() {
+		Alert about = new Alert (AlertType.INFORMATION);
+		about.setTitle("À propos...");
+		about.setHeaderText("Crédits");
+		WebView viewWeb = new WebView();
+	}
+
+	private void actionAjouter(int valeur) {
+		this.valProperty.set(this.valProperty.get() + valeur);
+	}
+
+	@FXML
+	private void actionRAZ() {
+		this.valProperty.set(10);
+	}
+
+	@FXML
+	private void actionPlus() {
+		actionAjouter(1);
+	}
+
+	@FXML
+	private void actionMoins() {
+		actionAjouter(-1);
+	}
+
+	public PlusMoinsController() {
+		System.out.println("Construction de PlusMoinsController");
+	}
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		System.out.println("Initialisation de PlusMoinsController");
+	}
+
+	public void ecrireCoucou() {
+		System.out.println("Ecrire COUCOU avec PlusMoinsController");
+	}
+}

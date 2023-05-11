@@ -1,0 +1,188 @@
+package memory.view;
+
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import javafx.concurrent.Task;
+import javafx.event.Event;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
+import memory.om.Carte;
+import memory.om.Jeu;
+import memory.om.Reponse;
+
+public class JeuTricheMemoryController implements Initializable {
+
+	@FXML
+	private Button butCaseZero;
+	@FXML
+	private Button butCaseUn;
+	@FXML
+	private Button butCaseDeux;
+	@FXML
+	private Button butCaseTrois;
+	@FXML
+	private Button butCaseQuatre;
+	@FXML
+	private Button butCaseCinq;
+	@FXML
+	private Button butCaseSix;
+	@FXML
+	private Button butCaseSept;
+	@FXML
+	private Button butCaseHuit;
+	@FXML
+	private Button butCaseNeuf;
+	@FXML
+	private Button butCaseDix;
+	@FXML
+	private Button butCaseOnze;
+	@FXML
+	private Button butCaseDouze;
+	@FXML
+	private Button butCaseTreize;
+	@FXML
+	private Button butCaseQuatorze;
+	@FXML
+	private Button butCaseQuinze;
+
+	private Jeu jeuTriche;
+
+	private Button butPremierSelect = null;
+	private Button butSecondSelect = null;
+
+	private int valPremierBut = -1;
+	private int valSecondBut = -1;
+
+	public JeuTricheMemoryController() {
+		this.jeuTriche = new Jeu(8, true);
+	}
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		this.butCaseZero.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseUn.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseDeux.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseTrois.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseQuatre.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseCinq.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseSix.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseSept.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseHuit.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseNeuf.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseDix.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseOnze.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseDouze.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseTreize.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseQuatorze.setOnMouseClicked(e -> actionCarte(e));
+		this.butCaseQuinze.setOnMouseClicked(e -> actionCarte(e));
+	}
+
+	private void actionCarte(MouseEvent event) {
+		Reponse choixCarte;
+		if (event.getSource() == this.butCaseZero) {
+			choixCarte = this.jeuTriche.jouer(0);
+			this.butCaseZero.setText("" + this.jeuTriche.getCarteValeur(0));
+			this.butCaseZero.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseZero);
+		} else if (event.getSource() == this.butCaseUn) {
+			choixCarte = this.jeuTriche.jouer(1);
+			this.butCaseUn.setText("" + this.jeuTriche.getCarteValeur(1));
+			this.butCaseUn.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseUn);
+		} else if (event.getSource() == this.butCaseDeux) {
+			choixCarte = this.jeuTriche.jouer(2);
+			this.butCaseDeux.setText("" + this.jeuTriche.getCarteValeur(2));
+			this.butCaseDeux.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseDeux);
+		} else if (event.getSource() == this.butCaseTrois) {
+			choixCarte = this.jeuTriche.jouer(3);
+			this.butCaseTrois.setText("" + this.jeuTriche.getCarteValeur(3));
+			this.butCaseTrois.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseTrois);
+		} else if (event.getSource() == this.butCaseQuatre) {
+			choixCarte = this.jeuTriche.jouer(4);
+			this.butCaseQuatre.setText("" + this.jeuTriche.getCarteValeur(4));
+			this.butCaseQuatre.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseQuatre);
+		} else if (event.getSource() == this.butCaseCinq) {
+			choixCarte = this.jeuTriche.jouer(5);
+			this.butCaseCinq.setText("" + this.jeuTriche.getCarteValeur(5));
+			this.butCaseCinq.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseCinq);
+		} else if (event.getSource() == this.butCaseSix) {
+			choixCarte = this.jeuTriche.jouer(6);
+			this.butCaseSix.setText("" + this.jeuTriche.getCarteValeur(6));
+			this.butCaseSix.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseSix);
+		} else if (event.getSource() == this.butCaseSept) {
+			choixCarte = this.jeuTriche.jouer(7);
+			this.butCaseSept.setText("" + this.jeuTriche.getCarteValeur(7));
+			this.butCaseSept.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseSept);
+		} else if (event.getSource() == this.butCaseHuit) {
+			choixCarte = this.jeuTriche.jouer(8);
+			this.butCaseHuit.setText("" + this.jeuTriche.getCarteValeur(8));
+			this.butCaseHuit.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseHuit);
+		} else if (event.getSource() == this.butCaseNeuf) {
+			choixCarte = this.jeuTriche.jouer(9);
+			this.butCaseNeuf.setText("" + this.jeuTriche.getCarteValeur(9));
+			this.butCaseNeuf.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseNeuf);
+		} else if (event.getSource() == this.butCaseDix) {
+			choixCarte = this.jeuTriche.jouer(10);
+			this.butCaseDix.setText("" + this.jeuTriche.getCarteValeur(10));
+			this.butCaseDix.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseDix);
+		} else if (event.getSource() == this.butCaseOnze) {
+			choixCarte = this.jeuTriche.jouer(11);
+			this.butCaseOnze.setText("" + this.jeuTriche.getCarteValeur(11));
+			this.butCaseOnze.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseOnze);
+		} else if (event.getSource() == this.butCaseDouze) {
+			choixCarte = this.jeuTriche.jouer(12);
+			this.butCaseDouze.setText("" + this.jeuTriche.getCarteValeur(12));
+			this.butCaseDouze.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseDouze);
+		} else if (event.getSource() == this.butCaseTreize) {
+			choixCarte = this.jeuTriche.jouer(13);
+			this.butCaseTreize.setText("" + this.jeuTriche.getCarteValeur(13));
+			this.butCaseTreize.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseTreize);
+		} else if (event.getSource() == this.butCaseQuatorze) {
+			choixCarte = this.jeuTriche.jouer(14);
+			this.butCaseQuatorze.setText("" + this.jeuTriche.getCarteValeur(14));
+			this.butCaseQuatorze.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseQuatorze);
+		} else if (event.getSource() == this.butCaseQuinze) {
+			choixCarte = this.jeuTriche.jouer(15);
+			this.butCaseQuinze.setText("" + this.jeuTriche.getCarteValeur(15));
+			this.butCaseQuinze.setDisable(true);
+			effectuerCoup(choixCarte, this.butCaseQuinze);
+		}
+	}
+
+	private void effectuerCoup(Reponse rep, Button but) {
+		if (rep == Reponse.PREMIERE) {
+			this.butPremierSelect = but;
+			System.out.println("premier");
+		} else if (rep == Reponse.GAGNE) {
+			System.out.println("Point gagner");
+			this.butPremierSelect = null;
+			this.butSecondSelect = null;
+		} else if (rep == Reponse.PERDU) {
+			this.butSecondSelect = but;
+
+		}
+	}
+
+	public static void attendre(int temps, Runnable suite) {
+		Task<Void> stopit new Task<Void>();
+	}
+}
