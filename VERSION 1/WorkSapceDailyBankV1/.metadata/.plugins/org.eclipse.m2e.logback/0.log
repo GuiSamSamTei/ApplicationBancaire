@@ -10169,3 +10169,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.openjfx:j
 2023-05-11 08:19:42,909 [Worker-2: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/com.google.guava.failureaccess_1.0.1.jar
 2023-05-11 08:19:42,913 [Worker-2: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/IUT Blagnac/INFO S2/SAE/SAE 1/WorkSapceIHM/DailyBank":
 2023-05-11 08:19:42,915 [Worker-2: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-11 11:45:02,033 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

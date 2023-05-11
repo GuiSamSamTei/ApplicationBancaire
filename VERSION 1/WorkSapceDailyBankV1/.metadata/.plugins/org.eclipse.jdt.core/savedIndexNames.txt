@@ -1,2 +1,0 @@
-INDEX VERSION 1.132+/Users/bastien/Documents/IUT Blagnac/INFO S2/SAE/SAE 1/WorkSapceDailyBankV0/.metadata/.plugins/org.eclipse.jdt.core
-1865797976.index

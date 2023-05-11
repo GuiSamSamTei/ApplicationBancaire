@@ -67,14 +67,22 @@ public class CompteEditorPaneController {
 			this.btnCancel.setText("Annuler");
 			break;
 		case MODIFICATION:
-			AlertUtilities.showAlert(this.primaryStage, "Non implémenté", "Modif de compte n'est pas implémenté", null,
-					AlertType.ERROR);
-			return null;
+			this.txtDecAutorise.setDisable(false);
+			this.txtSolde.setDisable(false);
+			this.lblMessage.setText("Informations sur le nouveau compte");
+			this.lblSolde.setText("Solde (premier dépôt)");
+			this.btnOk.setText("Ajouter");
+			this.btnCancel.setText("Annuler");
+			break;
 		// break;
 		case SUPPRESSION:
-			AlertUtilities.showAlert(this.primaryStage, "Non implémenté", "Suppression de compte n'est pas implémenté",
-					null, AlertType.ERROR);
-			return null;
+			this.txtDecAutorise.setDisable(false);
+			this.txtSolde.setDisable(false);
+			this.lblMessage.setText("Informations sur le nouveau compte");
+			this.lblSolde.setText("Solde (premier dépôt)");
+			this.btnOk.setText("Ajouter");
+			this.btnCancel.setText("Annuler");
+			break;
 		// break;
 		}
 
@@ -188,7 +196,40 @@ public class CompteEditorPaneController {
 	}
 
 	private boolean isSaisieValide() {
-
+		String idClient = this.txtIdclient.getText();
+		String idAgence = this.txtIdAgence.getText();
+		String numCompte = this.txtIdNumCompte.getText();
+		String decouvert = this.txtDecAutorise.getText();
+		String solde = this.txtSolde.getText();
+		if(idClient == null) {
+			AlertUtilities.showAlert(this.primaryStage, "Id Client Vide", "Saisissez un Id de Client", null,
+					AlertType.ERROR);
+			return false;
+		}
+		
+		if(idAgence == null) {
+			AlertUtilities.showAlert(this.primaryStage, "Id Agence Vide", "Saisissez un Id d'Agence", null,
+					AlertType.ERROR);
+			return false;
+		}
+		
+		if(numCompte == null) {
+			AlertUtilities.showAlert(this.primaryStage, "Numéro de Compte Vide", "Saisissez un numéro de compte", null,
+					AlertType.ERROR);
+			return false;
+		}
+		
+		if(decouvert == null) {
+			AlertUtilities.showAlert(this.primaryStage, "Découvert Autorisé Vide", "Saisissez un découvert autorisé", null,
+					AlertType.ERROR);
+			return false;
+		}
+		
+		if(solde == null) {
+			AlertUtilities.showAlert(this.primaryStage, "Premier Solde Vide", "Saisissez un premier solde", null,
+					AlertType.ERROR);
+			return false;
+		}
 		return true;
 	}
 }
