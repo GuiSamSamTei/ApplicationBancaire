@@ -5,8 +5,8 @@
 :Entreprise: DailyBank
 :Equipe: 1B1
 
-Créé par : 
-Créé pour :  
+Créé par : Groupe 1B1
+Créé pour : 
 
 == I. Introduction
 === 1. Objet :
