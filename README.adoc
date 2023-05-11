@@ -7,9 +7,25 @@
 == Répartition des tâches et états d'avancement
 [%header,cols=7*]
 |===
-|Version    |Rôle           |Use Case           |Cas                |BAELEN Julie       |SAMPAIO Guilherme  |RECORD Bastien
-
-|1          |Chef d'Agence  |CRUD employé       |C                  |                   |                   |
+|Version  |Rôle           |Use Case           |Cas                    |BAELEN Julie       |SAMPAIO Guilherme  |RECORD Bastien
+|1        |Chef d’Agence  |CRUD employé       |C                      | | | |
+|1        |Chef d’Agence  |CRUD employé       |R                      | | | |
+|1        |Chef d’Agence  |CRUD employé       |U                      | | | |
+|1        |Chef d’Agence  |CRUD employé       |D                      | | | |
+|1        |Guichetier     | Compte            |Créer                  || | | 
+|1        |Guichetier     | Compte            |Créditer/Débiter       || | | 
+|1        |Guichetier     | Compte            | Effectuer un virement || | | 
+|1        |Guichetier     | Compte            | Clôturer              || | | 
+|2        |Chef d’Agence  | Compte            | Débit exceptionnel    || | | 
+|2        |Chef d’Agence  | Emprunt           | Simuler emprunt       || | | 
+|2        |Chef d’Agence  | Emprunt           | Simuler assurance     || | | 
+|2        |Guichetier     | Compte            | Relevé PDF            || | | 
+|2        |Guichetier     | CRUD Prélèvement  | C                     || | | 
+|2        |Guichetier     | CRUD Prélèvement  | R                     || | | 
+|2        |Guichetier     | CRUD Prélèvement  | U                     || | | 
+|2        |Guichetier     | CRUD Prélèvement  | D                     || | | 
+|2        |Batch          | Prélèvements automatiques                 | || | | 
+|2        |Batch          | Reléves mensuels                          | || | | 
 |===
 
 *D* pour en Développment +
@@ -19,38 +35,22 @@
 == Livrables
 [%header,cols=4*]
 |===
-|Date       |Nom                |Lien               |Retour
-
-|12 mai     |CDCU V1            |                   |
-
-|           |GANTT V1           |                   |
-
-|16 mai     |Doc Util V1        |                   |
-
-|           |CDCU V2            |                   |
-
-|           |Gantt réalisé V1   |                   |
-
-|           |Gantt V2           |                   |
-
-|17 mai     |Doc Tech V1        |                   |
-
-|           |Cahier Tests V1    |                   |
-
-|           |Jar V1             |                   |
-
-|26 mai     |Doc Util V2        |                   |
-
-|           |Gantt réalisé V2   |                   |
-
-|           |Chiffrage projet   |                   |
-
-|           |Dac Tech V2        |                   |
-
-|           |Cahier Tests V2 +
-             et recette final   |                   |
-
-|           |Jar V2             |                   |
+|Date       |Nom                |Lien                                       |Retour
+| Sem.19    |CDC V1             |link:VERSION 1/CDCU V1.adoc[CDC Version 1] |
+|           |Gantt V1 Prévu     |                   |
+| 16/05     |CDC V2             |                   |
+|           |Gantt V1 Réalisé   |                   |
+|           |Gantt V2 Prévu     |                   |     
+|           |Doc Tec V1         |                   |    
+|           |Doc User V1        |                   |
+|           |Recette V1         |                   | 
+|           |Suivi projet V1    |                   | 
+| 26/05     |Gantt V2 Réalisé   |                   | 
+|           |Doc. Util. V2      |                   |         
+|           |Doc. Tec. V2       |                   |     
+|           |Code V2            |                   | 
+|           |Recette V2         |                   | 
+|           |`jar` projet       |                   | 
 |===
 
 == Planning Gantt V1
