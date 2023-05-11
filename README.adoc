@@ -8,24 +8,24 @@
 [%header,cols=7*]
 |===
 |Version  |Rôle           |Use Case           |Cas                    |BAELEN Julie       |SAMPAIO Guilherme  |RECORD Bastien
-|1        |Chef d’Agence  |CRUD employé       |C                      | | | |
-|1        |Chef d’Agence  |CRUD employé       |R                      | | | |
-|1        |Chef d’Agence  |CRUD employé       |U                      | | | |
-|1        |Chef d’Agence  |CRUD employé       |D                      | | | |
-|1        |Guichetier     | Compte            |Créer                  || | | 
-|1        |Guichetier     | Compte            |Créditer/Débiter       || | | 
-|1        |Guichetier     | Compte            | Effectuer un virement || | | 
-|1        |Guichetier     | Compte            | Clôturer              || | | 
-|2        |Chef d’Agence  | Compte            | Débit exceptionnel    || | | 
-|2        |Chef d’Agence  | Emprunt           | Simuler emprunt       || | | 
-|2        |Chef d’Agence  | Emprunt           | Simuler assurance     || | | 
-|2        |Guichetier     | Compte            | Relevé PDF            || | | 
-|2        |Guichetier     | CRUD Prélèvement  | C                     || | | 
-|2        |Guichetier     | CRUD Prélèvement  | R                     || | | 
-|2        |Guichetier     | CRUD Prélèvement  | U                     || | | 
-|2        |Guichetier     | CRUD Prélèvement  | D                     || | | 
-|2        |Batch          | Prélèvements automatiques                 | || | | 
-|2        |Batch          | Reléves mensuels                          | || | | 
+|1        |Chef d’Agence  |CRUD employé       |C                      |                   | | 
+|1        |Chef d’Agence  |CRUD employé       |R                      |              | | 
+|1        |Chef d’Agence  |CRUD employé       |U                      | | | 
+|1        |Chef d’Agence  |CRUD employé       |D                      | | |
+|1        |Guichetier     | Compte            |Créer                  || |
+|1        |Guichetier     | Compte            |Créditer/Débiter       || |  
+|1        |Guichetier     | Compte            | Effectuer un virement || |  
+|1        |Guichetier     | Compte            | Clôturer              || |  
+|2        |Chef d’Agence  | Compte            | Débit exceptionnel    || | 
+|2        |Chef d’Agence  | Emprunt           | Simuler emprunt       || | 
+|2        |Chef d’Agence  | Emprunt           | Simuler assurance     || | 
+|2        |Guichetier     | Compte            | Relevé PDF            || | 
+|2        |Guichetier     | CRUD Prélèvement  | C                     || |
+|2        |Guichetier     | CRUD Prélèvement  | R                     || | 
+|2        |Guichetier     | CRUD Prélèvement  | U                     || | 
+|2        |Guichetier     | CRUD Prélèvement  | D                     || | 
+|2        |Batch          | Prélèvements automatiques                 | || 
+|2        |Batch          | Reléves mensuels                          | || 
 |===
 
 *D* pour en Développment +
@@ -54,5 +54,5 @@
 |===
 
 == Planning Gantt V1
-
+image:VERSION 1/
 image::VERSION 1/Gantt V1.png[]
