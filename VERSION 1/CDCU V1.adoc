@@ -56,5 +56,5 @@ Les contraintes techniques sont::
     Modifier le javafx 
 Les contraintes organisationnelles sont::
     La version doit être livré le 17 mai +
-    -La repartition des rôles de l'équipe +
+    La repartition des rôles de l'équipe +
     Gestion du git
