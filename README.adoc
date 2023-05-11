@@ -58,5 +58,3 @@ L'équipe est constituée de trois personnes::
 
 == Planning Gantt V1
 image:VERSION 1/Gantt V1.png[]
-
-permalink:
