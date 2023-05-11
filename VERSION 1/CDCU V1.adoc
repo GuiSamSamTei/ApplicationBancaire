@@ -56,6 +56,6 @@ Les contraintes techniques sont::
     - Il faut savoir relier la base de données avec le code java +
     - Modifier le javafx 
 Les contraintes organisationnelles sont::
-    - La version doit être livré le 17 mai +
-    - La repartition des rôles de l'équipe +
+    - La version doit être livrée le 17 mai +
+    - La répartition des rôles de l'équipe +
     - Gestion du git
