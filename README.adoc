@@ -47,7 +47,7 @@ L'équipe est constituée de trois personnes::
 |           |Doc Tec V1         |                   |    
 |           |Doc User V1        |                   |
 |           |Recette V1         |                   | 
-|           |`jar`V1            |                   | 
+|           |`jar` V1           |                   | 
 | 26/05     |Gantt V2 Réalisé   |                   | 
 |           |Doc. Util. V2      |                   |         
 |           |Doc. Tec. V2       |                   |     
