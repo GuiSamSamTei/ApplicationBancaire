@@ -51,10 +51,10 @@ Fonction : Gérer les employés::
 
 Il y a différents types de contraintes, comme les contraintes techniques ou organisationnelles. +
 Les contraintes techniques sont:: 
-- Certaines fonctionnalitées ne fonctionnent que pour un certain rôle +
-- Il faut savoir relier la base de données avec le code java +
-- Modifier le javafx 
+    Certaines fonctionnalitées ne fonctionnent que pour un certain rôle +
+    Il faut savoir relier la base de données avec le code java +
+    Modifier le javafx 
 Les contraintes organisationnelles sont::
-- La version doit être livré le 17 mai +
-- La repartition des rôles de l'équipe +
-- Gestion du git
+    La version doit être livré le 17 mai +
+    -La repartition des rôles de l'équipe +
+    Gestion du git
