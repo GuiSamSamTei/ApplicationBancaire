@@ -108,8 +108,6 @@ autorisé est de -100 euros.
 autorisé est de -100 euros.
 ^|OK
 5+|
-5+|Commentaire :
-Compléter et si on ne valide pas, ...
 
 |====
 
