@@ -169,4 +169,40 @@ public class Access_BD_CompteCourant {
 			throw new DataAccessException(Table.CompteCourant, Order.UPDATE, "Erreur accès", e);
 		}
 	}
+	
+	public void createCompteCourant(CompteCourant compte)
+			throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException {
+		try {
+			CompteCourant cc;
+
+			Connection con = LogToDatabase.getConnexion();
+
+			String query = "INSERT INTO CompteCourant(debitAutorise, solde, idNumCli, estCLoture) VALUES (" +"?" + ", " + "?" + ", " + "?" + ", " + "?" +")";
+
+			PreparedStatement pst = con.prepareStatement(query);
+			pst.setInt(1, compte.debitAutorise);
+			pst.setDouble(2, compte.solde);
+			pst.setInt(3, compte.idNumCli);
+			pst.setString(4, compte.estCloture);
+			System.err.println(query);
+
+			ResultSet rs = pst.executeQuery();
+
+			if (rs.next()) {
+			} else {
+				rs.close();
+				pst.close();
+			}
+
+			if (rs.next()) {
+				throw new RowNotFoundOrTooManyRowsException(Table.CompteCourant, Order.SELECT,
+						"Recherche anormale (en trouve au moins 2)", null, 2);
+			}
+			rs.close();
+			pst.close();
+		} catch (SQLException e) {
+			throw new DataAccessException(Table.CompteCourant, Order.SELECT, "Erreur accès", e);
+		}
+
+	}
 }

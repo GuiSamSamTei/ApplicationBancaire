@@ -3,6 +3,7 @@ package application.view;
 import java.util.Locale;
 
 import application.DailyBankState;
+import application.control.ExceptionDialog;
 import application.tools.AlertUtilities;
 import application.tools.ConstantesIHM;
 import application.tools.EditionMode;
@@ -16,6 +17,11 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
 import model.data.CompteCourant;
+import model.orm.Access_BD_CompteCourant;
+import model.orm.exception.ApplicationException;
+import model.orm.exception.DatabaseConnexionException;
+import model.orm.exception.Order;
+import model.orm.exception.Table;
 
 public class CompteEditorPaneController {
 
