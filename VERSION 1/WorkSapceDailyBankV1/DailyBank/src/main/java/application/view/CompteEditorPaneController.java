@@ -194,7 +194,6 @@ public class CompteEditorPaneController {
 	}
 
 	private boolean isSaisieValide() {
-
 		return true;
 	}
 }
