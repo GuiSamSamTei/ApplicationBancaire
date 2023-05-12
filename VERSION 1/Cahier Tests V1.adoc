@@ -114,6 +114,20 @@ Compléter et si on ne valide pas, ...
 |====
 
 
+>|Cas de test 4+|Test-01-03-01
+>|Titre 4+|Créditer un compte
+>|Objectif 4+| Vérifier qu'il est possible de débiter un compte
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_COP.1 ^|Cliquer sur le bouton "Enregistrer Crédit". ^|La page des débit du compte s’affiche. ^| Un compte actif est sélectionné ^|OK
+^|All_G_COP.2  ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde est +150euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros
+ ^|OK
+^|All_G_COP.3  ^|Rentrer un montant 150 dans le champ "Montant". ^|Le nouveau solde est -50 euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de -200 euros
+ ^|OK
+5+|
+
+|====
+
 
 === 2. Fonctionnalités des chefs d'agence :
 [.text-justify]
