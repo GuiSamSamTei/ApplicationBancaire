@@ -13,14 +13,15 @@ Bastie ncoucou
 [%header,cols=7*]
 |===
 |Version  |Rôle           |Use Case           |Cas                    |BAELEN Julie       |SAMPAIO Guilherme  |RECORD Bastien
-|1        |Chef d’Agence  |CRUD employé       |C                      |                   | | 
-|1        |Chef d’Agence  |CRUD employé       |R                      |              | | 
-|1        |Chef d’Agence  |CRUD employé       |U                      | | | 
-|1        |Chef d’Agence  |CRUD employé       |D                      | | |
-|1        |Guichetier     | Compte            |Créer                  ||En cours |
-|1        |Guichetier     | Compte            |Créditer/Débiter       |OK| |  
-|1        |Guichetier     | Compte            | Effectuer un virement || |  
-|1        |Guichetier     | Compte            | Clôturer              ||En cours |  
+|1        |Chef d’Agence  |CRUD employé       |C                      |                   |                   |
+|1        |Chef d’Agence  |CRUD employé       |R                      |                   |                   |
+|1        |Chef d’Agence  |CRUD employé       |U                      |                   |                   |
+|1        |Chef d’Agence  |CRUD employé       |D                      |                   |                   |
+|1        |Guichetier     | Compte            |Créer                  |                   |F                  |
+|1        |Guichetier     | Compte            |Créditer/Débiter       |F                  |                   |
+|1        |Guichetier     | Compte            |Effectuer un virement  |                   |                   |
+|1        |Guichetier     | Compte            |Clôturer               |                   |                   |F
+
 |2        |Chef d’Agence  | Compte            | Débit exceptionnel    || | 
 |2        |Chef d’Agence  | Emprunt           | Simuler emprunt       || | 
 |2        |Chef d’Agence  | Emprunt           | Simuler assurance     || | 
