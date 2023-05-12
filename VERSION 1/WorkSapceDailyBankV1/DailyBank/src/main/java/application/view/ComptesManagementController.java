@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import application.DailyBankState;
 import application.control.ComptesManagement;
+import application.tools.AlertUtilities;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -11,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
@@ -79,6 +81,8 @@ public class ComptesManagementController {
 	@FXML
 	private Button btnVoirOpes;
 	@FXML
+	private Button btnCloturerCompte;
+	@FXML
 	private Button btnModifierCompte;
 	@FXML
 	private Button btnSupprCompte;
@@ -94,6 +98,20 @@ public class ComptesManagementController {
 		if (selectedIndice >= 0) {
 			CompteCourant cpt = this.oListCompteCourant.get(selectedIndice);
 			this.cmDialogController.gererOperationsDUnCompte(cpt);
+		}
+		this.loadList();
+		this.validateComponentState();
+	}
+
+	@FXML
+	private void doCloturerCompte() {
+		int selectedIndice = this.lvComptes.getSelectionModel().getSelectedIndex();
+		if (selectedIndice >= 0) {
+			if (AlertUtilities.confirmYesCancel(this.primaryStage, "Clôturer le compte",
+					"Etes vous sur de vouloir clôturer ce compte ?", null, AlertType.CONFIRMATION)) {
+				this.cmDialogController.cloturerCompte(this.oListCompteCourant.get(selectedIndice));
+				System.out.println("Compte cloturer");
+			}
 		}
 		this.loadList();
 		this.validateComponentState();
@@ -131,8 +149,14 @@ public class ComptesManagementController {
 		int selectedIndice = this.lvComptes.getSelectionModel().getSelectedIndex();
 		if (selectedIndice >= 0) {
 			this.btnVoirOpes.setDisable(false);
+			if (this.oListCompteCourant.get(selectedIndice).estCloture.equals("O")) {
+				this.btnCloturerCompte.setDisable(true);
+			} else {
+				this.btnCloturerCompte.setDisable(false);
+			}
 		} else {
 			this.btnVoirOpes.setDisable(true);
+			this.btnCloturerCompte.setDisable(true);
 		}
 	}
 }

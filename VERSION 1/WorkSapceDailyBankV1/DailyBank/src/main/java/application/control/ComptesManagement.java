@@ -79,7 +79,7 @@ public class ComptesManagement {
 
 				// TODO : enregistrement du nouveau compte en BDD (la BDD donne de nouvel id
 				// dans "compte")
-				
+
 				// if JAMAIS vrai
 				// existe pour compiler les catchs dessous
 				if (Math.random() < -1) {
@@ -114,5 +114,19 @@ public class ComptesManagement {
 			listeCpt = new ArrayList<>();
 		}
 		return listeCpt;
+	}
+
+	public void cloturerCompte(CompteCourant cpt) {
+		try {
+			Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
+			acc.updateCloturationCompteCourant(cpt);
+		} catch (DatabaseConnexionException e) {
+			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+			ed.doExceptionDialog();
+			this.primaryStage.close();
+		} catch (ApplicationException ae) {
+			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+			ed.doExceptionDialog();
+		}
 	}
 }

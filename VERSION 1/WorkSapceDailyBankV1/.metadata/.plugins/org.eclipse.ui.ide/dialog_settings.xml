@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank"/>
 			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/SAE/SAE 1/WorkSapceIHM/DailyBank"/>
 			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/WorkSapceIHM/Memory"/>
 			<item value="/Users/bastien/Documents/IUT Blagnac/INFO S2/RESSOURCES/R2-02_Développement d&apos;applications avec IHM/WorkSapceIHM/TP3"/>
