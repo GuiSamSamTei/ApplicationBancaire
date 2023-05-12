@@ -67,22 +67,14 @@ public class CompteEditorPaneController {
 			this.btnCancel.setText("Annuler");
 			break;
 		case MODIFICATION:
-			this.txtDecAutorise.setDisable(false);
-			this.txtSolde.setDisable(false);
-			this.lblMessage.setText("Informations sur le nouveau compte");
-			this.lblSolde.setText("Solde (premier dépôt)");
-			this.btnOk.setText("Ajouter");
-			this.btnCancel.setText("Annuler");
-			break;
+			AlertUtilities.showAlert(this.primaryStage, "Non implémenté", "Modif de compte n'est pas implémenté", null,
+					AlertType.ERROR);
+			return null;
 		// break;
 		case SUPPRESSION:
-			this.txtDecAutorise.setDisable(false);
-			this.txtSolde.setDisable(false);
-			this.lblMessage.setText("Informations sur le nouveau compte");
-			this.lblSolde.setText("Solde (premier dépôt)");
-			this.btnOk.setText("Ajouter");
-			this.btnCancel.setText("Annuler");
-			break;
+			AlertUtilities.showAlert(this.primaryStage, "Non implémenté", "Suppression de compte n'est pas implémenté",
+					null, AlertType.ERROR);
+			return null;
 		// break;
 		}
 
@@ -226,7 +218,7 @@ public class CompteEditorPaneController {
 		}
 		
 		if(solde == null) {
-			AlertUtilities.showAlert(this.primaryStage, "Premier Solde Vide", "Saisissez un premier solde", null,
+			AlertUtilities.showAlert(this.primaryStage, "Premier Solde Vide", "Saisissez un p", null,
 					AlertType.ERROR);
 			return false;
 		}
