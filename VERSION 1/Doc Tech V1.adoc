@@ -1,4 +1,15 @@
-= Cahier des charges V1 (Level 0)
+= Documentation technique Version 1
+:toc:
+:toc-title: Sommaire
 
-== Version 1 - livrables
+Créé par : Équipe 1B1
 
+== I. Présentation de l'application
+
+
+
+== II. Architecture
+
+
+
+== III. Description des fonctionnalités

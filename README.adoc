@@ -38,22 +38,24 @@ L'équipe est constituée de trois personnes::
 == Livrables
 [%header,cols=4*]
 |===
-|Date       |Nom                |Lien                                                                                                   |Retour
-| Sem.19    |CDC V1             |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/CDCU%20V1.adoc[CDCU Version 1]  |
-|           |Gantt V1 Prévu     |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Gantt%20V1.pdf[Gantt Prévu V1]  |
+|Date       |Nom                |Lien               |Retour
+| Sem.19    |CDC V1             |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/CDCU%20V1.adoc[CDCU Version 1] |
+|           |Gantt V1 Prévu     |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Gantt%20V1.pdf[Gantt Prévu V1] |
 | 16/05     |CDC V2             |                   |
 |           |Gantt V1 Réalisé   |                   |
 |           |Gantt V2 Prévu     |                   |     
 |           |Doc Tec V1         |                   |    
 |           |Doc User V1        |                   |
 |           |Recette V1         |                   | 
-|           |Suivi projet V1    |                   | 
+|           |`jar` V1           |                   | 
+|           |javadoc V1         |                   | 
 | 26/05     |Gantt V2 Réalisé   |                   | 
-|           |Doc. Util. V2      |                   |         
-|           |Doc. Tec. V2       |                   |     
-|           |Code V2            |                   | 
+|           |Doc User V2        |                   |         
+|           |Doc Tec V2         |                   |     
+|           |Chiffrage projet   |                   | 
 |           |Recette V2         |                   | 
-|           |`jar` projet       |                   | 
+|           |`jar` V2           |                   | 
+|           |javadoc V2         |                   | 
 |===
 
 == Planning Gantt V1
