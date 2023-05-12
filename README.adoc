@@ -7,6 +7,8 @@ L'équipe est constituée de trois personnes::
   - Guilherme SAMPAIO (chargé de faire respect les délais)
   - Bastien RECORD (oraganisateur du dépôt Git)
 
+Bastie ncoucou
+
 == Répartition des tâches et états d'avancement
 [%header,cols=7*]
 |===
