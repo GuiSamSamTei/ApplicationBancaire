@@ -1,3 +1,15 @@
-= Documentation technique Version 
+= Documentation technique Version 1
+:toc:
+:toc-title: Sommaire
 
-== Version 1 - livrables
+Créé par : Équipe 1B1
+
+== Présentation de l'application
+
+
+
+== Architecture
+
+
+
+== Description des fonctionnalités
