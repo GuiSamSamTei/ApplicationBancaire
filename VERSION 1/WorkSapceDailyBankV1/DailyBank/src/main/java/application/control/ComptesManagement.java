@@ -72,8 +72,19 @@ public class ComptesManagement {
 		compte = cep.doCompteEditorDialog(this.clientDesComptes, null, EditionMode.CREATION);
 		if (compte != null) {
 			try {
+<<<<<<< HEAD
 				Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
 				acc.createCompteCourant(compte);
+=======
+				// Temporaire jusqu'à implémentation
+				compte = null;
+				AlertUtilities.showAlert(this.primaryStage, "En cours de développement", "Non implémenté",
+						"Enegistrement réel en BDD du compe non effectué\nEn cours de développement", AlertType.ERROR);
+
+				// TODO : enregistrement du nouveau compte en BDD (la BDD donne de nouvel id
+				// dans "compte")
+
+>>>>>>> Bastien
 				// if JAMAIS vrai
 				// existe pour compiler les catchs dessous
 				if (Math.random() < -1) {
@@ -109,5 +120,19 @@ public class ComptesManagement {
 			listeCpt = new ArrayList<>();
 		}
 		return listeCpt;
+	}
+
+	public void cloturerCompte(CompteCourant cpt) {
+		try {
+			Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
+			acc.updateCloturationCompteCourant(cpt);
+		} catch (DatabaseConnexionException e) {
+			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+			ed.doExceptionDialog();
+			this.primaryStage.close();
+		} catch (ApplicationException ae) {
+			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+			ed.doExceptionDialog();
+		}
 	}
 }

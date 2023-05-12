@@ -10170,6 +10170,7 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.openjfx:j
 2023-05-11 08:19:42,913 [Worker-2: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/IUT Blagnac/INFO S2/SAE/SAE 1/WorkSapceIHM/DailyBank":
 2023-05-11 08:19:42,915 [Worker-2: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
 2023-05-11 11:45:02,033 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+<<<<<<< HEAD
 2023-05-12 14:25:47,781 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2023-05-12 14:26:03,459 [Worker-24: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
 2023-05-12 14:26:03,518 [Worker-19: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
@@ -10293,3 +10294,215 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.openjfx:j
 2023-05-12 14:30:21,638 [Worker-9: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/com.google.guava.failureaccess_1.0.1.jar
 2023-05-12 14:30:21,642 [Worker-9: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
 2023-05-12 14:30:21,643 [Worker-9: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+=======
+2023-05-12 14:32:42,384 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-05-12 14:32:59,763 [Worker-1: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-12 14:32:59,763 [Worker-0: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-12 14:33:00,042 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 14:33:00,044 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 14:33:00,053 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 14:33:00,053 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 14:33:01,286 [Worker-19: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-12 14:33:04,169 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-05-12 14:33:04,315 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-12 14:33:04,367 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/main/java
+2023-05-12 14:33:04,368 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DailyBank/src/main/resources
+2023-05-12 14:33:04,368 [Worker-11: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/test/java
+2023-05-12 14:33:04,441 [Worker-11: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2023-05-12 14:33:04,707 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 14:33:04,708 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 14:33:04,714 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 14:33:04,715 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 14:33:06,335 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606 [703])
+2023-05-12 14:33:06,336 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606
+2023-05-12 14:33:06,336 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/aether-connector-okhttp-0.17.8.jar
+2023-05-12 14:33:06,336 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/commons-lang3-3.8.1.jar
+2023-05-12 14:33:06,336 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/guice-4.2.2-no_aop.jar
+2023-05-12 14:33:06,336 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/jansi-2.4.0.jar
+2023-05-12 14:33:06,336 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-artifact-3.8.7.jar
+2023-05-12 14:33:06,336 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-builder-support-3.8.7.jar
+2023-05-12 14:33:06,336 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-compat-3.8.7.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-core-3.8.7.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-embedder-3.8.7.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-model-3.8.7.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-model-builder-3.8.7.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-plugin-api-3.8.7.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-repository-metadata-3.8.7.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-api-1.6.3.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-connector-basic-1.6.3.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-impl-1.6.3.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-provider-3.8.7.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-spi-1.6.3.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-transport-wagon-1.6.3.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-util-1.6.3.jar
+2023-05-12 14:33:06,337 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-settings-3.8.7.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-settings-builder-3.8.7.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-shared-utils-3.3.4.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/okhttp-3.14.1.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/okio-1.17.3.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/org.eclipse.sisu.inject-0.3.5.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/org.eclipse.sisu.plexus-0.3.5.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-build-api-0.0.7.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-cipher-2.0.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-classworlds-2.6.0.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-component-annotations-2.1.0.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-interpolation-1.26.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-sec-dispatcher-2.0.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-utils-3.3.1.jar
+2023-05-12 14:33:06,338 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/wagon-file-3.5.3.jar
+2023-05-12 14:33:06,339 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/wagon-provider-api-3.5.3.jar
+2023-05-12 14:33:06,339 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_31.1.0.jre [444])
+2023-05-12 14:33:06,340 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/com.google.guava_31.1.0.jre.jar
+2023-05-12 14:33:06,340 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_1.7.36 [870])
+2023-05-12 14:33:06,340 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/slf4j.api_1.7.36.jar
+2023-05-12 14:33:06,340 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [456])
+2023-05-12 14:33:06,340 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/javax.inject_1.0.0.v20220405-0441.jar
+2023-05-12 14:33:06,340 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20221203-1659 [454])
+2023-05-12 14:33:06,340 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/javax.annotation_1.3.5.v20221203-1659.jar
+2023-05-12 14:33:06,340 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.4.0.v20221112-0806 [476])
+2023-05-12 14:33:06,340 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.apache.commons.cli_1.4.0.v20221112-0806.jar
+2023-05-12 14:33:06,340 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.1 [446])
+2023-05-12 14:33:06,340 [Worker-22: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/com.google.guava.failureaccess_1.0.1.jar
+2023-05-12 14:33:06,345 [Worker-22: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-12 14:33:06,346 [Worker-22: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-12 14:35:26,858 [Worker-20: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-12 14:35:26,859 [Worker-20: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-12 14:51:36,120 [Worker-27: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-12 14:51:36,120 [Worker-27: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-12 15:04:35,571 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:04:35,574 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:04:35,576 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:04:35,576 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:09:15,525 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:09:15,526 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-12 15:09:15,529 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:09:15,529 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:12:04,851 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:12:04,851 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:12:04,853 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:12:04,853 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:12:11,132 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:12:11,132 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:12:11,134 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:12:11,134 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:12:20,043 [Worker-33: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-12 15:12:20,043 [Worker-33: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-12 15:16:56,690 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:16:56,691 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:16:56,692 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:16:56,692 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:17:14,141 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:17:14,142 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:17:14,143 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:17:14,143 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:17:15,848 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:17:15,849 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:17:15,850 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:17:15,850 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:17:19,346 [Worker-33: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-12 15:17:19,346 [Worker-33: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-12 15:18:25,699 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:18:25,700 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:18:25,701 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:18:25,701 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:18:36,431 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:18:36,432 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:18:36,433 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:18:36,433 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:18:41,089 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:18:41,090 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:18:41,091 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:18:41,091 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:18:46,309 [Worker-37: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-12 15:18:46,309 [Worker-37: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-12 15:28:55,516 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:28:55,516 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:28:55,517 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:28:55,517 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:29:47,952 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:29:47,953 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:29:47,954 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:29:47,954 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:29:52,767 [Worker-39: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-12 15:29:52,767 [Worker-39: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-12 15:43:39,926 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:43:39,926 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:43:39,927 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:43:39,927 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:46:11,273 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:11,274 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:46:11,275 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:11,275 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:46:12,294 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:12,295 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:46:12,296 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:12,296 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:46:25,456 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:25,456 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:46:25,457 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:25,458 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:46:26,484 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:26,485 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:46:26,487 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:26,487 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:46:36,120 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:36,120 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:46:36,121 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:36,121 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:46:37,143 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:37,144 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:46:37,145 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:46:37,145 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:47:44,702 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:47:44,702 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:47:44,703 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:47:44,703 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:47:51,770 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:47:51,770 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:47:51,771 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:47:51,771 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 15:48:09,731 [Worker-39: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-12 15:48:09,731 [Worker-39: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-12 15:59:00,199 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:59:00,200 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 15:59:00,201 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 15:59:00,201 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 16:02:33,015 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:02:33,015 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 16:02:33,016 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:02:33,016 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 16:03:45,268 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:03:45,269 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 16:03:45,270 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:03:45,270 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 16:04:14,949 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:04:14,949 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 16:04:14,950 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:04:14,950 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 16:05:05,454 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:05:05,455 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 16:05:05,456 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:05:05,456 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 16:08:12,213 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:08:12,214 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 16:08:12,214 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:08:12,214 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 16:08:19,985 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:08:19,985 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 16:08:19,986 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:08:19,986 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 16:08:21,006 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:08:21,006 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 16:08:21,007 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:08:21,007 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 16:08:52,278 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:08:52,278 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-12 16:08:52,279 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-12 16:08:52,279 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-12 16:08:53,899 [Worker-56: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-12 16:08:53,899 [Worker-56: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-12 16:10:08,854 [Worker-57: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-12 16:10:08,854 [Worker-57: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-12 16:14:32,202 [Worker-58: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-12 16:14:32,202 [Worker-58: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+>>>>>>> Bastien

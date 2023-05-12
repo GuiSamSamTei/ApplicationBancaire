@@ -170,6 +170,7 @@ public class Access_BD_CompteCourant {
 			throw new DataAccessException(Table.CompteCourant, Order.UPDATE, "Erreur accès", e);
 		}
 	}
+<<<<<<< HEAD
 	
 	public void createCompteCourant(CompteCourant compte)
 			throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException, ManagementRuleViolation {
@@ -184,11 +185,25 @@ public class Access_BD_CompteCourant {
 			pst.setInt(3, compte.idNumCli);
 			pst.setString(4, "N");
 
+=======
+
+	public void updateCloturationCompteCourant(CompteCourant cc) throws RowNotFoundOrTooManyRowsException,
+			DataAccessException, DatabaseConnexionException, ManagementRuleViolation {
+		try {
+			Connection con = LogToDatabase.getConnexion();
+
+			String query = "UPDATE CompteCourant SET " + "estCloture = ? " + "WHERE idNumCompte = ?";
+
+			PreparedStatement pst = con.prepareStatement(query);
+			pst.setString(1, "O");
+			pst.setInt(2, cc.idNumCompte);
+>>>>>>> Bastien
 
 			System.err.println(query);
 
 			int result = pst.executeUpdate();
 			pst.close();
+<<<<<<< HEAD
 
 			if (result != 1) {
 				con.rollback();
@@ -214,5 +229,16 @@ public class Access_BD_CompteCourant {
 			throw new DataAccessException(Table.Client, Order.INSERT, "Erreur accès", e);
 		}
 
+=======
+			if (result != 1) {
+				con.rollback();
+				throw new RowNotFoundOrTooManyRowsException(Table.CompteCourant, Order.UPDATE,
+						"Update anormal (update de moins ou plus d'une ligne)", null, result);
+			}
+			con.commit();
+		} catch (SQLException e) {
+			throw new DataAccessException(Table.CompteCourant, Order.UPDATE, "Erreur accès", e);
+		}
+>>>>>>> Bastien
 	}
 }
