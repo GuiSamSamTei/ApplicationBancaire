@@ -4,12 +4,12 @@
 
 Créé par : Équipe 1B1
 
-== Présentation de l'application
+== I. Présentation de l'application
 
 
 
-== Architecture
+== II. Architecture
 
 
 
-== Description des fonctionnalités
+== III. Description des fonctionnalités
