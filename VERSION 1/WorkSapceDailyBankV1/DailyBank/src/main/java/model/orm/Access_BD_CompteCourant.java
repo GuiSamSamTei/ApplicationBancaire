@@ -177,10 +177,12 @@ public class Access_BD_CompteCourant {
 
 			Connection con = LogToDatabase.getConnexion();
 
-			String query = "INSERT INTO CLIENT VALUES (" + "seq_id_client.NEXTVAL" + ", " + "?" + ", " + "?"+ ")";
+			String query = "INSERT INTO CompteCourant(idNumCompte, debitAutorise, solde, idNumCli, estCloture) VALUES (" + "seq_id_compte.NEXTVAL" + ", " + "?" + ", " + "?"+ ", " + "?" + ", " + "?" + ")";
 			PreparedStatement pst = con.prepareStatement(query);
 			pst.setInt(1, compte.debitAutorise);
 			pst.setDouble(2, compte.solde);
+			pst.setInt(3, compte.idNumCli);
+			pst.setString(4, "N");
 
 
 			System.err.println(query);
@@ -194,7 +196,7 @@ public class Access_BD_CompteCourant {
 						"Insert anormal (insert de moins ou plus d'une ligne)", null, result);
 			}
 
-			query = "SELECT seq_id_client.CURRVAL from CompteCourant";
+			query = "SELECT seq_id_compte.CURRVAL from DUAL";
 
 			System.err.println(query);
 			PreparedStatement pst2 = con.prepareStatement(query);

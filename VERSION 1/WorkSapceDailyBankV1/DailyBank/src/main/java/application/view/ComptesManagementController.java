@@ -114,6 +114,8 @@ public class ComptesManagementController {
 		if (compte != null) {
 			this.oListCompteCourant.add(compte);
 		}
+		this.loadList();
+		this.validateComponentState();
 	}
 
 	private void loadList() {
