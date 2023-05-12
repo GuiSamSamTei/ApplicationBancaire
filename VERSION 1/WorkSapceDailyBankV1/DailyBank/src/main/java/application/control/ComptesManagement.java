@@ -75,11 +75,11 @@ public class ComptesManagement {
 				// Temporaire jusqu'à implémentation
 				compte = null;
 				AlertUtilities.showAlert(this.primaryStage, "En cours de développement", "Non implémenté",
-						"Enregistrement réel en BDD du compe non effectué\nEn cours de développement", AlertType.ERROR);
+						"Enegistrement réel en BDD du compe non effectué\nEn cours de développement", AlertType.ERROR);
 
 				// TODO : enregistrement du nouveau compte en BDD (la BDD donne de nouvel id
 				// dans "compte")
-
+				
 				// if JAMAIS vrai
 				// existe pour compiler les catchs dessous
 				if (Math.random() < -1) {
