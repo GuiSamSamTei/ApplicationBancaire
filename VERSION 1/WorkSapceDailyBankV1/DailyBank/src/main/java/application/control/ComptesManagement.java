@@ -72,10 +72,8 @@ public class ComptesManagement {
 		compte = cep.doCompteEditorDialog(this.clientDesComptes, null, EditionMode.CREATION);
 		if (compte != null) {
 			try {
-<<<<<<< HEAD
 				Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
 				acc.createCompteCourant(compte);
-=======
 				// Temporaire jusqu'à implémentation
 				compte = null;
 				AlertUtilities.showAlert(this.primaryStage, "En cours de développement", "Non implémenté",
@@ -83,8 +81,6 @@ public class ComptesManagement {
 
 				// TODO : enregistrement du nouveau compte en BDD (la BDD donne de nouvel id
 				// dans "compte")
-
->>>>>>> Bastien
 				// if JAMAIS vrai
 				// existe pour compiler les catchs dessous
 				if (Math.random() < -1) {
