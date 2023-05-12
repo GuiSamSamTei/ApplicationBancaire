@@ -1,5 +1,6 @@
 package model.orm;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -171,37 +172,44 @@ public class Access_BD_CompteCourant {
 	}
 	
 	public void createCompteCourant(CompteCourant compte)
-			throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException {
+			throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException, ManagementRuleViolation {
 		try {
-			CompteCourant cc;
 
 			Connection con = LogToDatabase.getConnexion();
 
-			String query = "INSERT INTO CompteCourant(debitAutorise, solde, idNumCli, estCLoture) VALUES (" +"?" + ", " + "?" + ", " + "?" + ", " + "?" +")";
-
+			String query = "INSERT INTO CLIENT VALUES (" + "seq_id_client.NEXTVAL" + ", " + "?" + ", " + "?"+ ")";
 			PreparedStatement pst = con.prepareStatement(query);
 			pst.setInt(1, compte.debitAutorise);
 			pst.setDouble(2, compte.solde);
-			pst.setInt(3, compte.idNumCli);
-			pst.setString(4, compte.estCloture);
+
+
 			System.err.println(query);
 
-			ResultSet rs = pst.executeQuery();
-
-			if (rs.next()) {
-			} else {
-				rs.close();
-				pst.close();
-			}
-
-			if (rs.next()) {
-				throw new RowNotFoundOrTooManyRowsException(Table.CompteCourant, Order.SELECT,
-						"Recherche anormale (en trouve au moins 2)", null, 2);
-			}
-			rs.close();
+			int result = pst.executeUpdate();
 			pst.close();
+
+			if (result != 1) {
+				con.rollback();
+				throw new RowNotFoundOrTooManyRowsException(Table.Client, Order.INSERT,
+						"Insert anormal (insert de moins ou plus d'une ligne)", null, result);
+			}
+
+			query = "SELECT seq_id_client.CURRVAL from CompteCourant";
+
+			System.err.println(query);
+			PreparedStatement pst2 = con.prepareStatement(query);
+
+			ResultSet rs = pst2.executeQuery();
+			rs.next();
+			int numCliBase = rs.getInt(1);
+
+			con.commit();
+			rs.close();
+			pst2.close();
+
+			compte.idNumCli = numCliBase;
 		} catch (SQLException e) {
-			throw new DataAccessException(Table.CompteCourant, Order.SELECT, "Erreur accès", e);
+			throw new DataAccessException(Table.Client, Order.INSERT, "Erreur accès", e);
 		}
 
 	}
