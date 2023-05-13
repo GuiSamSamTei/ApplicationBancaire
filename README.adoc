@@ -40,8 +40,8 @@ L'équipe est constituée de trois personnes::
 [%header,cols=4*]
 |===
 |Date       |Nom                |Lien               |Retour
-| Sem.19    |CDC V1             |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/CDCU%20V1.adoc[CDCU Version 1] |
-|           |Gantt V1 Prévu     |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Gantt%20V1.pdf[Gantt Prévu V1] |
+| Sem.19    |CDC V1             |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/CDCU%20V1.adoc[CDCU Version 1] | Page de garde : manque nom du projet/client, de l'équipe. Contexte et objectifs à revoir trop succinct, relisez le document donné en introduction du projet. Existant à revoir : fichiers remis, architecture de l'appli, UC V0 commenté ... Il faut prioriser les fonctions V1 et donner leurs règles de gestion. Il faut présenter utilisateurs et rôles. Détailler les contraintes, donner les livrables attendus.  
+|           |Gantt V1 Prévu     |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Gantt%20V1.pdf[Gantt Prévu V1] | A revoir, il manque affectation des tâches , tâches récap, jalons.
 | 16/05     |CDC V2             |                   |
 |           |Gantt V1 Réalisé   |                   |
 |           |Gantt V2 Prévu     |                   |     
