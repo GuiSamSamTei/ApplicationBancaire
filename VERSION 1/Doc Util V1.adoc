@@ -4,5 +4,13 @@
 
 Créé par : Équipe 1B1
 
-== Présentation de l'application
+== I. Présentation de l'application
+[text-justify]
+
+
+== II. Installation utilisation
+
+
+
+== III. Fonctionnement
 
