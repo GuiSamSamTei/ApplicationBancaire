@@ -36,7 +36,7 @@ Ordinateur sous Windows ou OS équivalent.
 
 == III. Cas de test :
 === 1. Fonctionnalités des guichetiers :
-==== 1.1 Gestion des clients :
+==== 1.1 Gestion des clients (GS) :
 
 |====
 
@@ -88,7 +88,7 @@ Compléter et si on ne valide pas, ...
 |====
 
 
-==== 1.3 Gestion des opérations :
+==== 1.3 Gestion des opérations (JB) :
 
 |====
 
@@ -112,9 +112,9 @@ autorisé est de -100 euros.
 
 |====
 
->|Cas de test 4+|Test-01-03-01
+>|Cas de test 4+|Test-01-03-02
 >|Titre 4+|Créditer un compte
->|Objectif 4+| Vérifier qu'il est possible de débiter un compte
+>|Objectif 4+| Vérifier qu'il est possible de créditer un compte
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
 ^|All_G_COP.1 ^|Cliquer sur le bouton "Enregistrer Crédit". ^|La page des débit du compte s’affiche. ^| Un compte actif est sélectionné ^|OK
@@ -132,7 +132,7 @@ autorisé est de -100 euros.
 Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, ainsi que d'autres qui leur sont réservées.
 
 
-==== 2.1 Gestion des clients :
+==== 2.1 Gestion des employés :
 
 |====
 
