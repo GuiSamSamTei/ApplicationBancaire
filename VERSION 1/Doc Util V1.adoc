@@ -3,3 +3,6 @@
 :toc-title: Sommaire
 
 Créé par : Équipe 1B1
+
+== Présentation de l'application
+
