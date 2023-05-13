@@ -6,12 +6,11 @@
 :Equipe: 1B1
 
 Créé par : Groupe 1B1
-Créé pour : 
 
 == I. Introduction
 === 1. Objet :
 [.text-justify]
-Ce document a été produit dans le cadre d'un projet d'élaboration d'une application bancaire pour ...
+Ce document a été produit dans le cadre d'un projet d'élaboration d'une application bancaire pour permettre d'élaborer différents tests de l'applications pour montrer son bon fonctionnement.
 
 
 
@@ -21,12 +20,12 @@ L'exécution des tests spécifiés au chapitre suivant requiert :
 
 * Une base de données installée (référence document technique).
 * L'environnement de test tel que spécifié dans la partie "Environnement de test" de ce document.
-* Les fiches de tests. *À vérifier*
+* Un exécutable jar (application dans laquelle les tests doivent être effectués)
 
 
 === 1. Éléments à tester :
 [.text-justify]
-Les éléments testés concernent les Use-Cases spécifiés dans la *documentation technique*.
+Les éléments testés concernent les Use-Cases sont spécifiés dans la *documentation technique*.
 
 
 === 2. Environnement de test :
