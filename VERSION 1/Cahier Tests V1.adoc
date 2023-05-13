@@ -36,7 +36,7 @@ Ordinateur sous Windows ou OS équivalent.
 
 == III. Cas de test :
 === 1. Fonctionnalités des guichetiers :
-==== 1.1 Gestion des clients (GS) :
+==== 1.1 Gestion des clients :
 
 |====
 
@@ -45,11 +45,10 @@ Ordinateur sous Windows ou OS équivalent.
 >|Objectif 4+| Vérifier qu'il est possible de créer un nouveau client
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_C.1 ^|Cliquer sur le bouton "Nouveau client". ^|La fenêtre de création des clients s'ouvre. ^| aucune ^|OK
-^|All_G_C.2 ^|Compléter les champs spécifiés et valider. ^|Un nouveau client est créé. ^|aucune ^|OK
+^|All_G_C.1 ^|Cliquer sur le bouton "Nouveau client". ^|La fenêtre de création des clients s'ouvre. ^|aucune ^|OK
+^|All_G_C.2 ^|Compléter les champs spécifiés et valider. ^|Un nouveau client est créé. ^|Tous les champs doivent être remplis ^|OK
 5+|
-5+|Commentaire :
-Compléter et si on ne valide pas, ...
+5+|Commentaire : Un nouveau client est créé et enregistré dans la Base de données. Il est afficher dans la liste des clients.
 
 |====
 
@@ -64,8 +63,7 @@ Compléter et si on ne valide pas, ...
 ^|All_G_C.4 ^|Modifier les champs souhaités et confirmer. ^|Retour sur les informations du client. Le client est modifié. ^|La fenêtre modifier client est active ^|OK
 ^|All_G_C.5 ^|Modifier les champs souhaités et annuler. ^|Retour sur les informations du client. Le client est inchangé. ^|La fenêtre modifier client est active ^|OK
 5+|
-5+|Commentaire :
-Compléter et si on ne valide pas, ...
+5+|Commentaire : La modification des clients affiche un fenêtre avec les informations déjà inscrites. L'ID et rendre le client actif ou inactif est imposible à changer.
 
 |====
 
@@ -74,7 +72,7 @@ Compléter et si on ne valide pas, ...
 
 |====
 
->|Cas de test 4+|Test-01-02-03
+>|Cas de test 4+|Test-01-02-01
 >|Titre 4+|Consultation d'un compte
 >|Objectif 4+| Vérifier qu'il est possible de consulter un compte
 5+|
@@ -82,13 +80,12 @@ Compléter et si on ne valide pas, ...
 ^|All_G_CB.1 ^|Cliquer sur le bouton "Comptes client". ^|La page des comptes du client s’affiche. ^|Un client actif est sélectionné ^|OK
 ^|All_G_CB.2 ^|Sélectionner le bouton "Voir opérations". ^|La page des opérations du compte s’affiche. ^|Un compte actif est sélectionné ^|OK
 5+|
-5+|Commentaire :
-Compléter et si on ne valide pas, ...
+5+|Commentaire : La consultation des comptes d'un client permet de voir l'historique des différentes opérations effectuées sur ce compte.
 
 |====
 
 
-==== 1.3 Gestion des opérations (JB) :
+==== 1.3 Gestion des opérations :
 
 |====
 
@@ -98,15 +95,12 @@ Compléter et si on ne valide pas, ...
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
 ^|All_G_COP.1 ^|Cliquer sur le bouton "Enregistrer Débit". ^|La page des débit du compte s’affiche. ^| Un compte actif est sélectionné ^|OK
-^|All_G_COP.2  ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde est +50euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros
- ^|OK
-^|All_G_COP.3  ^|Rentrer un montant 150 dans le champ "Montant". ^|Le nouveau solde est -50 euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros, le découvert
-autorisé est de -100 euros.
- ^|OK
+^|All_G_COP.2  ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde est +50euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros ^|OK
+^|All_G_COP.3  ^|Rentrer un montant 150 dans le champ "Montant". ^|Le nouveau solde est -50 euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros, le découvert autorisé est de -100 euros. ^|OK
 ^|All_G_COP.4  ^|Rentrer un montant 250 dans le champ "Montant". ^|Blocage ! + pop-up ^| Le compte sélectionné a un solde de +100 euros, le découvert
-autorisé est de -100 euros.
-^|OK
+autorisé est de -100 euros. ^|OK
 5+|
+5+|Commentaire : L'opération est possible seulement quand un compte est actif. Le montant à débiter ne doit pas dépasser le découvert autorisé lors du débit au solde.
 
 |====
 
@@ -118,11 +112,10 @@ autorisé est de -100 euros.
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
 ^|All_G_COP.1 ^|Cliquer sur le bouton "Enregistrer Crédit". ^|La page des débit du compte s’affiche. ^| Un compte actif est sélectionné ^|OK
-^|All_G_COP.2  ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde est +150euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros
- ^|OK
-^|All_G_COP.3  ^|Rentrer un montant 150 dans le champ "Montant". ^|Le nouveau solde est -50 euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de -200 euros
- ^|OK
+^|All_G_COP.2  ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde est +150euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros ^|OK
+^|All_G_COP.3  ^|Rentrer un montant 150 dans le champ "Montant". ^|Le nouveau solde est -50 euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de -200 euros ^|OK
 5+|
+5+|Commentaire : Le montant à créditer doit être positif pour que le crédit soit effectué.
 
 |====
 
@@ -132,18 +125,17 @@ autorisé est de -100 euros.
 Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, ainsi que d'autres qui leur sont réservées.
 
 
-==== 2.1 Gestion des employés :
+==== 2.1 Gestion des clients :
 
 |====
 
 >|Cas de test 4+|Test-02-01-01
 >|Titre 4+|Rendre inactif un client
->|Objectif 4+| Vérifier qu'il est possible de rendre un client inactif
+>|Objectif 4+|Vérifier qu'il est possible de rendre un client inactif
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_C.1    ^|Sélectionner le bouton "Inactif" et confirmer. ^|...  ^|Un client actif est sélectionné ... ^| ...
+^|C_G_C.1 ^|Sélectionner le bouton "Inactif" et confirmer. ^|Le client est devenue inactif ^|Un client actif est sélectionné ^|OK
 5+|
-5+|Commentaire :
-Compléter et si on ne valide pas, ...
+5+|Commentaire : Rendre un client inactif n'empêche pas de faire des opérations sur ses comptes.
 
 |====
