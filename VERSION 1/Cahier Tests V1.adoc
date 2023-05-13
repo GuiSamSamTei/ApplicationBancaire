@@ -86,7 +86,7 @@ Ordinateur sous Windows ou OS équivalent.
 
 |====
 
->|Cas de test 4+|Test-01-02-01
+>|Cas de test 4+|Test-01-02-02
 >|Titre 4+|Créer un compte
 >|Objectif 4+|Vérifier qu'il est possible de créer un compte
 5+|
@@ -101,7 +101,7 @@ Ordinateur sous Windows ou OS équivalent.
 
 |====
 
->|Cas de test 4+|Test-01-02-01
+>|Cas de test 4+|Test-01-02-03
 >|Titre 4+|Clôturer un compte
 >|Objectif 4+|Vérifier qu'il est possible de clôturer un compte
 5+|
