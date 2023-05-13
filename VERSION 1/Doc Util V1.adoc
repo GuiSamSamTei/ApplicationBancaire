@@ -5,7 +5,7 @@
 Créé par : Équipe 1B1
 
 == I. Présentation de l'application
-[text-justify]
+[.text-justify]
 
 
 == II. Installation utilisation
