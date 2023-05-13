@@ -114,10 +114,16 @@ public class OperationsManagementController {
 	
 
 	private void validateComponentState() {
-		// Non implémenté => désactivé
-		this.btnCredit.setDisable(false);
-		this.btnDebit.setDisable(false);
-		this.btnVirement.setDisable(false);
+		if(this.compteConcerne.estCloture == null || this.compteConcerne.estCloture.equals("O")) {
+			this.btnCredit.setDisable(true);
+			this.btnDebit.setDisable(true);
+			this.btnVirement.setDisable(true);
+		}else {
+			this.btnCredit.setDisable(false);
+			this.btnDebit.setDisable(false);
+			this.btnVirement.setDisable(false);
+		}
+		
 	}
 
 	private void updateInfoCompteClient() {
