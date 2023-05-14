@@ -171,6 +171,17 @@ public class Access_BD_CompteCourant {
 		}
 	}
 
+	/**
+	 * Clôture d'un CompteCourant.
+	 * @author Bastien RECORD
+	 * 
+	 * @param cc IN : Compte à clôturer
+	 * @throws RowNotFoundOrTooManyRowsException La requête modifie 0 ou plus de 1
+	 *                                           ligne
+	 * @throws DataAccessException               Erreur d'accès aux données (requête
+	 *                                           mal formée ou autre)
+	 * @throws DatabaseConnexionException        Erreur de connexion
+	 */
 	public void updateCloturationCompteCourant(CompteCourant cc) throws RowNotFoundOrTooManyRowsException,
 			DataAccessException, DatabaseConnexionException, ManagementRuleViolation {
 		try {
@@ -210,6 +221,15 @@ public class Access_BD_CompteCourant {
 		}
 	}
 
+	/**
+	 * Création d'un CompteCourant.
+	 * @author Guilherme SAMPAIO 
+	 * @param compte IN compte.idNumCli doit exister
+	 * @throws RowNotFoundOrTooManyRowsException La requête modifie 0 ou plus de 1 ligne
+	 * @throws DataAccessException 			 Erreur d'accès aux données (requête mal formée ou autre)
+	 * @throws DatabaseConnexionException 		 Erreur de connexion
+	 * @throws ManagementRuleViolation 		 Erreur sur le solde courant par rapport au débitAutorisé (solde < débitAutorisé)
+	 */
 	public void createCompteCourant(CompteCourant compte) throws RowNotFoundOrTooManyRowsException, DataAccessException,
 			DatabaseConnexionException, ManagementRuleViolation {
 		try {
