@@ -19,6 +19,14 @@ public class ClientEditorPane {
 	private ClientEditorPaneController cepcViewController;
 	private DailyBankState dailyBankState;
 
+	/**
+	 * Constructeur de la classe ClientEditorPane
+	 * 
+	 * @param _parentStage IN : Stage parent
+	 * @param _dbstate     IN : Etat de l'application
+	 * 
+	 * @return void
+	 */
 	public ClientEditorPane(Stage _parentStage, DailyBankState _dbstate) {
 		this.dailyBankState = _dbstate;
 		try {
@@ -44,6 +52,14 @@ public class ClientEditorPane {
 		}
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion d'un client
+	 * 
+	 * @param client IN : Client à gérer
+	 * @param em     IN : Mode d'édition
+	 * 
+	 * @return Client
+	 */
 	public Client doClientEditorDialog(Client client, EditionMode em) {
 		return this.cepcViewController.displayDialog(client, em);
 	}

@@ -37,13 +37,22 @@ public class CompteEditorPaneController {
 	private CompteCourant compteEdite;
 	private CompteCourant compteResultat;
 
-	// Manipulation de la fenêtre
+	/**
+	 * Manipulation de la fenêtre
+	 * 
+	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
+	 *                         fichier xml contrôlé par this
+	 * @param _dbstate         IN : Etat courant de l'application
+	 */
 	public void initContext(Stage _containingStage, DailyBankState _dbstate) {
 		this.primaryStage = _containingStage;
 		this.dailyBankState = _dbstate;
 		this.configure();
 	}
 
+	/**
+	 * Configuration de la fenêtre
+	 */
 	private void configure() {
 		this.primaryStage.setOnCloseRequest(e -> this.closeWindow(e));
 
@@ -51,6 +60,11 @@ public class CompteEditorPaneController {
 		this.txtSolde.focusedProperty().addListener((t, o, n) -> this.focusSolde(t, o, n));
 	}
 
+	/**
+	 * Gestion de la fermeture de la fenêtre
+	 * 
+	 * @param e IN : Evènement de fermeture
+	 */
 	public CompteCourant displayDialog(Client client, CompteCourant cpte, EditionMode mode) {
 		this.clientDuCompte = client;
 		this.editionMode = mode;
@@ -102,13 +116,24 @@ public class CompteEditorPaneController {
 		return this.compteResultat;
 	}
 
-	// Gestion du stage
+	/**
+	 * Gestion du bouton OK
+	 * @param e IN : Evènement de clic sur le bouton
+	 * @return null
+	 */
 	private Object closeWindow(WindowEvent e) {
 		this.doCancel();
 		e.consume();
 		return null;
 	}
 
+	/**
+	 * focus sur le champ txtDecAutorise
+	 * @param txtField IN : Champ qui a le focus
+	 * @param oldPropertyValue IN : Ancienne valeur du focus
+	 * @param newPropertyValue IN : Nouvelle valeur du focus
+	 * @return null
+	 */
 	private Object focusDecouvert(ObservableValue<? extends Boolean> txtField, boolean oldPropertyValue,
 			boolean newPropertyValue) {
 		if (oldPropertyValue) {
@@ -126,6 +151,13 @@ public class CompteEditorPaneController {
 		return null;
 	}
 
+	/**
+	 * focus sur le champ txtSolde
+	 * @param txtField IN : Champ qui a le focus
+	 * @param oldPropertyValue IN : Ancienne valeur du focus
+	 * @param newPropertyValue IN : Nouvelle valeur du focus
+	 * @return null
+	 */
 	private Object focusSolde(ObservableValue<? extends Boolean> txtField, boolean oldPropertyValue,
 			boolean newPropertyValue) {
 		if (oldPropertyValue) {
@@ -164,12 +196,18 @@ public class CompteEditorPaneController {
 	@FXML
 	private Button btnCancel;
 
+	/**
+	 * Gestion du bouton Annuler
+	 */
 	@FXML
 	private void doCancel() {
 		this.compteResultat = null;
 		this.primaryStage.close();
 	}
 
+	/**
+	 * Gestion du bouton Ajouter
+	 */
 	@FXML
 	private void doAjouter() {
 		switch (this.editionMode) {
@@ -193,7 +231,34 @@ public class CompteEditorPaneController {
 
 	}
 
+	/**
+	 * Vérification de la validité de la saisie
+	 * @author : Guilherme SAMPAIO
+	 * @return true si la saisie est valide
+	 */
 	private boolean isSaisieValide() {
+
+		if(compteEdite.debitAutorise < 0 && compteEdite.solde < compteEdite.debitAutorise * (-1)){
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", "Le découvert autorisé doit être positif et le solde initial doit être supérieur au découvert autorisé", null, AlertType.ERROR);
+			return false;
+		}
+
+		if(compteEdite.debitAutorise < 0){
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", "Le découvert autorisé doit être positif, on le mettra en négatif automatiquement", null, AlertType.ERROR);
+			return false;
+		}
+
+		if(compteEdite.solde < compteEdite.debitAutorise * (-1)){
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", "Le solde initial doit être supérieur au découvert autorisé", null, AlertType.ERROR);
+			return false;
+		}
+
+		if(compteEdite.solde < 0){
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", "Le solde initial doit être positif", null, AlertType.ERROR);
+			return false;
+		}
+
+
 		return true;
 	}
 }

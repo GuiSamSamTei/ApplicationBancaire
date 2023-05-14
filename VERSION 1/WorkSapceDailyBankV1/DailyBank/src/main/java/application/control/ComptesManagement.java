@@ -1,3 +1,6 @@
+// Création d'un compte: Guilherme SAMPAIO
+// Clôturation d'un compte: Bastien RECORD
+
 package application.control;
 
 import java.util.ArrayList;
@@ -29,6 +32,14 @@ public class ComptesManagement {
 	private DailyBankState dailyBankState;
 	private Client clientDesComptes;
 
+	/**
+	 * Constructeur de la classe ComptesManagement
+	 * 
+	 * @param _parentStage IN : Stage parent
+	 * @param _dbstate     IN : Etat de l'application
+	 * 
+	 * @return void
+	 */
 	public ComptesManagement(Stage _parentStage, DailyBankState _dbstate, Client client) {
 
 		this.clientDesComptes = client;
@@ -56,16 +67,35 @@ public class ComptesManagement {
 		}
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion des comptes
+	 * 
+	 * @return void
+	 */
 	public void doComptesManagementDialog() {
 		this.cmcViewController.displayDialog();
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion des comptes
+	 * 
+	 * @param cpt IN : Compte à gérer
+	 * 
+	 * @return void
+	 */
 	public void gererOperationsDUnCompte(CompteCourant cpt) {
 		OperationsManagement om = new OperationsManagement(this.primaryStage, this.dailyBankState,
 				this.clientDesComptes, cpt);
 		om.doOperationsManagementDialog();
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion des comptes
+	 * 
+	 * @param cpt IN : Compte à gérer
+	 * 
+	 * @return void
+	 */
 	public CompteCourant creerNouveauCompte() {
 		CompteCourant compte;
 		CompteEditorPane cep = new CompteEditorPane(this.primaryStage, this.dailyBankState);
@@ -74,11 +104,6 @@ public class ComptesManagement {
 			try {
 				Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
 				acc.createCompteCourant(compte);
-				// if JAMAIS vrai
-				// existe pour compiler les catchs dessous
-				if (Math.random() < -1) {
-					throw new ApplicationException(Table.CompteCourant, Order.INSERT, "todo : test exceptions", null);
-				}
 			} catch (DatabaseConnexionException e) {
 				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
 				ed.doExceptionDialog();
@@ -91,6 +116,13 @@ public class ComptesManagement {
 		return compte;
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion des comptes
+	 * 
+	 * @param cpt IN : Compte à gérer
+	 * 
+	 * @return void
+	 */
 	public ArrayList<CompteCourant> getComptesDunClient() {
 		ArrayList<CompteCourant> listeCpt = new ArrayList<>();
 
@@ -110,6 +142,13 @@ public class ComptesManagement {
 		return listeCpt;
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion des comptes
+	 * @author Bastien RECORD
+	 * @param cpt IN : Compte à gérer
+	 * 
+	 * @return void
+	 */
 	public void cloturerCompte(CompteCourant cpt) {
 		try {
 			Access_BD_CompteCourant acc = new Access_BD_CompteCourant();

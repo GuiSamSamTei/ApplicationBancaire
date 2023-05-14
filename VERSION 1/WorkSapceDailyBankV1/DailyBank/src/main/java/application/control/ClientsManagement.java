@@ -23,6 +23,14 @@ public class ClientsManagement {
 	private DailyBankState dailyBankState;
 	private ClientsManagementController cmcViewController;
 
+	/**
+	 * Constructeur de la classe ClientsManagement
+	 * 
+	 * @param _parentStage IN : Stage parent
+	 * @param _dbstate     IN : Etat de l'application
+	 * 
+	 * @return void
+	 */
 	public ClientsManagement(Stage _parentStage, DailyBankState _dbstate) {
 		this.dailyBankState = _dbstate;
 		try {
@@ -48,10 +56,24 @@ public class ClientsManagement {
 		}
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion des clients
+	 * 
+	 * @param void
+	 * 
+	 * @return void
+	 */
 	public void doClientManagementDialog() {
 		this.cmcViewController.displayDialog();
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion des clients
+	 * 
+	 * @param void
+	 * 
+	 * @return void
+	 */
 	public Client modifierClient(Client c) {
 		ClientEditorPane cep = new ClientEditorPane(this.primaryStage, this.dailyBankState);
 		Client result = cep.doClientEditorDialog(c, EditionMode.MODIFICATION);
@@ -73,6 +95,13 @@ public class ClientsManagement {
 		return result;
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion des clients
+	 * 
+	 * @param void
+	 * 
+	 * @return void
+	 */
 	public Client nouveauClient() {
 		Client client;
 		ClientEditorPane cep = new ClientEditorPane(this.primaryStage, this.dailyBankState);
@@ -96,11 +125,25 @@ public class ClientsManagement {
 		return client;
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion des comptes d'un client
+	 * 
+	 * @param void
+	 * 
+	 * @return void
+	 */
 	public void gererComptesClient(Client c) {
 		ComptesManagement cm = new ComptesManagement(this.primaryStage, this.dailyBankState, c);
 		cm.doComptesManagementDialog();
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion des comptes d'un client
+	 * 
+	 * @param void
+	 * 
+	 * @return void
+	 */
 	public ArrayList<Client> getlisteComptes(int _numCompte, String _debutNom, String _debutPrenom) {
 		ArrayList<Client> listeCli = new ArrayList<>();
 		try {

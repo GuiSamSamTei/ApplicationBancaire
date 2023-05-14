@@ -29,7 +29,12 @@ public class ClientsManagementController {
 	// Données de la fenêtre
 	private ObservableList<Client> oListClients;
 
-	// Manipulation de la fenêtre
+	/**
+	 * Manipulation de la fenêtre
+	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
+	 * @param _cm IN : Contrôleur de Dialogue associé à ClientsManagementController
+	 * @param _dbstate IN : Etat courant de l'application
+	 */
 	public void initContext(Stage _containingStage, ClientsManagement _cm, DailyBankState _dbstate) {
 		this.cmDialogController = _cm;
 		this.primaryStage = _containingStage;
@@ -37,6 +42,9 @@ public class ClientsManagementController {
 		this.configure();
 	}
 
+	/**
+	 * Validation de l'état des composants
+	 */
 	private void configure() {
 		this.primaryStage.setOnCloseRequest(e -> this.closeWindow(e));
 
@@ -48,11 +56,18 @@ public class ClientsManagementController {
 		this.validateComponentState();
 	}
 
+	/**
+	 * Validation de l'état des composants
+	 */
 	public void displayDialog() {
 		this.primaryStage.showAndWait();
 	}
 
-	// Gestion du stage
+	/**
+	 * Validation de l'état des composants
+	 * @param e IN : Event
+	 * @return Object : null
+	 */
 	private Object closeWindow(WindowEvent e) {
 		this.doCancel();
 		e.consume();
@@ -76,11 +91,17 @@ public class ClientsManagementController {
 	@FXML
 	private Button btnComptesClient;
 
+	/**
+	 * Validation de l'état des composants
+	 */
 	@FXML
 	private void doCancel() {
 		this.primaryStage.close();
 	}
 
+	/**
+	 * Action du bouton Rechercher
+	 */
 	@FXML
 	private void doRechercher() {
 		int numCompte;
@@ -124,6 +145,10 @@ public class ClientsManagementController {
 		this.validateComponentState();
 	}
 
+	/**
+	 * Méthode appelée lors de l'appui sur le bouton Comptes Client
+	 * 
+	 */
 	@FXML
 	private void doComptesClient() {
 		int selectedIndice = this.lvClients.getSelectionModel().getSelectedIndex();
@@ -133,6 +158,10 @@ public class ClientsManagementController {
 		}
 	}
 
+	/**
+	 * Méthode appelée lors de l'appui sur le bouton Modifier Client
+	 * 
+	 */ 
 	@FXML
 	private void doModifierClient() {
 
@@ -146,10 +175,18 @@ public class ClientsManagementController {
 		}
 	}
 
+	/**
+	 * Méthode appelée lors de l'appui sur le bouton Désactiver Client
+	 * 
+	 */
 	@FXML
 	private void doDesactiverClient() {
 	}
 
+	/**
+	 * Méthode appelée lors de l'appui sur le bouton Nouveau Client
+	 * 
+	 */
 	@FXML
 	private void doNouveauClient() {
 		Client client;
@@ -159,6 +196,9 @@ public class ClientsManagementController {
 		}
 	}
 
+	/**
+	 * Validation de l'état des composants
+	 */
 	private void validateComponentState() {
 		// Non implémenté => désactivé
 		this.btnDesactClient.setDisable(true);

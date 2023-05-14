@@ -32,17 +32,30 @@ public class OperationEditorPaneController {
 	private CompteCourant compteEdite;
 	private Operation operationResultat;
 
-	// Manipulation de la fenêtre
+	/**
+	 * Manipulation de la fenêtre
+	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
+	 * @param _dbstate IN : Etat courant de l'application
+	 */
 	public void initContext(Stage _containingStage, DailyBankState _dbstate) {
 		this.primaryStage = _containingStage;
 		this.dailyBankState = _dbstate;
 		this.configure();
 	}
 
+	/**
+	 * Validation de l'état des composants
+	 */
 	private void configure() {
 		this.primaryStage.setOnCloseRequest(e -> this.closeWindow(e));
 	}
 
+	/**
+	 * Affichage de la fenêtre
+	 * @param cpte IN : Compte à éditer
+	 * @param mode IN : Mode de l'opération
+	 * @return IN : Opération résultat
+	 */
 	public Operation displayDialog(CompteCourant cpte, CategorieOperation mode) {
 		this.categorieOperation = mode;
 		this.compteEdite = cpte;
@@ -95,7 +108,11 @@ public class OperationEditorPaneController {
 		return this.operationResultat;
 	}
 
-	// Gestion du stage
+	/**
+	 * Fermeture de la fenêtre
+	 * @param e IN : Evènement de validation
+	 * @return IN : Opération résultat
+	 */
 	private Object closeWindow(WindowEvent e) {
 		this.doCancel();
 		e.consume();
@@ -117,12 +134,18 @@ public class OperationEditorPaneController {
 	@FXML
 	private Button btnCancel;
 
+	/**
+	 * Validation de l'opération
+	 */
 	@FXML
 	private void doCancel() {
 		this.operationResultat = null;
 		this.primaryStage.close();
 	}
 
+	/**
+	 * Action sur le bouton OK
+	 */
 	@FXML
 	private void doAjouter() {
 		switch (this.categorieOperation) {

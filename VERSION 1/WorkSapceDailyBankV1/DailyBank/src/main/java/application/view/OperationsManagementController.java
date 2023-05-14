@@ -35,7 +35,14 @@ public class OperationsManagementController {
 	private CompteCourant compteConcerne;
 	private ObservableList<Operation> oListOperations;
 
-	// Manipulation de la fenêtre
+	/**
+	 * Manipulation de la fenêtre
+	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
+	 * @param _om IN : Contrôleur de Dialogue associé à OperationsManagementController
+	 * @param _dbstate IN : Etat courant de l'application
+	 * @param client IN : Client du compte
+	 * @param compte IN : Compte concerné
+	 */
 	public void initContext(Stage _containingStage, OperationsManagement _om, DailyBankState _dbstate, Client client,
 			CompteCourant compte) {
 		this.primaryStage = _containingStage;
@@ -46,6 +53,9 @@ public class OperationsManagementController {
 		this.configure();
 	}
 
+	/**
+	 * Configuration de la fenêtre
+	 */
 	private void configure() {
 		this.primaryStage.setOnCloseRequest(e -> this.closeWindow(e));
 
@@ -56,11 +66,18 @@ public class OperationsManagementController {
 		this.validateComponentState();
 	}
 
+	/**
+	 * Mise à jour des informations du compte client
+	 */
 	public void displayDialog() {
 		this.primaryStage.showAndWait();
 	}
 
-	// Gestion du stage
+	/**
+	 * Gestion du stage
+	 * @param e IN : Evènement de fermeture de la fenêtre
+	 * @return null
+	 */
 	private Object closeWindow(WindowEvent e) {
 		this.doCancel();
 		e.consume();
@@ -82,11 +99,17 @@ public class OperationsManagementController {
 	@FXML
 	private Button btnVirement;
 
+	/**
+	 * Action sur le bouton "Annuler"
+	 */
 	@FXML
 	private void doCancel() {
 		this.primaryStage.close();
 	}
 
+	/**
+	 * Action sur le bouton "Effectuer un débit"
+	 */
 	@FXML
 	private void doDebit() {
 
@@ -97,6 +120,9 @@ public class OperationsManagementController {
 		}
 	}
 
+	/**
+	 * Action sur le bouton "Effectuer un crédit"
+	 */
 	@FXML
 	private void doCredit() {
 		Operation op = this.omDialogController.enregistrerCredit();
@@ -106,13 +132,16 @@ public class OperationsManagementController {
 		}
 	}
 
+	
 	@FXML
 	private void doAutre() {
 		
 	}
 
 	
-
+	/**
+	 * Validation de l'état des composants
+	 */
 	private void validateComponentState() {
 		if(this.compteConcerne.estCloture == null || this.compteConcerne.estCloture.equals("O")) {
 			this.btnCredit.setDisable(true);
@@ -126,6 +155,9 @@ public class OperationsManagementController {
 		
 	}
 
+	/**
+	 * Mise à jour des informations du compte client
+	 */
 	private void updateInfoCompteClient() {
 
 		PairsOfValue<CompteCourant, ArrayList<Operation>> opesEtCompte;

@@ -18,6 +18,14 @@ public class CompteEditorPane {
 	private Stage primaryStage;
 	private CompteEditorPaneController cepcViewController;
 
+	/**
+	 * Constructeur de la classe ClientEditorPane
+	 * 
+	 * @param _parentStage IN : Stage parent
+	 * @param _dbstate     IN : Etat de l'application
+	 * 
+	 * @return void
+	 */
 	public CompteEditorPane(Stage _parentStage, DailyBankState _dbstate) {
 
 		try {
@@ -43,6 +51,14 @@ public class CompteEditorPane {
 		}
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion d'un client
+	 * 
+	 * @param client IN : Client à gérer
+	 * @param em     IN : Mode d'édition
+	 * 
+	 * @return void
+	 */
 	public CompteCourant doCompteEditorDialog(Client client, CompteCourant cpte, EditionMode em) {
 		return this.cepcViewController.displayDialog(client, cpte, em);
 	}

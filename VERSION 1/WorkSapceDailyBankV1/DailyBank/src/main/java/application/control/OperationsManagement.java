@@ -1,3 +1,5 @@
+// Débit-Crédit : Julie BAELEN
+
 package application.control;
 
 import java.util.ArrayList;
@@ -29,14 +31,14 @@ public class OperationsManagement {
 	private OperationsManagementController omcViewController;
 	private Client clientDuCompte;
 	private CompteCourant compteConcerne;
-	
+
 	/**
 	 * Création des scenes javafx de la gestion d'opération
 	 * 
-	 *  @param _parentStage        : Le stage parent
-	 *  @param _dbstate        : L'application DailyBankState
-	 * 	@param client        : Le client séléctionné
-	 *  @param compte        : Le compte du client séléctionné
+	 * @param _parentStage : Le stage parent
+	 * @param _dbstate     : L'application DailyBankState
+	 * @param client       : Le client séléctionné
+	 * @param compte       : Le compte du client séléctionné
 	 *
 	 * @throws Exception e
 	 */
@@ -64,12 +66,12 @@ public class OperationsManagement {
 
 			this.omcViewController = loader.getController();
 			this.omcViewController.initContext(this.primaryStage, this, _dbstate, client, this.compteConcerne);
-			
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+
 	/**
 	 * permet d'acceder au dialog de OperationManagementController
 	 *
@@ -77,12 +79,13 @@ public class OperationsManagement {
 	public void doOperationsManagementDialog() {
 		this.omcViewController.displayDialog();
 	}
+
 	/**
 	 * Enregistre un débit
 	 *
 	 *
 	 * @return L'opération demandée
-	 * @throws ApplicationException        Erreur d'accès aux données (requête mal
+	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
@@ -109,12 +112,13 @@ public class OperationsManagement {
 		}
 		return op;
 	}
+
 	/**
 	 * Enregistre un crédit
 	 *
 	 *
 	 * @return L'opération demandée
-	 * @throws ApplicationException        Erreur d'accès aux données (requête mal
+	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
@@ -140,12 +144,13 @@ public class OperationsManagement {
 		}
 		return op;
 	}
+
 	/**
 	 * Rajoute à l'arrayList les opération effectuées
 	 *
 	 *
-	 * @return new PairsOfValue 
-	 * @throws ApplicationException        Erreur d'accès aux données (requête mal
+	 * @return new PairsOfValue
+	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
@@ -175,5 +180,3 @@ public class OperationsManagement {
 		return new PairsOfValue<>(this.compteConcerne, listeOP);
 	}
 }
-
-

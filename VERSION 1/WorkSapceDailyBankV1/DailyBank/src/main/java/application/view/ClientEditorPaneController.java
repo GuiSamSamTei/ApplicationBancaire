@@ -35,7 +35,11 @@ public class ClientEditorPaneController {
 	private EditionMode editionMode;
 	private Client clientResultat;
 
-	// Manipulation de la fenêtre
+	/**
+	 * Manipulation de la fenêtre
+	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
+	 * @param _dbstate IN : Etat courant de l'application
+	 */
 
 	public void initContext(Stage _containingStage, DailyBankState _dbstate) {
 		this.primaryStage = _containingStage;
@@ -43,10 +47,19 @@ public class ClientEditorPaneController {
 		this.configure();
 	}
 
+	// 
+
 	private void configure() {
 		this.primaryStage.setOnCloseRequest(e -> this.closeWindow(e));
 	}
 
+	
+	/** Manipulation de la fenêtre
+	 * 
+	 * @param client IN : Client à afficher
+	 * @param mode  IN : Mode d'édition
+	 * @return Client : Client résultat
+	 */ 
 	public Client displayDialog(Client client, EditionMode mode) {
 
 		this.editionMode = mode;
@@ -130,7 +143,11 @@ public class ClientEditorPaneController {
 		return this.clientResultat;
 	}
 
-	// Gestion du stage
+	/**
+	 * Fermeture de la fenêtre
+	 * @param e IN : événement de fermeture
+	 * @return Object: null
+	 */
 	private Object closeWindow(WindowEvent e) {
 		this.doCancel();
 		e.consume();
@@ -164,12 +181,18 @@ public class ClientEditorPaneController {
 	@FXML
 	private Button butCancel;
 
+	/**
+	 * Action sur le bouton Annuler
+	 */
 	@FXML
 	private void doCancel() {
 		this.clientResultat = null;
 		this.primaryStage.close();
 	}
 
+	/**
+	 * Action sur le bouton Ok
+	 */
 	@FXML
 	private void doAjouter() {
 		switch (this.editionMode) {
@@ -193,6 +216,11 @@ public class ClientEditorPaneController {
 
 	}
 
+	/**
+	 * Vérifie que les données saisies sont valides
+	 * 
+	 * @return true si les données sont valides, false sinon
+	 */
 	private boolean isSaisieValide() {
 		this.clientEdite.nom = this.txtNom.getText().trim();
 		this.clientEdite.prenom = this.txtPrenom.getText().trim();

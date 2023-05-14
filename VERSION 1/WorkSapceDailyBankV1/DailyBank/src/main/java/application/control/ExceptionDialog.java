@@ -16,6 +16,15 @@ public class ExceptionDialog {
 	private Stage primaryStage;
 	private ExceptionDialogController edcViewController;
 
+	/**
+	 * Constructeur de la classe ExceptionDialog
+	 * 
+	 * @param _parentStage IN : Stage parent
+	 * @param _dbstate     IN : Etat de l'application
+	 * @param ae           IN : Exception à afficher
+	 * 
+	 * @return void
+	 */
 	public ExceptionDialog(Stage _parentStage, DailyBankState _dbstate, ApplicationException ae) {
 
 		try {
@@ -41,13 +50,12 @@ public class ExceptionDialog {
 		}
 	}
 
+	/**
+	 * Affiche la fenêtre de gestion des clients
+	 * 
+	 * @return void
+	 */
 	public void doExceptionDialog() {
 		this.edcViewController.displayDialog();
 	}
-
-	/*
-	 * Test : ApplicationException ae = new ApplicationException(Table.NONE,
-	 * Order.OTHER, "M", null ); ExceptionDialogTemp ed = new
-	 * ExceptionDialogTemp(primaryStage, dbs, ae); ed.doExceptionDisplay();
-	 */
 }

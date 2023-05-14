@@ -23,7 +23,14 @@ public class ExceptionDialogController {
 	// Données de la fenêtre
 	private ApplicationException aException;
 
-	// Manipulation de la fenêtre
+	/**
+	 * Manipulation de la fenêtre
+	 * 
+	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
+	 *                         fichier xml contrôlé par this
+	 * @param _dbstate         IN : Etat courant de l'application
+	 * @param _ae              IN : Exception à afficher
+	 */
 
 	public void initContext(Stage _containingStage, DailyBankState _dbstate, ApplicationException _ae) {
 		this.primaryStage = _containingStage;
@@ -32,6 +39,9 @@ public class ExceptionDialogController {
 		this.configure();
 	}
 
+	/**
+	 * Manipulation de la fenêtre
+	 */
 	private void configure() {
 		this.primaryStage.setOnCloseRequest(e -> this.closeWindow(e));
 		this.lblTitre.setText(this.aException.getMessage());
@@ -44,11 +54,18 @@ public class ExceptionDialogController {
 		this.txtDetails.setText(sw.toString());
 	}
 
+	/**
+	 * Manipulation de la fenêtre
+	 */
 	public void displayDialog() {
 		this.primaryStage.showAndWait();
 	}
 
-	// Gestion du stage
+	/**
+	 * Manipulation de la fenêtre
+	 * 
+	 * @param e IN : Evènement de fermeture de la fenêtre
+	 */
 	private Object closeWindow(WindowEvent e) {
 		return null;
 	}
@@ -66,6 +83,9 @@ public class ExceptionDialogController {
 	@FXML
 	private TextArea txtDetails;
 
+	/**
+	 * Fermeture de la fenêtre
+	 */
 	@FXML
 	private void doOK() {
 		this.primaryStage.close();
