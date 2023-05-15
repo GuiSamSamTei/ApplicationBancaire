@@ -49,9 +49,13 @@ Cliquons sur Gestion pour acceder aux comptes!
 
 image:7.jpg[]
 
-Nous arrivons sur une autre page, celle ci est l'accueil de gestion de comptes.
+Nous arrivons sur une autre page, celle ci est l'accueil de gestion de comptes. Cliquons sur rechercher.
 
 image:8.jpg[]
+
+Tous les utilisateurs apparaissent, choisissons un compte aléatoirement.
+
+image:9.jpg[]
 
 == III. Fonctionnement
 
