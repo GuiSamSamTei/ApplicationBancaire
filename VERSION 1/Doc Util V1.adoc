@@ -79,7 +79,7 @@ image:12.jpg[]
 == 10) Débit/ crédit
 Nous pouvons maintenant faire un crédit ou un débit, essayons avec un débit.
 
-image:operation.jpg[]
+image:operation.PNG[]
 
 image:13.jpg[]
 
@@ -90,7 +90,7 @@ En cliquant sur le bouton "clôturer un compte", un pop-up apparaitra pour s'ass
 
 image:15.jpg[]
 
-image:cloturer.jpg[]
+image:cloturer.PNG[]
 
 image:16.jpg[]
 
