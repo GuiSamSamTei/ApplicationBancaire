@@ -64,15 +64,17 @@ Tous les utilisateurs apparaissent, choisissons un compte aléatoirement.
 
 image:9.jpg[]
 
-Cliquons sur "Comptes"
+Cliquons sur "Comptes client"
 
 image:10.jpg[]
 
 == 9) Opération
 
-Voici les comptes de l'utilisateur que nous avons selectionné. Nous pouvons voir ses opérations en cliquant sur le bouton "opération".
+Voici les comptes de l'utilisateur que nous avons selectionné. Choisissons un compte aléatoirement, nous pouvons voir ses opérations en cliquant sur le bouton "opération".
 
 image:11.jpg[]
+
+image:12.jpg[]
 
 
 == III. Fonctionnement
