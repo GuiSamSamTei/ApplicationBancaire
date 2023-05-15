@@ -122,11 +122,7 @@ public class Access_BD_CompteCourant {
 	/**
 	 * Mise à jour d'un CompteCourant.
 	 *
-	 * cc.idNumCompte (clé primaire) doit exister seul cc.debitAutorise est mis à
-	 * jour cc.solde non mis à jour (ne peut se faire que par une opération)
-	 * cc.idNumCli non mis à jour (un cc ne change pas de client)
-	 *
-	 * @param cc IN cc.idNumCompte (clé primaire) doit exister seul
+	 * @param cc IN client 
 	 * @throws RowNotFoundOrTooManyRowsException La requête modifie 0 ou plus de 1
 	 *                                           ligne
 	 * @throws DataAccessException               Erreur d'accès aux données (requête
