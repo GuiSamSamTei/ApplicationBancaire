@@ -3,7 +3,7 @@
 :toc-title: Sommaire
 
 Date : 16/05/2023 +
-Créé par : Équipe 1B1
+Créé par : Équipe 1B1 +
 Créé pour : Directeur de la banque DailyBank
 
 == I. Présentation
