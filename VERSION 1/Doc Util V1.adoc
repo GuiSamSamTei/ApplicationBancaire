@@ -39,9 +39,11 @@ image:gestion.PNG[]
 
 Vous pouvez aussi selectionner le boutton "?".
 
-image:aide.PNG[]
+image:6.jpg[]
 
 celui ci permet d'obtenir une aide.
+
+image:aide.PNG[]
 
 == III. Fonctionnement
 
