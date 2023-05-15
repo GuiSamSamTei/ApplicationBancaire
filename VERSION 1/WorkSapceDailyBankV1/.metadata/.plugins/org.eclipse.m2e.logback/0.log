@@ -10833,3 +10833,1180 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.openjfx:j
 2023-05-13 12:25:33,599 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
 2023-05-13 12:25:36,082 [Worker-25: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
 2023-05-13 12:25:36,082 [Worker-25: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 13:03:28,687 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-05-15 13:03:45,297 [Worker-0: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-15 13:03:45,339 [Worker-24: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-15 13:03:45,665 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:03:45,667 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:03:45,674 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:03:45,674 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:03:46,939 [Worker-0: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-15 13:05:11,147 [Worker-30: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-05-15 13:05:11,234 [Worker-30: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-15 13:05:11,280 [Worker-30: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/main/java
+2023-05-15 13:05:11,280 [Worker-30: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DailyBank/src/main/resources
+2023-05-15 13:05:11,280 [Worker-30: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/test/java
+2023-05-15 13:05:11,396 [Worker-30: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2023-05-15 13:05:11,676 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:05:11,677 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:05:11,683 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:05:11,683 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:05:43,751 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606 [703])
+2023-05-15 13:05:43,752 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606
+2023-05-15 13:05:43,752 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/aether-connector-okhttp-0.17.8.jar
+2023-05-15 13:05:43,752 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/commons-lang3-3.8.1.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/guice-4.2.2-no_aop.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/jansi-2.4.0.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-artifact-3.8.7.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-builder-support-3.8.7.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-compat-3.8.7.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-core-3.8.7.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-embedder-3.8.7.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-model-3.8.7.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-model-builder-3.8.7.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-plugin-api-3.8.7.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-repository-metadata-3.8.7.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-api-1.6.3.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-connector-basic-1.6.3.jar
+2023-05-15 13:05:43,753 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-impl-1.6.3.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-provider-3.8.7.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-spi-1.6.3.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-transport-wagon-1.6.3.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-util-1.6.3.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-settings-3.8.7.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-settings-builder-3.8.7.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-shared-utils-3.3.4.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/okhttp-3.14.1.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/okio-1.17.3.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/org.eclipse.sisu.inject-0.3.5.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/org.eclipse.sisu.plexus-0.3.5.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-build-api-0.0.7.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-cipher-2.0.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-classworlds-2.6.0.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-component-annotations-2.1.0.jar
+2023-05-15 13:05:43,754 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-interpolation-1.26.jar
+2023-05-15 13:05:43,755 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-sec-dispatcher-2.0.jar
+2023-05-15 13:05:43,755 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-utils-3.3.1.jar
+2023-05-15 13:05:43,755 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/wagon-file-3.5.3.jar
+2023-05-15 13:05:43,755 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/wagon-provider-api-3.5.3.jar
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_31.1.0.jre [444])
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/com.google.guava_31.1.0.jre.jar
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_1.7.36 [870])
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/slf4j.api_1.7.36.jar
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [456])
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/javax.inject_1.0.0.v20220405-0441.jar
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20221203-1659 [454])
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/javax.annotation_1.3.5.v20221203-1659.jar
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.4.0.v20221112-0806 [476])
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.apache.commons.cli_1.4.0.v20221112-0806.jar
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.1 [446])
+2023-05-15 13:05:43,756 [Worker-13: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/com.google.guava.failureaccess_1.0.1.jar
+2023-05-15 13:05:43,761 [Worker-13: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 13:05:43,763 [Worker-13: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 13:09:04,875 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:09:04,878 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:09:04,880 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:09:04,880 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:09:50,762 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:09:50,763 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:09:50,764 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:09:50,764 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:10:54,028 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:10:54,028 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:10:54,029 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:10:54,029 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:10:55,069 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:10:55,070 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:10:55,071 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:10:55,071 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:11:01,863 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:11:01,864 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:11:01,865 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:11:01,865 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:12:00,872 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:12:00,872 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:12:00,874 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:12:00,874 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:12:12,204 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:12:12,205 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:12:12,206 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:12:12,206 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:12:13,248 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:12:13,249 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:12:13,250 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:12:13,251 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:12:59,296 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:12:59,297 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:12:59,298 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:12:59,298 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:13:22,997 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:13:23,001 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:13:23,004 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:13:23,004 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:13:24,042 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:13:24,043 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:13:24,045 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:13:24,045 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:14:03,292 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:14:03,292 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:14:03,293 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:14:03,293 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:15:42,320 [Worker-30: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:15:42,321 [Worker-30: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:15:42,322 [Worker-30: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:15:42,322 [Worker-30: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:16:01,384 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:16:01,385 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:16:01,386 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:16:01,386 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:16:19,960 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:16:19,961 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:16:19,962 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:16:19,962 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:16:27,600 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:16:27,600 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:16:27,601 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:16:27,601 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:16:38,671 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:16:38,672 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:16:38,673 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:16:38,673 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:16:43,069 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:16:43,069 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:16:43,070 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:16:43,070 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:17:17,670 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:17:17,671 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:17:17,673 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:17:17,673 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:17:21,447 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:17:21,447 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:17:21,448 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:17:21,449 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:17:59,185 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:17:59,186 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:17:59,187 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:17:59,187 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:18:53,538 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:18:53,539 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:18:53,540 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:18:53,540 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:18:54,560 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:18:54,560 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:18:54,561 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:18:54,561 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:18:58,982 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:18:58,983 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:18:58,984 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:18:58,984 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:19:32,634 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:19:32,635 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:19:32,636 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:19:32,636 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:19:42,171 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:19:42,171 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:19:42,172 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:19:42,172 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:19:46,333 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:19:46,333 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:19:46,334 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:19:46,334 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:19:47,372 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:19:47,373 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 13:19:47,374 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:19:47,374 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:20:19,449 [Worker-33: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:20:19,450 [Worker-33: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:20:19,452 [Worker-33: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:20:19,452 [Worker-33: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:25:48,088 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:25:48,089 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:25:48,090 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:25:48,090 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:26:31,953 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:26:31,954 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:26:31,955 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:26:31,955 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:27:04,853 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:27:04,854 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:27:04,854 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:27:04,855 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:27:41,815 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:27:41,816 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-15 13:27:41,818 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:27:41,818 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:32:32,033 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:32:32,034 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:32:32,035 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:32:32,035 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:32:57,577 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:32:57,578 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:32:57,579 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:32:57,579 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:33:13,593 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:33:13,593 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:33:13,594 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:33:13,594 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:34:07,247 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:34:07,247 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:34:07,248 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:34:07,248 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:36:16,792 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:36:16,793 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:36:16,794 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:36:16,794 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:43:31,460 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:43:31,461 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:43:31,462 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:43:31,462 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:43:32,487 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:43:32,488 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:43:32,489 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:43:32,489 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:43:59,533 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:43:59,533 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:43:59,534 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:43:59,534 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:44:00,558 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:44:00,558 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:44:00,559 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:44:00,559 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:44:07,727 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:44:07,728 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:44:07,729 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:44:07,729 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 13:53:08,921 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:53:08,922 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 13:53:08,923 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 13:53:08,923 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:06:43,780 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:06:43,780 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:06:43,781 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:06:43,781 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:15:36,212 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:15:36,212 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:15:36,213 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:15:36,213 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:16:29,480 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:16:29,480 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:16:29,481 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:16:29,481 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:16:30,505 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:16:30,505 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:16:30,506 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:16:30,506 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:16:56,425 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:16:56,426 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:16:56,427 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:16:56,427 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:18:05,145 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:18:05,145 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:18:05,147 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:18:05,147 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:18:30,667 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:18:30,668 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:18:30,668 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:18:30,669 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:18:41,749 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:18:41,750 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:18:41,751 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:18:41,751 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:19:05,154 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:19:05,154 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:19:05,155 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:19:05,155 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:19:27,121 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:19:27,121 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:19:27,122 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:19:27,122 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:19:52,857 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:19:52,858 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:19:52,858 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:19:52,858 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:19:57,996 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:19:57,996 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:19:57,997 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:19:57,997 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:20:14,192 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:20:14,192 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:20:14,193 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:20:14,193 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:21:48,282 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:21:48,282 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:21:48,283 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:21:48,283 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:22:34,939 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:22:34,939 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:22:34,940 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:22:34,940 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:23:28,070 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:23:28,070 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:23:28,072 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:23:28,072 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:23:53,517 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:23:53,517 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:23:53,518 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:23:53,518 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:24:25,475 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:24:25,476 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:24:25,477 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:24:25,477 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:24:56,124 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:24:56,124 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:24:56,126 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:24:56,126 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:25:18,188 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:25:18,188 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:25:18,189 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:25:18,189 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:25:30,150 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:25:30,150 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:25:30,151 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:25:30,151 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:25:38,735 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:25:38,735 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:25:38,736 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:25:38,736 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:26:30,085 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:26:30,086 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:26:30,086 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:26:30,086 [Worker-56: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:26:48,156 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:26:48,156 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:26:48,157 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:26:48,157 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:27:23,837 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:27:23,837 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:27:23,838 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:27:23,838 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:28:46,865 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:28:46,866 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:28:46,866 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:28:46,866 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:28:51,422 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:28:51,423 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:28:51,423 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:28:51,423 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:30:59,198 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:30:59,198 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:30:59,199 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:30:59,199 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:31:03,503 [Worker-53: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 14:31:03,503 [Worker-53: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 14:32:36,478 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:32:36,478 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:32:36,482 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:32:36,482 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:35:40,919 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:35:40,920 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:35:40,921 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:35:40,921 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:36:33,083 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:36:33,083 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:36:33,085 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:36:33,085 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:36:58,308 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:36:58,308 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:36:58,310 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:36:58,310 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:37:02,132 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:37:02,132 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:37:02,133 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:37:02,133 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:37:57,909 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:37:57,909 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:37:57,910 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:37:57,910 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:38:34,645 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:38:34,646 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:38:34,646 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:38:34,646 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:38:48,906 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:38:48,906 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:38:48,907 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:38:48,907 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:38:49,943 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:38:49,944 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:38:49,945 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:38:49,945 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:39:05,586 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:39:05,587 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:39:05,587 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:39:05,587 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:39:26,965 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:39:26,966 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:39:26,966 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:39:26,966 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:39:44,725 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:39:44,726 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:39:44,726 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:39:44,726 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:40:04,314 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:40:04,314 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:40:04,315 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:40:04,315 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:41:15,626 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:41:15,627 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:41:15,627 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:41:15,627 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:41:25,029 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:41:25,030 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:41:25,030 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:41:25,030 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:43:13,433 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:43:13,434 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:43:13,434 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:43:13,434 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:46:18,567 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:46:18,568 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:46:18,569 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:46:18,569 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:46:31,141 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:46:31,141 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:46:31,142 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:46:31,142 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:47:31,123 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:47:31,124 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:47:31,124 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:47:31,124 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:47:42,318 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:47:42,319 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:47:42,320 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:47:42,320 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:47:50,288 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:47:50,289 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:47:50,289 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:47:50,289 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:48:10,832 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:48:10,832 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:48:10,833 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:48:10,833 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:48:31,802 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:48:31,802 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:48:31,803 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:48:31,803 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:49:16,777 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:49:16,777 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:49:16,778 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:49:16,778 [Worker-57: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:49:25,653 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:49:25,653 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:49:25,654 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:49:25,654 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:49:39,654 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:49:39,654 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:49:39,655 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:49:39,655 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:50:28,209 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:50:28,209 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:50:28,210 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:50:28,210 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:50:36,941 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:50:36,941 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:50:36,942 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:50:36,942 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:50:37,966 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:50:37,967 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:50:37,968 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:50:37,968 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:53:54,375 [Worker-57: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 14:53:54,375 [Worker-57: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 14:55:40,461 [Worker-57: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-05-15 14:55:40,581 [Worker-57: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-15 14:55:40,684 [Worker-57: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/main/java
+2023-05-15 14:55:40,684 [Worker-57: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DailyBank/src/main/resources
+2023-05-15 14:55:40,684 [Worker-57: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/test/java
+2023-05-15 14:55:40,745 [Worker-57: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2023-05-15 14:55:40,944 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:55:40,944 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:55:40,950 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:55:40,950 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:55:43,477 [Worker-67: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 14:55:43,477 [Worker-67: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 14:58:22,224 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:58:22,225 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:58:22,226 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:58:22,226 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:59:02,114 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:59:02,115 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-15 14:59:02,116 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:59:02,117 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 14:59:07,750 [Worker-75: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 14:59:07,750 [Worker-75: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 14:59:07,853 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:59:07,853 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 14:59:07,854 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 14:59:07,854 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:07:18,799 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:07:18,800 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:07:18,801 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:07:18,801 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:07:26,334 [Worker-80: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:07:26,335 [Worker-80: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:08:09,863 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:08:09,863 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:08:09,864 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:08:09,864 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:08:16,216 [Worker-78: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:08:16,216 [Worker-78: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:08:49,143 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:08:49,143 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:08:49,144 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:08:49,144 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:08:50,177 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:08:50,177 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:08:50,179 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:08:50,179 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:09:07,886 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:09:07,886 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:09:07,887 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:09:07,887 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:09:13,856 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:09:13,857 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:09:13,857 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:09:13,857 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:09:17,677 [Worker-78: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:09:17,677 [Worker-78: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:10:07,827 [Worker-63: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:10:07,827 [Worker-63: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:10:07,827 [Worker-63: Launching DailyBank-exe] WARN  o.e.m.i.l.MavenLaunchExtensionsSupport - Unknown or unsupported source locator org.eclipse.jdt.internal.launching.sourcelookup.advanced.AdvancedSourceLookupDirector
+2023-05-15 15:10:07,937 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:10:07,938 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:10:07,939 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:10:07,939 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:10:32,406 [Worker-63: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:10:32,406 [Worker-63: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:10:40,505 [Worker-63: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:10:40,505 [Worker-63: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:10:40,505 [Worker-63: Launching DailyBank-exe] WARN  o.e.m.i.l.MavenLaunchExtensionsSupport - Unknown or unsupported source locator org.eclipse.jdt.internal.launching.sourcelookup.advanced.AdvancedSourceLookupDirector
+2023-05-15 15:11:24,338 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:11:24,339 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:11:24,339 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:11:24,339 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:11:42,630 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:11:42,630 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:11:42,631 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:11:42,631 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:15:27,152 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:15:27,152 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-15 15:15:27,154 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:15:27,154 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:16:31,200 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:16:31,201 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:16:31,202 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:16:31,202 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:16:44,027 [Worker-82: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:16:44,027 [Worker-82: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:17:41,503 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:17:41,504 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:17:41,505 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:17:41,505 [Worker-83: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:17:55,754 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:17:55,755 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-15 15:17:55,757 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:17:55,757 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:19:48,611 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:19:48,611 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-15 15:19:48,614 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:19:48,614 [Worker-85: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:20:30,531 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:20:30,531 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-15 15:20:30,533 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:20:30,534 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:20:32,364 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:20:32,364 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-15 15:20:32,365 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:20:32,365 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:20:33,378 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:20:33,378 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-15 15:20:33,380 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:20:33,380 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:21:25,280 [Worker-84: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:21:25,281 [Worker-84: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:29:41,529 [Worker-86: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-05-15 15:29:41,597 [Worker-86: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-15 15:29:41,668 [Worker-86: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/main/java
+2023-05-15 15:29:41,668 [Worker-86: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DailyBank/src/main/resources
+2023-05-15 15:29:41,668 [Worker-86: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/test/java
+2023-05-15 15:29:41,720 [Worker-86: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2023-05-15 15:29:41,892 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:29:41,892 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:29:41,899 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:29:41,899 [Worker-88: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:30:09,016 [Worker-93: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:30:09,017 [Worker-93: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:33:56,573 [Worker-93: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:33:56,573 [Worker-93: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:42:19,930 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:42:19,931 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:42:19,932 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:42:19,932 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:42:24,384 [Worker-100: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:42:24,384 [Worker-100: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:42:49,940 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:42:49,940 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:42:49,941 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:42:49,941 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:44:47,835 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-05-15 15:44:59,303 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-05-15 15:44:59,586 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-15 15:44:59,669 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/main/java
+2023-05-15 15:44:59,669 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DailyBank/src/main/resources
+2023-05-15 15:44:59,670 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/test/java
+2023-05-15 15:44:59,880 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2023-05-15 15:45:00,336 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:45:00,339 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:45:00,347 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:45:00,348 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:45:01,618 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606 [703])
+2023-05-15 15:45:01,618 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606
+2023-05-15 15:45:01,618 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/aether-connector-okhttp-0.17.8.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/commons-lang3-3.8.1.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/guice-4.2.2-no_aop.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/jansi-2.4.0.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-artifact-3.8.7.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-builder-support-3.8.7.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-compat-3.8.7.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-core-3.8.7.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-embedder-3.8.7.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-model-3.8.7.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-model-builder-3.8.7.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-plugin-api-3.8.7.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-repository-metadata-3.8.7.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-api-1.6.3.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-connector-basic-1.6.3.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-impl-1.6.3.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-provider-3.8.7.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-spi-1.6.3.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-transport-wagon-1.6.3.jar
+2023-05-15 15:45:01,619 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-resolver-util-1.6.3.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-settings-3.8.7.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-settings-builder-3.8.7.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/maven-shared-utils-3.3.4.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/okhttp-3.14.1.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/okio-1.17.3.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/org.eclipse.sisu.inject-0.3.5.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/org.eclipse.sisu.plexus-0.3.5.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-build-api-0.0.7.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-cipher-2.0.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-classworlds-2.6.0.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-component-annotations-2.1.0.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-interpolation-1.26.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-sec-dispatcher-2.0.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/plexus-utils-3.3.1.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/wagon-file-3.5.3.jar
+2023-05-15 15:45:01,620 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606/jars/wagon-provider-api-3.5.3.jar
+2023-05-15 15:45:01,621 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_31.1.0.jre [444])
+2023-05-15 15:45:01,622 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/com.google.guava_31.1.0.jre.jar
+2023-05-15 15:45:01,622 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_1.7.36 [870])
+2023-05-15 15:45:01,622 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/slf4j.api_1.7.36.jar
+2023-05-15 15:45:01,622 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [456])
+2023-05-15 15:45:01,622 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/javax.inject_1.0.0.v20220405-0441.jar
+2023-05-15 15:45:01,622 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20221203-1659 [454])
+2023-05-15 15:45:01,622 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/javax.annotation_1.3.5.v20221203-1659.jar
+2023-05-15 15:45:01,622 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.4.0.v20221112-0806 [476])
+2023-05-15 15:45:01,622 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/org.apache.commons.cli_1.4.0.v20221112-0806.jar
+2023-05-15 15:45:01,622 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.1 [446])
+2023-05-15 15:45:01,622 [Worker-12: Launching DailyBank-exe] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/bastien/.p2/pool/plugins/com.google.guava.failureaccess_1.0.1.jar
+2023-05-15 15:45:01,626 [Worker-12: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:45:01,628 [Worker-12: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:47:12,364 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:47:12,367 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:47:12,368 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:47:12,368 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:47:15,498 [Worker-18: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:47:15,499 [Worker-18: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:47:52,834 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:47:52,835 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:47:52,836 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:47:52,836 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:58:29,428 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:58:29,429 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:58:29,430 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:58:29,430 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 15:58:32,741 [Worker-27: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 15:58:32,741 [Worker-27: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 15:59:14,542 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:59:14,542 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 15:59:14,544 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 15:59:14,544 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:00:07,936 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:00:07,936 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:00:07,938 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:00:07,938 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:00:42,344 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:00:42,346 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:00:42,348 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:00:42,348 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:01:58,898 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:01:58,899 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:01:58,900 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:01:58,900 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:01:59,958 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:01:59,958 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:01:59,959 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:01:59,959 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:02:09,214 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:02:09,214 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:02:09,216 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:02:09,216 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:02:25,592 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:02:25,592 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:02:25,593 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:02:25,593 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:02:32,055 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:02:32,055 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:02:32,057 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:02:32,057 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:03:58,971 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:03:58,972 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:03:58,974 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:03:58,974 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:04:09,238 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:04:09,239 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:04:09,240 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:04:09,240 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:04:26,716 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:04:26,716 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:04:26,717 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:04:26,717 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:04:43,778 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:04:43,778 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:04:43,779 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:04:43,779 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:05:16,057 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:05:16,058 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:05:16,059 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:05:16,059 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:05:30,810 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:05:30,811 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:05:30,812 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:05:30,812 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:05:34,034 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:05:34,035 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:05:34,036 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:05:34,036 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:05:36,074 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:05:36,075 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:05:36,076 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:05:36,076 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:06:30,100 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:06:30,100 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:06:30,103 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:06:30,103 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:06:53,125 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:06:53,126 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:06:53,127 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:06:53,127 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:06:55,732 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:06:55,733 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:06:55,734 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:06:55,734 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:06:58,782 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:06:58,782 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:06:58,783 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:06:58,783 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:07:05,412 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:07:05,413 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:07:05,414 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:07:05,414 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:07:11,202 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:07:11,202 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:07:11,203 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:07:11,203 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:08:11,104 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:08:11,105 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:08:11,108 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:08:11,108 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:08:14,847 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:08:14,848 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:08:14,849 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:08:14,849 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:08:19,651 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:08:19,651 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:08:19,652 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:08:19,652 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:08:24,787 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:08:24,787 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:08:24,788 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:08:24,788 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:09:52,033 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:09:52,033 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:09:52,034 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:09:52,034 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:10:08,420 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:08,420 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:10:08,421 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:08,421 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:10:09,468 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:09,468 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:10:09,470 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:09,470 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:10:11,984 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:11,985 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:10:11,985 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:11,986 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:10:25,293 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:25,293 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:10:25,294 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:25,294 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:10:31,759 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:31,760 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:10:31,761 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:31,761 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:10:35,686 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:35,687 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:10:35,688 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:10:35,688 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:11:15,721 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:11:15,722 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:11:15,722 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:11:15,723 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:11:16,763 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:11:16,763 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:11:16,765 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:11:16,765 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:11:21,451 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:11:21,451 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:11:21,452 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:11:21,452 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:13:23,185 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:13:23,185 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:13:23,186 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:13:23,187 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:13:36,457 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:13:36,457 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:13:36,458 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:13:36,458 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:16:15,694 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:16:15,694 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:16:15,695 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:16:15,695 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:16:39,642 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:16:39,642 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:16:39,643 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:16:39,643 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:16:44,571 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:16:44,572 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:16:44,572 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:16:44,572 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:16:56,198 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:16:56,198 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:16:56,199 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:16:56,199 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:17:22,225 [Worker-0: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 16:17:22,225 [Worker-0: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 16:20:27,246 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:20:27,246 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:20:27,248 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:20:27,248 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:20:28,280 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:20:28,281 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:20:28,282 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:20:28,282 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:21:41,748 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:21:41,749 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:21:41,749 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:21:41,749 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:21:42,780 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:21:42,781 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:21:42,782 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:21:42,782 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:22:05,587 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:22:05,587 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:22:05,588 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:22:05,588 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:22:09,579 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 16:22:09,579 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 16:23:05,700 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:23:05,701 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:23:05,702 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:23:05,702 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:23:06,748 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:23:06,749 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:23:06,750 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:23:06,750 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:23:16,652 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:23:16,652 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:23:16,653 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:23:16,653 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:23:27,330 [Worker-27: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 16:23:27,330 [Worker-27: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 16:24:15,745 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:15,746 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:24:15,746 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:15,746 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:24:16,776 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:16,777 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:24:16,778 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:16,778 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:24:35,449 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:35,450 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:24:35,451 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:35,451 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:24:44,906 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:44,906 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:24:44,907 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:44,907 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:24:53,731 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:53,732 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:24:53,733 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:53,733 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:24:56,297 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:56,297 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:24:56,298 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:24:56,298 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:25:00,756 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:25:00,756 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:25:00,757 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:25:00,757 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:25:41,759 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:25:41,759 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:25:41,760 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:25:41,760 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:25:47,436 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:25:47,437 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:25:47,437 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:25:47,437 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:26:01,517 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:26:01,517 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:26:01,519 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:26:01,519 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:26:12,228 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:26:12,229 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:26:12,230 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:26:12,230 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:26:40,264 [Worker-39: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 16:26:40,264 [Worker-39: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 16:28:48,264 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:28:48,264 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:28:48,265 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:28:48,265 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:29:08,436 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:29:08,436 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:29:08,437 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:29:08,437 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:29:30,397 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:29:30,398 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:29:30,399 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:29:30,399 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:29:31,433 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:29:31,434 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:29:31,435 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:29:31,435 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:29:43,627 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:29:43,628 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:29:43,628 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:29:43,628 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:29:47,262 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 16:29:47,263 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 16:31:32,917 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:31:32,918 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:31:32,918 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:31:32,919 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:33:57,493 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:33:57,493 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:33:57,494 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:33:57,494 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:34:20,801 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:34:20,801 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:34:20,802 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:34:20,802 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:35:46,760 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:35:46,761 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:35:46,762 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:35:46,762 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:35:47,780 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:35:47,781 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:35:47,784 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:35:47,784 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:35:57,103 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:35:57,103 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:35:57,104 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:35:57,104 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:36:08,729 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:36:08,730 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:36:08,730 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:36:08,730 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:37:59,996 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:37:59,997 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:37:59,997 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:37:59,997 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:38:39,495 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:38:39,495 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:38:39,496 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:38:39,496 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:38:40,527 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:38:40,528 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:38:40,529 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:38:40,529 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:39:04,132 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:39:04,133 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:39:04,134 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:39:04,134 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:39:05,176 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:39:05,176 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:39:05,178 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:39:05,178 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:40:02,881 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 16:40:02,882 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 16:41:01,657 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:41:01,658 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:41:01,658 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:41:01,658 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:41:10,830 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:41:10,831 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:41:10,831 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:41:10,831 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:41:38,160 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:41:38,160 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:41:38,161 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:41:38,161 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:42:32,805 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:42:32,805 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:42:32,806 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:42:32,806 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:43:39,446 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:43:39,446 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:43:39,447 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:43:39,447 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:43:40,488 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:43:40,489 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:43:40,490 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:43:40,490 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:43:42,352 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:43:42,352 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:43:42,353 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:43:42,353 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:43:49,081 [Worker-44: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 16:43:49,082 [Worker-44: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 16:46:11,242 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:46:11,243 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:46:11,244 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:46:11,244 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:46:16,092 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 16:46:16,092 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 16:47:11,673 [Worker-46: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 16:47:11,673 [Worker-46: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 16:49:09,172 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:49:09,172 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:49:09,173 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:49:09,173 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:49:11,808 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:49:11,809 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:49:11,810 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:49:11,810 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:49:12,848 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:49:12,848 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:49:12,850 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:49:12,850 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:49:16,215 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 16:49:16,215 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 16:51:48,938 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:51:48,938 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:51:48,939 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:51:48,939 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:52:04,820 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:52:04,820 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:52:04,821 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:52:04,821 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:52:16,196 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:52:16,196 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:52:16,198 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:52:16,198 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:52:52,599 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:52:52,599 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:52:52,600 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:52:52,600 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:55:40,975 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:55:40,975 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:55:40,976 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:55:40,976 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:55:57,104 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:55:57,104 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:55:57,106 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:55:57,107 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:56:03,367 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:56:03,368 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:56:03,368 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:56:03,368 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:56:04,397 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:56:04,398 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:56:04,398 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:56:04,398 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:56:39,819 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:56:39,820 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:56:39,820 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:56:39,820 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:56:40,842 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:56:40,842 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:56:40,843 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:56:40,843 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:57:01,684 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:57:01,685 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:57:01,685 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:57:01,685 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:58:13,383 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:58:13,383 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:58:13,384 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:58:13,384 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:58:14,419 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:58:14,419 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:58:14,421 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:58:14,421 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:58:34,798 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:58:34,798 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 16:58:34,799 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 16:58:34,799 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 16:58:39,698 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 16:58:39,698 [Worker-38: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 17:00:30,412 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:00:30,413 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 17:00:30,413 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:00:30,413 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 17:01:41,425 [Worker-44: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 17:01:41,425 [Worker-44: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 17:03:51,506 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:03:51,507 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 17:03:51,508 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:03:51,508 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 17:03:56,965 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:03:56,966 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 17:03:56,966 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:03:56,966 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 17:04:56,825 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:04:56,825 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 17:04:56,826 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:04:56,826 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 17:04:57,847 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:04:57,847 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 17:04:57,848 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:04:57,848 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 17:05:01,070 [Worker-47: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank":
+2023-05-15 17:05:01,070 [Worker-47: Launching DailyBank-exe] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean javafx:run
+2023-05-15 17:06:37,787 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:06:37,788 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 17:06:37,788 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:06:37,788 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 17:07:07,163 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:07:07,164 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 17:07:07,164 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:07:07,164 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 17:07:25,422 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:07:25,423 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-15 17:07:25,423 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:07:25,423 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 17:07:35,079 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:07:35,079 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-05-15 17:07:35,080 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:07:35,080 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources
+2023-05-15 17:07:46,553 [Worker-49: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-05-15 17:07:46,687 [Worker-49: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: sae-s2.01-2023:DailyBank:1.0 @ /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/pom.xml.
+2023-05-15 17:07:46,739 [Worker-49: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/main/java
+2023-05-15 17:07:46,739 [Worker-49: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DailyBank/src/main/resources
+2023-05-15 17:07:46,739 [Worker-49: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DailyBank/src/test/java
+2023-05-15 17:07:46,817 [Worker-49: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2023-05-15 17:07:47,014 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:07:47,014 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2023-05-15 17:07:47,021 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-15 17:07:47,021 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bastien/Documents/GitHub/sae2023-bank-1b01/VERSION 1/WorkSapceDailyBankV1/DailyBank/src/test/resources

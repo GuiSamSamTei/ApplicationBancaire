@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.CategorieOperation;
+import application.tools.ConstantesIHM;
 import application.tools.PairsOfValue;
 import application.tools.StageManagement;
 import application.view.OperationsManagementController;
@@ -29,18 +30,17 @@ public class OperationsManagement {
 	private OperationsManagementController omcViewController;
 	private Client clientDuCompte;
 	private CompteCourant compteConcerne;
-	
+
 	/**
 	 * Création des scenes javafx de la gestion d'opération
 	 * 
-	 *  @param _parentStage        : Le stage parent
-	 *  @param _dbstate        : L'application DailyBankState
-	 * 	@param client        : Le client séléctionné
-	 *  @param compte        : Le compte du client séléctionné
+	 * @param _parentStage : Le stage parent
+	 * @param _dbstate     : L'application DailyBankState
+	 * @param client       : Le client séléctionné
+	 * @param compte       : Le compte du client séléctionné
 	 *
 	 * @throws Exception e
 	 */
-
 	public OperationsManagement(Stage _parentStage, DailyBankState _dbstate, Client client, CompteCourant compte) {
 
 		this.clientDuCompte = client;
@@ -64,12 +64,12 @@ public class OperationsManagement {
 
 			this.omcViewController = loader.getController();
 			this.omcViewController.initContext(this.primaryStage, this, _dbstate, client, this.compteConcerne);
-			
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+
 	/**
 	 * permet d'acceder au dialog de OperationManagementController
 	 *
@@ -77,12 +77,13 @@ public class OperationsManagement {
 	public void doOperationsManagementDialog() {
 		this.omcViewController.displayDialog();
 	}
+
 	/**
 	 * Enregistre un débit
 	 *
 	 *
 	 * @return L'opération demandée
-	 * @throws ApplicationException        Erreur d'accès aux données (requête mal
+	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
@@ -109,12 +110,13 @@ public class OperationsManagement {
 		}
 		return op;
 	}
+
 	/**
 	 * Enregistre un crédit
 	 *
 	 *
 	 * @return L'opération demandée
-	 * @throws ApplicationException        Erreur d'accès aux données (requête mal
+	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
@@ -140,12 +142,13 @@ public class OperationsManagement {
 		}
 		return op;
 	}
+
 	/**
 	 * Rajoute à l'arrayList les opération effectuées
 	 *
 	 *
-	 * @return new PairsOfValue 
-	 * @throws ApplicationException        Erreur d'accès aux données (requête mal
+	 * @return new PairsOfValue
+	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
@@ -174,6 +177,29 @@ public class OperationsManagement {
 		System.out.println(this.compteConcerne.solde);
 		return new PairsOfValue<>(this.compteConcerne, listeOP);
 	}
+
+	public Operation enregistrerVirement() {
+		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
+		Operation op = oep.doOperationEditorDialog(this.compteConcerne, CategorieOperation.VIREMENT);
+
+		if (op != null) {
+			try {
+
+				Access_BD_Operation ao = new Access_BD_Operation();
+				ao.insertDebit(this.compteConcerne.idNumCompte, op.montant, ConstantesIHM.TYPE_OP_7);
+				ao.insertCredit(op.idNumCompte, op.montant, ConstantesIHM.TYPE_OP_7);
+
+			} catch (DatabaseConnexionException e) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+				ed.doExceptionDialog();
+				this.primaryStage.close();
+				op = null;
+			} catch (ApplicationException ae) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+				ed.doExceptionDialog();
+				op = null;
+			}
+		}
+		return op;
+	}
 }
-
-

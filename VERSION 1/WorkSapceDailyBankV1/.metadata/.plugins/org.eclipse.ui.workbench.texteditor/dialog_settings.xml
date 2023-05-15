@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Acces"/>
+		<item key="selection" value="init"/>
 		<list key="findhistory">
+			<item value="init"/>
+			<item value="operationResultat"/>
+			<item value="compteDestResultat"/>
+			<item value="displayDi"/>
+			<item value="doA"/>
 			<item value="Acces"/>
 			<item value="&#x09;&#x09;&lt;dependency&gt;"/>
 			<item value="stageNormal"/>
@@ -15,8 +20,9 @@
 			<item value="Deux"/>
 		</list>
 		<list key="replacehistory">
-			<item value="stageJeu"/>
 			<item value=""/>
+			<item value="compteDestResultat"/>
+			<item value="stageJeu"/>
 			<item value="jeuMemory"/>
 			<item value="Trois"/>
 		</list>
