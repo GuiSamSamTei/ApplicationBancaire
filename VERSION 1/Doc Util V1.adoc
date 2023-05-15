@@ -19,41 +19,41 @@ image:1.jpg[]
 
 image:2.jpg[]
 
-Bienvenue sur votre compte DailyBank!
+== Bienvenue sur votre compte DailyBank!
 
-Vous pouvez désormais cliquer sur la section "Utilisateur".
+== Vous pouvez désormais cliquer sur la section "Utilisateur".
 
 image:3.jpg[]
 
-Ce bouton permet de se connecter ou de se deconnecter.
+== Ce bouton permet de se connecter ou de se deconnecter.
 
 image:4.jpg[]
 
-Vous pouvez également appuyer sur le boutton "Gestion".
+== Vous pouvez également appuyer sur le boutton "Gestion".
 
 image:5.jpg[]
 
-Ce bouton permet de voir les comptes des employés ou des clients.
+== Ce bouton permet de voir les comptes des employés ou des clients.
 
 image:gestion.PNG[]
 
-Vous pouvez aussi selectionner le boutton "?".
+== Vous pouvez aussi selectionner le boutton "?".
 
 image:6.jpg[]
 
-celui ci permet d'obtenir une aide.
+== Celui ci permet d'obtenir une aide.
 
 image:aide.PNG[]
 
-Cliquons sur Gestion pour acceder aux comptes!
+== Cliquons sur Gestion pour acceder aux comptes!
 
 image:7.jpg[]
 
-Nous arrivons sur une autre page, celle ci est l'accueil de gestion de comptes. Cliquons sur rechercher.
+== Nous arrivons sur une autre page, celle ci est l'accueil de gestion de comptes. Cliquons sur rechercher.
 
 image:8.jpg[]
 
-Tous les utilisateurs apparaissent, choisissons un compte aléatoirement.
+== Tous les utilisateurs apparaissent, choisissons un compte aléatoirement.
 
 image:9.jpg[]
 
