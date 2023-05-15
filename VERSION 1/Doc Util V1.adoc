@@ -35,7 +35,7 @@ image:5.jpg[]
 
 Ce bouton permet de voir les comptes des employés ou des clients.
 
-image:gestion.jpg[]
+image:gestion.png[]
 
 == III. Fonctionnement
 
