@@ -32,24 +32,24 @@ Un chef d'agence a les mêmes fonctionnalités qu'un guichetier mais il peut aus
 
 == IV. Description fonctionnelle des besoins
 
-Fonction : Créditer / Débiter un compte::
-    Objectif : Permettre d'effectuer des débits et des dépôts sur un compte +
+Fonction : Générer un relevé mensuel d'un compte en PDF::
+    Objectif : Permettre d'effectuer un relevé de compte (en PDF) avec les opérations effectuées dans le mois +
     Description : Cette action est réalisable par un guichetier
 
-Fonction : Créer un compte::
-    Objectif : Permettre d'ajoouter un compte à un utilisateur +
+Fonction : Gérer les prélèvements automatiques::
+    Objectif : Permettre d'effectuer le CRUD sur des virements automatiques +
     Description : Cette action est réalisable par un guichetier
 
-Fonction : Effectuer un virement de compte à compte::
-    Objectif : Permettre de faire un virement d'un compte vers un autre +
-    Description : Cette action est réalisable par un guichetier
+Fonction : Effectuer un Débit exceptionnel::
+    Objectif : Permettre de faire un débit exceptionnelle sur un compte +
+    Description : Cette action est réalisable par un chef d'agence
 
-Fonction : Clôturer un compte::
-    Objectif : Permettre de fermer un compte existant +
-    Description : Cette action est réalisable par un guichetier
+Fonction : Simuler un emprunt::
+    Objectif : Permettre de faire une simulation d'emprunt +
+    Description : Cette action est réalisable par un chef d'agence
 
-Fonction : Gérer les employés::
-    Objectif : Permettre de faire le CRUD sur tous types d'employés +
+Fonction : Simuler une assurance d'emprunt::
+    Objectif : Permettre de simuler une assurance d'emprunt +
     Description : Cette action est réalisable par un chef d'agence
 
 
