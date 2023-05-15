@@ -59,7 +59,7 @@ Nous arrivons sur une autre page, celle ci est l'accueil de gestion de comptes. 
 
 image:8.jpg[]
 
-== 8)Comptes d'un utilisateur
+== 8) Comptes d'un utilisateur
 Tous les utilisateurs apparaissent, choisissons un compte aléatoirement.
 
 image:9.jpg[]
