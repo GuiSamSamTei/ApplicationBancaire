@@ -66,3 +66,6 @@ Les contraintes organisationnelles sont::
     - La version doit être livrée le 17 mai +
     - La répartition des rôles de l'équipe +
     - Gestion du git
+
+Les différents livrables attendus sont::
+    - Un fichier .jar 
