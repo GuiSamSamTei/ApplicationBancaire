@@ -29,6 +29,13 @@ Ce bouton permet de se connecter ou de se deconnecter.
 
 image:4.jpg[]
 
+Vous pouvez également appuyer sur le boutton Gestion.
+
+image:5.jpg[]
+
+Ce bouton permet de voir les comptes des employés ou des clients.
+
+image:6.jpg[]
 
 == III. Fonctionnement
 
