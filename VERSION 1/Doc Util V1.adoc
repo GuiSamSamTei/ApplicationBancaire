@@ -83,14 +83,21 @@ image:operation.PNG[]
 
 image:13.jpg[]
 
-image:14.jpg[]
+
 
 == 11) Clôturer un compte
 En cliquant sur le bouton "clôturer un compte", un pop-up apparaitra pour s'assurer de votre décision de clôturer le compte.
 
-image:15.jpg[]
+image:14.jpg[]
+
 
 image:cloturer.PNG[]
+
+== 12) Nouveau Compte utilisateur
+Voici comment ouvrir un nouveau compte à un utilisateur.
+
+image:15.jpg[]
+
 
 image:16.jpg[]
 
