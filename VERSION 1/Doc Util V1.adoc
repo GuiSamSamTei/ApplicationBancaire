@@ -21,7 +21,7 @@ image:2.jpg[]
 
 Bienvenue sur votre compte DailyBank!
 
-Vous pouvez désormais cliquer sur la section Utilisateur.
+Vous pouvez désormais cliquer sur la section "Utilisateur".
 
 image:3.jpg[]
 
@@ -29,13 +29,19 @@ Ce bouton permet de se connecter ou de se deconnecter.
 
 image:4.jpg[]
 
-Vous pouvez également appuyer sur le boutton Gestion.
+Vous pouvez également appuyer sur le boutton "Gestion".
 
 image:5.jpg[]
 
 Ce bouton permet de voir les comptes des employés ou des clients.
 
 image:gestion.png[]
+
+Vous pouvez aussi selectionner le boutton "?".
+
+image:aide.png[]
+
+celui ci permet d'obtenir une aide.
 
 == III. Fonctionnement
 
