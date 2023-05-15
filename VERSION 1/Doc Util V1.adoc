@@ -47,11 +47,11 @@ image:aide.PNG[]
 
 Cliquons sur Gestion pour acceder aux comptes!
 
-image:gestion.PNG[]
+image:7.jpg[]
 
 Nous arrivons sur une autre page, celle ci est l'accueil de gestion de comptes.
 
-image:7.jpg[]
+image:8.jpg[]
 
 == III. Fonctionnement
 
