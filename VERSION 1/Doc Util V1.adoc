@@ -76,6 +76,11 @@ image:11.jpg[]
 
 image:12.jpg[]
 
+Nous pouvons maintenant faire un crédit ou un débit, essayons avec un débit.
+
+image:13.jpg[]
+
+image:14.jpg[]
 
 == III. Fonctionnement
 
