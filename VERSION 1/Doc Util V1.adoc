@@ -35,11 +35,11 @@ image:5.jpg[]
 
 Ce bouton permet de voir les comptes des employés ou des clients.
 
-image:gestion.png[]
+image:gestion.PNG[]
 
 Vous pouvez aussi selectionner le boutton "?".
 
-image:aide.png[]
+image:aide.PNG[]
 
 celui ci permet d'obtenir une aide.
 
