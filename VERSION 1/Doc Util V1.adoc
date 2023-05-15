@@ -21,7 +21,14 @@ image:2.jpg[]
 
 Bienvenue sur votre compte DailyBank!
 
+Vous pouvez désormais cliquer sur la section Utilisateur.
+
 image:3.jpg[]
+
+Ce bouton permet de se connecter ou de se deconnecter.
+
+image:4.jpg[]
+
 
 == III. Fonctionnement
 
