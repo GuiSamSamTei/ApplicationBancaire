@@ -19,6 +19,6 @@ Baelen Julie -> Créditer, débiter + CRUD + Documentation utilisateur.
 
 == III. Description des fonctionnalités
 
-Crédité/ débité, par Julie Baelen
+== 1) Crédité/ débité, par Julie Baelen
 
 Premierement, je me suis essentiellement inspirée des fonctions "débiter", en changeant bien sur les noms des variables et leurs actions. De plus, j'ai ajouté dans la base de données la fonction créditer, qui fonctionne comme débiter mais sans découvert autorisé et en additionant. J'ai donc créé une dependance sous oracle du nom de "créditer".
