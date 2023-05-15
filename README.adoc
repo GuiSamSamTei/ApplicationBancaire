@@ -11,13 +11,13 @@ L'équipe est constituée de trois personnes::
 [%header,cols=7*]
 |===
 |Version  |Rôle           |Use Case           |Cas                    |BAELEN Julie       |SAMPAIO Guilherme  |RECORD Bastien
-|1        |Chef d’Agence  |CRUD employé       |C                      |                   |                   |
-|1        |Chef d’Agence  |CRUD employé       |R                      |                   |                   |
-|1        |Chef d’Agence  |CRUD employé       |U                      |                   |                   |
-|1        |Chef d’Agence  |CRUD employé       |D                      |                   |                   |
+|1        |Chef d’Agence  |CRUD employé       |C                      |                   |D                  |
+|1        |Chef d’Agence  |CRUD employé       |R                      |                   |D                  |
+|1        |Chef d’Agence  |CRUD employé       |U                      |                   |D                  |
+|1        |Chef d’Agence  |CRUD employé       |D                      |                   |D                  |
 |1        |Guichetier     | Compte            |Créer                  |                   |F                  |
 |1        |Guichetier     | Compte            |Créditer/Débiter       |F                  |                   |
-|1        |Guichetier     | Compte            |Effectuer un virement  |                   |                   |D
+|1        |Guichetier     | Compte            |Effectuer un virement  |                   |                   |F
 |1        |Guichetier     | Compte            |Clôturer               |                   |                   |F
 
 |2        |Chef d’Agence  | Compte            | Débit exceptionnel    || | 
@@ -43,7 +43,7 @@ L'équipe est constituée de trois personnes::
 | Sem.19    |CDC V1             |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/CDCU%20V1.adoc[CDCU Version 1] | Page de garde : manque nom du projet/client, de l'équipe. Contexte et objectifs à revoir trop succinct, relisez le document donné en introduction du projet. Existant à revoir : fichiers remis, architecture de l'appli, UC V0 commenté ... Il faut prioriser les fonctions V1 et donner leurs règles de gestion. Il faut présenter utilisateurs et rôles. Détailler les contraintes, donner les livrables attendus.  
 |           |Gantt V1 Prévu     |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Gantt%20V1.pdf[Gantt Prévu V1] | A revoir, il manque affectation des tâches , tâches récap, jalons.
 |16/05      |CDC V2             |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%202/CDCU%20V2.adoc[CDCU Version 2] |
-|           |Gantt V1 Réalisé   |                   |
+|           |Gantt V1 Réalisé   |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Gantt%20Réalisé%20V1.pdf[Gantt V1 Réalisé] |
 |           |Gantt V2 Prévu     |                   | 
 |           |Doc User V1        |                   |
 
