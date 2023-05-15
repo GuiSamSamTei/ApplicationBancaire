@@ -98,8 +98,14 @@ Voici comment ouvrir un nouveau compte à un utilisateur.
 
 image:15.jpg[]
 
-
 image:16.jpg[]
+
+== 13) Modifier un compte
+Pour finir, vous avez la possibilité de modifier un compte.
+
+image:17.jpg[]
+
+image:18.jpg[]
 
 == III. Fonctionnement
 
