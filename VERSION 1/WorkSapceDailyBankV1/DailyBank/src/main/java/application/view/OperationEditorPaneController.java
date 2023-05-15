@@ -1,3 +1,6 @@
+// Créditer/Débiter : Julie BAELEN
+// Virement compte à compte : Bastien RECORD
+
 package application.view;
 
 import java.util.ArrayList;
@@ -39,8 +42,10 @@ public class OperationEditorPaneController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
-	 * @param _dbstate IN : Etat courant de l'application
+	 * 
+	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
+	 *                         fichier xml contrôlé par this
+	 * @param _dbstate         IN : Etat courant de l'application
 	 */
 	public void initContext(Stage _containingStage, DailyBankState _dbstate) {
 		this.primaryStage = _containingStage;
@@ -57,8 +62,12 @@ public class OperationEditorPaneController {
 
 	/**
 	 * Affichage de la fenêtre
+	 * 
+	 * @author Julie BAELEN et Bastien RECORD
+	 * 
 	 * @param cpte IN : Compte à éditer
 	 * @param mode IN : Mode de l'opération
+	 * 
 	 * @return IN : Opération résultat
 	 */
 	public Operation displayDialog(CompteCourant cpte, CategorieOperation mode) {
@@ -142,6 +151,7 @@ public class OperationEditorPaneController {
 
 	/**
 	 * Fermeture de la fenêtre
+	 * 
 	 * @param e IN : Evènement de validation
 	 * @return IN : Opération résultat
 	 */
@@ -177,6 +187,8 @@ public class OperationEditorPaneController {
 
 	/**
 	 * Action sur le bouton OK
+	 * 
+	 * @author Julie BAELEN et Bastien RECORD
 	 */
 	@FXML
 	private void doAjouter() {

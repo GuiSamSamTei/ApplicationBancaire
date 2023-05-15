@@ -1,3 +1,6 @@
+// Créditer/Débiter : Julie BAELEN
+// Virement compte à compte : Bastien RECORD
+
 package application.view;
 
 import java.util.ArrayList;
@@ -37,11 +40,14 @@ public class OperationsManagementController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
-	 * @param _om IN : Contrôleur de Dialogue associé à OperationsManagementController
-	 * @param _dbstate IN : Etat courant de l'application
-	 * @param client IN : Client du compte
-	 * @param compte IN : Compte concerné
+	 * 
+	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
+	 *                         fichier xml contrôlé par this
+	 * @param _om              IN : Contrôleur de Dialogue associé à
+	 *                         OperationsManagementController
+	 * @param _dbstate         IN : Etat courant de l'application
+	 * @param client           IN : Client du compte
+	 * @param compte           IN : Compte concerné
 	 */
 	public void initContext(Stage _containingStage, OperationsManagement _om, DailyBankState _dbstate, Client client,
 			CompteCourant compte) {
@@ -75,6 +81,7 @@ public class OperationsManagementController {
 
 	/**
 	 * Gestion du stage
+	 * 
 	 * @param e IN : Evènement de fermeture de la fenêtre
 	 * @return null
 	 */
@@ -109,6 +116,8 @@ public class OperationsManagementController {
 
 	/**
 	 * Action sur le bouton "Effectuer un débit"
+	 * 
+	 * @author Julie BAELEN
 	 */
 	@FXML
 	private void doDebit() {
@@ -122,6 +131,8 @@ public class OperationsManagementController {
 
 	/**
 	 * Action sur le bouton "Effectuer un crédit"
+	 * 
+	 * @author Julie BAELEN
 	 */
 	@FXML
 	private void doCredit() {
@@ -132,7 +143,11 @@ public class OperationsManagementController {
 		}
 	}
 
-	
+	/**
+	 * Action sur le bouton "Virement"
+	 * 
+	 * @author Bastien RECORD
+	 */
 	@FXML
 	private void doAutre() {
 		Operation op = this.omDialogController.enregistrerVirement();
@@ -141,9 +156,11 @@ public class OperationsManagementController {
 			this.validateComponentState();
 		}
 	}
-	
+
 	/**
 	 * Validation de l'état des composants
+	 * 
+	 * @author Bastien RECORD
 	 */
 	private void validateComponentState() {
 		if (this.compteConcerne.estCloture == null || this.compteConcerne.estCloture.equals("O")) {

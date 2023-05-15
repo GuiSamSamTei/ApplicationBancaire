@@ -37,8 +37,6 @@ public class ComptesManagement {
 	 * 
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
-	 * 
-	 * @return void
 	 */
 	public ComptesManagement(Stage _parentStage, DailyBankState _dbstate, Client client) {
 
@@ -69,8 +67,6 @@ public class ComptesManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des comptes
-	 * 
-	 * @return void
 	 */
 	public void doComptesManagementDialog() {
 		this.cmcViewController.displayDialog();
@@ -80,8 +76,6 @@ public class ComptesManagement {
 	 * Affiche la fenêtre de gestion des comptes
 	 * 
 	 * @param cpt IN : Compte à gérer
-	 * 
-	 * @return void
 	 */
 	public void gererOperationsDUnCompte(CompteCourant cpt) {
 		OperationsManagement om = new OperationsManagement(this.primaryStage, this.dailyBankState,
@@ -92,9 +86,11 @@ public class ComptesManagement {
 	/**
 	 * Affiche la fenêtre de gestion des comptes
 	 * 
+	 * @author Guilherme SAMPAIO
+	 * 
 	 * @param cpt IN : Compte à gérer
 	 * 
-	 * @return void
+	 * @return le nouveau compte
 	 */
 	public CompteCourant creerNouveauCompte() {
 		CompteCourant compte;
@@ -119,9 +115,7 @@ public class ComptesManagement {
 	/**
 	 * Affiche la fenêtre de gestion des comptes
 	 * 
-	 * @param cpt IN : Compte à gérer
-	 * 
-	 * @return void
+	 * @return une liste de comptes d'un client
 	 */
 	public ArrayList<CompteCourant> getComptesDunClient() {
 		ArrayList<CompteCourant> listeCpt = new ArrayList<>();
@@ -146,9 +140,8 @@ public class ComptesManagement {
 	 * Affiche la fenêtre de gestion des comptes
 	 * 
 	 * @author Bastien RECORD
-	 * @param cpt IN : Compte à gérer
 	 * 
-	 * @return void
+	 * @param cpt IN : Compte à gérer
 	 */
 	public void cloturerCompte(CompteCourant cpt) {
 		try {

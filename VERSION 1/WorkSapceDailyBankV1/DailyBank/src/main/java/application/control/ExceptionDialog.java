@@ -22,8 +22,6 @@ public class ExceptionDialog {
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 * @param ae           IN : Exception à afficher
-	 * 
-	 * @return void
 	 */
 	public ExceptionDialog(Stage _parentStage, DailyBankState _dbstate, ApplicationException ae) {
 
@@ -52,8 +50,6 @@ public class ExceptionDialog {
 
 	/**
 	 * Affiche la fenêtre de gestion des clients
-	 * 
-	 * @return void
 	 */
 	public void doExceptionDialog() {
 		this.edcViewController.displayDialog();

@@ -23,8 +23,6 @@ public class CompteEditorPane {
 	 * 
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
-	 * 
-	 * @return void
 	 */
 	public CompteEditorPane(Stage _parentStage, DailyBankState _dbstate) {
 
@@ -57,7 +55,7 @@ public class CompteEditorPane {
 	 * @param client IN : Client à gérer
 	 * @param em     IN : Mode d'édition
 	 * 
-	 * @return void
+	 * @return un compte
 	 */
 	public CompteCourant doCompteEditorDialog(Client client, CompteCourant cpte, EditionMode em) {
 		return this.cepcViewController.displayDialog(client, cpte, em);

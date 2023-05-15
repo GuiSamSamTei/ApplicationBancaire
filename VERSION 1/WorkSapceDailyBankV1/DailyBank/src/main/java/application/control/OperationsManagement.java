@@ -1,4 +1,5 @@
 // Débit-Crédit : Julie BAELEN
+// Enregistrer un viremenet de compte à compte : Bastien RECORD
 
 package application.control;
 
@@ -73,7 +74,7 @@ public class OperationsManagement {
 	}
 
 	/**
-	 * permet d'acceder au dialog de OperationManagementController
+	 * Permet d'acceder au dialog de OperationManagementController
 	 *
 	 */
 	public void doOperationsManagementDialog() {
@@ -83,8 +84,7 @@ public class OperationsManagement {
 	/**
 	 * Enregistre un débit
 	 *
-	 *
-	 * @return L'opération demandée
+	 * @return résultat de l'opération demandée
 	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
@@ -115,9 +115,10 @@ public class OperationsManagement {
 
 	/**
 	 * Enregistre un crédit
+	 * 
+	 * @author Julie BAELEN
 	 *
-	 *
-	 * @return L'opération demandée
+	 * @return résultat de l'opération demandée
 	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
@@ -180,6 +181,11 @@ public class OperationsManagement {
 		return new PairsOfValue<>(this.compteConcerne, listeOP);
 	}
 
+	/**
+	 * Permet d'enregistrer un virement
+	 * 
+	 * @return résultat de l'opération demandée
+	 */
 	public Operation enregistrerVirement() {
 		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
 		Operation op = oep.doOperationEditorDialog(this.compteConcerne, CategorieOperation.VIREMENT);

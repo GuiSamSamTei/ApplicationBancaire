@@ -118,6 +118,7 @@ public class CompteEditorPaneController {
 
 	/**
 	 * Gestion du bouton OK
+	 * 
 	 * @param e IN : Evènement de clic sur le bouton
 	 * @return null
 	 */
@@ -128,8 +129,9 @@ public class CompteEditorPaneController {
 	}
 
 	/**
-	 * focus sur le champ txtDecAutorise
-	 * @param txtField IN : Champ qui a le focus
+	 * Focus sur le champ txtDecAutorise
+	 * 
+	 * @param txtField         IN : Champ qui a le focus
 	 * @param oldPropertyValue IN : Ancienne valeur du focus
 	 * @param newPropertyValue IN : Nouvelle valeur du focus
 	 * @return null
@@ -152,8 +154,9 @@ public class CompteEditorPaneController {
 	}
 
 	/**
-	 * focus sur le champ txtSolde
-	 * @param txtField IN : Champ qui a le focus
+	 * Focus sur le champ txtSolde
+	 * 
+	 * @param txtField         IN : Champ qui a le focus
 	 * @param oldPropertyValue IN : Ancienne valeur du focus
 	 * @param newPropertyValue IN : Nouvelle valeur du focus
 	 * @return null
@@ -233,31 +236,37 @@ public class CompteEditorPaneController {
 
 	/**
 	 * Vérification de la validité de la saisie
+	 * 
 	 * @author : Guilherme SAMPAIO
 	 * @return true si la saisie est valide
 	 */
 	private boolean isSaisieValide() {
 
-		if(compteEdite.debitAutorise < 0 && compteEdite.solde < compteEdite.debitAutorise * (-1)){
-			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", "Le découvert autorisé doit être positif et le solde initial doit être supérieur au découvert autorisé", null, AlertType.ERROR);
+		if (compteEdite.debitAutorise < 0 && compteEdite.solde < compteEdite.debitAutorise * (-1)) {
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie",
+					"Le découvert autorisé doit être positif et le solde initial doit être supérieur au découvert autorisé",
+					null, AlertType.ERROR);
 			return false;
 		}
 
-		if(compteEdite.debitAutorise < 0){
-			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", "Le découvert autorisé doit être positif, on le mettra en négatif automatiquement", null, AlertType.ERROR);
+		if (compteEdite.debitAutorise < 0) {
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie",
+					"Le découvert autorisé doit être positif, on le mettra en négatif automatiquement", null,
+					AlertType.ERROR);
 			return false;
 		}
 
-		if(compteEdite.solde < compteEdite.debitAutorise * (-1)){
-			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", "Le solde initial doit être supérieur au découvert autorisé", null, AlertType.ERROR);
+		if (compteEdite.solde < compteEdite.debitAutorise * (-1)) {
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie",
+					"Le solde initial doit être supérieur au découvert autorisé", null, AlertType.ERROR);
 			return false;
 		}
 
-		if(compteEdite.solde < 0){
-			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", "Le solde initial doit être positif", null, AlertType.ERROR);
+		if (compteEdite.solde < 0) {
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", "Le solde initial doit être positif", null,
+					AlertType.ERROR);
 			return false;
 		}
-
 
 		return true;
 	}

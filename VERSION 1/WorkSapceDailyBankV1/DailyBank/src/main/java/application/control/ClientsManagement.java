@@ -58,10 +58,6 @@ public class ClientsManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des clients
-	 * 
-	 * @param void
-	 * 
-	 * @return void
 	 */
 	public void doClientManagementDialog() {
 		this.cmcViewController.displayDialog();
@@ -70,9 +66,7 @@ public class ClientsManagement {
 	/**
 	 * Affiche la fenêtre de gestion des clients
 	 * 
-	 * @param void
-	 * 
-	 * @return void
+	 * @return le client modifié
 	 */
 	public Client modifierClient(Client c) {
 		ClientEditorPane cep = new ClientEditorPane(this.primaryStage, this.dailyBankState);
@@ -98,9 +92,7 @@ public class ClientsManagement {
 	/**
 	 * Affiche la fenêtre de gestion des clients
 	 * 
-	 * @param void
-	 * 
-	 * @return void
+	 * @return le nouveau client
 	 */
 	public Client nouveauClient() {
 		Client client;
@@ -128,9 +120,7 @@ public class ClientsManagement {
 	/**
 	 * Affiche la fenêtre de gestion des comptes d'un client
 	 * 
-	 * @param void
-	 * 
-	 * @return void
+	 * @param c IN : client à gérer
 	 */
 	public void gererComptesClient(Client c) {
 		ComptesManagement cm = new ComptesManagement(this.primaryStage, this.dailyBankState, c);
@@ -140,9 +130,11 @@ public class ClientsManagement {
 	/**
 	 * Affiche la fenêtre de gestion des comptes d'un client
 	 * 
-	 * @param void
+	 * @param _numCompte   IN : numéro de compte
+	 * @param _debutNom    IN : prénom du client
+	 * @param _debutPrenom IN : nom du client
 	 * 
-	 * @return void
+	 * @return une liste de client
 	 */
 	public ArrayList<Client> getlisteComptes(int _numCompte, String _debutNom, String _debutPrenom) {
 		ArrayList<Client> listeCli = new ArrayList<>();

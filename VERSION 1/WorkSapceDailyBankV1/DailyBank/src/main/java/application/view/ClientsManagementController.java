@@ -31,9 +31,12 @@ public class ClientsManagementController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
-	 * @param _cm IN : Contrôleur de Dialogue associé à ClientsManagementController
-	 * @param _dbstate IN : Etat courant de l'application
+	 * 
+	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
+	 *                         fichier xml contrôlé par this
+	 * @param _cm              IN : Contrôleur de Dialogue associé à
+	 *                         ClientsManagementController
+	 * @param _dbstate         IN : Etat courant de l'application
 	 */
 	public void initContext(Stage _containingStage, ClientsManagement _cm, DailyBankState _dbstate) {
 		this.cmDialogController = _cm;
@@ -65,6 +68,7 @@ public class ClientsManagementController {
 
 	/**
 	 * Validation de l'état des composants
+	 * 
 	 * @param e IN : Event
 	 * @return Object : null
 	 */
@@ -161,7 +165,7 @@ public class ClientsManagementController {
 	/**
 	 * Méthode appelée lors de l'appui sur le bouton Modifier Client
 	 * 
-	 */ 
+	 */
 	@FXML
 	private void doModifierClient() {
 
@@ -185,7 +189,6 @@ public class ClientsManagementController {
 
 	/**
 	 * Méthode appelée lors de l'appui sur le bouton Nouveau Client
-	 * 
 	 */
 	@FXML
 	private void doNouveauClient() {
@@ -198,6 +201,8 @@ public class ClientsManagementController {
 
 	/**
 	 * Validation de l'état des composants
+	 * 
+	 * @author Bastien RECORD
 	 */
 	private void validateComponentState() {
 		// Non implémenté => désactivé

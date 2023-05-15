@@ -1,3 +1,6 @@
+// Clôturer compte : Bastien RECORD
+// Nouveau compte : Guilherme SAMPAIO
+
 package application.view;
 
 import java.util.ArrayList;
@@ -130,6 +133,8 @@ public class ComptesManagementController {
 
 	/**
 	 * Actions sur le bouton "Clôturer le compte"
+	 * 
+	 * @author Bastien RECORD
 	 */
 	@FXML
 	private void doCloturerCompte() {
@@ -160,6 +165,8 @@ public class ComptesManagementController {
 
 	/**
 	 * Actions sur le bouton "Nouveau compte"
+	 * 
+	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
 	private void doNouveauCompte() {

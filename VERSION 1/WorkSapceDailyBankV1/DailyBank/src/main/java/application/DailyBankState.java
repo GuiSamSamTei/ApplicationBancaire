@@ -14,14 +14,14 @@ import model.orm.exception.RowNotFoundOrTooManyRowsException;
  * Agence bancaire de l'employé connecté - L'employé connecté est il chef
  * d'agence ou pas
  */
-
 public class DailyBankState {
+
 	private Employe empAct;
 	private AgenceBancaire agAct;
 	private boolean isChefDAgence;
 
 	/**
-	 * Employé connecté.
+	 * Obtenir l'employé connecté.
 	 *
 	 * @return l'employé connecté (ou null si personne connecté)
 	 */
@@ -30,7 +30,7 @@ public class DailyBankState {
 	}
 
 	/**
-	 * Agence bancaire où travaille l'employé connecté.
+	 * Obtenir l'agence bancaire où travaille l'employé connecté.
 	 *
 	 * @return l'agence bancaire (ou null si personne connecté)
 	 */
@@ -39,7 +39,7 @@ public class DailyBankState {
 	}
 
 	/**
-	 * Staut de l'employé connecté
+	 * Obtenir le statut de l'employé connecté.
 	 *
 	 * @return true si chef d'agence, false sinon (ou personne connecté)
 	 */
@@ -79,11 +79,12 @@ public class DailyBankState {
 		}
 	}
 
-	/*
-	 * Permet de modifier le statut de l'employé connecté.
+	/**
+	 * Permet de modifier le statut d'un employé.
 	 *
 	 * @param droitsAccess ConstantesIHM.AGENCE_CHEF ou
-	 * ConstantesIHM.AGENCE_GUICHETIER
+	 *                     ConstantesIHM.AGENCE_GUICHETIER
+	 * @return true si le statut de l'employé a été modifié
 	 */
 	private boolean definirChefDAgence(String droitsAccess) {
 		boolean ca;

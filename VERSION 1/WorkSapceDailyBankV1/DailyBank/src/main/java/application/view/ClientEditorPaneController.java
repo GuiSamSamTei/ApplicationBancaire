@@ -37,29 +37,31 @@ public class ClientEditorPaneController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
-	 * @param _dbstate IN : Etat courant de l'application
+	 * 
+	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
+	 *                         fichier xml contrôlé par this
+	 * @param _dbstate         IN : Etat courant de l'application
 	 */
-
 	public void initContext(Stage _containingStage, DailyBankState _dbstate) {
 		this.primaryStage = _containingStage;
 		this.dailyBankState = _dbstate;
 		this.configure();
 	}
 
-	// 
-
+	/**
+	 * Configuration des actions par défaut voulus
+	 */
 	private void configure() {
 		this.primaryStage.setOnCloseRequest(e -> this.closeWindow(e));
 	}
 
-	
-	/** Manipulation de la fenêtre
+	/**
+	 * Manipulation de la fenêtre
 	 * 
 	 * @param client IN : Client à afficher
-	 * @param mode  IN : Mode d'édition
+	 * @param mode   IN : Mode d'édition
 	 * @return Client : Client résultat
-	 */ 
+	 */
 	public Client displayDialog(Client client, EditionMode mode) {
 
 		this.editionMode = mode;
@@ -145,6 +147,7 @@ public class ClientEditorPaneController {
 
 	/**
 	 * Fermeture de la fenêtre
+	 * 
 	 * @param e IN : événement de fermeture
 	 * @return Object: null
 	 */
