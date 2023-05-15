@@ -68,4 +68,7 @@ Les contraintes organisationnelles sont::
     - Gestion du git
 
 Les différents livrables attendus sont::
-    - Un fichier .jar 
+    - Un fichier `jar` qui sera l'exécutable pour lancer l'application +
+    - Un documentation technique à destination des développeurs pour permettre la maintenance de lapplication +
+    - Une documentation utilisateurs à destinations des différents utisateurs de l'application pour comprendre son fonctionnement +
+    - Un cahier de tests qui recouvrent différents tests du fonctionnement de l'application
