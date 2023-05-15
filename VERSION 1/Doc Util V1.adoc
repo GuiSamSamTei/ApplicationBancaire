@@ -11,7 +11,7 @@ L'application DailyBank permet la gestion de vos comptes en banque. De votre mai
 
 == II. Installation utilisation
 
-== Voici la page d'accueil. Pour commencer à utiliser DailyBank, appuyez sur "Connexion"
+== 1) Voici la page d'accueil. Pour commencer à utiliser DailyBank, appuyez sur "Connexion"
 
 image:1.jpg[]
 
