@@ -1,26 +1,32 @@
-= Cahier des charges Version 2
+= Cahier des charges - DailyBank Version 2
 :toc:
 :toc-title: Sommaire
 
 Date : 16/05/2023 +
-Créé par : Équipe 1B1 +
+Créé par : Équipe 1B1
+Participants : Guilherme SAMPAIO, Julie BAELEN et Bastien RECORD +
 Créé pour : Directeur de la banque DailyBank
 
 == I. Présentation
 === 1. Contexte
 [.text-justify]
-La banque DailyBank souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires et l’application sera déployée dans les 100 agences que compte son réseau.
-
+Pour s’adapter aux exigences d’instantanéité de leurs clients, les banques françaises ont accentué leurs efforts de restructuration et leurs investissements dans le digital. Des chantiers longs et coûteux. Par exemple, la Banque Postale a indiqué que sa banque mobile baptisée Ma French Bank sera disponible dans les bureaux de Poste au printemps 2019. Mais les banques ne se contentent pas de créer des offres alternatives : elles rénovent aussi en profondeur leurs services de banque au quotidien. +
+Au sein des réseaux de banque de détail, cela se traduit par des investissements majeurs dans la modernisation des outils de bureautique des guichetiers, et dans la robotisation des tâches automatisables. Un exercice qui s’accompagne de restructurations et, dans certains cas, d’une refonte du réseau.
 
 === 2. Objectifs
 [.text-justify]
+La banque DailyBank souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires et l’application sera déployée dans les 100 agences que compte son réseau. +
 L’application doit permettre de gérer des comptes bancaires de dépôt pour des clients préalablement créés. Elle devra permettre de débiter, créditer un compte soit par virement c’est à dire un échange d’argent entre deux comptes distincts mais domiciliés dans le réseau bancaire, soit par une personne physique se présentant devant un guichet.
 
 
 
 == III. Analyse de l'existant
 [.text-justify]
-Un application JAVA-Oracle déjà existante possède différentes options comme : modifier les informations d'un clients, créer un nouveau client, consulter un compte, débiter un compte et rendre inactif un client.
+Un application JAVA-Oracle déjà existante possède différentes options. +
+Une application est déjà fournis. Elle est organisée en plusieurs parties. La première partie est la page de connexion à la banque à l'aide de nos identifiants. Après la connexion l'application se sépare en deux partie : la partie de gestions des clients et la partie de gestion des employés. Dans la gestion des clients, il est possible d'ajouter des clients et de gérer leur comptes en y faisant des dépôts ou des retraits, ajouter un nouveau compte et clôturer un compte. Dans la partie gestion des employés, il est possible de consulter les employés, de modifier un employé, d'ajouter un employé et de supprimer un employé. +
+Pour l'utilisation de cette application, il existe deux rôles : les guichetiers et les chefs d'agences. +
+Un guichetier a accès à la gestion des clients et de leurs comptes. Cependant, il ne peut pas rendre innactif un client. +
+Un chef d'agence a les mêmes fonctionnalités qu'un guichetier mais il peut aussi accèder à la gestion des employés et rendre inactif un client.
 
 
 
