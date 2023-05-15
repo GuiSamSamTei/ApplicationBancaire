@@ -144,6 +144,7 @@ public class ComptesManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des comptes
+	 * 
 	 * @author Bastien RECORD
 	 * @param cpt IN : Compte à gérer
 	 * 
@@ -151,8 +152,15 @@ public class ComptesManagement {
 	 */
 	public void cloturerCompte(CompteCourant cpt) {
 		try {
-			Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
-			acc.updateCloturationCompteCourant(cpt);
+			if (cpt.solde == 0) {
+				Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
+				acc.updateCloturationCompteCourant(cpt);
+			} else {
+				AlertUtilities.showAlert(primaryStage, "Erreur lors de la clôturation du compte",
+						"Impossible de clôturer le compte", "Pour clôturer un compte son solde doit être de 0€ !!",
+						AlertType.WARNING);
+			}
+
 		} catch (DatabaseConnexionException e) {
 			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
 			ed.doExceptionDialog();

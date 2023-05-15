@@ -138,7 +138,6 @@ public class ComptesManagementController {
 			if (AlertUtilities.confirmYesCancel(this.primaryStage, "Clôturer le compte",
 					"Etes vous sur de vouloir clôturer ce compte ?", null, AlertType.CONFIRMATION)) {
 				this.cmDialogController.cloturerCompte(this.oListCompteCourant.get(selectedIndice));
-				System.out.println("Compte cloturer");
 			}
 		}
 		this.loadList();
