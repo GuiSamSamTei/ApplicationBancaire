@@ -100,7 +100,7 @@ image:15.jpg[]
 
 image:16.jpg[]
 
-== 13) Modifier un compte
+== 13) Modifier un client
 Pour finir, vous avez la possibilité de modifier un client dans la partie gestion client.
 
 image:17.jpg[]
