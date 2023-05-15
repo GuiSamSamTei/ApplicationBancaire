@@ -17,7 +17,7 @@ L'équipe est constituée de trois personnes::
 |1        |Chef d’Agence  |CRUD employé       |D                      |                   |                   |
 |1        |Guichetier     | Compte            |Créer                  |                   |F                  |
 |1        |Guichetier     | Compte            |Créditer/Débiter       |F                  |                   |
-|1        |Guichetier     | Compte            |Effectuer un virement  |                   |                   |
+|1        |Guichetier     | Compte            |Effectuer un virement  |                   |                   |D
 |1        |Guichetier     | Compte            |Clôturer               |                   |                   |F
 
 |2        |Chef d’Agence  | Compte            | Débit exceptionnel    || | 
