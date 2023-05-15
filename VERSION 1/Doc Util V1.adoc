@@ -15,7 +15,7 @@ Voici la page d'accueil. Pour commencer à utiliser DailyBank, appuyez sur "Conn
 
 image:1.jpg[]
 
-Une fois le boutton appuyé, voici le l'interface qui va apparaitre. Il suffit de rentrer vos informations tels que le Login et le mot de passe
+Une fois le boutton appuyé, voici le l'interface qui va apparaitre. Il suffit de rentrer vos informations tels que le Login et le mot de passe. Puis cliquez sur valider.
 
 image:2.jpg[]
 
