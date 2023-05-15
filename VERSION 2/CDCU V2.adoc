@@ -1,4 +1,4 @@
-= Cahier des charges Version 1
+= Cahier des charges Version 2
 :toc:
 :toc-title: Sommaire
 
@@ -13,7 +13,7 @@ La banque DailyBank souhaite développer une application JAVA-Oracle de gestion 
 
 === 2. Objectifs
 [.text-justify]
-L'objectif est d'ajouter des fonctionnalités à cette première version de l'application.
+L’application doit permettre de gérer des comptes bancaires de dépôt pour des clients préalablement créés. Elle devra permettre de débiter, créditer un compte soit par virement c’est à dire un échange d’argent entre deux comptes distincts mais domiciliés dans le réseau bancaire, soit par une personne physique se présentant devant un guichet.
 
 
 
