@@ -239,6 +239,7 @@ public class Access_BD_CompteCourant {
 			String query = "INSERT INTO CompteCourant(idNumCompte, debitAutorise, solde, idNumCli, estCloture) VALUES ("
 					+ "seq_id_compte.NEXTVAL" + ", " + "?" + ", " + "?" + ", " + "?" + ", " + "?" + ")";
 			PreparedStatement pst = con.prepareStatement(query);
+			compte.debitAutorise *= -1;
 			pst.setInt(1, compte.debitAutorise);
 			pst.setDouble(2, compte.solde);
 			pst.setInt(3, compte.idNumCli);
