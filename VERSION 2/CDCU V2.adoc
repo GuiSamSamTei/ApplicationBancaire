@@ -2,8 +2,9 @@
 :toc:
 :toc-title: Sommaire
 
-Date : 12/05/2023 +
+Date : 16/05/2023 +
 Créé par : Équipe 1B1
+Créé pour : Directeur de la banque DailyBank
 
 == I. Présentation
 === 1. Contexte
