@@ -45,8 +45,6 @@ celui ci permet d'obtenir une aide.
 
 image:aide.PNG[]
 
-----------------------------------------------------------------------------------------------------------------------
-
 Cliquons sur Gestion pour acceder aux comptes!
 
 image:gestion.PNG[]
