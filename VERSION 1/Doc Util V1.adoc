@@ -17,7 +17,7 @@ Voici la page d'accueil. Pour commencer à utiliser DailyBank, appuyez sur "Conn
 image:1.jpg[]
 
 == 2) Connexion
-Une fois le boutton appuyé, voici le l'interface qui va apparaitre. Il suffit de rentrer vos informations tels que le Login et le mot de passe. Puis cliquez sur valider.
+Une fois le bouton appuyé, voici le l'interface qui va apparaitre. Il suffit de rentrer vos informations tels que le Login et le mot de passe. Puis cliquez sur valider.
 
 image:2.jpg[]
 
@@ -32,7 +32,7 @@ Ce bouton permet de se connecter ou de se deconnecter.
 image:4.jpg[]
 
 == 4) Gestion
-Vous pouvez également appuyer sur le boutton "Gestion".
+Vous pouvez également appuyer sur le bouton "Gestion".
 
 image:5.jpg[]
 
@@ -40,8 +40,8 @@ Ce bouton permet de voir les comptes des employés ou des clients.
 
 image:gestion.PNG[]
 
-== 5) Butoon "?"
-Vous pouvez aussi selectionner le boutton "?".
+== 5) Bouton "?"
+Vous pouvez aussi selectionner le bouton "?".
 
 image:6.jpg[]
 
@@ -59,10 +59,15 @@ Nous arrivons sur une autre page, celle ci est l'accueil de gestion de comptes. 
 
 image:8.jpg[]
 
-== 8)zefze
+== 8)Comptes d'un utilisateur
 Tous les utilisateurs apparaissent, choisissons un compte aléatoirement.
 
 image:9.jpg[]
+
+== 9) Opération
+Voici les comptes de l'utilisateur que nous avons selectionné. Nous pouvons voir ses opérations en cliquant sur le bouton "opération".
+
+image:10.jpg[]
 
 == III. Fonctionnement
 
