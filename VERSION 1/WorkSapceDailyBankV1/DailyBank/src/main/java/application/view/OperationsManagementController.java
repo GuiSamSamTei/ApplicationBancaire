@@ -135,24 +135,26 @@ public class OperationsManagementController {
 	
 	@FXML
 	private void doAutre() {
-		
+		Operation op = this.omDialogController.enregistrerVirement();
+		if (op != null) {
+			this.updateInfoCompteClient();
+			this.validateComponentState();
+		}
 	}
-
 	
 	/**
 	 * Validation de l'état des composants
 	 */
 	private void validateComponentState() {
-		if(this.compteConcerne.estCloture == null || this.compteConcerne.estCloture.equals("O")) {
+		if (this.compteConcerne.estCloture == null || this.compteConcerne.estCloture.equals("O")) {
 			this.btnCredit.setDisable(true);
 			this.btnDebit.setDisable(true);
 			this.btnVirement.setDisable(true);
-		}else {
+		} else {
 			this.btnCredit.setDisable(false);
 			this.btnDebit.setDisable(false);
 			this.btnVirement.setDisable(false);
 		}
-		
 	}
 
 	/**

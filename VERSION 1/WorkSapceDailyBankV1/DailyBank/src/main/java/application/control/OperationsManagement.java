@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.CategorieOperation;
+import application.tools.ConstantesIHM;
 import application.tools.PairsOfValue;
 import application.tools.StageManagement;
 import application.view.OperationsManagementController;
@@ -42,7 +43,6 @@ public class OperationsManagement {
 	 *
 	 * @throws Exception e
 	 */
-
 	public OperationsManagement(Stage _parentStage, DailyBankState _dbstate, Client client, CompteCourant compte) {
 
 		this.clientDuCompte = client;
@@ -178,5 +178,30 @@ public class OperationsManagement {
 		}
 		System.out.println(this.compteConcerne.solde);
 		return new PairsOfValue<>(this.compteConcerne, listeOP);
+	}
+
+	public Operation enregistrerVirement() {
+		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
+		Operation op = oep.doOperationEditorDialog(this.compteConcerne, CategorieOperation.VIREMENT);
+
+		if (op != null) {
+			try {
+
+				Access_BD_Operation ao = new Access_BD_Operation();
+				ao.insertDebit(this.compteConcerne.idNumCompte, op.montant, ConstantesIHM.TYPE_OP_7);
+				ao.insertCredit(op.idNumCompte, op.montant, ConstantesIHM.TYPE_OP_7);
+
+			} catch (DatabaseConnexionException e) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+				ed.doExceptionDialog();
+				this.primaryStage.close();
+				op = null;
+			} catch (ApplicationException ae) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+				ed.doExceptionDialog();
+				op = null;
+			}
+		}
+		return op;
 	}
 }

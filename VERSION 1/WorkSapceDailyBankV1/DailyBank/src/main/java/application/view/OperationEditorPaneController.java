@@ -1,5 +1,6 @@
 package application.view;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
 import application.DailyBankState;
@@ -18,6 +19,9 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.CompteCourant;
 import model.data.Operation;
+import model.orm.Access_BD_CompteCourant;
+import model.orm.exception.DataAccessException;
+import model.orm.exception.DatabaseConnexionException;
 
 public class OperationEditorPaneController {
 
@@ -31,6 +35,7 @@ public class OperationEditorPaneController {
 	private CategorieOperation categorieOperation;
 	private CompteCourant compteEdite;
 	private Operation operationResultat;
+	private ArrayList<CompteCourant> listComptesClient;
 
 	/**
 	 * Manipulation de la fenêtre
@@ -93,7 +98,34 @@ public class OperationEditorPaneController {
 			this.cbTypeOpe.setItems(listTypesOpesPossibles1);
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;
-		// break;
+
+		case VIREMENT:
+			String info3 = "Cpt. : " + this.compteEdite.idNumCompte + "  "
+					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
+					+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
+			this.lblMessage.setText(info3);
+
+			this.btnOk.setText("Effectuer Virement");
+			this.btnCancel.setText("Annuler Virement");
+
+			ObservableList<String> listTypesOpesPossibles2 = FXCollections.observableArrayList();
+
+			Access_BD_CompteCourant cptAll = new Access_BD_CompteCourant();
+			try {
+				this.listComptesClient = cptAll.getCompteCourants(this.compteEdite.idNumCli);
+				for (int i = 0; i < this.listComptesClient.size(); i++) {
+					if (this.listComptesClient.get(i).idNumCompte != this.compteEdite.idNumCompte
+							&& !this.listComptesClient.get(i).estCloture.equals("O")) {
+						listTypesOpesPossibles2.add(this.listComptesClient.get(i).toString());
+					}
+				}
+			} catch (DataAccessException | DatabaseConnexionException e) {
+				e.printStackTrace();
+			}
+
+			this.cbTypeOpe.setItems(listTypesOpesPossibles2);
+			this.cbTypeOpe.getSelectionModel().select(0);
+			break;
 		}
 
 		// Paramétrages spécifiques pour les chefs d'agences
@@ -189,6 +221,7 @@ public class OperationEditorPaneController {
 			this.operationResultat = new Operation(-1, montant, null, null, this.compteEdite.idNumCli, typeOp);
 			this.primaryStage.close();
 			break;
+
 		case CREDIT:
 			// ce genre d'operation n'est pas encore géré
 			this.txtMontant.getStyleClass().remove("borderred");
@@ -209,9 +242,52 @@ public class OperationEditorPaneController {
 				this.txtMontant.requestFocus();
 				return;
 			}
-			
+
 			String typeOp2 = this.cbTypeOpe.getValue();
 			this.operationResultat = new Operation(-1, montant, null, null, this.compteEdite.idNumCli, typeOp2);
+			this.primaryStage.close();
+			break;
+
+		case VIREMENT:
+			this.txtMontant.getStyleClass().remove("borderred");
+			this.lblMontant.getStyleClass().remove("borderred");
+			this.lblMessage.getStyleClass().remove("borderred");
+			String info3 = "Cpt. : " + this.compteEdite.idNumCompte + "  "
+					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
+					+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
+			this.lblMessage.setText(info3);
+
+			try {
+				montant = Double.parseDouble(this.txtMontant.getText().trim());
+				if (montant <= 0)
+					throw new NumberFormatException();
+			} catch (NumberFormatException nfe) {
+				this.txtMontant.getStyleClass().add("borderred");
+				this.lblMontant.getStyleClass().add("borderred");
+				this.txtMontant.requestFocus();
+				return;
+			}
+			if (this.compteEdite.solde - montant < this.compteEdite.debitAutorise) {
+				info = "Dépassement du découvert ! - Cpt. : " + this.compteEdite.idNumCompte + "  "
+						+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
+						+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
+				this.lblMessage.setText(info);
+				this.txtMontant.getStyleClass().add("borderred");
+				this.lblMontant.getStyleClass().add("borderred");
+				this.lblMessage.getStyleClass().add("borderred");
+				this.txtMontant.requestFocus();
+				return;
+			}
+			CompteCourant compte = null;
+			for (int i = 0; i < this.listComptesClient.size(); i++) {
+				if (this.listComptesClient.get(i).toString()
+						.equals(this.cbTypeOpe.getSelectionModel().getSelectedItem())) {
+					compte = this.listComptesClient.get(i);
+				}
+			}
+
+			String typeOp3 = this.cbTypeOpe.getValue();
+			this.operationResultat = new Operation(-1, montant, null, null, compte.idNumCompte, typeOp3);
 			this.primaryStage.close();
 			break;
 		}
