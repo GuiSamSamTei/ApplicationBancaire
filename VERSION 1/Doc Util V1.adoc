@@ -45,5 +45,15 @@ celui ci permet d'obtenir une aide.
 
 image:aide.PNG[]
 
+----------------------------------------------------------------------------------------------------------------------
+
+Cliquons sur Gestion pour acceder aux comptes!
+
+image:gestion.PNG[]
+
+Nous arrivons sur une autre page, celle ci est l'accueil de gestion de comptes.
+
+image:7.jpg[]
+
 == III. Fonctionnement
 
