@@ -36,7 +36,7 @@ Ordinateur sous Windows ou OS équivalent.
 
 == III. Cas de test :
 === 1. Fonctionnalités des guichetiers :
-==== 1.1 Gestion des clients :
+==== 1.1 Gestion des clients V0 :
 
 |====
 
@@ -68,7 +68,7 @@ Ordinateur sous Windows ou OS équivalent.
 |====
 
 
-==== 1.2 Gestion des comptes bancaires :
+==== 1.2 Gestion des comptes bancaires (GS et BR):
 
 |====
 
@@ -113,7 +113,7 @@ Ordinateur sous Windows ou OS équivalent.
 |====
 
 
-==== 1.3 Gestion des opérations :
+==== 1.3 Gestion des opérations (JB et BR) :
 
 |====
 
@@ -165,7 +165,7 @@ autorisé est de -100 euros. ^|OK
 Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, ainsi que d'autres qui leur sont réservées.
 
 
-==== 2.1 Gestion des clients :
+==== 2.1 Gestion des clients V0 :
 
 |====
 
@@ -180,6 +180,6 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 |====
 
-==== 2.2 Gestion des employés :
+==== 2.2 Gestion des employés (GS) :
 
 *Manque de temps pour la Version 1*
