@@ -9,6 +9,7 @@ Créé par : Équipe 1B1
 L'application DailyBank permet la gestion de vos comptes en banque. De votre maison, à votre travail, l'application rend vos comptes disponibles partout. Que vous soyez employés, client, guichetier ou chef d'agence, vous pouvez utiliser DailyBank.
 
 
+
 == II. Installation utilisation, fonctionnement
 
 == 1) Page d'accueil
@@ -19,93 +20,90 @@ image:Image Doc Util/1.jpg[]
 == 2) Connexion
 Une fois le bouton appuyé, voici le l'interface qui va apparaitre. Il suffit de rentrer vos informations tels que le Login et le mot de passe. Puis cliquez sur valider.
 
-image:2.jpg[]
+image:Image Doc Util/2.jpg[]
 
 == 3) Utilisateur
 Bienvenue sur votre compte DailyBank!
 Vous pouvez désormais cliquer sur la section "Utilisateur".
 
-image:3.jpg[]
+image:Image Doc Util/3.jpg[]
 
 Ce bouton permet de se connecter ou de se deconnecter.
 
-image:4.jpg[]
+image:Image Doc Util/4.jpg[]
 
 == 4) Gestion
 Vous pouvez également appuyer sur le bouton "Gestion".
 
-image:5.jpg[]
+image:Image Doc Util/5.jpg[]
 
 Ce bouton permet de voir les comptes des employés ou des clients.
 
-image:gestion.PNG[]
+image:Image Doc Util/gestion.PNG[]
 
 == 5) Bouton "?"
 Vous pouvez aussi selectionner le bouton "?".
 
-image:6.jpg[]
+image:Image Doc Util/6.jpg[]
 
 Celui ci permet d'obtenir une aide.
 
-image:aide.PNG[]
+image:Image Doc Util/aide.PNG[]
 
 == 6) Gestion des comptes
 Cliquons sur Gestion pour acceder aux comptes!
 
-image:7.jpg[]
+image:Image Doc Util/7.jpg[]
 
 == 7) Rechercher
 Nous arrivons sur une autre page, celle ci est l'accueil de gestion de comptes. Cliquons sur rechercher.
 
-image:8.jpg[]
+image:Image Doc Util/8.jpg[]
 
 == 8) Comptes d'un utilisateur
 Tous les utilisateurs apparaissent, choisissons un compte aléatoirement.
 
-image:9.jpg[]
+image:Image Doc Util/9.jpg[]
 
 Cliquons sur "Comptes client"
 
-image:10.jpg[]
+image:Image Doc Util/10.jpg[]
 
 == 9) Opération
 
 Voici les comptes de l'utilisateur que nous avons selectionné. Choisissons un compte aléatoirement, nous pouvons voir ses opérations en cliquant sur le bouton "opération".
 
-image:11.jpg[]
+image:Image Doc Util/11.jpg[]
 
-image:12.jpg[]
+image:Image Doc Util/12.jpg[]
 
 == 10) Débit/ crédit
 Nous pouvons maintenant faire un crédit ou un débit, essayons avec un débit.
 
-image:operation.PNG[]
+image:Image Doc Util/operation.PNG[]
 
-image:13.jpg[]
+image:Image Doc Util/13.jpg[]
 
 
 
 == 11) Clôturer un compte
 En cliquant sur le bouton "clôturer un compte", un pop-up apparaitra pour s'assurer de votre décision de clôturer le compte.
 
-image:14.jpg[]
+image:Image Doc Util/14.jpg[]
 
 
-image:cloturer.PNG[]
+image:Image Doc Util/cloturer.PNG[]
 
 == 12) Nouveau Compte utilisateur
 Voici comment ouvrir un nouveau compte à un utilisateur.
 
-image:15.jpg[]
+image:Image Doc Util/15.jpg[]
 
-image:16.jpg[]
+image:Image Doc Util/16.jpg[]
 
 == 13) Modifier un client
 Pour finir, vous avez la possibilité de modifier un client dans la partie gestion client.
 
-image:17.jpg[]
+image:Image Doc Util/17.jpg[]
 
-image:18.jpg[]
-
-
-
+image:Image Doc Util/18.jpg[]
