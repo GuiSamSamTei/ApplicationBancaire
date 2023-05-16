@@ -147,9 +147,18 @@ autorisé est de -100 euros. ^|OK
 
 |====
 
+|====
 
-*ICI les test de "Effectuer un virement de compte à compte"*
+>|Cas de test 4+|Test-01-03-03
+>|Titre 4+|Effectuer un virement de compte à compte
+>|Objectif 4+| Vérifier qu'il est possible de faire un virement vers un autre compte
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_COP.1 ^|Cliquer sur le bouton "Virement compte à compte". ^|La page des virements du compte s’affiche. ^| Un compte actif est sélectionné ^|OK
+^|All_G_COP.2  ^|Rentrer un montant 50 dans le champ "Montant" et sélectionner le compte destinataire dans la liste déroulante ^|Le nouveau solde est +50euros et le solde du compte destinataire est de +250euros. ^| Le compte sélectionné a un solde de +100 euros et le compte destinataire à un solde de +200 ^|OK
+5+|Commentaire : Le virement est effectué seulement entre deux comptes non clôturer d'un client.
 
+|====
 
 === 2. Fonctionnalités des chefs d'agence :
 [.text-justify]
