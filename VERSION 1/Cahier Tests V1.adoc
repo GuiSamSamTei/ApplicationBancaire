@@ -182,4 +182,4 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 ==== 2.2 Gestion des employés :
 
-*ICI les tests de "Gérer (CRUD) des employés"*
+*Manque de temps pour la Version 1*
