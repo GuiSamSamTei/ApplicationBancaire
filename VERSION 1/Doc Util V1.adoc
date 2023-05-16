@@ -77,7 +77,7 @@ image:Image Doc Util/11.jpg[]
 
 image:Image Doc Util/12.jpg[]
 
-== 10) Débit / crédit / virement compte à compte (JB)
+== 10) Débit / crédit (JB) / virement compte à compte (BR)
 Nous pouvons maintenant faire un crédit ou un débit, essayons avec un débit.
 
 image:Image Doc Util/operation.PNG[]
