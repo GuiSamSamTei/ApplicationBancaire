@@ -53,7 +53,15 @@ application.view::
 
 
 
-== III. Description des fonctionnalités
+== III. Description application
+=== 1. Diagramme de Classes
+
+
+=== 2. Diagramme des Cas d'utilisation
+
+
+
+== IV. Description des fonctionnalités
 === 1. Fonctionnalités Guichetier
 ==== 1.1. Modifier informations client
 [.text-justify]
