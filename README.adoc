@@ -47,7 +47,7 @@ L'équipe est constituée de trois personnes::
 |           |Gantt V2 Prévu     |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%202/Gantt%20V2.pdf[Gantt Prévu V2] | 
 |           |Doc User V1        |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Doc%20Util%20V1.adoc[Doc User V1] |
 
-|17/05      |Doc Tec V1         |                   |    
+|17/05      |Doc Tec V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Doc%20Tech%20V1.adoc[Doc Tech V1]|    
 |           |Recette V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Cahier%20Tests%20V1.adoc[Cahier Test V1]| 
 |           |`jar` V1           |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/DailyBank%20V1.jar[Exécutable V1] | 
 |           |javadoc V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/tree/main/VERSION%201/Javadoc%20V1[Javadoc Version 1]| 
