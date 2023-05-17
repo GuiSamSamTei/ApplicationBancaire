@@ -153,4 +153,4 @@ Lors de la modification d'un client, il est possible de le rendre inactif seulem
 
 ==== 2.2. Gérer (faire le "CRUD") les employés
 [.text-justify]
-Opération non effectuer dans la version 1.
+Opération non effectuer dans la version 1 par manque de temps mais commencer.
