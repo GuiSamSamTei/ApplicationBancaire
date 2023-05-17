@@ -107,6 +107,16 @@ Premierement, je me suis essentiellement inspirée des fonctions "débiter", en 
 
 
 ==== 1.5. Créer un compte (GS)
+[.text-justify]
+Pour réaliser cette implémentation je me suis fortement inspiré du code qui sert à créer un client,sauf que j’ai changé les attributs propres des clients, comme l’adresse, le mail ou le téléphone par d’autres comme les droits, l’identifiant ou le mot de passe. J’ai aussi cherché la façon dont les autres requêtes étaient faites afin de la répliquer pour la création de comptes.
+
+*Fichiers concernés*::
+  - ClientsManagement.java +
+  - ClientsManagementController.java +
+  - clientsmanagement.fxml +
+  - CompteEditorPane.java +
+  - CompteEditorPaneController.java +
+  - compteeditorpane.fxml
 
 
 ==== 1.6. Effectuer un virement de compte à compte (BR)
