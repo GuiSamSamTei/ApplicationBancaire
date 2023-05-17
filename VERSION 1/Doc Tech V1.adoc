@@ -55,9 +55,11 @@ application.view::
 
 == III. Description application
 === 1. Diagramme de Classes
+image:Image Doc Tech/DC.png[]
 
 
 === 2. Diagramme des Cas d'utilisation
+image:Image Doc Tech/UseCase.png[]
 
 
 
