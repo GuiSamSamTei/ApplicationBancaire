@@ -21,7 +21,7 @@ Bastien RECORD -> Clôturer un compte et Virement de compte à compte
 [.text-justify]
 *Les packages : dans src/main/java* +
 
-application
+application::
   * DailyBank : main() de départ
 
 *application.control*
