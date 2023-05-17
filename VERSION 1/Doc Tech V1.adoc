@@ -20,11 +20,12 @@ Bastien RECORD -> Clôturer un compte et Virement de compte à compte
 == II. Architecture
 [.text-justify]
 *Les packages : dans src/main/java* +
+
 application::
   - DailyBank : main() de départ
 
 application.control::
-  - Contrôleurs de dialogue et accès aux données : gestion des fonctions de l’application. Deux rôles majeurs::
+  - Contrôleurs de dialogue et accès aux données : gestion des fonctions de l’application. Deux rôles majeurs : +
     Réalise les actions concrètes : accès BD, faire un calcul complexe, générer un fichier... +
     Ouvre les autres fenêtres nécessaires : gestion du dialogue
 
