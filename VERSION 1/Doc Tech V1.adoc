@@ -31,23 +31,58 @@ Bastien RECORD -> Clôturer un compte et Virement de compte à compte
 
 ==== 1.3. Consulter un compte
 [.text-justify]
+La consultation d'un compte s'affiche en cliquant sur "Comptes client" si un client est sélectionné dans la liste. Une fenêtre s'ouvre et affiche une liste de compte permettant d'effectuer différente opération sur les comptes.
+
+*Fichiers concernés*::
+  - ComptesManagementController.java +
+  - ComptesManagement.java +
+  - comptesmanagement.fxml +
+  - Access_BD_CompteCourant.java
 
 
 ==== 1.4. Créditer / Débiter (JB)
 [.text-justify]
-Premierement, je me suis essentiellement inspirée des fonctions "débiter", en changeant bien sur les noms des variables et leurs actions. De plus, j'ai ajouté dans la base de données la fonction créditer, qui fonctionne comme débiter mais sans découvert autorisé et en additionant. J'ai donc créé une dependance sous oracle du nom de "créditer".
+Premierement, je me suis essentiellement inspirée des fonctions "débiter", en changeant bien sur les noms des variables et leurs actions. De plus, j'ai ajouté dans la base de données la fonction créditer, qui fonctionne comme débiter mais sans découvert autorisé et en additionant. J'ai donc créé une dependance sous oracle du nom de "créditer". +
+
+*Fichiers concernés*::
+  - OperationManagement.java +
+  - OperationManagementController.java +
+  - operationmanagement.fxml +
+  - OperationEditorPane.java +
+  - OperationEditorPaneController.java +
+  - operationeditorpane.fxml +
+  - Access_BD_Operation.java
+
 
 ==== 1.5. Créer un compte
 
 
 ==== 1.6. Effectuer un virement de compte à compte
 [.text-justify]
-Le virement de compte à compte permet de faire un virement entre deux comptes différents d'un même client. Comme pour les débits ou les crédits, un compte doit être sélectionné avant de cliquer sur le bouton "Virement de compte à compte". Un fenêtre du même style que le crédit ou le débit s'ouvre pour choisir le montant et le compte destinataire. Pour effectuer ce virement, on appelle les méthode `insertDebit()` et `insertCredit()` pour effectuer le debit sur le compte source avec les mêmes contrainte qu'un débit et pour effectuer le crédit sur le compte destinataire.
+Le virement de compte à compte permet de faire un virement entre deux comptes différents d'un même client. Comme pour les débits ou les crédits, un compte doit être sélectionné avant de cliquer sur le bouton "Virement de compte à compte". Un fenêtre du même style que le crédit ou le débit s'ouvre pour choisir le montant et le compte destinataire. Pour effectuer ce virement, on appelle les méthode `insertDebit()` et `insertCredit()` pour effectuer le debit sur le compte source avec les mêmes contrainte qu'un débit et pour effectuer le crédit sur le compte destinataire. +
+
+*Fichiers concernés*::
+  - OperationManagement.java +
+  - OperationManagementController.java +
+  - operationmanagement.fxml +
+  - OperationEditorPane.java +
+  - OperationEditorPaneController.java +
+  - operationeditorpane.fxml +
+  - Access_BD_Operation.java
+
 
 ==== 1.7. Clôturer un compte (BR)
 [.text-justify]
-La clôturation d'un compte permet au guichetier de désactiver les transactions possibles sur le compte. Dans le contrôleur `ComptesManagementController` une méthode `doCloturerCompte()` est reliée à la vue FXML correspondante. Cette méthode est associée à un bouton et permet de clôturer un compte sélectionné dans la liste des comptes. Pour effectuer cette action, on vérifie si le compte a un solde de 0 euros. Si le compte est vide alors on effectue la clôturation en mettant à jour la base de données, sinon une alerte s'ouvre en indiquant qu'il faut que le compte possède un solde de 0 euros.
+La clôturation d'un compte permet au guichetier de désactiver les transactions possibles sur le compte. Dans le contrôleur `ComptesManagementController` une méthode `doCloturerCompte()` est reliée à la vue FXML correspondante. Cette méthode est associée à un bouton et permet de clôturer un compte sélectionné dans la liste des comptes. Pour effectuer cette action, on vérifie si le compte a un solde de 0 euros. Si le compte est vide alors on effectue la clôturation en mettant à jour la base de données, sinon une alerte s'ouvre en indiquant qu'il faut que le compte possède un solde de 0 euros. +
 
+*Fichiers concernés*::
+  - OperationManagement.java +
+  - OperationManagementController.java +
+  - operationmanagement.fxml +
+  - OperationEditorPane.java +
+  - OperationEditorPaneController.java +
+  - operationeditorpane.fxml +
+  - Access_BD_CompteCourant.java
 
 
 === 2. Fonctionnalités Chef d'agence
