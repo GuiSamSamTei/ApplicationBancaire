@@ -121,4 +121,14 @@ public class DailyBankMainFrame extends Application {
 		ClientsManagement cm = new ClientsManagement(this.primaryStage, this.dailyBankState);
 		cm.doClientManagementDialog();
 	}
+
+	/**
+	 * Lancer la gestion des employés (liste des employés)
+	 * 
+	 * @author Guilherme SAMPAIO
+	 */
+	public void gestionEmployes() {
+		EmployeManagement cm = new EmployeManagement(this.primaryStage, this.dailyBankState);
+		cm.doEmployeManagementDialog();
+	}
 }

@@ -261,6 +261,7 @@ public class OperationEditorPaneController {
 			break;
 
 		case VIREMENT:
+
 			this.txtMontant.getStyleClass().remove("borderred");
 			this.lblMontant.getStyleClass().remove("borderred");
 			this.lblMessage.getStyleClass().remove("borderred");

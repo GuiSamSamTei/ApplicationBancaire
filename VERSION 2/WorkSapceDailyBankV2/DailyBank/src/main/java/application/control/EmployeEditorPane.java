@@ -1,34 +1,38 @@
+// CRUD employé : Guilherme SAMPAIO
+
 package application.control;
 
 import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.EditionMode;
 import application.tools.StageManagement;
+import application.view.EmployeManagementController;
 import application.view.ClientEditorPaneController;
-import application.view.ClientsManagementController;
+import application.view.EmployeEditorPaneController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.data.Client;
+import model.data.Employe;
 
-public class ClientEditorPane {
+public class EmployeEditorPane {
 
 	private Stage primaryStage;
-	private ClientEditorPaneController cepcViewController;
+	private EmployeEditorPaneController eepcViewController;
 	private DailyBankState dailyBankState;
 
 	/**
-	 * Constructeur de la classe ClientEditorPane
+	 * Constructeur de la classe EmployeEditorPane
 	 * 
-	 * @param _parentStage IN : Stage parent
+	 * @param _parentStage IN : stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 */
-	public ClientEditorPane(Stage _parentStage, DailyBankState _dbstate) {
+	public EmployeEditorPane(Stage _parentStage, DailyBankState _dbstate) {
 		this.dailyBankState = _dbstate;
 		try {
-			FXMLLoader loader = new FXMLLoader(ClientsManagementController.class.getResource("clienteditorpane.fxml"));
+			FXMLLoader loader = new FXMLLoader(EmployeManagementController.class.getResource("employeeditorpane.fxml"));
 			BorderPane root = loader.load();
 
 			Scene scene = new Scene(root, root.getPrefWidth() + 20, root.getPrefHeight() + 10);
@@ -42,8 +46,8 @@ public class ClientEditorPane {
 			this.primaryStage.setTitle("Gestion d'un client");
 			this.primaryStage.setResizable(false);
 
-			this.cepcViewController = loader.getController();
-			this.cepcViewController.initContext(this.primaryStage, this.dailyBankState);
+			this.eepcViewController = loader.getController();
+			this.eepcViewController.initContext(this.primaryStage, this.dailyBankState);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -51,14 +55,15 @@ public class ClientEditorPane {
 	}
 
 	/**
-	 * Affiche la fenêtre de gestion d'un client
+	 * Affiche la fenêtre de gestion d'un employé
 	 * 
-	 * @param client IN : Client à gérer
-	 * @param em     IN : Mode d'édition
+	 * @author Guilherme SAMPAIO
 	 * 
-	 * @return Client
+	 * @param employe IN : Employé à gérer
+	 * @param em      IN : Mode d'édition
+	 * @return
 	 */
-	public Client doClientEditorDialog(Client client, EditionMode em) {
-		return this.cepcViewController.displayDialog(client, em);
+	public Employe doEmployeEditorDialog(Employe employe, EditionMode em) {
+		return this.eepcViewController.displayDialog(employe, em);
 	}
 }

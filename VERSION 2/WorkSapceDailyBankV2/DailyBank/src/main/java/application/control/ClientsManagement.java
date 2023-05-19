@@ -28,8 +28,6 @@ public class ClientsManagement {
 	 * 
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
-	 * 
-	 * @return void
 	 */
 	public ClientsManagement(Stage _parentStage, DailyBankState _dbstate) {
 		this.dailyBankState = _dbstate;
