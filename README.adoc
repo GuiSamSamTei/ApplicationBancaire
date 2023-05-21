@@ -47,7 +47,7 @@ L'équipe est constituée de trois personnes::
 |           |Gantt V2 Prévu     |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%202/Gantt%20V2.pdf[Gantt Prévu V2] | Suivi projet : il manque qq Task List dans vos issues. Sinon Ok. 
 |           |Doc User V1        |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Doc%20Util%20V1.adoc[Doc User V1] | Il manque l'installation. Reprendre les éléments oblig pour la forme du CDCU. Présenter les utilisateurs et classer les fonctions par utilisateur. Il faut donner plus d'information ex. Nouveau compte utilisateur, préciser si on modifie le décourvert, comment on vérifie que le compte a été créé.
 
-|17/05      |Doc Tec V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Doc%20Tech%20V1.adoc[Doc Tech V1]|    
+|17/05      |Doc Tec V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Doc%20Tech%20V1.adoc[Doc Tech V1]|   https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/retour%20doc%20technique.odt[retour doc technique] 
 |           |Recette V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Cahier%20Tests%20V1.adoc[Cahier Tests V1]| 
 |           |`jar` V1           |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/DailyBank%20V1.jar[Exécutable V1] | Je n'arrive pas à lancer votre jar...
 |           |javadoc V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/tree/main/VERSION%201/Javadoc%20V1[Javadoc V1] | 
