@@ -48,10 +48,10 @@ L'équipe est constituée de trois personnes::
 |           |Doc User V1        |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Doc%20Util%20V1.adoc[Doc User V1] | Il manque l'installation. Reprendre les éléments oblig pour la forme du CDCU. Présenter les utilisateurs et classer les fonctions par utilisateur. Il faut donner plus d'information ex. Nouveau compte utilisateur, préciser si on modifie le décourvert, comment on vérifie que le compte a été créé.
 
 |17/05      |Doc Tec V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Doc%20Tech%20V1.adoc[Doc Tech V1]|   https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/retour%20doc%20technique.odt[retour doc technique] 
-|           |Recette V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Cahier%20Tests%20V1.adoc[Cahier Tests V1]| 
+|           |Recette V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/Cahier%20Tests%20V1.adoc[Cahier Tests V1]| Manque les employés comme vous l'avez dit
 |           |`jar` V1           |https://github.com/IUT-Blagnac/sae2023-bank-1b01/blob/main/VERSION%201/DailyBank%20V1.jar[Exécutable V1] | Je n'arrive pas à lancer votre jar...
-|           |javadoc V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/tree/main/VERSION%201/Javadoc%20V1[Javadoc V1] | 
-|           |code V1            |https://github.com/IUT-Blagnac/sae2023-bank-1b01/tree/main/VERSION%201/WorkSapceDailyBankV1/DailyBank/src[Code source V1] | 
+|           |javadoc V1         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/tree/main/VERSION%201/Javadoc%20V1[Javadoc V1] | vu
+|           |code V1            |https://github.com/IUT-Blagnac/sae2023-bank-1b01/tree/main/VERSION%201/WorkSapceDailyBankV1/DailyBank/src[Code source V1] | vu
 | 26/05     |Gantt V2 Réalisé   |                   | 
 |           |Doc User V2        |                   |         
 |           |Doc Tec V2         |                   |     
