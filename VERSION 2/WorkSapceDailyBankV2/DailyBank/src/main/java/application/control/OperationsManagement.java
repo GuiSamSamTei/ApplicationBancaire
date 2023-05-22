@@ -11,9 +11,7 @@ import java.time.Month;
 import java.time.Year;
 import java.util.ArrayList;
 import java.util.Calendar;
-
 import com.itextpdf.text.DocumentException;
-
 import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.CategorieOperation;
@@ -37,6 +35,8 @@ import model.orm.exception.ApplicationException;
 import model.orm.exception.DataAccessException;
 import model.orm.exception.DatabaseConnexionException;
 import oracle.sql.DATE;
+import java.lang.Object;
+import com.itextpdf.text.pdf.PdfPTable;
 
 public class OperationsManagement {
 
@@ -238,19 +238,28 @@ public class OperationsManagement {
 				return false;
 			} else {
 				CreatePdf generator = new CreatePdf("Releve Mensuel_" + _listOp.get(0).idNumCompte + ".pdf");
-				int month = LocalDate.now().getMonthValue();
-				int year = LocalDate.now().getYear();
+				Calendar cal = Calendar.getInstance();
+
+				generator.ajoutParagraphe("Relevé de compte\n ", false);
+
+				PdfPTable table = new PdfPTable(3);
+				table.addCell("Date");
+				table.addCell("Type");
+				table.addCell("Montant");
+
 				for (int i = 0; i < _listOp.size(); i++) {
-					if (_listOp.get(i).dateOp.getYear() == year) {
+					LocalDate dtOp = _listOp.get(i).dateOp.toLocalDate();
 
-					}
+					if ((cal.get(Calendar.MONTH) + 1) == dtOp.getMonthValue()
+							&& cal.get(Calendar.YEAR) == dtOp.getYear()) {
 
-					if (i == (_listOp.size() - 1)) {
-						generator.ajoutParagraphe(_listOp.toString(), true);
-					} else {
-						generator.ajoutParagraphe(_listOp.toString(), false);
+						table.addCell(_listOp.get(i).dateOp.toString());
+						table.addCell("" + _listOp.get(i).idOperation);
+						table.addCell("" + _listOp.get(i).montant);
 					}
 				}
+
+				generator.ajoutTableau(table, true);
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

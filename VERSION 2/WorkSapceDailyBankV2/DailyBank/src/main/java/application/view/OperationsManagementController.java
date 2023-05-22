@@ -171,14 +171,13 @@ public class OperationsManagementController {
 	private void doReleveCompte() {
 		boolean op = this.omDialogController.genererReleveMensuel(this.oListOperations);
 		if (op) {
-			System.out.println("Relevé OK");
+			this.updateInfoCompteClient();
+			this.validateComponentState();
 		} else {
 			AlertUtilities.showAlert(primaryStage, "Erreur de génération du relevé",
 					"Impossible de générer le relevé de compte", "Le relevé de compte n'a pas été généré !!",
 					AlertType.ERROR);
 		}
-		this.updateInfoCompteClient();
-		this.validateComponentState();
 	}
 
 	/**
