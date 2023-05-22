@@ -11,10 +11,10 @@ L'équipe est constituée de trois personnes::
 [%header,cols=7*]
 |===
 |Version  |Rôle           |Use Case           |Cas                    |BAELEN Julie       |SAMPAIO Guilherme  |RECORD Bastien
-|1        |Chef d’Agence  |CRUD employé       |C                      |                   |D                  |
-|1        |Chef d’Agence  |CRUD employé       |R                      |                   |D                  |
-|1        |Chef d’Agence  |CRUD employé       |U                      |                   |D                  |
-|1        |Chef d’Agence  |CRUD employé       |D                      |                   |D                  |
+|1        |Chef d’Agence  |CRUD employé       |C                      |                   |F                  |
+|1        |Chef d’Agence  |CRUD employé       |R                      |                   |F                  |
+|1        |Chef d’Agence  |CRUD employé       |U                      |                   |F                  |
+|1        |Chef d’Agence  |CRUD employé       |D                      |                   |F                  |
 |1        |Guichetier     | Compte            |Créer                  |                   |F                  |
 |1        |Guichetier     | Compte            |Créditer/Débiter       |F                  |                   |
 |1        |Guichetier     | Compte            |Effectuer un virement  |                   |                   |F
