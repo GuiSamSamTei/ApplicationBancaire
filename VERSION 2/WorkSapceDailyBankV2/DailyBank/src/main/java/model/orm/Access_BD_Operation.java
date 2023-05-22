@@ -166,6 +166,21 @@ public class Access_BD_Operation {
 		}
 	}
 	
+	/**
+	 * Enregistrement d'un débit Exceptionnel.
+	 *<BR />
+	 * - Enregistre l'opération <BR />
+	 * - Met à jour le solde du compte. <BR />
+	 * - Possible pour le chef d'agence uniquement
+	 *
+	 * @param idNumCompte compte débité
+	 * @param montant     montant débité
+	 * @param typeOp      libellé de l'opération effectuée (cf TypeOperation)
+	 * @throws DataAccessException        Erreur d'accès aux données (requête mal
+	 *                                    formée ou autre)
+	 * @throws DatabaseConnexionException Erreur de connexion
+	 */
+	
 	public void insertDebitEx(int idNumCompte, double montant, String typeOp)
 			throws DatabaseConnexionException, ManagementRuleViolation, DataAccessException {
 		try {
