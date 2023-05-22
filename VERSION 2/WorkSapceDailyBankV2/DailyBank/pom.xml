@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>sae-s2.01-2023</groupId>
 	<artifactId>DailyBank</artifactId>
@@ -37,7 +39,8 @@
 		</dependency>
 
 
-		<!-- Dépendance pour ojdbc oracle : driver d'accès à une BD Oracle depuis java -->
+		<!-- Dépendance pour ojdbc oracle : driver d'accès à une BD Oracle
+		depuis java -->
 		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc10 -->
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
@@ -48,8 +51,9 @@
 
 		<!-- Dépendance pour .jar de génération d'un pdf 
 			Exemples de code :
-			- http://igm.univ-mlv.fr/~dr/XPOSE2004/sguinchard/iText/creation.html
-			- https://www.vogella.com/tutorials/JavaPDF/article.html
+		- http://igm.univ-mlv.fr/~dr/XPOSE2004/sguinchard/iText/creation.html
+			-
+		https://www.vogella.com/tutorials/JavaPDF/article.html
 		-->
 		<!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
 		<dependency>
@@ -57,7 +61,6 @@
 			<artifactId>itextpdf</artifactId>
 			<version>5.5.13.3</version>
 		</dependency>
-
 
 	</dependencies>
 
@@ -83,7 +86,8 @@
 						<configuration>
 							<shadedArtifactAttached>true</shadedArtifactAttached>
 							<transformers>
-								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>application.DailyBankApp</mainClass>
 								</transformer>
 							</transformers>

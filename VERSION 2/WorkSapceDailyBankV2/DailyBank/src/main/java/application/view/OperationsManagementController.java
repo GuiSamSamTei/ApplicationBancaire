@@ -1,5 +1,6 @@
 // Créditer/Débiter : Julie BAELEN
 // Virement compte à compte : Bastien RECORD
+// Relevé de compte : Bastien RECORD
 
 package application.view;
 
@@ -8,11 +9,13 @@ import java.util.Locale;
 
 import application.DailyBankState;
 import application.control.OperationsManagement;
+import application.tools.AlertUtilities;
 import application.tools.NoSelectionModel;
 import application.tools.PairsOfValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
@@ -107,6 +110,8 @@ public class OperationsManagementController {
 	private Button btnVirement;
 	@FXML
 	private Button btnDebitEx;
+	@FXML
+	private Button btnReleve;
 
 	/**
 	 * Action sur le bouton "Annuler"
@@ -130,6 +135,7 @@ public class OperationsManagementController {
 			this.validateComponentState();
 		}
 	}
+
 	/**
 	 * Action sur le bouton "débit exceptionnel" seulement pour le chef d'agence
 	 * 
@@ -144,6 +150,7 @@ public class OperationsManagementController {
 			this.validateComponentState();
 		}
 	}
+
 	/**
 	 * Action sur le bouton "Effectuer un crédit"
 	 * 
@@ -173,6 +180,24 @@ public class OperationsManagementController {
 	}
 
 	/**
+	 * Action sur le bouton "Relevé mensuel"
+	 * 
+	 * @author Bastien RECORD
+	 */
+	@FXML
+	private void doReleveCompte() {
+		boolean op = this.omDialogController.genererReleveMensuel(this.oListOperations);
+		if (op) {
+			this.updateInfoCompteClient();
+			this.validateComponentState();
+		} else {
+			AlertUtilities.showAlert(primaryStage, "Erreur de génération du relevé",
+					"Impossible de générer le relevé de compte", "Le relevé de compte n'a pas été généré !!",
+					AlertType.ERROR);
+		}
+	}
+
+	/**
 	 * Validation de l'état des composants
 	 * 
 	 * @author Bastien RECORD
@@ -183,7 +208,7 @@ public class OperationsManagementController {
 			this.btnDebit.setDisable(true);
 			this.btnVirement.setDisable(true);
 			this.btnDebitEx.setDisable(true);
-		} else if(this.dailyBankState.isChefDAgence()){
+		} else if (this.dailyBankState.isChefDAgence()) {
 			this.btnDebitEx.setDisable(false);
 			this.btnCredit.setDisable(false);
 			this.btnDebit.setDisable(false);
@@ -194,9 +219,8 @@ public class OperationsManagementController {
 			this.btnVirement.setDisable(false);
 			this.btnDebitEx.setDisable(true);
 		}
-			
-		}
-	
+		this.btnReleve.setDisable(false);
+	}
 
 	/**
 	 * Mise à jour des informations du compte client
