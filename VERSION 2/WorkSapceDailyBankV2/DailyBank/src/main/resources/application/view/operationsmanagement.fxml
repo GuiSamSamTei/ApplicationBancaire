@@ -27,6 +27,8 @@
 								<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
 								<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
 								<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
 							</rowConstraints>
 							<children>
 								<Button fx:id="btnDebit" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#doDebit" text="Enregistrer Débit" GridPane.rowIndex="1">
@@ -44,6 +46,7 @@
 										<Insets bottom="10.0" top="10.0" />
 									</GridPane.margin>
 								</Button>
+                        <Button fx:id="btnReleve" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#doReleveCompte" text="Relevé mensuel" GridPane.rowIndex="5" />
 							</children>
 						</GridPane>
 					</children>

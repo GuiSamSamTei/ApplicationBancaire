@@ -1,17 +1,28 @@
 // Débit-Crédit : Julie BAELEN
 // Enregistrer un viremenet de compte à compte : Bastien RECORD
+// Relevé de compte : Bastien RECORD
 
 package application.control;
 
+import java.io.FileNotFoundException;
+import java.sql.Date;
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.Year;
 import java.util.ArrayList;
+import java.util.Calendar;
+
+import com.itextpdf.text.DocumentException;
 
 import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.CategorieOperation;
 import application.tools.ConstantesIHM;
+import application.tools.CreatePdf;
 import application.tools.PairsOfValue;
 import application.tools.StageManagement;
 import application.view.OperationsManagementController;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
@@ -25,6 +36,7 @@ import model.orm.Access_BD_Operation;
 import model.orm.exception.ApplicationException;
 import model.orm.exception.DataAccessException;
 import model.orm.exception.DatabaseConnexionException;
+import oracle.sql.DATE;
 
 public class OperationsManagement {
 
@@ -184,6 +196,8 @@ public class OperationsManagement {
 	/**
 	 * Permet d'enregistrer un virement
 	 * 
+	 * @author Bastien RECORD
+	 * 
 	 * @return résultat de l'opération demandée
 	 */
 	public Operation enregistrerVirement() {
@@ -209,5 +223,40 @@ public class OperationsManagement {
 			}
 		}
 		return op;
+	}
+
+	/**
+	 * Permet de générer un relevé de compte mensuel
+	 * 
+	 * @author Bastien RECORD
+	 * 
+	 * @return true si le relevé a été généré sinon false
+	 */
+	public boolean genererReleveMensuel(ObservableList<Operation> _listOp) {
+		try {
+			if (_listOp.size() <= 0) {
+				return false;
+			} else {
+				CreatePdf generator = new CreatePdf("Releve Mensuel_" + _listOp.get(0).idNumCompte + ".pdf");
+				int month = LocalDate.now().getMonthValue();
+				int year = LocalDate.now().getYear();
+				for (int i = 0; i < _listOp.size(); i++) {
+					if (_listOp.get(i).dateOp.getYear() == year) {
+
+					}
+
+					if (i == (_listOp.size() - 1)) {
+						generator.ajoutParagraphe(_listOp.toString(), true);
+					} else {
+						generator.ajoutParagraphe(_listOp.toString(), false);
+					}
+				}
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (DocumentException e) {
+			e.printStackTrace();
+		}
+		return true;
 	}
 }
