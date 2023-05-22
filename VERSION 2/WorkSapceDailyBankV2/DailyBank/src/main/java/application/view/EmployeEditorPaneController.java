@@ -13,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
@@ -156,7 +157,7 @@ public class EmployeEditorPaneController {
 	@FXML
 	private TextField txtLogin;
 	@FXML
-	private TextField txtMDP;
+	private PasswordField txtMDP;
 	@FXML
 	private TextField txtIDAG;
 	@FXML
@@ -215,7 +216,7 @@ public class EmployeEditorPaneController {
 		this.employeEdite.prenom = this.txtPrenom.getText().trim();
 		this.employeEdite.droitsAccess = this.txtDroits.getText().trim();
 		this.employeEdite.login = this.txtLogin.getText().trim();
-		this.employeEdite.motPasse = this.txtMDP.getText().trim();
+		this.employeEdite.motPasse = new String(this.txtMDP.getText().trim());
 		if (this.employeEdite.nom.isEmpty()) {
 			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Le nom ne doit pas être vide",
 					AlertType.WARNING);
