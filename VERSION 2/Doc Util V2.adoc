@@ -84,6 +84,17 @@ image:Image Doc Util/operation.PNG[]
 
 image:Image Doc Util/13.jpg[]
 
+Maintenant Débit Exceptionnel, uniquement disponible pour le chef d'agence
+
+image:Image Doc Util/debitex1.jpg[]
+
+Noyus voyons que le découvert autorisé du compte est de 400, or nous allons prelever plus que le découvert autorisé
+
+image:Image Doc Util/debitex2.jpg[]
+
+nous voyons que le solde est inférieur au découvert autorisé
+
+image:Image Doc Util/debitex3.jpg[]
 
 
 === 11. Clôturer un compte (BR)
