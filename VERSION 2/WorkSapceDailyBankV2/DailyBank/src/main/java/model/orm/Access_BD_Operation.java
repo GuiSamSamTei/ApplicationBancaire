@@ -165,6 +165,31 @@ public class Access_BD_Operation {
 			throw new DataAccessException(Table.Operation, Order.INSERT, "Erreur accès", e);
 		}
 	}
+	
+	public void insertDebitEx(int idNumCompte, double montant, String typeOp)
+			throws DatabaseConnexionException, ManagementRuleViolation, DataAccessException {
+		try {
+			Connection con = LogToDatabase.getConnexion();
+			CallableStatement call;
+
+			String q = "{call DebiterEx (?, ?, ?, ?)}";
+			// les ? correspondent aux paramètres : cf. déf procédure (4 paramètres)
+			call = con.prepareCall(q);
+			// Paramètres in
+			call.setInt(1, idNumCompte);
+			// 1 -> valeur du premier paramètre, cf. déf procédure
+			call.setDouble(2, montant);
+			call.setString(3, typeOp);
+			// Paramètres out
+			call.registerOutParameter(4, java.sql.Types.INTEGER);
+			// 4 type du quatrième paramètre qui est déclaré en OUT, cf. déf procédure
+
+			call.execute();
+
+		} catch (SQLException e) {
+			throw new DataAccessException(Table.Operation, Order.INSERT, "Erreur accès", e);
+		}
+	}
 	/**
 	 * Enregistrement d'un crédit.
 	 * - Enregistre l'opération <BR />

@@ -112,6 +112,38 @@ public class OperationsManagement {
 		}
 		return op;
 	}
+	/**
+	 * Enregistre un débit Exceptionnel
+	 *
+	 * @return résultat de l'opération demandée seulement pour le chef d'agence
+	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
+	 *                                    formée ou autre)
+	 * @throws DatabaseConnexionException Erreur de connexion
+	 */
+	
+	public Operation enregistrerDebitEx() {
+
+		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
+		Operation op = oep.doOperationEditorDialog(this.compteConcerne, CategorieOperation.DEBITEX);
+		if (op != null) {
+			try {
+				Access_BD_Operation ao = new Access_BD_Operation();
+
+				ao.insertDebitEx(this.compteConcerne.idNumCompte, op.montant, op.idTypeOp);
+
+			} catch (DatabaseConnexionException e) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+				ed.doExceptionDialog();
+				this.primaryStage.close();
+				op = null;
+			} catch (ApplicationException ae) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+				ed.doExceptionDialog();
+				op = null;
+			}
+		}
+		return op;
+	}
 
 	/**
 	 * Enregistre un crédit

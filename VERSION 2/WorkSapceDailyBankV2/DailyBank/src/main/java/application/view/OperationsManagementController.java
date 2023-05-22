@@ -105,6 +105,8 @@ public class OperationsManagementController {
 	private Button btnCredit;
 	@FXML
 	private Button btnVirement;
+	@FXML
+	private Button btnDebitEx;
 
 	/**
 	 * Action sur le bouton "Annuler"
@@ -128,7 +130,20 @@ public class OperationsManagementController {
 			this.validateComponentState();
 		}
 	}
+	/**
+	 * Action sur le bouton "débit exceptionnel" seulement pour le chef d'agence
+	 * 
+	 * @author Julie BAELEN
+	 */
+	@FXML
+	private void doDebitEx() {
 
+		Operation op = this.omDialogController.enregistrerDebitEx();
+		if (op != null) {
+			this.updateInfoCompteClient();
+			this.validateComponentState();
+		}
+	}
 	/**
 	 * Action sur le bouton "Effectuer un crédit"
 	 * 
@@ -167,12 +182,21 @@ public class OperationsManagementController {
 			this.btnCredit.setDisable(true);
 			this.btnDebit.setDisable(true);
 			this.btnVirement.setDisable(true);
+			this.btnDebitEx.setDisable(true);
+		} else if(this.dailyBankState.isChefDAgence()){
+			this.btnDebitEx.setDisable(false);
+			this.btnCredit.setDisable(false);
+			this.btnDebit.setDisable(false);
+			this.btnVirement.setDisable(false);
 		} else {
 			this.btnCredit.setDisable(false);
 			this.btnDebit.setDisable(false);
 			this.btnVirement.setDisable(false);
+			this.btnDebitEx.setDisable(true);
 		}
-	}
+			
+		}
+	
 
 	/**
 	 * Mise à jour des informations du compte client
