@@ -124,6 +124,7 @@ public class OperationsManagement {
 		}
 		return op;
 	}
+
 	/**
 	 * Enregistre un débit Exceptionnel
 	 *
@@ -132,7 +133,7 @@ public class OperationsManagement {
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
-	
+
 	public Operation enregistrerDebitEx() {
 
 		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
@@ -286,7 +287,7 @@ public class OperationsManagement {
 							&& cal.get(Calendar.YEAR) == dtOp.getYear()) {
 
 						table.addCell(_listOp.get(i).dateOp.toString());
-						table.addCell("" + _listOp.get(i).idOperation);
+						table.addCell("" + _listOp.get(i).idTypeOp);
 						table.addCell("" + _listOp.get(i).montant);
 					}
 				}
