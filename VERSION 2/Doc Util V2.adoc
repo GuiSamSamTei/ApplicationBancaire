@@ -77,12 +77,14 @@ image:Image Doc Util/11.jpg[]
 
 image:Image Doc Util/12.jpg[]
 
-=== 10. Débit / crédit (JB) / virement compte à compte (BR)
+=== 10. Débit / crédit (JB) / virement compte à compte (BR) / Débit Exceptionnel (JB)
 Nous pouvons maintenant faire un crédit ou un débit, essayons avec un débit.
 
 image:Image Doc Util/operation.PNG[]
 
 image:Image Doc Util/13.jpg[]
+
+
 
 === 11. Clôturer un compte (BR)
 En cliquant sur le bouton "clôturer un compte", un pop-up apparaitra pour s'assurer de votre décision de clôturer le compte.
