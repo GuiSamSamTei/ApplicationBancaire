@@ -118,23 +118,6 @@ Ordinateur sous Windows ou OS équivalent.
 |====
 
 >|Cas de test 4+|Test-01-03-01
->|Titre 4+|Débit Exceptionnel sur un compte
->|Objectif 4+| Vérifier qu'il est possible de débiter un compte sans prendre en compte le découvert autorisé
-5+|
-^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_COP.1 ^|Cliquer sur le bouton "Débit Exceptionnel". ^|La page des débit exceptionnel du compte s’affiche. ^| Un compte actif est sélectionné ^|OK
-^|All_G_COP.2  ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde est +50euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros ^|OK
-^|All_G_COP.3  ^|Rentrer un montant 150 dans le champ "Montant". ^|Le nouveau solde est -50 euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros, le découvert autorisé est de -100 euros. ^|OK
-^|All_G_COP.4  ^|Rentrer un montant 250 dans le champ "Montant". ^|Le nouveau solde est -150 euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date  | Le compte sélectionné a un solde de +100 euros, le découvert
-autorisé est de -100 euros. Mais il n'impact pas sur l'opération ^|OK
-5+|
-5+|Commentaire : L'opération est possible seulement quand un compte est actif. Le montant à débiter peut dépasser le découvert autorisé lors du débit au solde.
-
-|====
-
-|====
-
->|Cas de test 4+|Test-01-03-01
 >|Titre 4+|Débiter un compte
 >|Objectif 4+| Vérifier qu'il est possible de débiter un compte
 5+|
@@ -200,3 +183,23 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 ==== 2.2 Gestion des employés (GS) :
 
 *Manque de temps pour la Version 1*
+
+
+==== 2.3 Gestion des opérations (JB) :
+
+|====
+
+>|Cas de test 4+|Test-02-03-01
+>|Titre 4+|Débit Exceptionnel sur un compte
+>|Objectif 4+| Vérifier qu'il est possible de débiter un compte sans prendre en compte le découvert autorisé
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_COP.1 ^|Cliquer sur le bouton "Débit Exceptionnel". ^|La page des débit exceptionnel du compte s’affiche. ^| Un compte actif est sélectionné ^|OK
+^|All_G_COP.2  ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde est +50euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros ^|OK
+^|All_G_COP.3  ^|Rentrer un montant 150 dans le champ "Montant". ^|Le nouveau solde est -50 euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros, le découvert autorisé est de -100 euros. ^|OK
+^|All_G_COP.4  ^|Rentrer un montant 250 dans le champ "Montant". ^|Le nouveau solde est -150 euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date  | Le compte sélectionné a un solde de +100 euros, le découvert
+autorisé est de -100 euros. Mais il n'impact pas sur l'opération ^|OK
+5+|
+5+|Commentaire : L'opération est possible seulement quand un compte est actif. Le montant à débiter peut dépasser le découvert autorisé lors du débit au solde.
+
+|====
