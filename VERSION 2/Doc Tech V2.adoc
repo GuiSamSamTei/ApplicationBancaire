@@ -1,4 +1,4 @@
-= Documentation technique Version 1
+= Documentation technique Version 2
 :toc:
 :toc-title: Sommaire
 
