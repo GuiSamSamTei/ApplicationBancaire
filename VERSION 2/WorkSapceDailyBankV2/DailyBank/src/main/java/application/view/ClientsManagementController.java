@@ -94,6 +94,8 @@ public class ClientsManagementController {
 	private Button btnModifClient;
 	@FXML
 	private Button btnComptesClient;
+	@FXML
+	private Button btnEmpruntsClient;
 
 	/**
 	 * Validation de l'état des composants
@@ -164,7 +166,6 @@ public class ClientsManagementController {
 
 	/**
 	 * Méthode appelée lors de l'appui sur le bouton Modifier Client
-	 * 
 	 */
 	@FXML
 	private void doModifierClient() {
@@ -181,7 +182,6 @@ public class ClientsManagementController {
 
 	/**
 	 * Méthode appelée lors de l'appui sur le bouton Désactiver Client
-	 * 
 	 */
 	@FXML
 	private void doDesactiverClient() {
@@ -200,6 +200,20 @@ public class ClientsManagementController {
 	}
 
 	/**
+	 * Méthode appelée lors de l'appui sur le bouton Emprunts Client
+	 * 
+	 * @author Bastien RECORD
+	 */
+	@FXML
+	private void doEmpruntsClient() {
+		int selectedIndice = this.lvClients.getSelectionModel().getSelectedIndex();
+		if (selectedIndice >= 0) {
+			Client client = this.oListClients.get(selectedIndice);
+			this.cmDialogController.gererEmpruntsClient(client);
+		}
+	}
+
+	/**
 	 * Validation de l'état des composants
 	 * 
 	 * @author Bastien RECORD
@@ -211,9 +225,15 @@ public class ClientsManagementController {
 		if (selectedIndice >= 0) {
 			this.btnModifClient.setDisable(false);
 			this.btnComptesClient.setDisable(false);
+			if (this.dailyBankState.isChefDAgence()) {
+				this.btnEmpruntsClient.setDisable(false);
+			} else {
+				this.btnEmpruntsClient.setDisable(true);
+			}
 		} else {
 			this.btnModifClient.setDisable(true);
 			this.btnComptesClient.setDisable(true);
+			this.btnEmpruntsClient.setDisable(true);
 		}
 	}
 }

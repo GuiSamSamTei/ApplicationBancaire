@@ -157,4 +157,17 @@ public class ClientsManagement {
 		}
 		return listeCli;
 	}
+
+	/**
+	 * Affiche la fenêtre de gestion des emprunts d'un client
+	 * 
+	 * @author Bastien RECORD
+	 * 
+	 * @param c IN : client à gérer
+	 */
+	public void gererEmpruntsClient(Client c) {
+		System.out.println("Liste Emprunt du client " + c.idNumCli);
+		EmpruntsManagement em = new EmpruntsManagement(primaryStage, dailyBankState, c);
+		em.doEmpruntsManagementDialog();
+	}
 }
