@@ -3,7 +3,6 @@
 package application.view;
 
 import java.util.ArrayList;
-
 import application.DailyBankState;
 import application.control.EmpruntsManagement;
 import application.tools.AlertUtilities;
@@ -118,7 +117,6 @@ public class EmpruntsManagementController {
 	 */
 	@FXML
 	private void doDetailsEmprunts() {
-		System.out.println("Détails");
 		int selectedIndice = this.lvEmprunts.getSelectionModel().getSelectedIndex();
 		if (selectedIndice >= 0) {
 			System.out.println("Un emprunt est sélectionné");
@@ -135,10 +133,7 @@ public class EmpruntsManagementController {
 	 */
 	@FXML
 	private void doNouvelEmprunt() {
-		System.out.println("Nouveau");
-
-		this.loadList();
-		this.validateComponentState();
+		this.emDialogController.creerEmprunts(this.clientDesEmprunts);
 	}
 
 	/**

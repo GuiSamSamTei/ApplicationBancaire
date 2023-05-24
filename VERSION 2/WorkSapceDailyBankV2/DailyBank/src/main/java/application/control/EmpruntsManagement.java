@@ -74,14 +74,14 @@ public class EmpruntsManagement {
 	}
 
 	/**
-	 * Affiche la fenêtre de gestion des comptes
+	 * Affiche la fenêtre de gestion des emprunts
 	 * 
-	 * @param cpt IN : Compte à gérer
+	 * @param client IN : client à gérer
 	 */
-	public void gererOperationsDUnCompte(CompteCourant cpt) {
-		OperationsManagement om = new OperationsManagement(this.primaryStage, this.dailyBankState,
-				this.clientDesEmprunt, cpt);
-		om.doOperationsManagementDialog();
+	public void creerEmprunts(Client client) {
+		System.out.println(this);
+		EmpruntEditorPane eep = new EmpruntEditorPane(this.primaryStage, this.dailyBankState);
+		eep.doEmpruntEditorPaneDialog();
 	}
 
 	/**

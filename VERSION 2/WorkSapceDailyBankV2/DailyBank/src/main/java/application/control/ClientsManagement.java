@@ -166,7 +166,6 @@ public class ClientsManagement {
 	 * @param c IN : client à gérer
 	 */
 	public void gererEmpruntsClient(Client c) {
-		System.out.println("Liste Emprunt du client " + c.idNumCli);
 		EmpruntsManagement em = new EmpruntsManagement(this.primaryStage, this.dailyBankState, c);
 		em.doEmpruntsManagementDialog();
 	}
