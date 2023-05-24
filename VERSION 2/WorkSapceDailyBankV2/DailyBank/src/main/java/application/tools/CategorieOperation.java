@@ -4,9 +4,9 @@ package application.tools;
  * Catégories possibles de opérations dans l'application.
  *
  * Simplifie et limite les accès à la BD. Implicite en BD : un type opération
- * est un cas particulier de DEBIT ou CREDIT ou VIREMENT.
+ * est un cas particulier de DEBIT ou CREDIT ou VIREMENT ou DEBITEX.
  *
  */
 public enum CategorieOperation {
-	DEBIT, CREDIT, VIREMENT
+	DEBIT, CREDIT, VIREMENT, DEBITEX, EMPRUNT
 }

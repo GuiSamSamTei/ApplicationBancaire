@@ -135,6 +135,21 @@ public class OperationEditorPaneController {
 			this.cbTypeOpe.setItems(listTypesOpesPossibles2);
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;
+		case DEBITEX:
+
+			String info4 = "Cpt. : " + this.compteEdite.idNumCompte + "  "
+					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde);
+			this.lblMessage.setText(info4);
+
+			this.btnOk.setText("Effectuer Débit");
+			this.btnCancel.setText("Annuler débit");
+
+			ObservableList<String> listTypesOpesPossibles4 = FXCollections.observableArrayList();
+			listTypesOpesPossibles4.addAll(ConstantesIHM.OPERATIONS_DEBIT_GUICHET);
+
+			this.cbTypeOpe.setItems(listTypesOpesPossibles4);
+			this.cbTypeOpe.getSelectionModel().select(0);
+			break;
 		}
 
 		// Paramétrages spécifiques pour les chefs d'agences
@@ -303,6 +318,32 @@ public class OperationEditorPaneController {
 			this.operationResultat = new Operation(-1, montant, null, null, compte.idNumCompte, typeOp3);
 			this.primaryStage.close();
 			break;
+		case DEBITEX:
+
+
+			this.txtMontant.getStyleClass().remove("borderred");
+			this.lblMontant.getStyleClass().remove("borderred");
+			this.lblMessage.getStyleClass().remove("borderred");
+			String info4 = "Cpt. : " + this.compteEdite.idNumCompte + "  "
+					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde);
+			this.lblMessage.setText(info4);
+
+			try {
+				montant = Double.parseDouble(this.txtMontant.getText().trim());
+				if (montant <= 0)
+					throw new NumberFormatException();
+			} catch (NumberFormatException nfe) {
+				this.txtMontant.getStyleClass().add("borderred");
+				this.lblMontant.getStyleClass().add("borderred");
+				this.txtMontant.requestFocus();
+				return;
+			}
+			String typeOp4 = this.cbTypeOpe.getValue();
+			this.operationResultat = new Operation(-1, montant, null, null, this.compteEdite.idNumCli, typeOp4);
+			this.primaryStage.close();
+			break;
+			
+			
 		}
 	}
 }

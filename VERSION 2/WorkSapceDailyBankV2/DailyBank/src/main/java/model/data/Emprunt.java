@@ -45,21 +45,21 @@ public class Emprunt {
 	        this.id = id;
 	    }
 
-	    public void setType(String type) {
-	        this.type = type;
+	    public void setTaux(int tauxApp) {
+	        this.tauxApp = tauxApp;
 	    }
 
-	    public void setName(String name) {
-	        this.name = name;
+	    public void setCapital(int capital) {
+	        this.capital = capital;
 	    }
 
 	    @Override
 	    public String toString() {
-	        return "Animal{" +
-	                "id=" + id +
-	                ", type='" + type + '\'' +
-	                ", name='" + name + '\'' +
+	        return "Emprunt{" +
+	                "idEmprunt=" + id +
+	                ", TauxApplicable='" + tauxApp + '\'' +
+	                ", capital='" + capital + '\'' +
 	                '}';
 	    }
 	}
-}
+
