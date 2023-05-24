@@ -19,6 +19,7 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
 import model.data.CompteCourant;
+import model.data.Emprunt;
 
 public class EmpruntsManagementController {
 
@@ -33,7 +34,7 @@ public class EmpruntsManagementController {
 
 	// Données de la fenêtre
 	private Client clientDesEmprunts;
-	private ObservableList<String> oListEmprunts;
+	private ObservableList<Emprunt> oListEmprunts;
 
 	/**
 	 * Manipulation de la fenêtre
@@ -98,7 +99,7 @@ public class EmpruntsManagementController {
 	@FXML
 	private Label lblInfosClient;
 	@FXML
-	private ListView<String> lvEmprunts;
+	private ListView<Emprunt> lvEmprunts;
 	@FXML
 	private Button btnDetailsEmprunt;
 	@FXML
@@ -122,6 +123,7 @@ public class EmpruntsManagementController {
 		if (selectedIndice >= 0) {
 			System.out.println("Un emprunt est sélectionné");
 		}
+
 		this.loadList();
 		this.validateComponentState();
 	}
@@ -143,11 +145,10 @@ public class EmpruntsManagementController {
 	 * Chargement de la liste des emprunts
 	 */
 	private void loadList() {
-		ArrayList<String> listeEmp = new ArrayList<>();
-		listeEmp.add("Emp 1");
-		listeEmp.add("Emp 2");
+		ArrayList<Emprunt> listeCpt;
+		listeCpt = this.emDialogController.getEmpruntDunClient();
 		this.oListEmprunts.clear();
-		this.oListEmprunts.addAll(listeEmp);
+		this.oListEmprunts.addAll(listeCpt);
 	}
 
 	/**

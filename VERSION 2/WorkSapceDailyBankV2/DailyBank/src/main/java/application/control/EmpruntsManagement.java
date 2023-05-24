@@ -18,7 +18,8 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.data.Client;
 import model.data.CompteCourant;
-import model.orm.Access_BD_CompteCourant;
+import model.data.Emprunt;
+import model.orm.Access_BD_Emprunt;
 import model.orm.exception.ApplicationException;
 import model.orm.exception.DatabaseConnexionException;
 import model.orm.exception.Order;
@@ -27,9 +28,9 @@ import model.orm.exception.Table;
 public class EmpruntsManagement {
 
 	private Stage primaryStage;
-	private EmpruntsManagementController cmcViewController;
+	private EmpruntsManagementController emcViewController;
 	private DailyBankState dailyBankState;
-	private Client clientDesComptes;
+	private Client clientDesEmprunt;
 
 	/**
 	 * Constructeur de la classe EmpruntsManagement
@@ -39,7 +40,7 @@ public class EmpruntsManagement {
 	 */
 	public EmpruntsManagement(Stage _parentStage, DailyBankState _dbstate, Client client) {
 
-		this.clientDesComptes = client;
+		this.clientDesEmprunt = client;
 		this.dailyBankState = _dbstate;
 		try {
 			FXMLLoader loader = new FXMLLoader(
@@ -57,8 +58,8 @@ public class EmpruntsManagement {
 			this.primaryStage.setTitle("Gestion des emprunts");
 			this.primaryStage.setResizable(false);
 
-			this.cmcViewController = loader.getController();
-			this.cmcViewController.initContext(this.primaryStage, this, _dbstate, client);
+			this.emcViewController = loader.getController();
+			this.emcViewController.initContext(this.primaryStage, this, _dbstate, client);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -69,7 +70,7 @@ public class EmpruntsManagement {
 	 * Affiche la fenêtre de gestion des comptes
 	 */
 	public void doEmpruntsManagementDialog() {
-		this.cmcViewController.displayDialog();
+		this.emcViewController.displayDialog();
 	}
 
 	/**
@@ -79,7 +80,7 @@ public class EmpruntsManagement {
 	 */
 	public void gererOperationsDUnCompte(CompteCourant cpt) {
 		OperationsManagement om = new OperationsManagement(this.primaryStage, this.dailyBankState,
-				this.clientDesComptes, cpt);
+				this.clientDesEmprunt, cpt);
 		om.doOperationsManagementDialog();
 	}
 
@@ -92,37 +93,37 @@ public class EmpruntsManagement {
 	 * 
 	 * @return le nouveau compte
 	 */
-	public CompteCourant creerNouveauCompte() {
-		CompteCourant compte;
-		CompteEditorPane cep = new CompteEditorPane(this.primaryStage, this.dailyBankState);
-		compte = cep.doCompteEditorDialog(this.clientDesComptes, null, EditionMode.CREATION);
-		if (compte != null) {
-			try {
-				Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
-				acc.createCompteCourant(compte);
-			} catch (DatabaseConnexionException e) {
-				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
-				ed.doExceptionDialog();
-				this.primaryStage.close();
-			} catch (ApplicationException ae) {
-				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
-				ed.doExceptionDialog();
-			}
-		}
-		return compte;
-	}
+//	public CompteCourant creerNouveauCompte() {
+//		CompteCourant compte;
+//		CompteEditorPane cep = new CompteEditorPane(this.primaryStage, this.dailyBankState);
+//		compte = cep.doCompteEditorDialog(this.clientDesEmprunt, null, EditionMode.CREATION);
+//		if (compte != null) {
+//			try {
+//				Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
+//				acc.createCompteCourant(compte);
+//			} catch (DatabaseConnexionException e) {
+//				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
+//				ed.doExceptionDialog();
+//				this.primaryStage.close();
+//			} catch (ApplicationException ae) {
+//				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
+//				ed.doExceptionDialog();
+//			}
+//		}
+//		return compte;
+//	}
 
 	/**
-	 * Affiche la fenêtre de gestion des comptes
+	 * Affiche la fenêtre de gestion des emprunt
 	 * 
-	 * @return une liste de comptes d'un client
+	 * @return une liste d'emprunts d'un client
 	 */
-	public ArrayList<CompteCourant> getComptesDunClient() {
-		ArrayList<CompteCourant> listeCpt = new ArrayList<>();
+	public ArrayList<Emprunt> getEmpruntDunClient() {
+		ArrayList<Emprunt> listeCpt = new ArrayList<>();
 
 		try {
-			Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
-			listeCpt = acc.getCompteCourants(this.clientDesComptes.idNumCli);
+			Access_BD_Emprunt acc = new Access_BD_Emprunt();
+			listeCpt = acc.getEmprunts(this.clientDesEmprunt.idNumCli);
 		} catch (DatabaseConnexionException e) {
 			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
 			ed.doExceptionDialog();
@@ -134,33 +135,5 @@ public class EmpruntsManagement {
 			listeCpt = new ArrayList<>();
 		}
 		return listeCpt;
-	}
-
-	/**
-	 * Affiche la fenêtre de gestion des comptes
-	 * 
-	 * @author Bastien RECORD
-	 * 
-	 * @param cpt IN : Compte à gérer
-	 */
-	public void cloturerCompte(CompteCourant cpt) {
-		try {
-			if (cpt.solde == 0) {
-				Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
-				acc.updateCloturationCompteCourant(cpt);
-			} else {
-				AlertUtilities.showAlert(primaryStage, "Erreur lors de la clôturation du compte",
-						"Impossible de clôturer le compte", "Pour clôturer un compte son solde doit être de 0€ !!",
-						AlertType.WARNING);
-			}
-
-		} catch (DatabaseConnexionException e) {
-			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
-			ed.doExceptionDialog();
-			this.primaryStage.close();
-		} catch (ApplicationException ae) {
-			ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
-			ed.doExceptionDialog();
-		}
 	}
 }

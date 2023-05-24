@@ -167,7 +167,7 @@ public class ClientsManagement {
 	 */
 	public void gererEmpruntsClient(Client c) {
 		System.out.println("Liste Emprunt du client " + c.idNumCli);
-		EmpruntsManagement em = new EmpruntsManagement(primaryStage, dailyBankState, c);
+		EmpruntsManagement em = new EmpruntsManagement(this.primaryStage, this.dailyBankState, c);
 		em.doEmpruntsManagementDialog();
 	}
 }
