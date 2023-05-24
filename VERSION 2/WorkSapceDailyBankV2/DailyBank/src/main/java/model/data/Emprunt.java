@@ -4,12 +4,12 @@ import java.util.Date;
 
 public class Emprunt {
 
-	    private int id;
-	    private int tauxApp;
-	    private int capital;
-	    private int duree;
-	    private int idClient;
-	    private Date date;
+	public int id;
+	public int tauxApp;
+	    public int capital;
+	    public int duree;
+	    public int idClient;
+	    public Date date;
 
 
 	    public Emprunt(int idEmprunt, int tauxApp, int capital, int duree, Date date, int idClient ) {
@@ -21,44 +21,16 @@ public class Emprunt {
 	        this.idClient = idClient;
 	    }
 
-	    public int getId() {
-	        return id;
-	    }
-
-	    public int getTauxApp() {
-	        return tauxApp;
-	    }
-
-	    public int getDuree() {
-	        return duree;
-	    }
-	    public int getidclient() {
-	        return idClient;
-	    }
-
-	    public Date getdate() {
-	        return date;
-	    }
-
-
-	    public void setId(int id) {
-	        this.id = id;
-	    }
-
-	    public void setTaux(int tauxApp) {
-	        this.tauxApp = tauxApp;
-	    }
-
-	    public void setCapital(int capital) {
-	        this.capital = capital;
-	    }
+	
 
 	    @Override
 	    public String toString() {
 	        return "Emprunt{" +
 	                "idEmprunt=" + id +
 	                ", TauxApplicable='" + tauxApp + '\'' +
-	                ", capital='" + capital + '\'' +
+	                ", Capital='" + capital + '\'' +
+	                ", Durée='" + duree + '\'' +
+	                ", idClient='" + idClient + '\'' +
 	                '}';
 	    }
 	}
