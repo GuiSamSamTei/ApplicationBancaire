@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import model.data.CompteCourant;
@@ -82,20 +83,20 @@ public class Access_BD_Emprunt {
 	 *                                           rapport au débitAutorisé (solde <
 	 *                                           débitAutorisé)
 	 */
-	public void createCompteCourant(CompteCourant compte) throws RowNotFoundOrTooManyRowsException, DataAccessException,
+	public void insertEmprunt(Emprunt emp) throws RowNotFoundOrTooManyRowsException, DataAccessException,
 			DatabaseConnexionException, ManagementRuleViolation {
 		try {
 
 			Connection con = LogToDatabase.getConnexion();
 
-			String query = "INSERT INTO CompteCourant(idNumCompte, debitAutorise, solde, idNumCli, estCloture) VALUES ("
-					+ "seq_id_compte.NEXTVAL" + ", " + "?" + ", " + "?" + ", " + "?" + ", " + "?" + ")";
+			String query = "INSERT INTO Emprunt(idEmprunt, tauxEmp, capitalEmp, dureeEmp, dateDebEmp, idNumCli) VALUES ("
+					+ "seq_id_emprunt.NEXTVAL" + ", " + "?" + ", " + "?" + ", " + "?" + ", " + "?" + ", " + "?" + ")";
 			PreparedStatement pst = con.prepareStatement(query);
-			compte.debitAutorise *= -1;
-			pst.setInt(1, compte.debitAutorise);
-			pst.setDouble(2, compte.solde);
-			pst.setInt(3, compte.idNumCli);
-			pst.setString(4, "N");
+			pst.setInt(1, emp.tauxApp);
+			pst.setInt(2, emp.capital);
+			pst.setInt(3, emp.duree);
+			pst.setDate(4, java.sql.Date.valueOf(LocalDate.now()));
+			pst.setInt(5, emp.idClient);
 
 			System.err.println(query);
 
@@ -106,25 +107,12 @@ public class Access_BD_Emprunt {
 				con.rollback();
 				throw new RowNotFoundOrTooManyRowsException(Table.Client, Order.INSERT,
 						"Insert anormal (insert de moins ou plus d'une ligne)", null, result);
+			} else {
+				con.commit();
 			}
 
-			query = "SELECT seq_id_compte.CURRVAL from DUAL";
-
-			System.err.println(query);
-			PreparedStatement pst2 = con.prepareStatement(query);
-
-			ResultSet rs = pst2.executeQuery();
-			rs.next();
-			int numCliBase = rs.getInt(1);
-
-			con.commit();
-			rs.close();
-			pst2.close();
-
-			compte.idNumCli = numCliBase;
 		} catch (SQLException e) {
 			throw new DataAccessException(Table.Client, Order.INSERT, "Erreur accès", e);
 		}
-
 	}
 }

@@ -134,6 +134,9 @@ public class EmpruntsManagementController {
 	@FXML
 	private void doNouvelEmprunt() {
 		this.emDialogController.creerEmprunts(this.clientDesEmprunts);
+
+		this.loadList();
+		this.validateComponentState();
 	}
 
 	/**

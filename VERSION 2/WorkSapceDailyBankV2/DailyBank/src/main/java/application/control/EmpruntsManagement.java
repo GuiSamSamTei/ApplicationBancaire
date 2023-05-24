@@ -79,8 +79,7 @@ public class EmpruntsManagement {
 	 * @param client IN : client à gérer
 	 */
 	public void creerEmprunts(Client client) {
-		System.out.println(this);
-		EmpruntEditorPane eep = new EmpruntEditorPane(this.primaryStage, this.dailyBankState);
+		EmpruntEditorPane eep = new EmpruntEditorPane(this.primaryStage, this.dailyBankState, this.clientDesEmprunt);
 		eep.doEmpruntEditorPaneDialog();
 	}
 
