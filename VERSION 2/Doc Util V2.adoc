@@ -79,7 +79,7 @@ image:Image Doc Util/10.jpg[]
 
 === 9. Prélévement automatique (GS)
 
-Choisissons un client, et cliquons sur prel auto.
+Choisissons un compte client, et cliquons sur prel auto.
 
 image:Image Doc Util/prel.PNG[]
 
