@@ -115,7 +115,7 @@ image:Image Doc Util/12.jpg[]
 === 11. Débit / crédit (JB) / virement compte à compte (BR) / Débit Exceptionnel (JB)
 Nous pouvons maintenant faire un crédit ou un débit, essayons avec un débit.
 
-image:Image Doc Util/pdf1.PNG[]
+image:Image Doc Util/pdf2.PNG[]
 
 image:Image Doc Util/13.jpg[]
 
@@ -130,6 +130,15 @@ image:Image Doc Util/debitex2.jpg[]
 nous voyons que le solde est inférieur au découvert autorisé
 
 image:Image Doc Util/debitex3.jpg[]
+
+=== 12. Générer un PDF de relevé de compte (BR)
+
+Dans la gestion de compte, cliquez sur voir opération
+
+Puis cliquez sur relevé de compte
+
+Pour retrouver le fichier, il se trouve dans le dossier dailyBank de votre ordinateur
+
 
 
 === 12. Clôturer un compte (BR)
