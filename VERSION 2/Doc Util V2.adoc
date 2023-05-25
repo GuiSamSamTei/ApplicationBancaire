@@ -135,13 +135,20 @@ image:Image Doc Util/debitex3.jpg[]
 
 Dans la gestion de compte, cliquez sur voir opération
 
+image:Image Doc Util/pdf1.PNG[]
+
 Puis cliquez sur relevé de compte
+
+image:Image Doc Util/pdf2.PNG[]
 
 Pour retrouver le fichier, il se trouve dans le dossier dailyBank de votre ordinateur
 
+image:Image Doc Util/pdf3.PNG[]
+
+image:Image Doc Util/pdf4.PNG[]
 
 
-=== 12. Clôturer un compte (BR)
+=== 13. Clôturer un compte (BR)
 En cliquant sur le bouton "clôturer un compte", un pop-up apparaitra pour s'assurer de votre décision de clôturer le compte.
 
 image:Image Doc Util/14.jpg[]
@@ -149,14 +156,14 @@ image:Image Doc Util/14.jpg[]
 
 image:Image Doc Util/cloturer.PNG[]
 
-=== 13. Nouveau Compte utilisateur (GS)
+=== 14. Nouveau Compte utilisateur (GS)
 Voici comment ouvrir un nouveau compte à un utilisateur.
 
 image:Image Doc Util/15.jpg[]
 
 image:Image Doc Util/16.jpg[]
 
-=== 14. Modifier un client V0
+=== 15. Modifier un client V0
 Pour finir, vous avez la possibilité de modifier un client dans la partie gestion client.
 
 image:Image Doc Util/17.jpg[]
