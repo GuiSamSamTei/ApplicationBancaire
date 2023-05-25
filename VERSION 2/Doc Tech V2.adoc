@@ -143,7 +143,7 @@ Premierement, pour créer la fonction créditer, je me suis essentiellement insp
 [.text-justify]
 Pour instaurer des débit excpetionnels, il suffit de prendre le même code que pour débiter mais en retirant quelques subtilités tels que le découvert autorisé. J'avais effectuer cette fonciton bien avant le message de Monsieur Péninou, j'ai donc créé une dépendance sous oracle du nom de "DebitEx", pour faire cela j'ai utilisé la dependance de créditer mais j'ai simplement remplacé le nom et le *''+''* en *''-''*. + 
 L'avantage d'utiliser créditer est de ne pas avoir le découvert, donc parfait pour les débits Exceptionnel. + 
-De plus, dans la fonction *validateComponentState()* j'ai ajouté le fait que seul le chef d'agence a accès à ce bouton.  +
+De plus, dans la fonction *validateComponentState()* j'ai ajouté le fait que seul le chef d'agence ai accès à ce bouton.  +
 
 *Fichiers concernés*::
   - OperationManagement.java +
