@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import application.DailyBankState;
 import application.control.ClientsManagement;
 import application.control.EmployeManagement;
+import application.tools.AlertUtilities;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -14,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
@@ -167,8 +169,12 @@ public class EmployeManagementController {
 	private void doDesactiverEmploye() {
 		int selectedIndice = this.lvEmployes.getSelectionModel().getSelectedIndex();
 		if (selectedIndice >= 0) {
-			Employe employe = this.oListEmployes.get(selectedIndice);
-			this.cmDialogController.supprimerEmploye(employe.idEmploye);
+			if (AlertUtilities.confirmYesCancel(this.primaryStage, "Supprimer l'employé",
+					"Etes vous sur de vouloir supprimer cet employé ?", null, AlertType.CONFIRMATION)) {
+				Employe employe = this.oListEmployes.get(selectedIndice);
+				this.cmDialogController.supprimerEmploye(employe.idEmploye);
+			}
+			
 		}
 		this.loadList();
 		this.validateComponentState();
