@@ -10,7 +10,7 @@ Créé par : Groupe 1B1
 == I. Introduction
 === 1. Objet :
 [.text-justify]
-Ce document a été produit dans le cadre d'un projet d'élaboration d'une application bancaire pour permettre d'élaborer différents tests de l'applications pour montrer son bon fonctionnement.
+Ce document a été produit dans le cadre d'un projet d'élaboration d'une application bancaire pour permettre d'élaborer différents tests de l'application pour montrer son bon fonctionnement.
 
 
 
@@ -25,7 +25,7 @@ L'exécution des tests spécifiés au chapitre suivant requiert :
 
 === 1. Éléments à tester :
 [.text-justify]
-Les éléments testés concernent les Use-Cases sont spécifiés dans la *documentation technique*.
+Les éléments testés concernent les Use-Cases qui sont spécifiés dans la *documentation technique*.
 
 
 === 2. Environnement de test :
@@ -48,7 +48,7 @@ Ordinateur sous Windows ou OS équivalent.
 ^|All_G_C.1 ^|Cliquer sur le bouton "Nouveau client". ^|La fenêtre de création des clients s'ouvre. ^|aucune ^|OK
 ^|All_G_C.2 ^|Compléter les champs spécifiés et valider. ^|Un nouveau client est créé. ^|Tous les champs doivent être remplis ^|OK
 5+|
-5+|Commentaire : Un nouveau client est créé et enregistré dans la Base de données. Il est afficher dans la liste des clients.
+5+|Commentaire : Un nouveau client est créé et enregistré dans la Base de données. Il est affiché dans la liste des clients.
 
 |====
 
@@ -60,8 +60,8 @@ Ordinateur sous Windows ou OS équivalent.
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
 ^|All_G_C.3 ^|Cliquer sur le bouton "Modifier client". ^|La fenêtre de modification des données du clients s'ouvre. ^|Le client est sélectionné ^|OK
-^|All_G_C.4 ^|Modifier les champs souhaités et confirmer. ^|Retour sur les informations du client. Le client est modifié. ^|La fenêtre modifier client est active ^|OK
-^|All_G_C.5 ^|Modifier les champs souhaités et annuler. ^|Retour sur les informations du client. Le client est inchangé. ^|La fenêtre modifier client est active ^|OK
+^|All_G_C.4 ^|Modifier les champs souhaités et confirmer. ^|Retour sur les informations du client. Le client est modifié. ^|La fenêtre "Modifier client" est active ^|OK
+^|All_G_C.5 ^|Modifier les champs souhaités et annuler. ^|Retour sur les informations du client. Le client est inchangé. ^|La fenêtre "Modifier client" est active ^|OK
 5+|
 5+|Commentaire : La modification des clients affiche un fenêtre avec les informations déjà inscrites. L'ID et rendre le client actif ou inactif est imposible à changer.
 
@@ -92,8 +92,8 @@ Ordinateur sous Windows ou OS équivalent.
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
 ^|All_G_CB.1 ^|Cliquer sur le bouton "Nouveau compte". ^|La page de gestion d'un compte s’affiche. ^|aucune ^|OK
-^|All_G_CB.2 ^|Remplir les champs et cliquer sur ajouter ^|Le compte est ajouter et s'affiche dans la liste des comtpes clients ^|Les champs doivent être correct ^|OK
-^|All_G_CB.3 ^|Remplir les champs et cliquer sur annuler ^|La liste des comtpes n'est pas modifiée ^|aucune ^|OK
+^|All_G_CB.2 ^|Remplir les champs et cliquer sur "Ajouter" ^|Le compte est ajouter et s'affiche dans la liste des comptes clients ^|Les champs doivent être corrects ^|OK
+^|All_G_CB.3 ^|Remplir les champs et cliquer sur "Annuler" ^|La liste des comptes n'est pas modifiée ^|aucune ^|OK
 5+|
 5+|Commentaire : Seulement les champs découvert autorisé et solde sont à remplir. Les autres champs s'implémentent automatiquement.
 
@@ -106,7 +106,7 @@ Ordinateur sous Windows ou OS équivalent.
 >|Objectif 4+|Vérifier qu'il est possible de clôturer un compte
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_CB.1 ^|Cliquer sur le bouton "Clôturer compte". ^|Le compte devient clôturer à la place d'ouvert ^|Un compte actif est sélectionné ^|OK
+^|All_G_CB.1 ^|Cliquer sur le bouton "Clôturer compte". ^|Le compte devient clôturé à la place d'ouvert ^|Un compte actif est sélectionné ^|OK
 5+|
 5+|Commentaire : Lorsqu'un compte est clôturé il est impossible d'effectuer des opérations.
 
@@ -123,7 +123,7 @@ Ordinateur sous Windows ou OS équivalent.
 ^|All_G_CB.2 ^|Cliquer sur le bouton "Relevé de compte". ^|Une fenêtre s'ouvre avec un message d'erreur "impossible de générer le relevé de compte". Aucun fichier pdf n'est alors créer dans notre espace de document. ^|Un compte clôturer ou non est ouvert mais la liste des différentes opérations est vide. ^|OK
 ^|All_G_CB.3 ^|Cliquer sur le bouton "Relevé de compte". ^|Une fenêtre s'ouvre avec un message d'erreur "impossible de générer le relevé de compte". Aucun fichier pdf n'est alors créer dans notre espace de document. ^|Un compte clôturer ou non est ouvert mais la liste des différentes opérations contient différentes opérations ne correspondant pas au mois et année actuel (localhost). ^|OK
 5+|
-5+|Commentaire : Lorsqu'un compte n'a aucune opérations alors le relevé mensuel n'est pas généré. Pour générer le relevé mensuel, seul les opérations effectuées le même mois et année (localhost) que l'action de générer le relevé sont alors inscris dans la pdf.
+5+|Commentaire : Lorsqu'un compte n'a aucune opération alors le relevé mensuel n'est pas généré. Pour générer le relevé mensuel, seul les opérations effectuées le même mois et année (localhost) que l'action de générer le relevé sont alors inscrites dans la pdf.
 
 |====
 
@@ -136,7 +136,7 @@ Ordinateur sous Windows ou OS équivalent.
 >|Objectif 4+| Vérifier qu'il est possible de débiter un compte
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|All_G_COP.1 ^|Cliquer sur le bouton "Enregistrer Débit". ^|La page des débit du compte s’affiche. ^| Un compte actif est sélectionné ^|OK
+^|All_G_COP.1 ^|Cliquer sur le bouton "Enregistrer Débit". ^|La page des débits du compte s’affiche. ^| Un compte actif est sélectionné ^|OK
 ^|All_G_COP.2  ^|Rentrer un montant 50 dans le champ "Montant". ^|Le nouveau solde est +50euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros ^|OK
 ^|All_G_COP.3  ^|Rentrer un montant 150 dans le champ "Montant". ^|Le nouveau solde est -50 euros. On a créé une nouvelle opération dans la liste des opérations avec le bon montant et la bonne date ^| Le compte sélectionné a un solde de +100 euros, le découvert autorisé est de -100 euros. ^|OK
 ^|All_G_COP.4  ^|Rentrer un montant 250 dans le champ "Montant". ^|Blocage ! + pop-up ^| Le compte sélectionné a un solde de +100 euros, le découvert
@@ -188,7 +188,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 >|Objectif 4+|Vérifier qu'il est possible de rendre un client inactif
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_C.1 ^|Sélectionner le bouton "Inactif" et confirmer. ^|Le client est devenue inactif ^|Un client actif est sélectionné ^|OK
+^|C_G_C.1 ^|Sélectionner le bouton "Inactif" et confirmer. ^|Le client est devenu inactif ^|Un client actif est sélectionné ^|OK
 5+|
 5+|Commentaire : Rendre un client inactif n'empêche pas de faire des opérations sur ses comptes.
 
@@ -196,7 +196,78 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 ==== 2.2 Gestion des employés (GS) :
 
-*Manque de temps pour la Version 1*
+|====
+
+>|Cas de test 4+|Test-02-02-01
+>|Titre 4+|Vérifier qu'on peut rechercher un employé par son id
+>|Objectif 4+|Obtenir un employé spécifique en saisissant uniquement son id
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_E.1 ^|Saisir l'idEmploye désiré dans le champ "Numéro" ^|On trouve l'employé associé à l'identifiant saisi ^|L'employé associé à l'identifiant existe ^|OK
+^|C_G_E.2 ^|Saisir l'idEmploye d'un employé ^|On ne trouve aucun employé ^|L'employé associé à l'identifiant saisi n'existe pas ^|OK
+5+|
+5+|Commentaire : Si l'employé n'existe pas, la liste d'employés sera vide, parce qu'on ne trouve aucun employé.
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-02-02-02
+>|Titre 4+|Vérifier qu'on peut rechercher un employé par son nom et/ou prénom
+>|Objectif 4+|Obtenir les employés en fonction de son nom et/ou son prénom
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_E.2 ^|Saisir le nom de l'employé désiré dans le champ "Nom" et cliquer sur "Rechercher" ^|On trouve des employés ^|Il y a des employés avec ce nom ^|OK
+^|C_G_E.3 ^|Saisir le prénom de l'employé désiré dans le champ "Prénom" et cliquer sur "Rechercher" ^|On trouve des employés ^|Il y a des employés avec ce prénom ^|OK
+^|C_G_E.4 ^|Saisir le nom/prénom de l'employé désiré dans les champs dédiés et cliquer sur "Rechercher" ^|On trouve des employés ^|Il y a des employés avec ces noms/prénoms ^|OK
+5+|
+5+|Commentaire : S'il n'y a aucun employé avec ces noms/prénoms, la liste sera vide. On peut rechercher par seulement le nom, seulement le prénom ou le nom ET le prénom.
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-02-02-03
+>|Titre 4+|Voir tous les employés
+>|Objectif 4+|Obtenir une liste avec tous les employés de l'agence
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_E.5 ^|Cliquer sur le bouton "Rechercher" ^|On trouve tous les employés de l'agence ^|Les champs de texte de recherche sont vides ^|OK
+5+|
+5+|Commentaire : Si un des champs de texte de recherche n'est pas vide, on n'obtiendra que les employés qui correspondent à la recherche.
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-02-02-04
+>|Titre 4+|Modifier les employés
+>|Objectif 4+|Faire des modifications sur les employés
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_E.6 ^|Cliquer sur le bouton "Modifier" ^|Une fenêtre s'ouvre pour modifier les informations de l'employé ^|Avoir sélectionné un employé ^|OK
+^|C_G_E.7 ^|Modifier les informations et cliquer sur "Modifier" ^|Les informations de l'employé ont changé dans la base de données et dans la liste et la fenêtre se ferme ^|Avoir ouvert la fenêtre de modification ^|OK
+^|C_G_E.8 ^|Modifier les informations et cliquer sur "Annuler" ^|La fenêtre se ferme et aucune modification est sauvegardée ^| Avoir ouvert la fenêtre de modification ^|OK
+5+|
+5+|Commentaire : Le bouton de modification s'active uniquement si on a sélectionné un employé.
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-02-02-04
+>|Titre 4+|Modifier les employés
+>|Objectif 4+|Faire des modifications sur les employés
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_E.6 ^|Cliquer sur le bouton "Modifier" ^|Une fenêtre s'ouvre pour modifier les informations de l'employé ^|Avoir sélectionné un employé ^|OK
+^|C_G_E.7 ^|Modifier les informations et cliquer sur "Modifier" ^|Les informations de l'employé ont changé dans la base de données et dans la liste et la fenêtre se ferme ^|Avoir ouvert la fenêtre de modification ^|OK
+^|C_G_E.8 ^|Modifier les informations et cliquer sur "Annuler" ^|La fenêtre se ferme et aucune modification est sauvegardée ^| Avoir ouvert la fenêtre de modification ^|OK
+5+|
+5+|Commentaire : Le bouton de modification s'active uniquement si on a sélectionné un employé.
+
+|====
+
 
 
 ==== 2.3 Gestion des opérations (JB) :
