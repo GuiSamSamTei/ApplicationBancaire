@@ -77,23 +77,23 @@ Cliquons sur "Comptes client"
 
 image:Image Doc Util/10.jpg[]
 
-=== 9. Prélévement automatique
+=== 9. Prélévement automatique (GS)
 
 Choisissons un client, et cliquons sur prel auto.
 
-image:Image Doc Util/prel.jpg[]
+image:Image Doc Util/prel.PNG[]
 
 Pour ajouter un prelevement auto, il suffit de cliquer sur nouveau prel auto
 
-image:Image Doc Util/prel2.jpg[]
+image:Image Doc Util/prel2.PNG[]
 
-image:Image Doc Util/prel3.jpg[]
+image:Image Doc Util/prel3.PNG[]
 
 Puis pour supprimer il faut cliquer sur supprimer
 
-image:Image Doc Util/prelsup.jpg[]
+image:Image Doc Util/prelsup.PNG[]
 
-=== 9. Opération (JB)
+=== 10. Opération (JB)
 
 Voici les comptes de l'utilisateur que nous avons selectionné. Choisissons un compte aléatoirement, nous pouvons voir ses opérations en cliquant sur le bouton "opération".
 
@@ -101,7 +101,7 @@ image:Image Doc Util/11.jpg[]
 
 image:Image Doc Util/12.jpg[]
 
-=== 10. Débit / crédit (JB) / virement compte à compte (BR) / Débit Exceptionnel (JB)
+=== 11. Débit / crédit (JB) / virement compte à compte (BR) / Débit Exceptionnel (JB)
 Nous pouvons maintenant faire un crédit ou un débit, essayons avec un débit.
 
 image:Image Doc Util/operation.PNG[]
@@ -121,7 +121,7 @@ nous voyons que le solde est inférieur au découvert autorisé
 image:Image Doc Util/debitex3.jpg[]
 
 
-=== 11. Clôturer un compte (BR)
+=== 12. Clôturer un compte (BR)
 En cliquant sur le bouton "clôturer un compte", un pop-up apparaitra pour s'assurer de votre décision de clôturer le compte.
 
 image:Image Doc Util/14.jpg[]
@@ -129,14 +129,14 @@ image:Image Doc Util/14.jpg[]
 
 image:Image Doc Util/cloturer.PNG[]
 
-=== 12. Nouveau Compte utilisateur (GS)
+=== 13. Nouveau Compte utilisateur (GS)
 Voici comment ouvrir un nouveau compte à un utilisateur.
 
 image:Image Doc Util/15.jpg[]
 
 image:Image Doc Util/16.jpg[]
 
-=== 13. Modifier un client V0
+=== 14. Modifier un client V0
 Pour finir, vous avez la possibilité de modifier un client dans la partie gestion client.
 
 image:Image Doc Util/17.jpg[]
