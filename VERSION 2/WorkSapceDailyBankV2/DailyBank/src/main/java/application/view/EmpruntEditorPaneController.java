@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
 import model.data.Emprunt;
+import model.data.AssuranceEmprunt;
 import model.orm.Access_BD_Emprunt;
 import model.orm.exception.DataAccessException;
 import model.orm.exception.DatabaseConnexionException;
@@ -108,17 +109,44 @@ public class EmpruntEditorPaneController {
 
 	@FXML
 	private void doValidate() {
+		double tauxApp;
+		int capitalEmp, dureeEmp;
+		Date dateDebEmp;
+
+		tauxApp = Double.valueOf(this.tauxApp.getText());
+		capitalEmp = Integer.valueOf(this.capital.getText());
+		dureeEmp = Integer.valueOf(this.duree.getText());
+		dateDebEmp = java.sql.Date.valueOf(LocalDate.now());
+
+		Emprunt newEmprunt = new Emprunt(0, tauxApp, capitalEmp, dureeEmp, dateDebEmp, this.clientDesEmprunts.idNumCli);
+
 		if (this.isSaisieValide()) {
-			Emprunt newEmprunt = new Emprunt(0, Integer.valueOf(this.tauxApp.getText().trim()),
-					Integer.valueOf(this.capital.getText().trim()), Integer.valueOf(this.duree.getText().trim()), null,
-					this.clientDesEmprunts.idNumCli);
-			Access_BD_Emprunt ae = new Access_BD_Emprunt();
-			try {
-				ae.insertEmprunt(newEmprunt);
-			} catch (RowNotFoundOrTooManyRowsException | DataAccessException | DatabaseConnexionException
-					| ManagementRuleViolation e) {
-				e.printStackTrace();
+			if (this.assuranceOui.isSelected()) {
+				double tauxAss, tauxCouv;
+
+				tauxAss = Double.valueOf(this.tauxAssurance.getText());
+				tauxCouv = Double.valueOf(this.tauxCouv.getText());
+
+				AssuranceEmprunt newAssurance = new AssuranceEmprunt(0, tauxAss, tauxCouv, 0);
+
+				Access_BD_Emprunt ae = new Access_BD_Emprunt();
+				try {
+					ae.insertEmprunt(newEmprunt, newAssurance);
+				} catch (RowNotFoundOrTooManyRowsException | DataAccessException | DatabaseConnexionException
+						| ManagementRuleViolation e) {
+					e.printStackTrace();
+				}
+			} else {
+
+				Access_BD_Emprunt ae = new Access_BD_Emprunt();
+				try {
+					ae.insertEmprunt(newEmprunt, null);
+				} catch (RowNotFoundOrTooManyRowsException | DataAccessException | DatabaseConnexionException
+						| ManagementRuleViolation e) {
+					e.printStackTrace();
+				}
 			}
+
 			this.doCancel();
 		}
 	}

@@ -9,24 +9,25 @@ import java.util.Date;
  */
 public class Emprunt {
 
-	public int id;
-	public int tauxApp;
-	public int capital;
-	public int duree;
+	public int idEmprunt;
+	public double tauxApplicable;
+	public int capitalEmprunt;
+	public int dureeEmprunt;
 	public int idClient;
-	public Date date;
+	public Date dateDebEmprunt;
 
-	public Emprunt(int idEmprunt, int tauxApp, int capital, int duree, Date date, int idClient) {
-		this.id = idEmprunt;
-		this.tauxApp = tauxApp;
-		this.capital = capital;
-		this.duree = duree;
-		this.date = date;
+	public Emprunt(int idEmprunt, double tauxApp, int capital, int duree, Date date, int idClient) {
+		this.idEmprunt = idEmprunt;
+		this.tauxApplicable = tauxApp / 100;
+		this.capitalEmprunt = capital;
+		this.dureeEmprunt = duree;
+		this.dateDebEmprunt = date;
 		this.idClient = idClient;
 	}
 
 	@Override
 	public String toString() {
-		return "[" + this.id + "] Capital = " + this.capital + "€ (" + this.date.toString() + ")";
+		return "[" + this.idEmprunt + "] Capital = " + this.capitalEmprunt + "€ (" + this.dateDebEmprunt.toString()
+				+ ")";
 	}
 }

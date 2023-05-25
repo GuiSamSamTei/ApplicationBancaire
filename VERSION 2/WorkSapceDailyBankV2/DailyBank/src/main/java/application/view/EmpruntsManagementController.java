@@ -119,7 +119,8 @@ public class EmpruntsManagementController {
 	private void doDetailsEmprunts() {
 		int selectedIndice = this.lvEmprunts.getSelectionModel().getSelectedIndex();
 		if (selectedIndice >= 0) {
-			System.out.println("Un emprunt est sélectionné");
+			Emprunt emp = this.oListEmprunts.get(selectedIndice);
+			this.emDialogController.detailsEmprunt(emp);
 		}
 
 		this.loadList();
@@ -133,7 +134,7 @@ public class EmpruntsManagementController {
 	 */
 	@FXML
 	private void doNouvelEmprunt() {
-		this.emDialogController.creerEmprunts(this.clientDesEmprunts);
+		this.emDialogController.creerEmprunt();
 
 		this.loadList();
 		this.validateComponentState();

@@ -74,43 +74,24 @@ public class EmpruntsManagement {
 	}
 
 	/**
-	 * Affiche la fenêtre de gestion des emprunts
+	 * Affiche la fenêtre de création d'un emprunt
 	 * 
 	 * @param client IN : client à gérer
 	 */
-	public void creerEmprunts(Client client) {
+	public void creerEmprunt() {
 		EmpruntEditorPane eep = new EmpruntEditorPane(this.primaryStage, this.dailyBankState, this.clientDesEmprunt);
 		eep.doEmpruntEditorPaneDialog();
 	}
 
 	/**
-	 * Affiche la fenêtre de gestion des comptes
+	 * Affiche la fenêtre de détails des emprunts
 	 * 
-	 * @author Guilherme SAMPAIO
-	 * 
-	 * @param cpt IN : Compte à gérer
-	 * 
-	 * @return le nouveau compte
+	 * @param emprunt
 	 */
-//	public CompteCourant creerNouveauCompte() {
-//		CompteCourant compte;
-//		CompteEditorPane cep = new CompteEditorPane(this.primaryStage, this.dailyBankState);
-//		compte = cep.doCompteEditorDialog(this.clientDesEmprunt, null, EditionMode.CREATION);
-//		if (compte != null) {
-//			try {
-//				Access_BD_CompteCourant acc = new Access_BD_CompteCourant();
-//				acc.createCompteCourant(compte);
-//			} catch (DatabaseConnexionException e) {
-//				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, e);
-//				ed.doExceptionDialog();
-//				this.primaryStage.close();
-//			} catch (ApplicationException ae) {
-//				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dailyBankState, ae);
-//				ed.doExceptionDialog();
-//			}
-//		}
-//		return compte;
-//	}
+	public void detailsEmprunt(Emprunt emprunt) {
+		EmpruntDetails ed = new EmpruntDetails(this.primaryStage, this.dailyBankState, emprunt);
+		ed.doEmpruntDetailsDialog();
+	}
 
 	/**
 	 * Affiche la fenêtre de gestion des emprunt
