@@ -47,7 +47,7 @@ public class PrelEditorPane {
 			this.primaryStage.initOwner(_parentStage);
 			StageManagement.manageCenteringStage(_parentStage, this.primaryStage);
 			this.primaryStage.setScene(scene);
-			this.primaryStage.setTitle("Gestion d'un prélèvemnt");
+			this.primaryStage.setTitle("Gestion d'un prélèvement");
 			this.primaryStage.setResizable(false);
 
 			this.pepcViewController = loader.getController();
