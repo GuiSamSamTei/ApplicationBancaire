@@ -115,7 +115,7 @@ image:Image Doc Util/12.jpg[]
 === 11. Débit / crédit (JB) / virement compte à compte (BR) / Débit Exceptionnel (JB)
 Nous pouvons maintenant faire un crédit ou un débit, essayons avec un débit.
 
-image:Image Doc Util/operation.PNG[]
+image:Image Doc Util/pdf1.PNG[]
 
 image:Image Doc Util/13.jpg[]
 
