@@ -37,8 +37,8 @@ image:Image Doc Tech/DC.png[]
 == II. Architecture
 [.text-justify]
 === 1. Installation
-Notre application est codé sur eclipse en java jdk17. +
-Pour installer l'application sur eclipse, il faut ouvrir un workspace pouvant gérer le javaFx, de plus il faut importer DailyBank pour acceder à l'application. Après avoir lancer le Maven Build avec " clean javafx:run", l'application se lancera toute seule et referez-vous à la doc Util en cas de problème. +
+Notre application est codé sur eclipse en java *jdk17*. +
+Pour installer l'application sur eclipse, il faut ouvrir un workspace pouvant gérer le javaFx, de plus il faut importer *DailyBank* pour acceder à l'application. Après avoir lancer le Maven Build avec " clean javafx:run", l'application se lancera toute seule et referez-vous à la doc Util en cas de problème. +
 Au niveau de la base de données, pour se connecter nos identifiants sont : *G1B1S2* et notre mot de passe est : *password1234*
 
 
