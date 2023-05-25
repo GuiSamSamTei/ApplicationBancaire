@@ -163,6 +163,8 @@ image:Image Doc Util/15.jpg[]
 
 image:Image Doc Util/16.jpg[]
 
+Le compte apparait donc sur l'ecran, et dans la base de données
+
 === 15. Modifier un client V0
 Pour finir, vous avez la possibilité de modifier un client dans la partie gestion client.
 
