@@ -10,6 +10,7 @@ import application.control.ClientsManagement;
 import application.control.ComptesManagement;
 import application.control.EmployeManagement;
 import application.control.PrelManagement;
+import application.tools.AlertUtilities;
 import application.tools.StageManagement;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -20,6 +21,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -162,8 +164,12 @@ public class PrelManagementController {
 	private void doSupprPrel() {
 		int selectedIndice = this.lvPrelevements.getSelectionModel().getSelectedIndex();
 		if (selectedIndice >= 0) {
-			Prelevement prel = this.oListPrelevements.get(selectedIndice);
-			this.cmDialogController.supprimerPrelevement(prel.idPrelev);
+			if (AlertUtilities.confirmYesCancel(this.primaryStage, "Supprimer le prélèvement",
+					"Etes vous sur de vouloir supprimer ce prélèvement ?", null, AlertType.CONFIRMATION)) {
+				Prelevement prel = this.oListPrelevements.get(selectedIndice);
+				this.cmDialogController.supprimerPrelevement(prel.idPrelev);
+			}
+			
 		}
 		this.loadList();
 		this.validateComponentState();
