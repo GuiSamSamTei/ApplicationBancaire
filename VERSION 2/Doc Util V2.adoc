@@ -8,6 +8,17 @@ Créé par : Équipe 1B1
 [.text-justify]
 L'application DailyBank permet la gestion de vos comptes en banque. De votre maison, à votre travail, l'application rend vos comptes disponibles partout. Que vous soyez employés, client, guichetier ou chef d'agence, vous pouvez utiliser DailyBank.
 
+Explication des différents rôles::
+  * Le chef d'agence +
+  ** le chef d'agence est le rôle ayant le plus de droits dans notre application. Il est le seul à pouvoir gerer les débits excpetionnels, faire le CRUD des employés et generer des simulations d'emprunts avec ou sans assurance. +
+* Le guichetier +
+ ** le guichetier peut generer le pdf et faire le CRUD des prélévements automatiques. +
+* Le client +
+ ** le client peut acceder à son compte et effectuer des crédits/débits et virement. +
+ * Le client inactif +
+ ** Le client inactif ne peut plus acceder à ses comptes mais ses informations restent sur notre application.
+ 
+
 
 
 == II. Installation utilisation, fonctionnement
