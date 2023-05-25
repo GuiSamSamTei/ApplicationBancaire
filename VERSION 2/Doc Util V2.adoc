@@ -11,6 +11,14 @@ L'application DailyBank permet la gestion de vos comptes en banque. De votre mai
 
 
 == II. Installation utilisation, fonctionnement
+=== Installation 
+
+Notre application est codé sur eclipse en java *jdk17*. +
+Pour installer l'application sur eclipse, il faut ouvrir un workspace pouvant gérer le javaFx, de plus il faut importer *DailyBank* pour acceder à l'application. Après avoir lancer le Maven Build avec " clean javafx:run", l'application se lancera toute seule et referez-vous à la doc Util en cas de problème. +
+Au niveau de la base de données, pour se connecter nos identifiants sont : *G1B1S2* et notre mot de passe est : *password1234*. +
+Pour changer de base de données, il suffit d'aller dans la class *LogToDatabase.java* et de changer les identifiants et mots de passes ici: 
+
+image:Image Doc Tech/log.PNG[]
 
 === 1. Page d'accueil V0
 Voici la page d'accueil. Pour commencer à utiliser DailyBank, appuyez sur "Connexion"
