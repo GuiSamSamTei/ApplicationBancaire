@@ -77,6 +77,22 @@ Cliquons sur "Comptes client"
 
 image:Image Doc Util/10.jpg[]
 
+=== 9. Prélévement automatique
+
+Choisissons un client, et cliquons sur prel auto.
+
+image:Image Doc Util/prel.jpg[]
+
+Pour ajouter un prelevement auto, il suffit de cliquer sur nouveau prel auto
+
+image:Image Doc Util/prel2.jpg[]
+
+image:Image Doc Util/prel3.jpg[]
+
+Puis pour supprimer il faut cliquer sur supprimer
+
+image:Image Doc Util/prelsup.jpg[]
+
 === 9. Opération (JB)
 
 Voici les comptes de l'utilisateur que nous avons selectionné. Choisissons un compte aléatoirement, nous pouvons voir ses opérations en cliquant sur le bouton "opération".
