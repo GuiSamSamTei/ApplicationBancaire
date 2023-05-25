@@ -22,7 +22,10 @@ Explication des différents rôles::
 * Le guichetier +
  ** le guichetier peut generer le pdf et faire le CRUD des prélévements automatiques. +
 * Le client +
- ** le client peut acceder à son compte et effectuer des crédits/débits et virement.
+ ** le client peut acceder à son compte et effectuer des crédits/débits et virement. +
+ * Le client inactif +
+ ** Le client inactif ne peut plus acceder à ses comptes mais ses informations restent sur notre application.
+ 
 
 === 3. Diagramme des Cas d'utilisation
 image:Image Doc Tech/UseCase.png[]
