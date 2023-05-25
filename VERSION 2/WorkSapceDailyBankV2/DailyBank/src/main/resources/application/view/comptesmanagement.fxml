@@ -58,6 +58,7 @@
                            </GridPane.margin>
                         </Button>
                         <Button fx:id="btnCloturerCompte" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#doCloturerCompte" text="Clôturer compte" GridPane.rowIndex="2" />
+                        <Button fx:id="btnPrel" mnemonicParsing="false" onAction="#doVoirPrelevements" prefHeight="25.0" prefWidth="243.0" text="Voir prél. auto." GridPane.rowIndex="1" />
                      </children>
                   </GridPane>
                </children>

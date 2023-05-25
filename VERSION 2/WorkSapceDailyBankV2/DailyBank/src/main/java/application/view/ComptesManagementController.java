@@ -108,6 +108,8 @@ public class ComptesManagementController {
 	private Button btnModifierCompte;
 	@FXML
 	private Button btnSupprCompte;
+	@FXML
+	private Button btnPrel;
 
 	/**
 	 * Actions sur le bouton "Annuler"
@@ -126,6 +128,17 @@ public class ComptesManagementController {
 		if (selectedIndice >= 0) {
 			CompteCourant cpt = this.oListCompteCourant.get(selectedIndice);
 			this.cmDialogController.gererOperationsDUnCompte(cpt);
+		}
+		this.loadList();
+		this.validateComponentState();
+	}
+	
+	@FXML
+	private void doVoirPrelevements() {
+		int selectedIndice = this.lvComptes.getSelectionModel().getSelectedIndex();
+		if (selectedIndice >= 0) {
+			CompteCourant cpt = this.oListCompteCourant.get(selectedIndice);
+			this.cmDialogController.gererPrelevementsDUnCompte(cpt);
 		}
 		this.loadList();
 		this.validateComponentState();
@@ -196,6 +209,7 @@ public class ComptesManagementController {
 		// Non implémenté => désactivé
 		this.btnModifierCompte.setDisable(true);
 		this.btnSupprCompte.setDisable(true);
+		this.btnPrel.setDisable(true);
 
 		int selectedIndice = this.lvComptes.getSelectionModel().getSelectedIndex();
 		if (selectedIndice >= 0) {
@@ -204,6 +218,7 @@ public class ComptesManagementController {
 				this.btnCloturerCompte.setDisable(true);
 			} else {
 				this.btnCloturerCompte.setDisable(false);
+				this.btnPrel.setDisable(false);
 			}
 		} else {
 			this.btnVoirOpes.setDisable(true);

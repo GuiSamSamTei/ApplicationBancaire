@@ -82,6 +82,17 @@ public class ComptesManagement {
 				this.clientDesComptes, cpt);
 		om.doOperationsManagementDialog();
 	}
+	
+	/**
+	 * Affiche la fenêtre de gestion des prélèvements
+	 * 
+	 * @author: Guilherme SAMPAIO
+	 * @param cpt IN : Compte des prélèvements
+	 */
+	public void gererPrelevementsDUnCompte(CompteCourant cpt) {
+		PrelManagement pm = new PrelManagement(this.primaryStage, this.dailyBankState, cpt);
+		pm.doPrelevementsManagementDialog();
+	} //Passer à prelManagement
 
 	/**
 	 * Affiche la fenêtre de gestion des comptes
@@ -163,4 +174,6 @@ public class ComptesManagement {
 			ed.doExceptionDialog();
 		}
 	}
+
+	
 }

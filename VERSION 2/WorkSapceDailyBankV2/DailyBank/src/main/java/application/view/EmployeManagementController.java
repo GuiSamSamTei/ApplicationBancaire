@@ -24,11 +24,7 @@ public class EmployeManagementController {
 
 	// Etat courant de l'application
 	private DailyBankState dailyBankState;
-	private int i = 10;
-
-	public int getI() {
-		return this.i;
-	}
+	
 
 	// Contrôleur de Dialogue associé à ClientsManagementController
 	private EmployeManagement cmDialogController;
