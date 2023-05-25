@@ -51,7 +51,6 @@ public class EmployeManagement {
 			this.primaryStage.setResizable(false);
 
 			this.emcViewController = loader.getController();
-			System.out.println(emcViewController.getI());
 			this.emcViewController.initContext(this.primaryStage, this, _dbstate);
 
 		} catch (Exception e) {
