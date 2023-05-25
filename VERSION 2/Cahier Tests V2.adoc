@@ -260,9 +260,9 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 >|Objectif 4+|Faire des modifications sur les employés
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_E.6 ^|Cliquer sur le bouton "Modifier" ^|Une fenêtre s'ouvre pour modifier les informations de l'employé ^|Avoir sélectionné un employé ^|OK
-^|C_G_E.7 ^|Modifier les informations et cliquer sur "Modifier" ^|Les informations de l'employé ont changé dans la base de données et dans la liste et la fenêtre se ferme ^|Avoir ouvert la fenêtre de modification ^|OK
-^|C_G_E.8 ^|Modifier les informations et cliquer sur "Annuler" ^|La fenêtre se ferme et aucune modification est sauvegardée ^| Avoir ouvert la fenêtre de modification ^|OK
+^|C_G_E.9 ^|Cliquer sur le bouton "Modifier" ^|Une fenêtre s'ouvre pour modifier les informations de l'employé ^|Avoir sélectionné un employé ^|OK
+^|C_G_E.10 ^|Modifier les informations et cliquer sur "Modifier" ^|Les informations de l'employé ont changé dans la base de données et dans la liste et la fenêtre se ferme ^|Avoir ouvert la fenêtre de modification ^|OK
+^|C_G_E.11 ^|Modifier les informations et cliquer sur "Annuler" ^|La fenêtre se ferme et aucune modification est sauvegardée ^| Avoir ouvert la fenêtre de modification ^|OK
 5+|
 5+|Commentaire : Le bouton de modification s'active uniquement si on a sélectionné un employé.
 
