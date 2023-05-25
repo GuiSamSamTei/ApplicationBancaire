@@ -42,6 +42,8 @@ Pour installer l'application sur eclipse, il faut ouvrir un workspace pouvant g�
 Au niveau de la base de données, pour se connecter nos identifiants sont : *G1B1S2* et notre mot de passe est : *password1234*. +
 Pour changer de base de données, il suffit d'aller dans la class *LogToDatabase.java* et de changer les identifiants et mots de passes ici: 
 
+image:Image Doc Tech/log.PNG[]
+
 
 *Les packages : dans src/main/java* +
 
