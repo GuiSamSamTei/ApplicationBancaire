@@ -54,8 +54,7 @@ L'équipe est constituée de trois personnes::
 |           |code V1            |https://github.com/IUT-Blagnac/sae2023-bank-1b01/tree/main/VERSION%201/WorkSapceDailyBankV1/DailyBank/src[Code source V1] | vu
 | 26/05     |Gantt V2 Réalisé   |                   | 
 |           |Doc User V2        |                   |         
-|           |Doc Tec V2         |                   |     
-|           |Chiffrage projet   |                   | 
+|           |Doc Tec V2         |                   | 
 |           |Recette V2         |                   | 
 |           |`jar` V2           |                   | 
 |           |javadoc V2         |                   | 
