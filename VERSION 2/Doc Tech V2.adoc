@@ -44,7 +44,7 @@ Pour changer de base de données, il suffit d'aller dans la class *LogToDatabase
 
 image:Image Doc Tech/log.PNG[]
 
-Le fichier DailyBankState sert à décrire l'état courant de l'application: : +
+Le fichier DailyBankState sert à décrire l'état courant de l'application::
 * Employé connecté +
 * Agence bancaire de l'employé connecté +
 * L'employé connecté est il chef d'agence ou pas +
