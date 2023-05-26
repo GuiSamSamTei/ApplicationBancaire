@@ -149,7 +149,7 @@ public class Access_BD_Employe {
 				throw new RowNotFoundOrTooManyRowsException(Table.Employe, Order.INSERT,
 						"Insert anormal (insert de moins ou plus d'une ligne)", null, result);
 			}
-
+			con.commit();
 			
 		} catch (SQLException e) {
 			throw new DataAccessException(Table.Employe, Order.INSERT, "Erreur accès", e);
