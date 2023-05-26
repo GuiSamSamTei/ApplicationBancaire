@@ -113,14 +113,15 @@ public class EmpruntEditorPaneController {
 		int capitalEmp, dureeEmp;
 		Date dateDebEmp;
 
-		tauxApp = Double.valueOf(this.tauxApp.getText());
-		capitalEmp = Integer.valueOf(this.capital.getText());
-		dureeEmp = Integer.valueOf(this.duree.getText());
-		dateDebEmp = java.sql.Date.valueOf(LocalDate.now());
-
-		Emprunt newEmprunt = new Emprunt(0, tauxApp, capitalEmp, dureeEmp, dateDebEmp, this.clientDesEmprunts.idNumCli);
-
 		if (this.isSaisieValide()) {
+			tauxApp = Double.valueOf(this.tauxApp.getText());
+			capitalEmp = Integer.valueOf(this.capital.getText());
+			dureeEmp = Integer.valueOf(this.duree.getText());
+			dateDebEmp = java.sql.Date.valueOf(LocalDate.now());
+
+			Emprunt newEmprunt = new Emprunt(0, tauxApp, capitalEmp, dureeEmp, dateDebEmp,
+					this.clientDesEmprunts.idNumCli);
+
 			if (this.assuranceOui.isSelected()) {
 				double tauxAss, tauxCouv;
 
@@ -149,48 +150,47 @@ public class EmpruntEditorPaneController {
 
 			this.doCancel();
 		}
+
 	}
 
 	private boolean isSaisieValide() {
-//		this.clientEdite.nom = this.txtNom.getText().trim();
-//		this.clientEdite.prenom = this.txtPrenom.getText().trim();
-//		this.clientEdite.adressePostale = this.txtAdr.getText().trim();
-//		this.clientEdite.telephone = this.txtTel.getText().trim();
-//		this.clientEdite.email = this.txtMail.getText().trim();
-//		if (this.rbActif.isSelected()) {
-//			this.clientEdite.estInactif = ConstantesIHM.CLIENT_ACTIF;
-//		} else {
-//			this.clientEdite.estInactif = ConstantesIHM.CLIENT_INACTIF;
-//		}
-//
-//		if (this.clientEdite.nom.isEmpty()) {
-//			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Le nom ne doit pas être vide",
-//					AlertType.WARNING);
-//			this.txtNom.requestFocus();
-//			return false;
-//		}
-//		if (this.clientEdite.prenom.isEmpty()) {
-//			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Le prénom ne doit pas être vide",
-//					AlertType.WARNING);
-//			this.txtPrenom.requestFocus();
-//			return false;
-//		}
-//
-//		String regex = "(0)[1-9][0-9]{8}";
-//		if (!Pattern.matches(regex, this.clientEdite.telephone) || this.clientEdite.telephone.length() > 10) {
-//			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Le téléphone n'est pas valable",
-//					AlertType.WARNING);
-//			this.txtTel.requestFocus();
-//			return false;
-//		}
-//		regex = "^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@"
-//				+ "[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$";
-//		if (!Pattern.matches(regex, this.clientEdite.email) || this.clientEdite.email.length() > 20) {
-//			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Le mail n'est pas valable",
-//					AlertType.WARNING);
-//			this.txtMail.requestFocus();
-//			return false;
-//		}
+
+		if (this.capital.getText().trim().isEmpty()) {
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Le capital ne doit pas être vide",
+					AlertType.WARNING);
+
+			return false;
+		}
+
+		if (this.duree.getText().trim().isEmpty()) {
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "La durée ne doit pas être vide",
+					AlertType.WARNING);
+
+			return false;
+		}
+
+		if (this.tauxApp.getText().trim().isEmpty()) {
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null,
+					"Le taux applicable ne doit pas être vide", AlertType.WARNING);
+
+			return false;
+		}
+
+		if (this.assuranceOui.isSelected()) {
+			if (this.tauxAssurance.getText().trim().isEmpty()) {
+				AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null,
+						"Le taux assurance ne doit pas être vide", AlertType.WARNING);
+
+				return false;
+			}
+
+			if (this.tauxCouv.getText().trim().isEmpty()) {
+				AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null,
+						"Le taux couverture ne doit pas être vide", AlertType.WARNING);
+
+				return false;
+			}
+		}
 
 		return true;
 	}
