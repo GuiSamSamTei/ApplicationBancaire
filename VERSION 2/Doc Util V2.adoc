@@ -100,6 +100,17 @@ image:Image Doc Util/prel2.PNG[]
 
 image:Image Doc Util/prel3.PNG[]
 
+Pour rechercher un prélèvement spécifique, veuillez rentrer l'identifiant du prélèvement dans le champ "Numéro"
+
+image:Image Doc Util/prel14.png[]
+
+Ensuite, cliquez sur le bouton "Rechercher"
+image:Image Doc Util/prel15.png[]
+
+Et ainsi vous obtenez uniquement le prélèvement qui vous intéresse
+image:Image Doc Util/prel16.png[]
+
+
 Puis pour supprimer il faut cliquer sur supprimer
 
 image:Image Doc Util/prelsup.PNG[]
