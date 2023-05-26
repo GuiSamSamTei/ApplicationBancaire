@@ -174,6 +174,86 @@ autorisé est de -100 euros. ^|OK
 
 |====
 
+==== 1.4 Gestion des prélèvements automatiques (GS):
+
+|====
+
+>|Cas de test 4+|Test-01-04-01
+>|Titre 4+|Ouvrir la fenêtre
+>|Objectif 4+| Faire apparaître les prélèvements automatiques du compte selectionné
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_RP.1 ^|Cliquer sur le bouton "Voir prél. auto.". ^|La fenêtre de gestion des prélèvements s'ouvre. ^|Avoir sélectionné un compte d'un client ^|OK
+5+|
+5+|Commentaire : Le bouton "Voir prél. auto." s'active uniquement après sélectionner un compte d'un client et les prélèvements affichés correspondent aux prélèvements de ce compte uniquement, il n'y aura aucun s'il n'y a aucun prélèvement dans le compte.
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-01-04-02
+>|Titre 4+|Rechercher un prélèvement spécifique
+>|Objectif 4+| Faire apparaître uniquement le prélèvement recherché
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_RP.1b ^|Saisir l'identifiant du prélèvement dans le champ "Numéro" et cliquer sur "Rechercher". ^|Seul le prélèvement recherché reste. ^|Le prélèvement recherché existe et il correspond au compte sélectionné ^|OK
+5+|
+5+|Commentaire : Si le champ "Numéro" est vide, on obtiendra tous les prélèvements automatiques du compte et si l'identifiant saisi n'existe ou ne correspond pas avec le compte sélectionné la liste sera vide.
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-01-04-03
+>|Titre 4+|Modifier un prélèvement 
+>|Objectif 4+| Modifier les informations d'un prélèvemnt
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_MP.1 ^|Cliquer sur "Modifier prél. auto." ^|La fenêtre de modification apparaît ^|Un prélèvement a été sélectionné ^|OK
+^|All_G_MP.2 ^|Saisir le nouveau montant et cliquer sur "Modifier" ^|Le montant du prélèvement est modifié et enregistré dans la base de données ^|Le montant saisi est un nombre supérieur à 0 ^|OK
+^|All_G_MP.3 ^|Saisir la nouvelle date récurrente et cliquer sur "Modifier" ^|La date récurrente du prélèvement est modifiée et enregistrée dans la base de données ^|La date récurrente saisie est un nombre supérieur à 0 et inférieur à 28(à cause du mois de février) ^|OK
+^|All_G_MP.4 ^|Saisir le nouveau bénéficiaire et cliquer sur "Modifier" ^|Le bénéficiaire du prélèvement est modifié et enregistré dans la base de données ^|Le bénéficiaire a été saisi ^|OK
+5+|
+5+|Commentaire : Le bouton "Modifier prél. auto." s'active uniquement si un prélèvement automatique a été sélectionné.
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-01-04-04
+>|Titre 4+|Ajouter des prélèvements
+>|Objectif 4+|Enregistrer un nouveau prélèvement dans la base de données
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_CP.1 ^|Cliquer sur le bouton "Nouveau prél. auto." ^|Une fenêtre s'ouvre pour saisir les informations du nouveau prélèvement ^|Aucune ^|OK
+^|C_G_CP.2 ^|Saisir les informations et cliquer sur "Ajouter" ^|Le prélèvement est enregistré dans la base de données et apparaît dans la liste des prélèvements et la fenêtre se ferme ^|Avoir ouvert la fenêtre de création et saisi toutes les informations demandées ^|OK
+^|C_G_CP.3 ^|Saisir toutes les informations sauf "Montant" ^|Une fenêtre d'erreur apparaît indiquant "Saisissez un montant valide(un nombre)" ^|Aucune ^|OK
+^|C_G_CP.4 ^|Saisir toutes les informations mais "Montant" est un nombre inférieur ou égal à 0 ^|Une fenêtre d'erreur apparaît indiquant "Saisissez un montant valide(supérieur à 0)" ^|Aucune ^|OK
+^|C_G_CP.5 ^|Saisir toutes les informations sauf "Date récurrente" ^|Une fenêtre d'erreur apparaît indiquant "Saisissez une date récurrente valide (un nombre)" ^|Aucune ^|OK
+^|C_G_CP.6 ^|Saisir toutes les informations mais "Date récurrente"  est un nombre qui n'est pas compris entre 1 et 28 ^|Une fenêtre d'erreur apparaît indiquant "Saisissez une date récurrente valide (de 1 à 28)" ^|Aucune ^|OK
+^|C_G_CP.7 ^|Saisir toutes les informations sauf "Bénéficiaire" ^|Une fenêtre d'erreur apparaît indiquant "Le bénéficiaire ne doit pas être vide" ^|Aucune ^|OK
+5+|
+5+|Commentaire : 
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-01-04-05
+>|Titre 4+|Supprimer des prélèvements
+>|Objectif 4+|Supprimer un prélèvement de la base de données
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_DP.1 ^|Cliquer sur le bouton "Supprimer prél. auto." ^|Une fenêtre s'ouvre pour demander la confirmation de la suppression du compte ^|Un prélèvement a été sélectionné ^|OK
+^|C_G_DP.2 ^|Cliquer sur "Accepter" ^|Le prélèvement est supprimé de la base de données, disparaît de la liste des prélèvements et la fenêtre se ferme ^|Aucune ^|OK
+^|C_G_DP.3 ^|Cliquer sur "Annuler" ^|Le prélèvement reste dans la base de données et la fenêtre se ferme ^|Aucune ^|OK
+5+|
+5+|Commentaire : Le bouton "Supprimer prél. auto." s'active uniquement après avoir sélectionné un prélèvement.
+
+|====
+
+
+
 === 2. Fonctionnalités des chefs d'agence :
 [.text-justify]
 Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, ainsi que d'autres qui leur sont réservées.
@@ -203,8 +283,8 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 >|Objectif 4+|Obtenir un employé spécifique en saisissant uniquement son id
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_E.1 ^|Saisir l'idEmploye désiré dans le champ "Numéro" ^|On trouve l'employé associé à l'identifiant saisi ^|L'employé associé à l'identifiant existe ^|OK
-^|C_G_E.2 ^|Saisir l'idEmploye d'un employé ^|On ne trouve aucun employé ^|L'employé associé à l'identifiant saisi n'existe pas ^|OK
+^|C_G_RE.1 ^|Saisir l'idEmploye désiré dans le champ "Numéro" ^|On trouve l'employé associé à l'identifiant saisi ^|L'employé associé à l'identifiant existe ^|OK
+^|C_G_RE.2 ^|Saisir l'idEmploye d'un employé ^|On ne trouve aucun employé ^|L'employé associé à l'identifiant saisi n'existe pas ^|OK
 5+|
 5+|Commentaire : Si l'employé n'existe pas, la liste d'employés sera vide, parce qu'on ne trouve aucun employé.
 
@@ -217,9 +297,9 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 >|Objectif 4+|Obtenir les employés en fonction de son nom et/ou son prénom
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_E.2 ^|Saisir le nom de l'employé désiré dans le champ "Nom" et cliquer sur "Rechercher" ^|On trouve des employés ^|Il y a des employés avec ce nom ^|OK
-^|C_G_E.3 ^|Saisir le prénom de l'employé désiré dans le champ "Prénom" et cliquer sur "Rechercher" ^|On trouve des employés ^|Il y a des employés avec ce prénom ^|OK
-^|C_G_E.4 ^|Saisir le nom/prénom de l'employé désiré dans les champs dédiés et cliquer sur "Rechercher" ^|On trouve des employés ^|Il y a des employés avec ces noms/prénoms ^|OK
+^|C_G_RE.3 ^|Saisir le nom de l'employé désiré dans le champ "Nom" et cliquer sur "Rechercher" ^|On trouve des employés ^|Il y a des employés avec ce nom ^|OK
+^|C_G_RE.4 ^|Saisir le prénom de l'employé désiré dans le champ "Prénom" et cliquer sur "Rechercher" ^|On trouve des employés ^|Il y a des employés avec ce prénom ^|OK
+^|C_G_RE.5 ^|Saisir le nom/prénom de l'employé désiré dans les champs dédiés et cliquer sur "Rechercher" ^|On trouve des employés ^|Il y a des employés avec ces noms/prénoms ^|OK
 5+|
 5+|Commentaire : S'il n'y a aucun employé avec ces noms/prénoms, la liste sera vide. On peut rechercher par seulement le nom, seulement le prénom ou le nom ET le prénom.
 
@@ -232,7 +312,7 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 >|Objectif 4+|Obtenir une liste avec tous les employés de l'agence
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_E.5 ^|Cliquer sur le bouton "Rechercher" ^|On trouve tous les employés de l'agence ^|Les champs de texte de recherche sont vides ^|OK
+^|C_G_RE.6 ^|Cliquer sur le bouton "Rechercher" ^|On trouve tous les employés de l'agence ^|Les champs de texte de recherche sont vides ^|OK
 5+|
 5+|Commentaire : Si un des champs de texte de recherche n'est pas vide, on n'obtiendra que les employés qui correspondent à la recherche.
 
@@ -245,9 +325,9 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 >|Objectif 4+|Faire des modifications sur les employés
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_E.6 ^|Cliquer sur le bouton "Modifier" ^|Une fenêtre s'ouvre pour modifier les informations de l'employé ^|Avoir sélectionné un employé ^|OK
-^|C_G_E.7 ^|Modifier les informations et cliquer sur "Modifier" ^|Les informations de l'employé ont changé dans la base de données et dans la liste et la fenêtre se ferme ^|Avoir ouvert la fenêtre de modification ^|OK
-^|C_G_E.8 ^|Modifier les informations et cliquer sur "Annuler" ^|La fenêtre se ferme et aucune modification est sauvegardée ^| Avoir ouvert la fenêtre de modification ^|OK
+^|C_G_UE.1 ^|Cliquer sur le bouton "Modifier" ^|Une fenêtre s'ouvre pour modifier les informations de l'employé ^|Avoir sélectionné un employé ^|OK
+^|C_G_UE.2 ^|Modifier les informations et cliquer sur "Modifier" ^|Les informations de l'employé ont changé dans la base de données et dans la liste et la fenêtre se ferme ^|Avoir ouvert la fenêtre de modification ^|OK
+^|C_G_UE.3 ^|Modifier les informations et cliquer sur "Annuler" ^|La fenêtre se ferme et aucune modification est sauvegardée ^| Avoir ouvert la fenêtre de modification ^|OK
 5+|
 5+|Commentaire : Le bouton de modification s'active uniquement si on a sélectionné un employé.
 
@@ -255,16 +335,36 @@ Les chefs d'agence ont accès aux mêmes fonctionnalités que les guichetiers, a
 
 |====
 
->|Cas de test 4+|Test-02-02-04
->|Titre 4+|Modifier les employés
->|Objectif 4+|Faire des modifications sur les employés
+>|Cas de test 4+|Test-02-02-05
+>|Titre 4+|Ajouter des employés
+>|Objectif 4+|Enregistrer un nouveau employé dans la base de données
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
-^|C_G_E.9 ^|Cliquer sur le bouton "Modifier" ^|Une fenêtre s'ouvre pour modifier les informations de l'employé ^|Avoir sélectionné un employé ^|OK
-^|C_G_E.10 ^|Modifier les informations et cliquer sur "Modifier" ^|Les informations de l'employé ont changé dans la base de données et dans la liste et la fenêtre se ferme ^|Avoir ouvert la fenêtre de modification ^|OK
-^|C_G_E.11 ^|Modifier les informations et cliquer sur "Annuler" ^|La fenêtre se ferme et aucune modification est sauvegardée ^| Avoir ouvert la fenêtre de modification ^|OK
+^|C_G_CE.1 ^|Cliquer sur le bouton "Nouveau employé" ^|Une fenêtre s'ouvre pour saisir les informations du nouveau employé ^|Aucune ^|OK
+^|C_G_CE.2 ^|Saisir les informations et cliquer sur "Ajouter" ^|L'employé est enregistré dans la base de données et apparaît dans la liste des employés et la fenêtre se ferme ^|Avoir ouvert la fenêtre de modification et saisi toutes les informations demandées ^|OK
+^|C_G_CE.3 ^|Saisir toutes les informations sauf "Nom" ^|Une fenêtre d'erreur apparaît indiquant "Le nom ne doit pas être vide" ^|Aucune ^|OK
+^|C_G_CE.4 ^|Saisir toutes les informations sauf "Prénom" ^|Une fenêtre d'erreur apparaît indiquant "Le prénom ne doit pas être vide" ^|Aucune ^|OK
+^|C_G_CE.5 ^|Saisir toutes les informations sauf "Droits accès" ^|Une fenêtre d'erreur apparaît indiquant "Les droits d'accès ne doivent pas être vides" ^|Aucune ^|OK
+^|C_G_CE.6 ^|Saisir toutes les informations sauf "Login" ^|Une fenêtre d'erreur apparaît indiquant "Le login ne doit pas être vide" ^|Aucune ^|OK
+^|C_G_CE.7 ^|Saisir toutes les informations sauf "Mot de Passe" ^|Une fenêtre d'erreur apparaît indiquant "Le mot de passe ne doit pas être vide" ^|Aucune ^|OK
+^|C_G_CE.8 ^|Saisir les informations et cliquer sur "Annuler" ^|La fenêtre se ferme et l'employé n'est pas sauvegaardé ^| Avoir ouvert la fenêtre de modification ^|OK
 5+|
-5+|Commentaire : Le bouton de modification s'active uniquement si on a sélectionné un employé.
+5+|Commentaire : 
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-02-02-06
+>|Titre 4+|Supprimer un employé
+>|Objectif 4+|Supprimer un employé de la base de données
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_G_UE.1 ^|Cliquer sur le bouton "Supprimer employé" ^|Une fenêtre s'ouvre pour demander la confirmation de la suppression de l'employé ^|Avoir sélectionné un employé ^|OK
+^|C_G_UE.2 ^|Cliquer sur "Accepter" ^|L'employé est supprimé de la base de données ^|Aucune ^|OK
+^|C_G_UE.3 ^|Cliquer sur "Annuler" ^|La fenêtre se ferme et l'employé reste dans la base de données ^|Aucune ^|OK
+5+|
+5+|Commentaire : Le bouton de suppression s'active uniquement si on a sélectionné un employé.
 
 |====
 

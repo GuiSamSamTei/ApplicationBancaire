@@ -171,6 +171,8 @@ public class Access_BD_Employe {
 						"Insert anormal (insert de moins ou plus d'une ligne)", null, result);
 			}
 
+			con.commit();
+			
 		} catch (SQLException e) {
 			throw new DataAccessException(Table.Employe, Order.INSERT, "Erreur accès", e);
 		}
