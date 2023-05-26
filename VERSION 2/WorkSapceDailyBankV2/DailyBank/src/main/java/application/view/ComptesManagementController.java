@@ -11,20 +11,17 @@ import application.tools.AlertUtilities;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
-import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
 import model.data.CompteCourant;
 
 public class ComptesManagementController {
-
-	// Etat courant de l'application
-	private DailyBankState dailyBankState;
 
 	// Contrôleur de Dialogue associé à ComptesManagementController
 	private ComptesManagement cmDialogController;
@@ -38,7 +35,7 @@ public class ComptesManagementController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
 	 *                         fichier xml contrôlé par this
 	 * @param _cm              IN : Contrôleur de Dialogue associé à
@@ -48,7 +45,6 @@ public class ComptesManagementController {
 	public void initContext(Stage _containingStage, ComptesManagement _cm, DailyBankState _dbstate, Client client) {
 		this.cmDialogController = _cm;
 		this.primaryStage = _containingStage;
-		this.dailyBankState = _dbstate;
 		this.clientDesComptes = client;
 		this.configure();
 	}
@@ -84,7 +80,7 @@ public class ComptesManagementController {
 
 	/**
 	 * Fermeture de la fenêtre
-	 * 
+	 *
 	 * @param e IN : Evènement de fermeture de la fenêtre
 	 * @return null
 	 */
@@ -132,7 +128,12 @@ public class ComptesManagementController {
 		this.loadList();
 		this.validateComponentState();
 	}
-	
+
+	/**
+	 * Action sur le bouton "Prélèvement"
+	 *
+	 * @author Gulherme SAMPAIO
+	 */
 	@FXML
 	private void doVoirPrelevements() {
 		int selectedIndice = this.lvComptes.getSelectionModel().getSelectedIndex();
@@ -146,7 +147,7 @@ public class ComptesManagementController {
 
 	/**
 	 * Actions sur le bouton "Clôturer le compte"
-	 * 
+	 *
 	 * @author Bastien RECORD
 	 */
 	@FXML
@@ -178,7 +179,7 @@ public class ComptesManagementController {
 
 	/**
 	 * Actions sur le bouton "Nouveau compte"
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -204,6 +205,8 @@ public class ComptesManagementController {
 
 	/**
 	 * Validation de l'état des composants
+	 *
+	 * @author Bastien RECORD
 	 */
 	private void validateComponentState() {
 		// Non implémenté => désactivé

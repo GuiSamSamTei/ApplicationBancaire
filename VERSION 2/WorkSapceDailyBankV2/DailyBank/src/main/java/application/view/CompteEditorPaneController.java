@@ -3,7 +3,6 @@ package application.view;
 import java.util.Locale;
 
 import application.DailyBankState;
-import application.control.ExceptionDialog;
 import application.tools.AlertUtilities;
 import application.tools.ConstantesIHM;
 import application.tools.EditionMode;
@@ -17,11 +16,6 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
 import model.data.CompteCourant;
-import model.orm.Access_BD_CompteCourant;
-import model.orm.exception.ApplicationException;
-import model.orm.exception.DatabaseConnexionException;
-import model.orm.exception.Order;
-import model.orm.exception.Table;
 
 public class CompteEditorPaneController {
 
@@ -39,7 +33,7 @@ public class CompteEditorPaneController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
 	 *                         fichier xml contrôlé par this
 	 * @param _dbstate         IN : Etat courant de l'application
@@ -62,7 +56,7 @@ public class CompteEditorPaneController {
 
 	/**
 	 * Gestion de la fermeture de la fenêtre
-	 * 
+	 *
 	 * @param e IN : Evènement de fermeture
 	 */
 	public CompteCourant displayDialog(Client client, CompteCourant cpte, EditionMode mode) {
@@ -118,7 +112,7 @@ public class CompteEditorPaneController {
 
 	/**
 	 * Gestion du bouton OK
-	 * 
+	 *
 	 * @param e IN : Evènement de clic sur le bouton
 	 * @return null
 	 */
@@ -130,7 +124,7 @@ public class CompteEditorPaneController {
 
 	/**
 	 * Focus sur le champ txtDecAutorise
-	 * 
+	 *
 	 * @param txtField         IN : Champ qui a le focus
 	 * @param oldPropertyValue IN : Ancienne valeur du focus
 	 * @param newPropertyValue IN : Nouvelle valeur du focus
@@ -155,7 +149,7 @@ public class CompteEditorPaneController {
 
 	/**
 	 * Focus sur le champ txtSolde
-	 * 
+	 *
 	 * @param txtField         IN : Champ qui a le focus
 	 * @param oldPropertyValue IN : Ancienne valeur du focus
 	 * @param newPropertyValue IN : Nouvelle valeur du focus
@@ -236,7 +230,7 @@ public class CompteEditorPaneController {
 
 	/**
 	 * Vérification de la validité de la saisie
-	 * 
+	 *
 	 * @author : Guilherme SAMPAIO
 	 * @return true si la saisie est valide
 	 */

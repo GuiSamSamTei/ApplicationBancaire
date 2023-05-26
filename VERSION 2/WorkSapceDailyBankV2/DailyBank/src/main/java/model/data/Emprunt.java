@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * Classe Emprunt
- * 
+ *
  * @author Julie BAELEN
  */
 public class Emprunt {

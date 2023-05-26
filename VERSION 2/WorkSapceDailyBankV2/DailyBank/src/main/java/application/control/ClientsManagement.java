@@ -25,7 +25,7 @@ public class ClientsManagement {
 
 	/**
 	 * Constructeur de la classe ClientsManagement
-	 * 
+	 *
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 */
@@ -63,7 +63,7 @@ public class ClientsManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des clients
-	 * 
+	 *
 	 * @return le client modifié
 	 */
 	public Client modifierClient(Client c) {
@@ -89,7 +89,7 @@ public class ClientsManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des clients
-	 * 
+	 *
 	 * @return le nouveau client
 	 */
 	public Client nouveauClient() {
@@ -117,7 +117,7 @@ public class ClientsManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des comptes d'un client
-	 * 
+	 *
 	 * @param c IN : client à gérer
 	 */
 	public void gererComptesClient(Client c) {
@@ -127,11 +127,11 @@ public class ClientsManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des comptes d'un client
-	 * 
+	 *
 	 * @param _numCompte   IN : numéro de compte
 	 * @param _debutNom    IN : prénom du client
 	 * @param _debutPrenom IN : nom du client
-	 * 
+	 *
 	 * @return une liste de client
 	 */
 	public ArrayList<Client> getlisteComptes(int _numCompte, String _debutNom, String _debutPrenom) {
@@ -160,9 +160,9 @@ public class ClientsManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des emprunts d'un client
-	 * 
+	 *
 	 * @author Bastien RECORD
-	 * 
+	 *
 	 * @param c IN : client à gérer
 	 */
 	public void gererEmpruntsClient(Client c) {

@@ -21,7 +21,7 @@ public class ClientEditorPane {
 
 	/**
 	 * Constructeur de la classe ClientEditorPane
-	 * 
+	 *
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 */
@@ -52,10 +52,10 @@ public class ClientEditorPane {
 
 	/**
 	 * Affiche la fenêtre de gestion d'un client
-	 * 
+	 *
 	 * @param client IN : Client à gérer
 	 * @param em     IN : Mode d'édition
-	 * 
+	 *
 	 * @return Client
 	 */
 	public Client doClientEditorDialog(Client client, EditionMode em) {

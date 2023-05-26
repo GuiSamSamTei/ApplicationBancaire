@@ -6,15 +6,13 @@ import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.EditionMode;
 import application.tools.StageManagement;
-import application.view.EmployeManagementController;
-import application.view.ClientEditorPaneController;
 import application.view.EmployeEditorPaneController;
+import application.view.EmployeManagementController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import model.data.Client;
 import model.data.Employe;
 
 public class EmployeEditorPane {
@@ -25,7 +23,7 @@ public class EmployeEditorPane {
 
 	/**
 	 * Constructeur de la classe EmployeEditorPane
-	 * 
+	 *
 	 * @param _parentStage IN : stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 */
@@ -56,9 +54,9 @@ public class EmployeEditorPane {
 
 	/**
 	 * Affiche la fenêtre de gestion d'un employé
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @param employe IN : Employé à gérer
 	 * @param em      IN : Mode d'édition
 	 * @return

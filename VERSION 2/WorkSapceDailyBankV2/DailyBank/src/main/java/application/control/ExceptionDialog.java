@@ -18,7 +18,7 @@ public class ExceptionDialog {
 
 	/**
 	 * Constructeur de la classe ExceptionDialog
-	 * 
+	 *
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 * @param ae           IN : Exception à afficher

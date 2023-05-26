@@ -1,7 +1,6 @@
 package application.tools;
 
 /**
- *
  * Mode d'édition possibles pour des données (client, employé, compte, ...). 3
  * modes définis : - CREATION : l'employé va créer une nouvelle donnée. La
  * fenêtre sera a priori vide. L'employé pourra saisir et valider ou annuler. -

@@ -2,33 +2,19 @@
 
 package application.view;
 
-import java.util.regex.Pattern;
-
 import application.DailyBankState;
-import application.control.ExceptionDialog;
 import application.tools.AlertUtilities;
 import application.tools.EditionMode;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import model.data.Client;
-import model.data.Employe;
 import model.data.Prelevement;
-import model.orm.exception.ApplicationException;
-import model.orm.exception.Order;
-import model.orm.exception.Table;
 
 public class PrelEditorPaneController {
-
-	// Etat courant de l'application
-	private DailyBankState dailyBankState;
 
 	// Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
 	private Stage primaryStage;
@@ -42,14 +28,13 @@ public class PrelEditorPaneController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : fenêtre physique où est la scène contenant le
 	 *                         xml contrôler par this
 	 * @param _dbstate         IN : état courant de l'application
 	 */
 	public void initContext(Stage _containingStage, DailyBankState _dbstate) {
 		this.primaryStage = _containingStage;
-		this.dailyBankState = _dbstate;
 		this.configure();
 	}
 
@@ -62,7 +47,7 @@ public class PrelEditorPaneController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param employe IN : Employé à afficher
 	 * @param mode    IN :mode d'édition
 	 * @return employé résultat
@@ -96,20 +81,20 @@ public class PrelEditorPaneController {
 		case SUPPRESSION:
 			break;
 		}
-		
+
 		// initialisation du contenu des champs
 		this.txtMontant.setText(String.valueOf(this.prelEdite.montant));
 		this.txtDate.setText(String.valueOf(this.prelEdite.dateRecurrente));
 		this.txtBenef.setText(this.prelEdite.beneficiaire);
 		this.prelResultat = null;
-		
+
 		this.primaryStage.showAndWait();
 		return this.prelResultat;
 	}
 
 	/**
 	 * Fermeture de la fenêtre
-	 * 
+	 *
 	 * @param e IN : événement de fermeture
 	 * @return Object : null
 	 */
@@ -136,7 +121,7 @@ public class PrelEditorPaneController {
 
 	/**
 	 * Action sur le bouton annuler
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -147,7 +132,7 @@ public class PrelEditorPaneController {
 
 	/**
 	 * Action sur le bouton ajouter
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -173,39 +158,39 @@ public class PrelEditorPaneController {
 
 	}
 
-	/*
+	/**
 	 * Vérifie si les données saisies sont valides
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @return true si tout est bien saisi et false sinon
 	 */
 	private boolean isSaisieValide() {
 		try {
 			this.prelEdite.montant = Double.parseDouble(this.txtMontant.getText().trim());
 			if (this.prelEdite.montant <= 0) {
-				AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Saisissez un montant valide (supérieur à 0)",
-						AlertType.WARNING);
+				AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null,
+						"Saisissez un montant valide (supérieur à 0)", AlertType.WARNING);
 				this.txtMontant.requestFocus();
 				return false;
 			}
-		}catch(Exception e) {
-			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Saisissez un montant valide (un nombre)",
-					AlertType.WARNING);
+		} catch (Exception e) {
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null,
+					"Saisissez un montant valide (un nombre)", AlertType.WARNING);
 			this.txtMontant.requestFocus();
 			return false;
 		}
 		try {
 			this.prelEdite.dateRecurrente = Integer.parseInt(this.txtDate.getText().trim());
 			if (this.prelEdite.dateRecurrente < 1 || this.prelEdite.dateRecurrente > 28) {
-				AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Saisissez une date récurrente valide(de 1 à 28)",
-						AlertType.WARNING);
+				AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null,
+						"Saisissez une date récurrente valide(de 1 à 28)", AlertType.WARNING);
 				this.txtDate.requestFocus();
 				return false;
 			}
-		} catch (Exception e){
-			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null, "Saisissez une date valide (un nombre)",
-					AlertType.WARNING);
+		} catch (Exception e) {
+			AlertUtilities.showAlert(this.primaryStage, "Erreur de saisie", null,
+					"Saisissez une date valide (un nombre)", AlertType.WARNING);
 			this.txtDate.requestFocus();
 			return false;
 		}
@@ -219,5 +204,5 @@ public class PrelEditorPaneController {
 
 		return true;
 	}
-	
+
 }

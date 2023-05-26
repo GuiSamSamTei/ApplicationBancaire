@@ -20,7 +20,7 @@ public class CompteEditorPane {
 
 	/**
 	 * Constructeur de la classe ClientEditorPane
-	 * 
+	 *
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 */
@@ -51,10 +51,10 @@ public class CompteEditorPane {
 
 	/**
 	 * Affiche la fenêtre de gestion d'un client
-	 * 
+	 *
 	 * @param client IN : Client à gérer
 	 * @param em     IN : Mode d'édition
-	 * 
+	 *
 	 * @return un compte
 	 */
 	public CompteCourant doCompteEditorDialog(Client client, CompteCourant cpte, EditionMode em) {

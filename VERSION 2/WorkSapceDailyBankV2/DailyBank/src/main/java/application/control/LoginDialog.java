@@ -18,7 +18,6 @@ import model.orm.exception.DatabaseConnexionException;
  * Classe de contrôleur de Dialogue de la fenêtre de login.
  *
  */
-
 public class LoginDialog {
 
 	// Stage de la fenêtre construite par LoginDialog

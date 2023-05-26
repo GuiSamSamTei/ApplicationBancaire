@@ -14,9 +14,6 @@ import model.orm.exception.ApplicationException;
 
 public class ExceptionDialogController {
 
-	// Etat courant de l'application
-	private DailyBankState dailyBankState;
-
 	// Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
 	private Stage primaryStage;
 
@@ -25,7 +22,7 @@ public class ExceptionDialogController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
 	 *                         fichier xml contrôlé par this
 	 * @param _dbstate         IN : Etat courant de l'application
@@ -34,7 +31,6 @@ public class ExceptionDialogController {
 
 	public void initContext(Stage _containingStage, DailyBankState _dbstate, ApplicationException _ae) {
 		this.primaryStage = _containingStage;
-		this.dailyBankState = _dbstate;
 		this.aException = _ae;
 		this.configure();
 	}
@@ -63,7 +59,7 @@ public class ExceptionDialogController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param e IN : Evènement de fermeture de la fenêtre
 	 */
 	private Object closeWindow(WindowEvent e) {

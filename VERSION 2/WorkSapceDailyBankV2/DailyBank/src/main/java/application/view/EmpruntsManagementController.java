@@ -3,9 +3,9 @@
 package application.view;
 
 import java.util.ArrayList;
+
 import application.DailyBankState;
 import application.control.EmpruntsManagement;
-import application.tools.AlertUtilities;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -13,17 +13,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
-import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
-import model.data.CompteCourant;
 import model.data.Emprunt;
 
 public class EmpruntsManagementController {
-
-	// Etat courant de l'application
-	private DailyBankState dailyBankState;
 
 	// Contrôleur de Dialogue associé à ComptesManagementController
 	private EmpruntsManagement emDialogController;
@@ -37,17 +32,17 @@ public class EmpruntsManagementController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
 	 *                         fichier xml contrôlé par this
-	 * @param _cm              IN : Contrôleur de Dialogue associé à
-	 *                         ComptesManagementController
+	 * @param _em              IN : Contrôleur de Dialogue associé à
+	 *                         EmpruntsManagementController
 	 * @param _dbstate         IN : Etat courant de l'application
+	 * @param _client          IN : client concerné
 	 */
 	public void initContext(Stage _containingStage, EmpruntsManagement _em, DailyBankState _dbstate, Client client) {
 		this.emDialogController = _em;
 		this.primaryStage = _containingStage;
-		this.dailyBankState = _dbstate;
 		this.clientDesEmprunts = client;
 		this.configure();
 	}
@@ -83,7 +78,7 @@ public class EmpruntsManagementController {
 
 	/**
 	 * Fermeture de la fenêtre
-	 * 
+	 *
 	 * @param e IN : Evènement de fermeture de la fenêtre
 	 * @return null
 	 */
@@ -113,7 +108,9 @@ public class EmpruntsManagementController {
 	}
 
 	/**
-	 * Actions sur le bouton "Voir les opérations"
+	 * Actions sur le bouton "Détails emprunt"
+	 *
+	 * @author Bastien RECORD
 	 */
 	@FXML
 	private void doDetailsEmprunts() {
@@ -128,8 +125,8 @@ public class EmpruntsManagementController {
 	}
 
 	/**
-	 * Actions sur le bouton "Clôturer le compte"
-	 * 
+	 * Actions sur le bouton "Nouvel emprunt"
+	 *
 	 * @author Bastien RECORD
 	 */
 	@FXML
@@ -142,6 +139,8 @@ public class EmpruntsManagementController {
 
 	/**
 	 * Chargement de la liste des emprunts
+	 *
+	 * @author Bastien RECORD
 	 */
 	private void loadList() {
 		ArrayList<Emprunt> listeCpt;
@@ -152,7 +151,7 @@ public class EmpruntsManagementController {
 
 	/**
 	 * Validation de l'état des composants
-	 * 
+	 *
 	 * @author Bastien RECORD
 	 */
 	private void validateComponentState() {

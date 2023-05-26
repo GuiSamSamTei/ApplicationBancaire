@@ -3,7 +3,6 @@ package application.control;
 import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.StageManagement;
-import application.view.ClientsManagementController;
 import application.view.EmpruntEditorPaneController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -15,18 +14,16 @@ import model.data.Client;
 public class EmpruntEditorPane {
 
 	private Stage primaryStage;
-	private DailyBankState dailyBankState;
 	private EmpruntEditorPaneController eepViewController;
 	private Client clientDesEmprunts;
 
 	/**
 	 * Constructeur de la classe EmpruntEditorPane
-	 * 
+	 *
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 */
 	public EmpruntEditorPane(Stage _parentStage, DailyBankState _dbstate, Client _client) {
-		this.dailyBankState = _dbstate;
 		this.clientDesEmprunts = _client;
 		try {
 			FXMLLoader loader = new FXMLLoader(EmpruntEditorPaneController.class.getResource("emprunteditorpane.fxml"));
@@ -52,7 +49,7 @@ public class EmpruntEditorPane {
 	}
 
 	/**
-	 * Affiche la fenêtre de gestion des clients
+	 * Affiche la fenêtre de création d'un emprunt et son assurance
 	 */
 	public void doEmpruntEditorPaneDialog() {
 		this.eepViewController.displayDialog();

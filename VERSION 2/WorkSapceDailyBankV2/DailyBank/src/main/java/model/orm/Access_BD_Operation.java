@@ -7,7 +7,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Calendar;
 
 import model.data.Operation;
 import model.orm.exception.DataAccessException;
@@ -120,12 +119,13 @@ public class Access_BD_Operation {
 	}
 
 	/**
-	 * Enregistrement d'un débit.
-	 *
-	 * Se fait par procédure stockée : - Vérifie que le débitAutorisé n'est pas
-	 * dépassé <BR />
+	 * Enregistrement d'un débit Se fait par procédure stockée : - Vérifie que le
+	 * débitAutorisé n'est pas dépassé <BR />
 	 * - Enregistre l'opération <BR />
 	 * - Met à jour le solde du compte. <BR />
+	 *
+	 * @author Julie BAELEN
+	 *
 	 *
 	 * @param idNumCompte compte débité
 	 * @param montant     montant débité
@@ -165,13 +165,14 @@ public class Access_BD_Operation {
 			throw new DataAccessException(Table.Operation, Order.INSERT, "Erreur accès", e);
 		}
 	}
-	
+
 	/**
-	 * Enregistrement d'un débit Exceptionnel.
-	 *<BR />
+	 * Enregistrement d'un débit Exceptionnel. <BR />
 	 * - Enregistre l'opération <BR />
 	 * - Met à jour le solde du compte. <BR />
 	 * - Possible pour le chef d'agence uniquement
+	 *
+	 * @author Julie BAELEN
 	 *
 	 * @param idNumCompte compte débité
 	 * @param montant     montant débité
@@ -180,7 +181,7 @@ public class Access_BD_Operation {
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
-	
+
 	public void insertDebitEx(int idNumCompte, double montant, String typeOp)
 			throws DatabaseConnexionException, ManagementRuleViolation, DataAccessException {
 		try {
@@ -205,10 +206,12 @@ public class Access_BD_Operation {
 			throw new DataAccessException(Table.Operation, Order.INSERT, "Erreur accès", e);
 		}
 	}
+
 	/**
-	 * Enregistrement d'un crédit.
-	 * - Enregistre l'opération <BR />
+	 * Enregistrement d'un crédit. - Enregistre l'opération <BR />
 	 * - Met à jour le solde du compte. <BR />
+	 *
+	 * * @author Julie BAELEN
 	 *
 	 * @param idNumCompte compte crédité
 	 * @param montant     montant crédité
@@ -248,24 +251,4 @@ public class Access_BD_Operation {
 			throw new DataAccessException(Table.Operation, Order.INSERT, "Erreur accès", e);
 		}
 	}
-
-	/*
-	 * Fonction utilitaire qui retourne un ordre sql "to_date" pour mettre une date
-	 * dans une requête sql
-	 *
-	 * @param d Date (java.sql) à transformer
-	 *
-	 * @return Une chaine : TO_DATE ('j/m/a', 'DD/MM/YYYY') 'j/m/a' : jour mois an
-	 * de d ex : TO_DATE ('25/01/2019', 'DD/MM/YYYY')
-	 */
-	private String dateToString(Date d) {
-		String sd;
-		Calendar cal;
-		cal = Calendar.getInstance();
-		cal.setTime(d);
-		sd = "" + cal.get(Calendar.DAY_OF_MONTH) + "/" + (cal.get(Calendar.MONTH) + 1) + "/" + cal.get(Calendar.YEAR);
-		sd = "TO_DATE( '" + sd + "' , 'DD/MM/YYYY')";
-		return sd;
-	}
-
 }

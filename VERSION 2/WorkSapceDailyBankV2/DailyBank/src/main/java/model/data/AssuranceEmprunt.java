@@ -2,7 +2,7 @@ package model.data;
 
 /**
  * Classe AssuranceEmprunt
- * 
+ *
  * @author Bastien RECORD
  */
 public class AssuranceEmprunt {

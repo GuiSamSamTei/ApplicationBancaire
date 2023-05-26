@@ -2,8 +2,6 @@
 
 package application.view;
 
-import java.util.regex.Pattern;
-
 import application.DailyBankState;
 import application.control.ExceptionDialog;
 import application.tools.AlertUtilities;
@@ -14,12 +12,9 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleGroup;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import model.data.Client;
 import model.data.Employe;
 import model.orm.exception.ApplicationException;
 import model.orm.exception.Order;
@@ -42,7 +37,7 @@ public class EmployeEditorPaneController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : fenêtre physique où est la scène contenant le
 	 *                         xml contrôler par this
 	 * @param _dbstate         IN : état courant de l'application
@@ -62,7 +57,7 @@ public class EmployeEditorPaneController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param employe IN : Employé à afficher
 	 * @param mode    IN :mode d'édition
 	 * @return employé résultat
@@ -132,7 +127,7 @@ public class EmployeEditorPaneController {
 
 	/**
 	 * Fermeture de la fenêtre
-	 * 
+	 *
 	 * @param e IN : événement de fermeture
 	 * @return Object : null
 	 */
@@ -167,7 +162,7 @@ public class EmployeEditorPaneController {
 
 	/**
 	 * Action sur le bouton annuler
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -178,7 +173,7 @@ public class EmployeEditorPaneController {
 
 	/**
 	 * Action sur le bouton ajouter
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -206,9 +201,9 @@ public class EmployeEditorPaneController {
 
 	/**
 	 * Vérifie si les données saisies sont valides
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @return true si tout est bien saisi et false sinon
 	 */
 	private boolean isSaisieValide() {

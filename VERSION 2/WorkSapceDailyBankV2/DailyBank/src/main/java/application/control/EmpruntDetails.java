@@ -1,25 +1,20 @@
 package application.control;
 
-import java.util.Date;
 import java.text.DecimalFormat;
-import java.time.LocalDate;
-import java.time.ZoneId;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.text.SimpleDateFormat;
+
 import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.StageManagement;
-import application.view.ClientsManagementController;
 import application.view.EmpruntDetailsController;
-import application.view.EmpruntEditorPaneController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.data.AssuranceEmprunt;
-import model.data.Client;
 import model.data.Emprunt;
 import model.orm.Access_BD_Emprunt;
 import model.orm.exception.DataAccessException;
@@ -28,7 +23,6 @@ import model.orm.exception.DatabaseConnexionException;
 public class EmpruntDetails {
 
 	private Stage primaryStage;
-	private DailyBankState dailyBankState;
 	private EmpruntDetailsController edViewController;
 	private Emprunt empruntConcerne;
 
@@ -36,12 +30,11 @@ public class EmpruntDetails {
 
 	/**
 	 * Constructeur de la classe EmpruntDetails
-	 * 
+	 *
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 */
 	public EmpruntDetails(Stage _parentStage, DailyBankState _dbstate, Emprunt _emprunt) {
-		this.dailyBankState = _dbstate;
 		this.empruntConcerne = _emprunt;
 		try {
 			FXMLLoader loader = new FXMLLoader(EmpruntDetailsController.class.getResource("empruntdetails.fxml"));
@@ -67,12 +60,21 @@ public class EmpruntDetails {
 	}
 
 	/**
-	 * Affiche la fenêtre de gestion des clients
+	 * Affiche la fenêtre des détails d'un emprunt
+	 *
+	 * @author Bastien RECORD
 	 */
 	public void doEmpruntDetailsDialog() {
 		this.edViewController.displayDialog();
 	}
 
+	/**
+	 * Permet d'obtenir une liste de détails d'un emprunt
+	 *
+	 * @author Bastien RECORD
+	 *
+	 * @return une liste de détails en string
+	 */
 	public ArrayList<String> genererListDetails() {
 		ArrayList<String> listeDetail = new ArrayList<>();
 		listeDetail.add("Date | Capital Deb | Montant intérêts | Montant du | Mensualité | Capital Fin");
@@ -117,6 +119,13 @@ public class EmpruntDetails {
 		return listeDetail;
 	}
 
+	/**
+	 * Permet d'obtenir l'assurance associé à un emprunt
+	 *
+	 * @author Bastien RECORD
+	 *
+	 * @return l'assurance de l'emprunt (null si aucune assurance trouvée)
+	 */
 	public AssuranceEmprunt genererAssurance() {
 		Access_BD_Emprunt ae = new Access_BD_Emprunt();
 		AssuranceEmprunt assurance = null;
@@ -130,6 +139,13 @@ public class EmpruntDetails {
 		return assurance;
 	}
 
+	/**
+	 * Retourne l'attribut this.sommeInteret
+	 *
+	 * @author Bastien RECORD
+	 *
+	 * @return this.sommeInteret
+	 */
 	public double getSommeInteret() {
 		return this.sommeInteret;
 	}

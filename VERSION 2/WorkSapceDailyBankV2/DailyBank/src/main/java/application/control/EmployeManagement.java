@@ -8,14 +8,12 @@ import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.EditionMode;
 import application.tools.StageManagement;
-import application.view.ClientsManagementController;
 import application.view.EmployeManagementController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import model.data.Client;
 import model.data.Employe;
 import model.orm.Access_BD_Employe;
 import model.orm.exception.ApplicationException;
@@ -29,7 +27,7 @@ public class EmployeManagement {
 
 	/**
 	 * Constructeur de la classe EmployeManagement
-	 * 
+	 *
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 */
@@ -60,7 +58,7 @@ public class EmployeManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des clients
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	public void doEmployeManagementDialog() {
@@ -69,9 +67,9 @@ public class EmployeManagement {
 
 	/**
 	 * Permet de supprimer un employé
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @param idEmploye IN : Employé à supprimer
 	 */
 	public void supprimerEmploye(int idEmploye) {
@@ -92,9 +90,9 @@ public class EmployeManagement {
 
 	/**
 	 * Permet de créer un nouvel employé
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @return l'employé à créer
 	 */
 	public Employe nouveauEmploye() {
@@ -122,9 +120,9 @@ public class EmployeManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des employé
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @param _idEmploye   IN : id de l'employé
 	 * @param _debutNom    IN : le prénom de l'employé
 	 * @param _debutPrenom IN : le nom de l'employé
@@ -156,9 +154,9 @@ public class EmployeManagement {
 
 	/**
 	 * Permet de modifier un employé
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @param empMod IN : l'employé à modifier
 	 * @return l'employé modifié
 	 */

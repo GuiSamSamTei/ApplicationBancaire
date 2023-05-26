@@ -4,57 +4,40 @@ package application.view;
 
 import java.util.ArrayList;
 
-import application.DailyBankApp;
 import application.DailyBankState;
-import application.control.ClientsManagement;
-import application.control.ComptesManagement;
-import application.control.EmployeManagement;
 import application.control.PrelManagement;
 import application.tools.AlertUtilities;
-import application.tools.StageManagement;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Alert.AlertType;
-import javafx.scene.layout.BorderPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import model.data.Client;
 import model.data.CompteCourant;
-import model.data.Employe;
 import model.data.Prelevement;
 
 public class PrelManagementController {
-
-	// Etat courant de l'application
-	private DailyBankState dailyBankState;
-	
 
 	// Contrôleur de Dialogue associé à ClientsManagementController
 	private PrelManagement cmDialogController;
 
 	// Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
 	private Stage primaryStage;
-	 
 
 	// Données de la fenêtre
 	private ObservableList<Prelevement> oListPrelevements;
 
-
 	private CompteCourant compte;
 
 	// Manipulation de la fenêtre
-	public void initContext(Stage _containingStage, PrelManagement _cm, DailyBankState _dbstate, CompteCourant compteConcerne) {
+	public void initContext(Stage _containingStage, PrelManagement _cm, DailyBankState _dbstate,
+			CompteCourant compteConcerne) {
 		this.cmDialogController = _cm;
 		this.primaryStage = _containingStage;
-		this.dailyBankState = _dbstate;
 		this.compte = compteConcerne;
 		this.configure();
 	}
@@ -102,7 +85,7 @@ public class PrelManagementController {
 
 	/**
 	 * Action sur le bouton annuler
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -112,7 +95,7 @@ public class PrelManagementController {
 
 	/**
 	 * Action sur le bouton rechercher
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -130,8 +113,6 @@ public class PrelManagementController {
 			idPrel = -1;
 		}
 
-
-
 		// Recherche des prélèvements en BD.
 
 		ArrayList<Prelevement> listePrels;
@@ -143,7 +124,11 @@ public class PrelManagementController {
 		this.validateComponentState();
 	}
 
-	
+	/**
+	 * Action sur le bouton modifier prélèvement
+	 *
+	 * @author Gulherme SAMPAIO
+	 */
 	@FXML
 	private void doModifierPrel() {
 
@@ -159,7 +144,11 @@ public class PrelManagementController {
 		this.validateComponentState();
 	}
 
-	
+	/**
+	 * Action sur le bouton supprimer prélèvement
+	 *
+	 * @author Gulherme SAMPAIO
+	 */
 	@FXML
 	private void doSupprPrel() {
 		int selectedIndice = this.lvPrelevements.getSelectionModel().getSelectedIndex();
@@ -169,16 +158,20 @@ public class PrelManagementController {
 				Prelevement prel = this.oListPrelevements.get(selectedIndice);
 				this.cmDialogController.supprimerPrelevement(prel.idPrelev);
 			}
-			
+
 		}
 		this.loadList();
 		this.validateComponentState();
 	}
 
-	
+	/**
+	 * Action sur le bouton nouveau prélèvement
+	 *
+	 * @author Gulherme SAMPAIO
+	 */
 	@FXML
 	private void doNouveauPrel() {
-		Prelevement prel = new Prelevement(0,0,0,"",this.compte.idNumCompte);
+		Prelevement prel = new Prelevement(0, 0, 0, "", this.compte.idNumCompte);
 		prel = this.cmDialogController.nouveauPrelevement();
 		if (prel != null) {
 			this.oListPrelevements.add(prel);
@@ -189,7 +182,7 @@ public class PrelManagementController {
 
 	/**
 	 * Actualisation de la liste des prélèvements
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	private void loadList() {
@@ -208,7 +201,7 @@ public class PrelManagementController {
 
 	/**
 	 * Active et désactive les boutons selon différents états
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	private void validateComponentState() {

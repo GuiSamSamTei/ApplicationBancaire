@@ -1,6 +1,5 @@
 package model.orm;
 
-import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -122,7 +121,7 @@ public class Access_BD_CompteCourant {
 	/**
 	 * Mise à jour d'un CompteCourant.
 	 *
-	 * @param cc IN client 
+	 * @param cc IN client
 	 * @throws RowNotFoundOrTooManyRowsException La requête modifie 0 ou plus de 1
 	 *                                           ligne
 	 * @throws DataAccessException               Erreur d'accès aux données (requête
@@ -169,8 +168,9 @@ public class Access_BD_CompteCourant {
 
 	/**
 	 * Clôture d'un CompteCourant.
+	 *
 	 * @author Bastien RECORD
-	 * 
+	 *
 	 * @param cc IN : Compte à clôturer
 	 * @throws RowNotFoundOrTooManyRowsException La requête modifie 0 ou plus de 1
 	 *                                           ligne
@@ -207,7 +207,7 @@ public class Access_BD_CompteCourant {
 
 			ResultSet rs = pst2.executeQuery();
 			rs.next();
-			int numCliBase = rs.getInt(1);
+			rs.getInt(1);
 
 			con.commit();
 			rs.close();
@@ -219,12 +219,17 @@ public class Access_BD_CompteCourant {
 
 	/**
 	 * Création d'un CompteCourant.
-	 * @author Guilherme SAMPAIO 
+	 *
+	 * @author Guilherme SAMPAIO
 	 * @param compte IN compte.idNumCli doit exister
-	 * @throws RowNotFoundOrTooManyRowsException La requête modifie 0 ou plus de 1 ligne
-	 * @throws DataAccessException 			 Erreur d'accès aux données (requête mal formée ou autre)
-	 * @throws DatabaseConnexionException 		 Erreur de connexion
-	 * @throws ManagementRuleViolation 		 Erreur sur le solde courant par rapport au débitAutorisé (solde < débitAutorisé)
+	 * @throws RowNotFoundOrTooManyRowsException La requête modifie 0 ou plus de 1
+	 *                                           ligne
+	 * @throws DataAccessException               Erreur d'accès aux données (requête
+	 *                                           mal formée ou autre)
+	 * @throws DatabaseConnexionException        Erreur de connexion
+	 * @throws ManagementRuleViolation           Erreur sur le solde courant par
+	 *                                           rapport au débitAutorisé (solde <
+	 *                                           débitAutorisé)
 	 */
 	public void createCompteCourant(CompteCourant compte) throws RowNotFoundOrTooManyRowsException, DataAccessException,
 			DatabaseConnexionException, ManagementRuleViolation {

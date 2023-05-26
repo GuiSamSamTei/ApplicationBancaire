@@ -37,7 +37,7 @@ public class ClientEditorPaneController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
 	 *                         fichier xml contrôlé par this
 	 * @param _dbstate         IN : Etat courant de l'application
@@ -57,7 +57,7 @@ public class ClientEditorPaneController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param client IN : Client à afficher
 	 * @param mode   IN : Mode d'édition
 	 * @return Client : Client résultat
@@ -147,7 +147,7 @@ public class ClientEditorPaneController {
 
 	/**
 	 * Fermeture de la fenêtre
-	 * 
+	 *
 	 * @param e IN : événement de fermeture
 	 * @return Object: null
 	 */
@@ -221,7 +221,7 @@ public class ClientEditorPaneController {
 
 	/**
 	 * Vérifie que les données saisies sont valides
-	 * 
+	 *
 	 * @return true si les données sont valides, false sinon
 	 */
 	private boolean isSaisieValide() {

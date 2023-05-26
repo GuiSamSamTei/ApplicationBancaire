@@ -5,28 +5,21 @@ package application.view;
 import java.util.ArrayList;
 
 import application.DailyBankState;
-import application.control.ClientsManagement;
 import application.control.EmployeManagement;
 import application.tools.AlertUtilities;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import model.data.Client;
-import model.data.CompteCourant;
 import model.data.Employe;
 
 public class EmployeManagementController {
-
-	// Etat courant de l'application
-	private DailyBankState dailyBankState;
-	
 
 	// Contrôleur de Dialogue associé à ClientsManagementController
 	private EmployeManagement cmDialogController;
@@ -41,7 +34,6 @@ public class EmployeManagementController {
 	public void initContext(Stage _containingStage, EmployeManagement employeManagement, DailyBankState _dbstate) {
 		this.cmDialogController = employeManagement;
 		this.primaryStage = _containingStage;
-		this.dailyBankState = _dbstate;
 		this.configure();
 	}
 
@@ -86,7 +78,7 @@ public class EmployeManagementController {
 
 	/**
 	 * Action sur le bouton annuler
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -96,7 +88,7 @@ public class EmployeManagementController {
 
 	/**
 	 * Action sur le bouton rechercher
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -142,7 +134,7 @@ public class EmployeManagementController {
 
 	/**
 	 * Action sur le bouton modifier
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -162,7 +154,7 @@ public class EmployeManagementController {
 
 	/**
 	 * Action sur le bouton supprimer
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -174,7 +166,7 @@ public class EmployeManagementController {
 				Employe employe = this.oListEmployes.get(selectedIndice);
 				this.cmDialogController.supprimerEmploye(employe.idEmploye);
 			}
-			
+
 		}
 		this.loadList();
 		this.validateComponentState();
@@ -182,7 +174,7 @@ public class EmployeManagementController {
 
 	/**
 	 * Action sur le bouton créer employé
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	@FXML
@@ -198,7 +190,7 @@ public class EmployeManagementController {
 
 	/**
 	 * Actualisation de la liste des clients
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	private void loadList() {
@@ -219,7 +211,7 @@ public class EmployeManagementController {
 
 	/**
 	 * Active et désactive les boutons selon différents états
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 */
 	private void validateComponentState() {

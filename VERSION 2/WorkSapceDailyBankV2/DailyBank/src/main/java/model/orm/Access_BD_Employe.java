@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import model.data.Client;
 import model.data.Employe;
 import model.orm.exception.DataAccessException;
 import model.orm.exception.DatabaseConnexionException;
@@ -82,7 +81,18 @@ public class Access_BD_Employe {
 			throw new DataAccessException(Table.Employe, Order.SELECT, "Erreur accès", e);
 		}
 	}
-	
+
+	/**
+	 * Insertion d'un nouvel employé
+	 *
+	 * @author Guilherme SAMPAIO
+	 *
+	 * @param employe IN : employé à ajouter
+	 *
+	 * @throws RowNotFoundOrTooManyRowsException
+	 * @throws DataAccessException
+	 * @throws DatabaseConnexionException
+	 */
 	public void insertEmploye(Employe employe)
 			throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException {
 		try {
@@ -90,7 +100,7 @@ public class Access_BD_Employe {
 			Connection con = LogToDatabase.getConnexion();
 
 			String query = "INSERT INTO EMPLOYE VALUES (" + "seq_id_employe.NEXTVAL" + ", " + "?" + ", " + "?" + ", "
-					+ "?" + ", " + "?" + ", " + "?" + ", " + "?"  + ")";
+					+ "?" + ", " + "?" + ", " + "?" + ", " + "?" + ")";
 			PreparedStatement pst = con.prepareStatement(query);
 			pst.setString(1, employe.nom);
 			pst.setString(2, employe.prenom);
@@ -128,7 +138,18 @@ public class Access_BD_Employe {
 			throw new DataAccessException(Table.Employe, Order.INSERT, "Erreur accès", e);
 		}
 	}
-	
+
+	/**
+	 * Supprime un employé
+	 *
+	 * @author Guilherme SAMPAIO
+	 *
+	 * @param idEmploye IN : id employé à supprimer
+	 *
+	 * @throws RowNotFoundOrTooManyRowsException
+	 * @throws DataAccessException
+	 * @throws DatabaseConnexionException
+	 */
 	public void supprEmploye(int idEmploye)
 			throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException {
 		try {
@@ -150,20 +171,29 @@ public class Access_BD_Employe {
 						"Insert anormal (insert de moins ou plus d'une ligne)", null, result);
 			}
 
-			
 		} catch (SQLException e) {
 			throw new DataAccessException(Table.Employe, Order.INSERT, "Erreur accès", e);
 		}
 	}
 
+	/**
+	 * Met à jour l'employé
+	 *
+	 * @author Guilherme SAMPAIO
+	 *
+	 * @param employe IN : employé à modifier
+	 *
+	 * @throws RowNotFoundOrTooManyRowsException
+	 * @throws DataAccessException
+	 * @throws DatabaseConnexionException
+	 */
 	public void updateEmploye(Employe employe)
 			throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException {
 		try {
 			Connection con = LogToDatabase.getConnexion();
 
-			String query = "UPDATE EMPLOYE SET " + "nom = " + "? , " + "prenom = " + "? , " + "droitsAccess = "
-					+ "? , " + "login = " + "? , " + "motPasse = " + "? , " + "idAg = " + "? " + " "
-					+ "WHERE idEmploye = ? ";
+			String query = "UPDATE EMPLOYE SET " + "nom = " + "? , " + "prenom = " + "? , " + "droitsAccess = " + "? , "
+					+ "login = " + "? , " + "motPasse = " + "? , " + "idAg = " + "? " + " " + "WHERE idEmploye = ? ";
 
 			PreparedStatement pst = con.prepareStatement(query);
 			pst.setString(1, employe.nom);
@@ -189,11 +219,25 @@ public class Access_BD_Employe {
 		}
 	}
 
+	/**
+	 * Retourne liste d'employés
+	 *
+	 * @author Guilherme SAMPAIO
+	 *
+	 * @param idEmploye   IN : id de recherche
+	 * @param debutNom    IN : nom de recherche
+	 * @param debutPrenom IN : prénom de recherche
+	 *
+	 * @return liste d'employés (vide si aucun employé trouvé)
+	 *
+	 * @throws DataAccessException
+	 * @throws DatabaseConnexionException
+	 */
 	public ArrayList<Employe> getEmployes(int idEmploye, String debutNom, String debutPrenom)
 			throws DataAccessException, DatabaseConnexionException {
 
 		ArrayList<Employe> alResult = new ArrayList<>();
-		
+
 		try {
 			Connection con = LogToDatabase.getConnexion();
 
@@ -234,8 +278,7 @@ public class Access_BD_Employe {
 				motPasse = (motPasse == null ? "" : motPasse);
 				int idAg = rs.getInt("idAg");
 
-				alResult.add(
-						new Employe(idEmployeTR, nom, prenom, droitsAccess, login, motPasse, idAg));
+				alResult.add(new Employe(idEmployeTR, nom, prenom, droitsAccess, login, motPasse, idAg));
 			}
 			rs.close();
 			pst.close();

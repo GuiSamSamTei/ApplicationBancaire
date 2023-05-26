@@ -6,17 +6,12 @@ import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.EditionMode;
 import application.tools.StageManagement;
-import application.view.EmployeManagementController;
 import application.view.PrelEditorPaneController;
-import application.view.ClientEditorPaneController;
-import application.view.EmployeEditorPaneController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import model.data.Client;
-import model.data.Employe;
 import model.data.Prelevement;
 
 public class PrelEditorPane {
@@ -27,9 +22,9 @@ public class PrelEditorPane {
 
 	/**
 	 * Constructeur de la classe PrelEditorPane
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @param _parentStage IN : stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 */
@@ -60,11 +55,11 @@ public class PrelEditorPane {
 
 	/**
 	 * Affiche la fenêtre de gestion d'un prélèvement
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @param prelevement IN : Prélèvement à gérer
-	 * @param em      IN : Mode d'édition
+	 * @param em          IN : Mode d'édition
 	 * @return
 	 */
 	public Prelevement doPrelevementEditorDialog(Prelevement prelevement, EditionMode em) {

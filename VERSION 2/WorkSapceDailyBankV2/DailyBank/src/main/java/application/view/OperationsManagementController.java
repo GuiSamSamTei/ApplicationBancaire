@@ -43,7 +43,7 @@ public class OperationsManagementController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
 	 *                         fichier xml contrôlé par this
 	 * @param _om              IN : Contrôleur de Dialogue associé à
@@ -84,7 +84,7 @@ public class OperationsManagementController {
 
 	/**
 	 * Gestion du stage
-	 * 
+	 *
 	 * @param e IN : Evènement de fermeture de la fenêtre
 	 * @return null
 	 */
@@ -123,7 +123,7 @@ public class OperationsManagementController {
 
 	/**
 	 * Action sur le bouton "Effectuer un débit"
-	 * 
+	 *
 	 * @author Julie BAELEN
 	 */
 	@FXML
@@ -137,8 +137,8 @@ public class OperationsManagementController {
 	}
 
 	/**
-	 * Action sur le bouton "débit exceptionnel" seulement pour le chef d'agence
-	 * 
+	 * Action sur le bouton "Débit exceptionnel" seulement pour le chef d'agence
+	 *
 	 * @author Julie BAELEN
 	 */
 	@FXML
@@ -153,7 +153,7 @@ public class OperationsManagementController {
 
 	/**
 	 * Action sur le bouton "Effectuer un crédit"
-	 * 
+	 *
 	 * @author Julie BAELEN
 	 */
 	@FXML
@@ -167,7 +167,7 @@ public class OperationsManagementController {
 
 	/**
 	 * Action sur le bouton "Virement"
-	 * 
+	 *
 	 * @author Bastien RECORD
 	 */
 	@FXML
@@ -181,7 +181,7 @@ public class OperationsManagementController {
 
 	/**
 	 * Action sur le bouton "Relevé mensuel"
-	 * 
+	 *
 	 * @author Bastien RECORD
 	 */
 	@FXML
@@ -199,7 +199,7 @@ public class OperationsManagementController {
 
 	/**
 	 * Validation de l'état des composants
-	 * 
+	 *
 	 * @author Bastien RECORD
 	 */
 	private void validateComponentState() {

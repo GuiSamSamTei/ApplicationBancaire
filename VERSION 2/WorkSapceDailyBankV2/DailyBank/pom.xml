@@ -38,6 +38,26 @@
 			<version>${javafx.version}</version>
 		</dependency>
 
+		<!-- Dépendance pour le jar : exécution sur tout système -->
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-graphics</artifactId>
+			<version>${javafx.version}</version>
+			<classifier>win</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-graphics</artifactId>
+			<version>${javafx.version}</version>
+			<classifier>linux</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-graphics</artifactId>
+			<version>${javafx.version}</version>
+			<classifier>mac</classifier>
+		</dependency>
+
 
 		<!-- Dépendance pour ojdbc oracle : driver d'accès à une BD Oracle
 		depuis java -->

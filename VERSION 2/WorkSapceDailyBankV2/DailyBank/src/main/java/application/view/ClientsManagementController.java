@@ -31,7 +31,7 @@ public class ClientsManagementController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
 	 *                         fichier xml contrôlé par this
 	 * @param _cm              IN : Contrôleur de Dialogue associé à
@@ -68,7 +68,7 @@ public class ClientsManagementController {
 
 	/**
 	 * Validation de l'état des composants
-	 * 
+	 *
 	 * @param e IN : Event
 	 * @return Object : null
 	 */
@@ -153,7 +153,7 @@ public class ClientsManagementController {
 
 	/**
 	 * Méthode appelée lors de l'appui sur le bouton Comptes Client
-	 * 
+	 *
 	 */
 	@FXML
 	private void doComptesClient() {
@@ -201,7 +201,7 @@ public class ClientsManagementController {
 
 	/**
 	 * Méthode appelée lors de l'appui sur le bouton Emprunts Client
-	 * 
+	 *
 	 * @author Bastien RECORD
 	 */
 	@FXML
@@ -215,7 +215,7 @@ public class ClientsManagementController {
 
 	/**
 	 * Validation de l'état des composants
-	 * 
+	 *
 	 * @author Bastien RECORD
 	 */
 	private void validateComponentState() {

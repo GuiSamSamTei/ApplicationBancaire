@@ -16,9 +16,6 @@ import model.data.Employe;
  */
 public class LoginDialogController {
 
-	// Etat courant de l'application
-	private DailyBankState dailyBankState;
-
 	// Contrôleur de Dialogue associé à LoginDialogController
 	private LoginDialog ldDialogController;
 
@@ -41,7 +38,6 @@ public class LoginDialogController {
 	public void initContext(Stage _containingStage, LoginDialog _ld, DailyBankState _dbstate) {
 		this.primaryStage = _containingStage;
 		this.ldDialogController = _ld;
-		this.dailyBankState = _dbstate;
 		this.configure();
 	}
 

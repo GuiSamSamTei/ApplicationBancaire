@@ -1,5 +1,6 @@
-// Création d'un compte: Guilherme SAMPAIO
-// Clôturation d'un compte: Bastien RECORD
+// Création d'un compte : Guilherme SAMPAIO
+// Clôturation d'un compte : Bastien RECORD
+// Prélèvement d'un compte : Guilherme SAMPAIO
 
 package application.control;
 
@@ -22,8 +23,6 @@ import model.data.CompteCourant;
 import model.orm.Access_BD_CompteCourant;
 import model.orm.exception.ApplicationException;
 import model.orm.exception.DatabaseConnexionException;
-import model.orm.exception.Order;
-import model.orm.exception.Table;
 
 public class ComptesManagement {
 
@@ -34,7 +33,7 @@ public class ComptesManagement {
 
 	/**
 	 * Constructeur de la classe ComptesManagement
-	 * 
+	 *
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 */
@@ -74,7 +73,7 @@ public class ComptesManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des comptes
-	 * 
+	 *
 	 * @param cpt IN : Compte à gérer
 	 */
 	public void gererOperationsDUnCompte(CompteCourant cpt) {
@@ -82,25 +81,25 @@ public class ComptesManagement {
 				this.clientDesComptes, cpt);
 		om.doOperationsManagementDialog();
 	}
-	
+
 	/**
 	 * Affiche la fenêtre de gestion des prélèvements
-	 * 
+	 *
 	 * @author: Guilherme SAMPAIO
 	 * @param cpt IN : Compte des prélèvements
 	 */
 	public void gererPrelevementsDUnCompte(CompteCourant cpt) {
 		PrelManagement pm = new PrelManagement(this.primaryStage, this.dailyBankState, cpt);
 		pm.doPrelevementsManagementDialog();
-	} //Passer à prelManagement
+	}
 
 	/**
-	 * Affiche la fenêtre de gestion des comptes
-	 * 
+	 * Affiche la fenêtre de création de compte
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @param cpt IN : Compte à gérer
-	 * 
+	 *
 	 * @return le nouveau compte
 	 */
 	public CompteCourant creerNouveauCompte() {
@@ -125,7 +124,7 @@ public class ComptesManagement {
 
 	/**
 	 * Affiche la fenêtre de gestion des comptes
-	 * 
+	 *
 	 * @return une liste de comptes d'un client
 	 */
 	public ArrayList<CompteCourant> getComptesDunClient() {
@@ -148,10 +147,10 @@ public class ComptesManagement {
 	}
 
 	/**
-	 * Affiche la fenêtre de gestion des comptes
-	 * 
+	 * Effuctue cloturation d'un compte
+	 *
 	 * @author Bastien RECORD
-	 * 
+	 *
 	 * @param cpt IN : Compte à gérer
 	 */
 	public void cloturerCompte(CompteCourant cpt) {
@@ -175,5 +174,4 @@ public class ComptesManagement {
 		}
 	}
 
-	
 }

@@ -1,23 +1,21 @@
 package application.view;
 
 import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.Date;
-import java.util.regex.Pattern;
-import javafx.scene.control.TextField;
+
 import application.DailyBankState;
 import application.control.EmpruntEditorPane;
 import application.tools.AlertUtilities;
-import application.tools.ConstantesIHM;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
-import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import model.data.AssuranceEmprunt;
 import model.data.Client;
 import model.data.Emprunt;
-import model.data.AssuranceEmprunt;
 import model.orm.Access_BD_Emprunt;
 import model.orm.exception.DataAccessException;
 import model.orm.exception.DatabaseConnexionException;
@@ -25,12 +23,6 @@ import model.orm.exception.ManagementRuleViolation;
 import model.orm.exception.RowNotFoundOrTooManyRowsException;
 
 public class EmpruntEditorPaneController {
-
-	// Etat courant de l'application
-	private DailyBankState dailyBankState;
-
-	// Contrôleur de Dialogue associé à ClientsManagementController
-	private EmpruntEditorPane eepDialogController;
 
 	// Fenêtre physique ou est la scène contenant le fichier xml contrôlé par this
 	private Stage primaryStage;
@@ -40,17 +32,16 @@ public class EmpruntEditorPaneController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
 	 *                         fichier xml contrôlé par this
 	 * @param _eep             IN : Contrôleur de Dialogue associé à
 	 *                         EmpruntEditorPaneController
 	 * @param _dbstate         IN : Etat courant de l'application
+	 * @param _client          IN : client concerné
 	 */
 	public void initContext(Stage _containingStage, EmpruntEditorPane _eep, DailyBankState _dbstate, Client _client) {
-		this.eepDialogController = _eep;
 		this.primaryStage = _containingStage;
-		this.dailyBankState = _dbstate;
 		this.clientDesEmprunts = _client;
 		this.configure();
 	}
@@ -71,7 +62,7 @@ public class EmpruntEditorPaneController {
 
 	/**
 	 * Validation de l'état des composants
-	 * 
+	 *
 	 * @param e IN : Event
 	 * @return Object : null
 	 */
@@ -100,13 +91,18 @@ public class EmpruntEditorPaneController {
 	private Label lblInfosCompte;
 
 	/**
-	 * Validation de l'état des composants
+	 * Action sur le bouton "Annuler"
 	 */
 	@FXML
 	private void doCancel() {
 		this.primaryStage.close();
 	}
 
+	/**
+	 * Action sur le bouton "Valider"
+	 *
+	 * @author Bastien RECORD
+	 */
 	@FXML
 	private void doValidate() {
 		double tauxApp;
@@ -153,6 +149,14 @@ public class EmpruntEditorPaneController {
 
 	}
 
+	/**
+	 * Vérifie que les champs sont correctements saisies
+	 *
+	 * @author Bastien RECORD
+	 *
+	 * @return true si la saisie est valide (false sinon et affiche une alerte avec
+	 *         l'erreur associée)
+	 */
 	private boolean isSaisieValide() {
 
 		if (this.capital.getText().trim().isEmpty()) {

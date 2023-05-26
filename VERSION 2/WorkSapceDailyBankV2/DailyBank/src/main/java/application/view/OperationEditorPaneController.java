@@ -7,13 +7,11 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 import application.DailyBankState;
-import application.tools.AlertUtilities;
 import application.tools.CategorieOperation;
 import application.tools.ConstantesIHM;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -42,7 +40,7 @@ public class OperationEditorPaneController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
 	 *                         fichier xml contrôlé par this
 	 * @param _dbstate         IN : Etat courant de l'application
@@ -62,12 +60,12 @@ public class OperationEditorPaneController {
 
 	/**
 	 * Affichage de la fenêtre
-	 * 
+	 *
 	 * @author Julie BAELEN et Bastien RECORD
-	 * 
+	 *
 	 * @param cpte IN : Compte à éditer
 	 * @param mode IN : Mode de l'opération
-	 * 
+	 *
 	 * @return IN : Opération résultat
 	 */
 	public Operation displayDialog(CompteCourant cpte, CategorieOperation mode) {
@@ -122,10 +120,10 @@ public class OperationEditorPaneController {
 			Access_BD_CompteCourant cptAll = new Access_BD_CompteCourant();
 			try {
 				this.listComptesClient = cptAll.getCompteCourants(this.compteEdite.idNumCli);
-				for (int i = 0; i < this.listComptesClient.size(); i++) {
-					if (this.listComptesClient.get(i).idNumCompte != this.compteEdite.idNumCompte
-							&& !this.listComptesClient.get(i).estCloture.equals("O")) {
-						listTypesOpesPossibles2.add(this.listComptesClient.get(i).toString());
+				for (CompteCourant element : this.listComptesClient) {
+					if (element.idNumCompte != this.compteEdite.idNumCompte
+							&& !element.estCloture.equals("O")) {
+						listTypesOpesPossibles2.add(element.toString());
 					}
 				}
 			} catch (DataAccessException | DatabaseConnexionException e) {
@@ -166,7 +164,7 @@ public class OperationEditorPaneController {
 
 	/**
 	 * Fermeture de la fenêtre
-	 * 
+	 *
 	 * @param e IN : Evènement de validation
 	 * @return IN : Opération résultat
 	 */
@@ -202,7 +200,7 @@ public class OperationEditorPaneController {
 
 	/**
 	 * Action sur le bouton OK
-	 * 
+	 *
 	 * @author Julie BAELEN et Bastien RECORD
 	 */
 	@FXML
@@ -307,10 +305,10 @@ public class OperationEditorPaneController {
 				return;
 			}
 			CompteCourant compte = null;
-			for (int i = 0; i < this.listComptesClient.size(); i++) {
-				if (this.listComptesClient.get(i).toString()
+			for (CompteCourant element : this.listComptesClient) {
+				if (element.toString()
 						.equals(this.cbTypeOpe.getSelectionModel().getSelectedItem())) {
-					compte = this.listComptesClient.get(i);
+					compte = element;
 				}
 			}
 
@@ -319,7 +317,6 @@ public class OperationEditorPaneController {
 			this.primaryStage.close();
 			break;
 		case DEBITEX:
-
 
 			this.txtMontant.getStyleClass().remove("borderred");
 			this.lblMontant.getStyleClass().remove("borderred");

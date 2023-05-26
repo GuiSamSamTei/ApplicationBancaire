@@ -19,14 +19,13 @@ public class OperationEditorPane {
 	private OperationEditorPaneController oepcViewController;
 
 	/**
-	 * Création des scenes javafx de l'enregistrement d'opération
-	 * 
+	 * Constructeur de la classe OperationEditorPane
+	 *
 	 * @param _parentStage : Le stage parent
 	 * @param _dbstate     : L'application DailyBankState
 	 *
 	 * @throws Exception e
 	 */
-
 	public OperationEditorPane(Stage _parentStage, DailyBankState _dbstate) {
 
 		try {
@@ -56,9 +55,9 @@ public class OperationEditorPane {
 	/**
 	 * Permet d'acceder au dialog de OperationEditorPaneController
 	 *
-	 * @param cpte : Le compte courant
-	 * @param cm   : La catégorie d'opération
-	 * 
+	 * @param cpte IN : Le compte courant
+	 * @param cm   IN : La catégorie d'opération
+	 *
 	 * @return dialog
 	 */
 	public Operation doOperationEditorDialog(CompteCourant cpte, CategorieOperation cm) {

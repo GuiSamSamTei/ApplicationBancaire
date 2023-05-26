@@ -1,16 +1,15 @@
 package model.orm;
 
-import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
-import java.text.DecimalFormat;
+
 import model.data.AssuranceEmprunt;
-import model.data.CompteCourant;
 import model.data.Emprunt;
 import model.orm.exception.DataAccessException;
 import model.orm.exception.DatabaseConnexionException;
@@ -22,7 +21,7 @@ import model.orm.exception.Table;
 /**
  *
  * Classe d'accès aux Emprunt en BD Oracle.
- * 
+ *
  * @author Bastien RECORD
  */
 public class Access_BD_Emprunt {
@@ -33,8 +32,12 @@ public class Access_BD_Emprunt {
 	/**
 	 * Recherche des Emprunt d'un client à partir de son id.
 	 *
+	 * @author Bastien RECORD
+	 *
 	 * @param idNumCli IN : id du client dont on cherche les emprunts
+	 *
 	 * @return tous les emprunts de idNumCli (ou liste vide)
+	 *
 	 * @throws DataAccessException        Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
@@ -74,18 +77,16 @@ public class Access_BD_Emprunt {
 	}
 
 	/**
-	 * Création d'un CompteCourant.
-	 * 
-	 * @author Guilherme SAMPAIO
-	 * @param compte IN compte.idNumCli doit exister
-	 * @throws RowNotFoundOrTooManyRowsException La requête modifie 0 ou plus de 1
-	 *                                           ligne
-	 * @throws DataAccessException               Erreur d'accès aux données (requête
-	 *                                           mal formée ou autre)
-	 * @throws DatabaseConnexionException        Erreur de connexion
-	 * @throws ManagementRuleViolation           Erreur sur le solde courant par
-	 *                                           rapport au débitAutorisé (solde <
-	 *                                           débitAutorisé)
+	 * Création d'un emprunt
+	 *
+	 * @author Bastien RECORD
+	 *
+	 * @param emp    IN : emprunt à ajouter
+	 * @param assEmp IN : assurance associé (null si aucune assurance)
+	 * @throws RowNotFoundOrTooManyRowsException
+	 * @throws DataAccessException
+	 * @throws DatabaseConnexionException
+	 * @throws ManagementRuleViolation
 	 */
 	public void insertEmprunt(Emprunt emp, AssuranceEmprunt assEmp) throws RowNotFoundOrTooManyRowsException,
 			DataAccessException, DatabaseConnexionException, ManagementRuleViolation {
@@ -154,9 +155,7 @@ public class Access_BD_Emprunt {
 					con.commit();
 				}
 
-//				rs.close();
 				pst.close();
-//				pst1.close();
 				pst2.close();
 			}
 
@@ -165,6 +164,18 @@ public class Access_BD_Emprunt {
 		}
 	}
 
+	/**
+	 * Retourne l'assurance associée à l'emprunt
+	 *
+	 * @author Bastien RECORD
+	 *
+	 * @param idEmprunt IN : id de l'emprunt associé
+	 *
+	 * @return l'assurance
+	 *
+	 * @throws DataAccessException
+	 * @throws DatabaseConnexionException
+	 */
 	public AssuranceEmprunt getAssuranceEmprunt(int idEmprunt) throws DataAccessException, DatabaseConnexionException {
 		AssuranceEmprunt result = null;
 
@@ -194,5 +205,4 @@ public class Access_BD_Emprunt {
 
 		return result;
 	}
-
 }

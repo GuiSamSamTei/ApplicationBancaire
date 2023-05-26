@@ -1,43 +1,21 @@
 package application.view;
 
 import java.text.DecimalFormat;
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.regex.Pattern;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.VBox;
+
 import application.DailyBankState;
 import application.control.EmpruntDetails;
-import application.control.EmpruntEditorPane;
-import application.tools.AlertUtilities;
-import application.tools.ConstantesIHM;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.Button;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import model.data.Client;
-import model.data.Emprunt;
 import model.data.AssuranceEmprunt;
-import model.orm.Access_BD_Emprunt;
-import model.orm.exception.DataAccessException;
-import model.orm.exception.DatabaseConnexionException;
-import model.orm.exception.ManagementRuleViolation;
-import model.orm.exception.RowNotFoundOrTooManyRowsException;
+import model.data.Emprunt;
 
 public class EmpruntDetailsController {
-
-	// Etat courant de l'application
-	private DailyBankState dailyBankState;
 
 	// Contrôleur de Dialogue associé à ClientsManagementController
 	private EmpruntDetails edDialogController;
@@ -50,17 +28,17 @@ public class EmpruntDetailsController {
 
 	/**
 	 * Manipulation de la fenêtre
-	 * 
+	 *
 	 * @param _containingStage IN : Fenêtre physique ou est la scène contenant le
 	 *                         fichier xml contrôlé par this
-	 * @param _eep             IN : Contrôleur de Dialogue associé à
+	 * @param _ed              IN : Contrôleur de Dialogue associé à
 	 *                         EmpruntEditorPaneController
 	 * @param _dbstate         IN : Etat courant de l'application
+	 * @param _emprunt         IN : emprunt concerné
 	 */
 	public void initContext(Stage _containingStage, EmpruntDetails _ed, DailyBankState _dbstate, Emprunt _emprunt) {
 		this.edDialogController = _ed;
 		this.primaryStage = _containingStage;
-		this.dailyBankState = _dbstate;
 		this.empruntConcerne = _emprunt;
 
 		this.vbAssurance.setVisible(false);
@@ -84,7 +62,7 @@ public class EmpruntDetailsController {
 
 	/**
 	 * Validation de l'état des composants
-	 * 
+	 *
 	 * @param e IN : Event
 	 * @return Object : null
 	 */
@@ -115,13 +93,18 @@ public class EmpruntDetailsController {
 	private Label lbTotal;
 
 	/**
-	 * Validation de l'état des composants
+	 * Fermeture de la fenêtre
 	 */
 	@FXML
 	private void doCancel() {
 		this.primaryStage.close();
 	}
 
+	/**
+	 * Actualise la liste détaillée de l'emprunt
+	 *
+	 * @author Bastien RECORD
+	 */
 	@FXML
 	private void doRefreshEmprunt() {
 		ArrayList<String> alDetails = this.edDialogController.genererListDetails();
@@ -134,6 +117,11 @@ public class EmpruntDetailsController {
 		}
 	}
 
+	/**
+	 * Actualise la liste détaillée de l'assurance
+	 *
+	 * @author Bastien RECORD
+	 */
 	@FXML
 	private void doRefreshAssurance() {
 		AssuranceEmprunt assuranceConcerne = this.edDialogController.genererAssurance();

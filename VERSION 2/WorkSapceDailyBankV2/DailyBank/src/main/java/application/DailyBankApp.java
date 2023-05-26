@@ -3,7 +3,7 @@ package application;
 import application.control.DailyBankMainFrame;
 
 /**
- * 
+ *
  * Classe principale de lancement.
  *
  */

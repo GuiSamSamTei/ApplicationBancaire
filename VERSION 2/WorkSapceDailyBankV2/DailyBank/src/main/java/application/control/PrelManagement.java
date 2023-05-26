@@ -2,45 +2,23 @@
 
 package application.control;
 
-import java.io.FileNotFoundException;
-import java.sql.Date;
-import java.time.LocalDate;
-import java.time.Month;
-import java.time.Year;
 import java.util.ArrayList;
-import java.util.Calendar;
-import com.itextpdf.text.DocumentException;
+
 import application.DailyBankApp;
 import application.DailyBankState;
-import application.tools.CategorieOperation;
-import application.tools.ConstantesIHM;
-import application.tools.CreatePdf;
 import application.tools.EditionMode;
-import application.tools.PairsOfValue;
 import application.tools.StageManagement;
-import application.view.OperationsManagementController;
 import application.view.PrelManagementController;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import model.data.Client;
 import model.data.CompteCourant;
-import model.data.Employe;
-import model.data.Operation;
 import model.data.Prelevement;
-import model.orm.Access_BD_CompteCourant;
-import model.orm.Access_BD_Employe;
-import model.orm.Access_BD_Operation;
 import model.orm.Access_BD_Prelevement;
 import model.orm.exception.ApplicationException;
-import model.orm.exception.DataAccessException;
 import model.orm.exception.DatabaseConnexionException;
-import oracle.sql.DATE;
-import java.lang.Object;
-import com.itextpdf.text.pdf.PdfPTable;
 
 public class PrelManagement {
 
@@ -51,13 +29,13 @@ public class PrelManagement {
 
 	/**
 	 * Création des scenes javafx de la gestion des prélèvements
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @param _parentStage : Le stage parent
 	 * @param _dbstate     : L'application DailyBankState
 	 * @param compte       : Le compte du client séléctionné
-	 * 
+	 *
 	 * @throws Exception e
 	 */
 	public PrelManagement(Stage _parentStage, DailyBankState _dbstate, CompteCourant compte) {
@@ -65,8 +43,7 @@ public class PrelManagement {
 		this.compteConcerne = compte;
 		this.dailyBankState = _dbstate;
 		try {
-			FXMLLoader loader = new FXMLLoader(
-					PrelManagementController.class.getResource("prelmanagement.fxml"));
+			FXMLLoader loader = new FXMLLoader(PrelManagementController.class.getResource("prelmanagement.fxml"));
 			BorderPane root = loader.load();
 
 			Scene scene = new Scene(root, 900 + 20, 350 + 10);
@@ -90,9 +67,9 @@ public class PrelManagement {
 
 	/**
 	 * Affichage de la fenêtre de gestion des prélèvements
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 */
 	public void doPrelevementsManagementDialog() {
 		this.pmcViewController.displayDialog();
@@ -100,10 +77,10 @@ public class PrelManagement {
 
 	/**
 	 * Suppression d'un prélèvement
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
 	 * @param idPrelev : L'id du prélèvement à supprimer
-	 * 
+	 *
 	 */
 	public void supprimerPrelevement(int idPrelev) {
 		try {
@@ -122,12 +99,12 @@ public class PrelManagement {
 
 	/**
 	 * Modification d'un prélèvement
-	 * 
+	 *
 	 * @author Guilherme Sampaio
-	 * 
+	 *
 	 * @param prelMod : Le prélèvement à modifier
 	 * @return Le prélèvement modifié
-	 * 
+	 *
 	 */
 	public Prelevement modifierPrelevement(Prelevement prelMod) {
 		PrelEditorPane cep = new PrelEditorPane(this.primaryStage, this.dailyBankState);
@@ -152,9 +129,9 @@ public class PrelManagement {
 
 	/**
 	 * Création d'un prélèvement
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @return Le prélèvement créé
 	 */
 	public Prelevement nouveauPrelevement() {
@@ -183,13 +160,13 @@ public class PrelManagement {
 
 	/**
 	 * Recherche des prélèvements en BD
-	 * 
+	 *
 	 * @author Guilherme SAMPAIO
-	 * 
+	 *
 	 * @param idPrelev : L'id du prélèvement à rechercher(si = -1, recherche tous
 	 *                 les prélèvements)
 	 * @return La liste des prélèvements
-	 * 
+	 *
 	 */
 	public ArrayList<Prelevement> getlistePrelevements(int idPrelev) {
 		ArrayList<Prelevement> listePrels = new ArrayList<>();

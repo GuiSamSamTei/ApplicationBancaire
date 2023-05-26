@@ -6,24 +6,18 @@ import java.util.ArrayList;
 
 import application.DailyBankApp;
 import application.DailyBankState;
-import application.tools.AlertUtilities;
-import application.tools.EditionMode;
 import application.tools.StageManagement;
 import application.view.EmpruntsManagementController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.data.Client;
-import model.data.CompteCourant;
 import model.data.Emprunt;
 import model.orm.Access_BD_Emprunt;
 import model.orm.exception.ApplicationException;
 import model.orm.exception.DatabaseConnexionException;
-import model.orm.exception.Order;
-import model.orm.exception.Table;
 
 public class EmpruntsManagement {
 
@@ -34,7 +28,7 @@ public class EmpruntsManagement {
 
 	/**
 	 * Constructeur de la classe EmpruntsManagement
-	 * 
+	 *
 	 * @param _parentStage IN : Stage parent
 	 * @param _dbstate     IN : Etat de l'application
 	 */
@@ -67,7 +61,7 @@ public class EmpruntsManagement {
 	}
 
 	/**
-	 * Affiche la fenêtre de gestion des comptes
+	 * Affiche la fenêtre de gestion des emprunts
 	 */
 	public void doEmpruntsManagementDialog() {
 		this.emcViewController.displayDialog();
@@ -75,8 +69,8 @@ public class EmpruntsManagement {
 
 	/**
 	 * Affiche la fenêtre de création d'un emprunt
-	 * 
-	 * @param client IN : client à gérer
+	 *
+	 * @author Julie BAELEN
 	 */
 	public void creerEmprunt() {
 		EmpruntEditorPane eep = new EmpruntEditorPane(this.primaryStage, this.dailyBankState, this.clientDesEmprunt);
@@ -85,8 +79,10 @@ public class EmpruntsManagement {
 
 	/**
 	 * Affiche la fenêtre de détails des emprunts
-	 * 
-	 * @param emprunt
+	 *
+	 * @author Bastien RECORD
+	 *
+	 * @param emprunt IN : emprunt à détailler
 	 */
 	public void detailsEmprunt(Emprunt emprunt) {
 		EmpruntDetails ed = new EmpruntDetails(this.primaryStage, this.dailyBankState, emprunt);
@@ -94,8 +90,10 @@ public class EmpruntsManagement {
 	}
 
 	/**
-	 * Affiche la fenêtre de gestion des emprunt
-	 * 
+	 * Permet d'obtenir une liste d'emprunts d'un client
+	 *
+	 * @author Bastien RECORD
+	 *
 	 * @return une liste d'emprunts d'un client
 	 */
 	public ArrayList<Emprunt> getEmpruntDunClient() {

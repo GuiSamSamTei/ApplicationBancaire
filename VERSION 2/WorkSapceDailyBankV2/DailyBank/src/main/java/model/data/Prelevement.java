@@ -1,10 +1,10 @@
 package model.data;
 
-
-/*
+/**
  * Attributs mis en public car cette classe ne fait que "véhiculer" des données.
+ *
+ * @author Guilherme SAMPAIO
  */
-
 public class Prelevement {
 
 	public int idPrelev;
@@ -12,7 +12,6 @@ public class Prelevement {
 	public int dateRecurrente;
 	public String beneficiaire;
 	public int idNumCompte;
-	
 
 	public Prelevement(int idPrelev, double montant, int dateRecurrente, String beneficiaire, int idNumCompte) {
 		super();
@@ -21,7 +20,7 @@ public class Prelevement {
 		this.dateRecurrente = dateRecurrente;
 		this.beneficiaire = beneficiaire;
 		this.idNumCompte = idNumCompte;
-		
+
 	}
 
 	public Prelevement(Prelevement p) {
@@ -35,6 +34,7 @@ public class Prelevement {
 	@Override
 	public String toString() {
 		return "[ " + this.idPrelev + " ] " + "Compte : " + String.valueOf(this.idNumCompte) + " Montant : "
-				+ String.format("%10.02f", this.montant)+ " E Bénéficiaire : " + this.beneficiaire + " Date récurrente : " + String.valueOf(dateRecurrente);
+				+ String.format("%10.02f", this.montant) + " E Bénéficiaire : " + this.beneficiaire
+				+ " Date récurrente : " + String.valueOf(dateRecurrente);
 	}
 }

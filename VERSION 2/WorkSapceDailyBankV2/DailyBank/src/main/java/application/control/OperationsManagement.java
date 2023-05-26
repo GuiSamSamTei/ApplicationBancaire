@@ -5,13 +5,13 @@
 package application.control;
 
 import java.io.FileNotFoundException;
-import java.sql.Date;
 import java.time.LocalDate;
-import java.time.Month;
-import java.time.Year;
 import java.util.ArrayList;
 import java.util.Calendar;
+
 import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.pdf.PdfPTable;
+
 import application.DailyBankApp;
 import application.DailyBankState;
 import application.tools.CategorieOperation;
@@ -32,23 +32,18 @@ import model.data.Operation;
 import model.orm.Access_BD_CompteCourant;
 import model.orm.Access_BD_Operation;
 import model.orm.exception.ApplicationException;
-import model.orm.exception.DataAccessException;
 import model.orm.exception.DatabaseConnexionException;
-import oracle.sql.DATE;
-import java.lang.Object;
-import com.itextpdf.text.pdf.PdfPTable;
 
 public class OperationsManagement {
 
 	private Stage primaryStage;
 	private DailyBankState dailyBankState;
 	private OperationsManagementController omcViewController;
-	private Client clientDuCompte;
 	private CompteCourant compteConcerne;
 
 	/**
 	 * Création des scenes javafx de la gestion d'opération
-	 * 
+	 *
 	 * @param _parentStage : Le stage parent
 	 * @param _dbstate     : L'application DailyBankState
 	 * @param client       : Le client séléctionné
@@ -58,7 +53,6 @@ public class OperationsManagement {
 	 */
 	public OperationsManagement(Stage _parentStage, DailyBankState _dbstate, Client client, CompteCourant compte) {
 
-		this.clientDuCompte = client;
 		this.compteConcerne = compte;
 		this.dailyBankState = _dbstate;
 		try {
@@ -96,6 +90,8 @@ public class OperationsManagement {
 	/**
 	 * Enregistre un débit
 	 *
+	 * @author Julie BAELEN
+	 *
 	 * @return résultat de l'opération demandée
 	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
@@ -128,12 +124,13 @@ public class OperationsManagement {
 	/**
 	 * Enregistre un débit Exceptionnel
 	 *
+	 * @author Julie BAELEN
+	 *
 	 * @return résultat de l'opération demandée seulement pour le chef d'agence
 	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
 	 *                                    formée ou autre)
 	 * @throws DatabaseConnexionException Erreur de connexion
 	 */
-
 	public Operation enregistrerDebitEx() {
 
 		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dailyBankState);
@@ -160,7 +157,7 @@ public class OperationsManagement {
 
 	/**
 	 * Enregistre un crédit
-	 * 
+	 *
 	 * @author Julie BAELEN
 	 *
 	 * @return résultat de l'opération demandée
@@ -193,7 +190,6 @@ public class OperationsManagement {
 
 	/**
 	 * Rajoute à l'arrayList les opération effectuées
-	 *
 	 *
 	 * @return new PairsOfValue
 	 * @throws ApplicationException       Erreur d'accès aux données (requête mal
@@ -228,9 +224,9 @@ public class OperationsManagement {
 
 	/**
 	 * Permet d'enregistrer un virement
-	 * 
+	 *
 	 * @author Bastien RECORD
-	 * 
+	 *
 	 * @return résultat de l'opération demandée
 	 */
 	public Operation enregistrerVirement() {
@@ -260,9 +256,9 @@ public class OperationsManagement {
 
 	/**
 	 * Permet de générer un relevé de compte mensuel
-	 * 
+	 *
 	 * @author Bastien RECORD
-	 * 
+	 *
 	 * @return true si le relevé a été généré sinon false
 	 */
 	public boolean genererReleveMensuel(ObservableList<Operation> _listOp) {
@@ -280,15 +276,15 @@ public class OperationsManagement {
 				table.addCell("Type");
 				table.addCell("Montant");
 
-				for (int i = 0; i < _listOp.size(); i++) {
-					LocalDate dtOp = _listOp.get(i).dateOp.toLocalDate();
+				for (Operation element : _listOp) {
+					LocalDate dtOp = element.dateOp.toLocalDate();
 
 					if ((cal.get(Calendar.MONTH) + 1) == dtOp.getMonthValue()
 							&& cal.get(Calendar.YEAR) == dtOp.getYear()) {
 
-						table.addCell(_listOp.get(i).dateOp.toString());
-						table.addCell("" + _listOp.get(i).idTypeOp);
-						table.addCell("" + _listOp.get(i).montant);
+						table.addCell(element.dateOp.toString());
+						table.addCell("" + element.idTypeOp);
+						table.addCell("" + element.montant);
 					}
 				}
 
