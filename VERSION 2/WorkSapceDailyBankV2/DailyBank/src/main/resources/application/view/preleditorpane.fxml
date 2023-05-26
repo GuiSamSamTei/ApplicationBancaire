@@ -44,7 +44,7 @@
                   <Insets right="20.0" />
                </GridPane.margin>
             </Label>
-            <Label alignment="CENTER_RIGHT" layoutX="21.0" layoutY="102.0" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="141.0" text="Date récurrente (jour du mois)" GridPane.rowIndex="1">
+            <Label alignment="CENTER_RIGHT" layoutX="21.0" layoutY="102.0" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="141.0" text="Date récurrente " GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets right="20.0" />
                </GridPane.margin>
