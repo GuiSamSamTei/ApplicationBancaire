@@ -57,6 +57,6 @@ L'équipe est constituée de trois personnes::
 |           |Doc Tec V2         |                   | 
 |           |Recette V2         |                   | 
 |           |`jar` V2           |                   | 
-|           |javadoc V2         |                   | 
+|           |javadoc V2         |https://github.com/IUT-Blagnac/sae2023-bank-1b01/tree/main/VERSION%202/Javadoc%20V2[Javadoc V2]|
 |           |code V2            |                   | 
 |===
