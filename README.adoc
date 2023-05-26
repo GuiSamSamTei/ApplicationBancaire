@@ -4,7 +4,7 @@
 
 L'équipe est constituée de trois personnes::
   - Julie BAELEN (chef d'équipe)
-  - Guilherme SAMPAIO (chargé de faire respect les délais)
+  - Guilherme SAMPAIO (chargé de faire respecter les délais)
   - Bastien RECORD (oraganisateur du dépôt Git)
 
 == Répartition des tâches et états d'avancement
