@@ -31,78 +31,63 @@ image:Image Doc Tech/log.PNG[]
 
 
 
-== III. Fonctionnement
+== III. Fonctionnalité Guichetier
+
 === 1. Page d'accueil V0
 Voici la page d'accueil. Pour commencer à utiliser DailyBank, appuyez sur "Connexion"
-
 image:Image Doc Util/1.jpg[]
 
 === 2. Connexion V0
 Une fois le bouton appuyé, voici le l'interface qui va apparaitre. Il suffit de rentrer vos informations tels que le Login et le mot de passe. Puis cliquez sur valider.
-
 image:Image Doc Util/2.jpg[]
 
 === 3. Utilisateur V0
 Bienvenue sur votre compte DailyBank!
 Vous pouvez désormais cliquer sur la section "Utilisateur".
-
 image:Image Doc Util/3.jpg[]
 
 Ce bouton permet de se connecter ou de se deconnecter.
-
 image:Image Doc Util/4.jpg[]
 
 === 4. Gestion V0
 Vous pouvez également appuyer sur le bouton "Gestion".
-
 image:Image Doc Util/5.jpg[]
 
 Ce bouton permet de voir les comptes des employés ou des clients.
-
 image:Image Doc Util/gestion.PNG[]
 
 === 5. Bouton "?" V0
 Vous pouvez aussi selectionner le bouton "?".
-
 image:Image Doc Util/6.jpg[]
 
 Celui ci permet d'obtenir une aide.
-
 image:Image Doc Util/aide.PNG[]
 
 === 6. Gestion des comptes V0
 Cliquons sur Gestion pour acceder aux comptes!
-
 image:Image Doc Util/7.jpg[]
 
 === 7. Rechercher V0
 Nous arrivons sur une autre page, celle ci est l'accueil de gestion de comptes. Cliquons sur rechercher.
-
 image:Image Doc Util/8.jpg[]
 
 === 8. Comptes d'un utilisateur V0
 Tous les utilisateurs apparaissent, choisissons un compte aléatoirement.
-
 image:Image Doc Util/9.jpg[]
 
 Cliquons sur "Comptes client"
-
 image:Image Doc Util/10.jpg[]
 
 === 9. Prélévement automatique (GS)
 
 Choisissons un compte client, et cliquons sur prel auto.
-
 image:Image Doc Util/prel.PNG[]
 
 Pour ajouter un prelevement auto, il suffit de cliquer sur nouveau prel auto
-
 image:Image Doc Util/prel2.PNG[]
-
 image:Image Doc Util/prel3.PNG[]
 
 Pour rechercher un prélèvement spécifique, veuillez rentrer l'identifiant du prélèvement dans le champ "Numéro"
-
 image:Image Doc Util/prel14.png[]
 
 Ensuite, cliquez sur le bouton "Rechercher"
@@ -111,77 +96,100 @@ image:Image Doc Util/prel15.png[]
 Et ainsi vous obtenez uniquement le prélèvement qui vous intéresse
 image:Image Doc Util/prel16.png[]
 
-
 Puis pour supprimer il faut cliquer sur supprimer
-
 image:Image Doc Util/prelsup.PNG[]
 
 === 10. Opération (JB)
 
 Voici les comptes de l'utilisateur que nous avons selectionné. Choisissons un compte aléatoirement, nous pouvons voir ses opérations en cliquant sur le bouton "opération".
-
 image:Image Doc Util/11.jpg[]
-
 image:Image Doc Util/12.jpg[]
 
-=== 11. Débit / crédit (JB) / virement compte à compte (BR) / Débit Exceptionnel (JB)
-Nous pouvons maintenant faire un crédit ou un débit, essayons avec un débit.
+=== 11. Débit / Crédit (JB) / Virement compte à compte (BR)
 
+Nous pouvons maintenant faire un crédit ou un débit ou un virement de compte à compte, essayons avec un débit.
 image:Image Doc Util/pdf2.PNG[]
-
 image:Image Doc Util/13.jpg[]
 
-Maintenant Débit Exceptionnel, uniquement disponible pour le chef d'agence
+Maintenant virement de compte à compte. Dans la liste des opérations d'un compte *non clôturé*, cliquer sur "Virement de compte à compte".
+image:Image Doc Util/virementcomptecompte.png[]
 
-image:Image Doc Util/debitex1.jpg[]
+Une fenêtre s'ouvre permettant de choisir un compte parmis les comptes *non clôturés* et de choisir le montant.
+image:Image Doc Util/detailvirementcompte.png[]
 
-Noyus voyons que le découvert autorisé du compte est de 400, or nous allons prelever plus que le découvert autorisé
-
-image:Image Doc Util/debitex2.jpg[]
-
-nous voyons que le solde est inférieur au découvert autorisé
-
-image:Image Doc Util/debitex3.jpg[]
+Après avoir cliquer sur "Effectuer virement", le compte source sera débité du montant (en respectant les règles d'un débit sinon le virement ne s'effectue pas) et le compte destinataire sera créditer de ce montant.
 
 === 12. Générer un PDF de relevé de compte (BR)
 
 Dans la gestion de compte, cliquez sur voir opération
-
 image:Image Doc Util/pdf1.PNG[]
 
 Puis cliquez sur relevé de compte
-
 image:Image Doc Util/pdf2.PNG[]
 
-Pour retrouver le fichier, il se trouve dans le dossier dailyBank de votre ordinateur
-
+Pour retrouver le fichier, il se trouve dans le répertoire courant de votre application (emplacement de `DailyBank` sur votre ordinateur)
 image:Image Doc Util/pdf3.PNG[]
-
 image:Image Doc Util/pdf4.PNG[]
 
-
 === 13. Clôturer un compte (BR)
+
 En cliquant sur le bouton "clôturer un compte", un pop-up apparaitra pour s'assurer de votre décision de clôturer le compte.
-
 image:Image Doc Util/14.jpg[]
-
-
 image:Image Doc Util/cloturer.PNG[]
 
+Lorsque que vous confirmer la clôturation, dans la liste des comptes, le compte concerné passera de "(Ouvert)" à "(Clôturer)"
+image:Image Doc Util/cloturereffectuer.png[]
+
 === 14. Nouveau Compte utilisateur (GS)
+
 Voici comment ouvrir un nouveau compte à un utilisateur.
-
 image:Image Doc Util/15.jpg[]
-
 image:Image Doc Util/16.jpg[]
 
 Le compte apparait donc sur l'ecran, et dans la base de données
-
 image:Image Doc Util/compte.PNG[]
 
 === 15. Modifier un client V0
-Pour finir, vous avez la possibilité de modifier un client dans la partie gestion client.
-
+Vous avez la possibilité de modifier un client dans la partie gestion client.
 image:Image Doc Util/17.jpg[]
-
 image:Image Doc Util/18.jpg[]
+
+
+
+== IV. Fonctionnalité Chef d'agence
+
+=== 1. Débit exceptionnel (JB)
+
+Effectuer débit exceptionnel
+image:Image Doc Util/debitex1.jpg[]
+
+Noyus voyons que le découvert autorisé du compte est de 400, or nous allons prelever plus que le découvert autorisé
+image:Image Doc Util/debitex2.jpg[]
+
+Nous voyons que le solde est inférieur au découvert autorisé
+image:Image Doc Util/debitex3.jpg[]
+
+=== 2. Créer un emprunt (JB) / assurance emprunt (BR)
+
+Dans la fenêtre de gestion des clients, sélectionner un client et cliquer sur "Emprunts client"
+image:Image Doc Util/empruntsclient.png[]
+
+Un fenêtre avec la liste des différents emprunts du client s'affiche. Cliquer sur "Nouvel Emprunt"
+image:Image Doc Util/newemprunt.png[]
+
+Un fenêtre de saisi s'ouvre avec la possibilité d'ajouter une assurance au nouvel emprunt. Cliquer sur "Valider" pour que l'emprunt (et son assurance si voulu) soit ajouter ou cliquer sur "Annuler" pour que l'action n'est pas lieu
+image:Image Doc Util/valideemprunt.png[]
+
+Si la saisie de l'emprunt n'est pas valide lorsqu'on clique sur "Valider" une fenêtre s'afficher avec l'erreur correspondant. Sinon l'emprunt est ajouté à la liste des emprunt du client.
+image:Image Doc Util/erreursaisiemprunt.png[]
+
+=== 2. Simuler l'emprunt et son assurance (BR)
+
+Dans la liste des emprunts d'un client, sélectionner un emprunt puis cliquer sur "Détails Emprunt"
+image:Image Doc Util/detailsemprunt.png[]
+
+Une nouvel fenêtre s'ouvre. Cliquer sur "Actualiser Emprunt" pour que la simulation de l'emprunt s'exécute. Le résultat s'affiche dans la liste.
+image:Image Doc Util/simuemprunt.png[]
+
+Si l'emprunt possède une assurance alors le bouton "Actualiser Assurance" s'affiche, cliquer dessus. la simulation de l'assurance s'affiche à côté de la liste.
+image:Image Doc Util/simuassurance.png[]
