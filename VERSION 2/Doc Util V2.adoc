@@ -10,9 +10,9 @@ L'application DailyBank permet la gestion de vos comptes en banque. De votre mai
 
 Explication des différents rôles::
   * Le chef d'agence +
-  ** le chef d'agence est le rôle ayant le plus de droits dans notre application. Il est le seul à pouvoir gerer les débits excpetionnels, faire le CRUD des employés et generer des simulations d'emprunts avec ou sans assurance. +
+  ** le chef d'agence est le rôle ayant le plus de droits dans notre application. Il est le seul à pouvoir gerer les débits excpetionnels, faire le CRUD des employés et generer des simulations d'emprunts avec ou sans assurance. Il peut également effectuer toute action que le guichetier peut faire. +
 * Le guichetier +
- ** le guichetier peut generer le pdf et faire le CRUD des prélévements automatiques. +
+ ** le guichetier peut generer le pdf, faire le CRUD des prélévements automatiques. +
 * Le client +
  ** le client peut acceder à son compte et effectuer des crédits/débits et virement. +
  * Le client inactif +
