@@ -17,13 +17,11 @@ Explication des différents rôles::
  ** le client peut acceder à son compte et effectuer des crédits/débits et virement. +
  * Le client inactif +
  ** Le client inactif ne peut plus acceder à ses comptes mais ses informations restent sur notre application.
- 
 
 
 
-== II. Installation utilisation, fonctionnement
-=== Installation 
-
+== II. Installation
+[.text-justify]
 Notre application est codé sur eclipse en java *jdk17*. +
 Pour installer l'application sur eclipse, il faut ouvrir un workspace pouvant gérer le javaFx, de plus il faut importer *DailyBank* pour acceder à l'application. Après avoir lancer le Maven Build avec " clean javafx:run", l'application se lancera toute seule et referez-vous à la doc Util en cas de problème. +
 Au niveau de la base de données, pour se connecter nos identifiants sont : *G1B1S2* et notre mot de passe est : *password1234*. +
@@ -31,6 +29,9 @@ Pour changer de base de données, il suffit d'aller dans la class *LogToDatabase
 
 image:Image Doc Tech/log.PNG[]
 
+
+
+== III. Fonctionnement
 === 1. Page d'accueil V0
 Voici la page d'accueil. Pour commencer à utiliser DailyBank, appuyez sur "Connexion"
 
