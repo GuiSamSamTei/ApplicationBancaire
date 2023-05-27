@@ -18,9 +18,9 @@ La banque DailyBank souhaite développer une application JAVA-Oracle de gestion 
 
 Explication des différents rôles::
   * Le chef d'agence +
-  ** le chef d'agence est le rôle ayant le plus de droits dans notre application. Il est le seul à pouvoir gerer les débits excpetionnels, faire le CRUD des employés et generer des simulations d'emprunts avec ou sans assurance. +
+  ** Le chef d'agence est le rôle ayant le plus de droits dans notre application. Il est le seul à pouvoir gerer les débits excpetionnels, faire le CRUD des employés et generer des simulations d'emprunts avec ou sans assurance. Il peut aussi effectuer les actions d'un guichetier. +
 * Le guichetier +
- ** le guichetier peut generer le pdf et faire le CRUD des prélévements automatiques. +
+ ** Le guichetier peut generer le pdf et faire le CRUD des prélévements automatiques. +
 * Le client +
  ** le client peut acceder à son compte et effectuer des crédits/débits et virement. +
  * Le client inactif +
