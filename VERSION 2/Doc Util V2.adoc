@@ -108,7 +108,7 @@ image:Image Doc Util/12.jpg[]
 === 11. Débit / Crédit (JB) / Virement compte à compte (BR)
 
 Nous pouvons maintenant faire un crédit ou un débit ou un virement de compte à compte, essayons avec un débit.
-image:Image Doc Util/pdf2.PNG[]
+image:Image Doc Util/pdf1.PNG[]
 image:Image Doc Util/13.jpg[]
 
 Maintenant virement de compte à compte. Dans la liste des opérations d'un compte *non clôturé*, cliquer sur "Virement de compte à compte".
