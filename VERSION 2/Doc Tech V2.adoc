@@ -83,9 +83,6 @@ application.view::
 
 
 
-
-
-
 == IV. Description des fonctionnalités
 === 1. Fonctionnalités Guichetier
 ==== 1.1. Modifier informations client (V0)
@@ -125,7 +122,7 @@ La consultation d'un compte s'affiche en cliquant sur "Comptes client" si un cli
   - Access_BD_CompteCourant.java
 
 
-==== 1.4.1. Créditer / Débiter (JB)
+==== 1.4. Créditer / Débiter (JB)
 [.text-justify]
 Premierement, pour créer la fonction créditer, je me suis essentiellement inspirée des fonctions "débiter", en changeant bien les noms des variables et leurs actions. De plus, j'ai ajouté dans la base de données la fonction créditer, qui fonctionne comme débiter mais sans découvert autorisé et en additionant. J'ai donc créé une dependance sous oracle du nom de "créditer". +
 
@@ -138,21 +135,6 @@ Premierement, pour créer la fonction créditer, je me suis essentiellement insp
   - operationeditorpane.fxml +
   - Access_BD_Operation.java
 
-
-==== 1.4.2. Débit Exceptionnel (JB)
-[.text-justify]
-Pour instaurer des débit excpetionnels, il suffit de prendre le même code que pour débiter mais en retirant quelques subtilités tels que le découvert autorisé. J'avais effectuer cette fonciton bien avant le message de Monsieur Péninou, j'ai donc créé une dépendance sous oracle du nom de "DebitEx", pour faire cela j'ai utilisé la dependance de créditer mais j'ai simplement remplacé le nom et le *''+''* en *''-''*. + 
-L'avantage d'utiliser créditer est de ne pas avoir le découvert, donc parfait pour les débits Exceptionnel. + 
-De plus, dans la fonction *validateComponentState()* j'ai ajouté le fait que seul le chef d'agence ai accès à ce bouton.  +
-
-*Fichiers concernés*::
-  - OperationManagement.java +
-  - OperationManagementController.java +
-  - operationmanagement.fxml +
-  - OperationEditorPane.java +
-  - OperationEditorPaneController.java +
-  - operationeditorpane.fxml +
-  - Access_BD_Operation.java
 
 ==== 1.5. Créer un compte (GS)
 [.text-justify]
@@ -195,10 +177,36 @@ La clôturation d'un compte permet au guichetier de désactiver les transactions
   - Access_BD_CompteCourant.java
 
 
+==== 1.8. Générer un relevé mensuel d'un compte en PDF (BR)
+[.text-justify]
+La génération d'un relevé mensuel se fait à partir de la librairie `itextpdf` de java. Cette librairie se concentre principalement sur les paragraphes, lignes et tableaux dans une page. Une classe `CreatePdf.java` permet d'iniatiliser ce document et de le compléter, cela facilite la lisibilité du code. +
+
+*Fichiers concernés*::
+  - OperationsManagement.java +
+  - OperationsManagementController.java +
+  - operationsmanagement.fxml +
+  - CreatePdf.java
+
+
+==== 1.9. Gérer (faire le "CRUD") les prélèvements automatiques (GS)
+[.text-justify]
+Le CRUD des prélèvements automatiques permet de créer un prélèvement, voir un prélèvements, modifier un prélèvements et supprimer un prélèvements. Cette fonctionnalité marche comme la gestion des clients. Le développement de cette fonctionnalité se base sur la récupération de données saisies à l'écran et l'interaction avec la base de données. +
+
+*Fichiers concernés*::
+  - PrelManagement.java +
+  - PrelManagementController.java +
+  - prelmanagement.fxml +
+  - PrelEditorPane.java +
+  - PrelEditorPaneController.java +
+  - Preleditorpane.fxml +
+  - Access_BD_Prelevement.java
+
+
+
 === 2. Fonctionnalités Chef d'agence
 ==== 2.1. Rendre inactif un client (V0)
 [.text-justify]
-Lors de la modification d'un client, il est possible de le rendre inactif seulement si on est connecté en tant que chef d'agence. Une méthode vérifie que c'est bien le cas et active ou désactive les RadioButton correspondant à rendre inactif un client.
+Lors de la modification d'un client, il est possible de le rendre inactif seulement si on est connecté en tant que chef d'agence. Une méthode vérifie que c'est bien le cas et active ou désactive les RadioButton correspondant à rendre inactif un client. +
 
 *Fichiers concernés*::
   - ClientsManagement.java +
@@ -211,4 +219,48 @@ Lors de la modification d'un client, il est possible de le rendre inactif seulem
 
 ==== 2.2. Gérer (faire le "CRUD") les employés (GS)
 [.text-justify]
-Opération non effectuer dans la version 1 par manque de temps mais commencer.
+Le CRUD des employés permet de créer un empoyé, voir un employé, modifier un employés et supprimer un employés. Cette fonctionnalité marche comme la gestion des clients. +
+
+*Fichiers concernés*::
+  - EmployeManagement.java +
+  - EmployeManagementController.java +
+  - employemanagement.fxml +
+  - EmployeEditorPane.java +
+  - EmployeEditorPaneController.java +
+  - employeeditorpane.fxml +
+  - Access_BD_Employe.java
+
+
+==== 2.3. Débit Exceptionnel (JB)
+[.text-justify]
+Pour instaurer des débit excpetionnels, il suffit de prendre le même code que pour débiter mais en retirant quelques subtilités tels que le découvert autorisé. J'avais effectuer cette fonciton bien avant le message de Monsieur Péninou, j'ai donc créé une dépendance sous oracle du nom de "DebitEx", pour faire cela j'ai utilisé la dependance de créditer mais j'ai simplement remplacé le nom et le *''+''* en *''-''*. + 
+L'avantage d'utiliser créditer est de ne pas avoir le découvert, donc parfait pour les débits Exceptionnel. + 
+De plus, dans la fonction *validateComponentState()* j'ai ajouté le fait que seul le chef d'agence ai accès à ce bouton.  +
+
+*Fichiers concernés*::
+  - OperationManagement.java +
+  - OperationManagementController.java +
+  - operationmanagement.fxml +
+  - OperationEditorPane.java +
+  - OperationEditorPaneController.java +
+  - operationeditorpane.fxml +
+  - Access_BD_Operation.java
+
+
+==== 2.4. Simulation d'emprunt et assurance (BR et JB)
+[.text-justify]
+Le développement de simulation d'emprunt et assurance est principalement dans l'interaction avec la base de données et les calculs de chacune des simulations. Deux classe dans le package `application.model.date` servent manipuler les emprunts et les assurances associés. Ces classes possèdent des attributs `public` qui ne font que véhiculer des données.
+
+*Fichiers concernés*::
+  - EmpruntDetails.java +
+  - EmpruntDetailsController.java +
+  - empruntdetails.fxml +
+  - EmpruntEditorPane.java +
+  - EmpruntEditorPaneController.java +
+  - emprunteditorpane.fxml +
+  - EmpruntsManagement.java +
+  - EmpruntsManagementController.java +
+  - empruntsmanagement.fxml +
+  - AssuranceEmprunt.java +
+  - Emprunt.java +
+  - Access_BD_Emprunt.java
