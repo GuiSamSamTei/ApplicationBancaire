@@ -8,9 +8,9 @@ Créé par : Équipe 1B1
 
 === 1. Organisation
 
-Julie BAELEN -> Créditer / Débiter +
-Guilherme SAMPAIO -> Créer un compte +
-Bastien RECORD -> Clôturer un compte et Virement de compte à compte
+Julie BAELEN -> Créditer / Débiter / Débit exceptionnel / Créer Emprunt et Assurance +
+Guilherme SAMPAIO -> Créer un compte / Gérer les employés / Gérer les prélèvements automatiques +
+Bastien RECORD -> Clôturer un compte / Virement de compte à compte / Générer un relevé mensuel d'un compte en PDF / Simuler Emprunt et Assurance
 
 === 2. Description d'application
 [.text-justify]
