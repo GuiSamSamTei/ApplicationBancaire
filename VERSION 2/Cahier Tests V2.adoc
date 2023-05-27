@@ -388,3 +388,39 @@ autorisé est de -100 euros. Mais il n'impact pas sur l'opération ^|OK
 5+|Commentaire : L'opération est possible seulement quand un compte est actif. Le montant à débiter peut dépasser le découvert autorisé lors du débit au solde.
 
 |====
+
+==== 2.4 Emprunt et assurance d'emprunt (BR et JB) :
+
+|====
+
+>|Cas de test 4+|Test-02-04-01
+>|Titre 4+|Créer un emprunt et assurance emprunt
+>|Objectif 4+| Vérifier qu'il est possible de créer un emprunt avec son assurance ou non
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_E_A.1 ^|Cliquer sur le bouton "Nouvel emprunt". ^|Un fenêtre de saisi s'ouvre. ^|Aucune ^|OK
+^|C_E_A.2 ^|Cliquer sur le bouton "Annuler". ^|La fenêtre de saisi se ferme et la liste des emprunts n'a pas changée ^|Aucune ^|OK
+^|C_E_A.3 ^|Cliquer sur le bouton "Valider". ^|La fenêtre de saisi se ferme et la liste des emprunts a été modifiée en ajoutant un emprunt ^|Tous les champs sont remplis sauf "Taux Assurance" et "Taux couv". Le radio button "Oui" n'est pas sélectioné mais "Non" peut l'être ^|OK
+^|C_E_A.4 ^|Cliquer sur le bouton "Valider". ^|La fenêtre de saisi se ferme et la liste des emprunts a été modifiée en ajoutant un emprunt ^|Tous les champs sont remplis et le radio button "Oui" est sélectionné ^|OK
+^|C_E_A.5 ^|Cliquer sur le bouton "Valider". ^|Un message d'erreur s'affiche avec son détails ^|Tous les champs sont vides ou seulement certains. Le radio button peut ne pas être sélectionné ^|OK
+^|C_E_A.6 ^|Cliquer sur le bouton "Valider". ^|Un message d'erreur s'affiche avec son détails ^|Tous les champs sont remplis sauf les champs concernant l'assurance. Le radio button est sélectionné sur "Oui" ^|OK
+5+|
+5+|Commentaire : L'ajout d'un emprunt se fait seulement si la saisie est valide (les champs nécessaires sont remplis).
+
+|====
+
+|====
+
+>|Cas de test 4+|Test-02-04-02
+>|Titre 4+|Simuler un emprunt et son assurance
+>|Objectif 4+| Vérifier qu'il est possible de simuler un emprunt avec son assurance (si existante)
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|C_E_A.1 ^|Cliquer sur le bouton "Voir détails Emprunt". ^|Une fenêtre de description d'emprun s'ouvre. ^|Un emprunt est sélectionné ^|OK
+^|C_E_A.2 ^|Cliquer sur le bouton "Actualiser Emprunt". ^|La liste s'actualise avec les détails de la simulation de l'emprunt et le bouton "Actualiser Assurance" reste désactiver. ^|Avoir sélectionné un emprunt ne possèdant pas d'assurance ^|OK
+^|C_E_A.3 ^|Cliquer sur le bouton "Actualiser Emprunt". ^|La liste s'actualise avec les détails de la simulation de l'emprunt et le bouton "Actualiser Assurance" s'active. ^|Avoir sélectionné un emprunt possèdant d'assurance ^|OK
+^|C_E_A.4 ^|Cliquer sur le bouton "Actualiser Assurance". ^|Des labels s'affiche sur le coté de la liste des détails d'emprunt avec les informations nécessaires pour l'assurance. ^|Avoir cliqué sur le bouton "Actualiser Emprunt" ^|OK
+5+|
+5+|Commentaire : Le bouton "Actualiser Emprunt" contrôle l'activation de "Actualisation Assurance".
+
+|====
